@@ -2,8 +2,8 @@ name: Update Language Sources
 
 on:
   schedule:
-    - cron:  '0 0 * * *'  # Exécuter une fois par jour à minuit
-  workflow_dispatch:  # Permet de déclencher manuellement
+    - cron: '0 0 * * *'
+  workflow_dispatch:
   push:
     paths:
       - 'projects.json'
@@ -13,16 +13,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Important pour avoir l'historique complet
 
-      - name: Update Projects Source Json
-        run: | 
-          npm i -D axios
-          node ./.github/workflows/update.js
-        
-      - name: Add & Commit
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm i -D axios
+
+      - name: Update translations
+        run: node ./.github/workflows/update.js
+
+      - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: "french/* english/*"
-          branch: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+          add: 'english/ french/'
+          commit: 'Update translations [skip ci]'
+          pull: '--rebase'
+          push: true
