@@ -1,0 +1,66 @@
+name: Create Release
+
+on: 
+  release:
+    types: [ published ]
+
+env:
+  ZIP_FILENAME: "padhiver-tradpack"
+  PACKAGE_CONTENT: "module.json fr.json welcome.js"
+  PACKAGE_ID: "padhiver-tradpack"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # Fusionner les traductions françaises
+    - name: Merge Translation
+      id: merge_translation
+      run: |
+        npm i -D deepmerge js-yaml
+        node ./.github/workflows/merge.js
+
+    # Remplacer les liens dans le module.json
+    - name: Substitute Manifest and Download Links
+      id: sub_manifest_link_version
+      uses: microsoft/variable-substitution@v1
+      with:
+        files: 'module.json'
+      env:
+        version: ${{github.event.release.tag_name}}
+        url: https://github.com/${{github.repository}}
+        manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
+        download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/padhiver-tradpack.zip
+        changelog: https://github.com/${{github.repository}}/releases/tag/${{github.event.release.tag_name}}
+
+    # Créer le zip
+    - name: Create Artifact
+      id: build-zip
+      run: zip -r $ZIP_FILENAME.zip $PACKAGE_CONTENT
+
+    # Mettre à jour la release
+    - name: Update Release with Files
+      id: create_version_release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        name: ${{ github.event.release.name }}
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: './module.json, ./padhiver-tradpack.zip'
+        tag: ${{ github.event.release.tag_name }}
+        body: ${{ github.event.release.body }}
+
+    # Publication sur le dépôt Foundry VTT
+    - name: Publish to Foundry VTT Repo
+      id: publish_foundry_repo
+      if: ${{ env.PACKAGE_ID }}
+      run: npx @ghost-fvtt/foundry-publish
+      env:
+        FVTT_MANIFEST_PATH: 'module.json'
+        FVTT_PACKAGE_ID: ${{ env.PACKAGE_ID }}
+        FVTT_USERNAME: ${{ secrets.FVTT_USERNAME }}
+        FVTT_PASSWORD: ${{ secrets.FVTT_PASSWORD }}

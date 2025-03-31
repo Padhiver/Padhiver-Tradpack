@@ -1,0 +1,26 @@
+{
+    "id": "padhiver-tradpack",
+    "title": "Translation: Français [Mega]",
+    "description": "Collection de traductions françaises pour plusieurs modules FoundryVTT.",
+    "authors": [
+      {
+        "name": "Votre Nom",
+        "email": "votre.email@exemple.com"
+      }
+    ],
+    "compatibility": {
+      "minimum": "11",
+      "verified": "11"
+    },
+    "esmodules": [ "welcome.js" ],
+    "languages": [{
+        "lang": "fr",
+        "name": "Français",
+        "path": "fr.json"
+    }],
+    "changelog": "Auto replaced",
+    "version": "Auto replaced",
+    "url": "Auto replaced",
+    "manifest": "Auto replaced",
+    "download": "Auto replaced"
+  }
