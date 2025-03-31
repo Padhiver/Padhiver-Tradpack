@@ -29,9 +29,9 @@ jobs:
         run: node ./.github/workflows/update.js
 
       - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           add: 'english/ french/'
           commit: 'Update translations [skip ci]'
-          pull: 'false'
+          pull: false
           push: true
