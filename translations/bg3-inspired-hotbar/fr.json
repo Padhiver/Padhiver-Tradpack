@@ -1,1 +1,7 @@
-{}
+{
+ "BG3.Hotbar": {
+  "Errors": {
+   "ItemNotFound": "Impossible de récupérer l'objet à partir de l'UUID. Ne peut être placé sur la barre d'accès rapide."
+  }
+ }
+}
