@@ -33,5 +33,5 @@ jobs:
         with:
           add: 'english/ french/'
           commit: 'Update translations [skip ci]'
-          pull: '--rebase'
+          pull_strategy: 'NO-PULL'  # Changer ici au lieu de 'pull: --rebase'
           push: true
