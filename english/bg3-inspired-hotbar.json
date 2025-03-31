@@ -1,0 +1,145 @@
+{
+    "BG3.Hotbar": {
+        "Errors": {
+            "InvalidDrop": "Invalid drop data: not valid JSON.",
+            "InvalidItem": "Invalid item data. Only items with a valid UUID can be placed on the hotbar.",
+            "ItemNotFound": "Could not retrieve item from UUID. Not placing on hotbar.",
+            "WrongToken": "You cannot drop items from a different token onto this hotbar.",
+            "UnableToRetrieve": "Unable to retrieve item data.",
+            "MacroNotFound": "Macro not found",
+            "NoActor": "No actor found",
+            "NoUIReference": "UI reference not found. Please try refreshing the page."
+        },
+        "ContextMenu": {
+            "EditItem": "Edit Item",
+            "ConfigureActivities": "Configure Activities",
+            "Remove": "Remove"
+        },
+        "UI": {
+            "AddRow": "Add Row",
+            "RemoveRow": "Remove Row"
+        },
+        "SettingsMenu": {
+            "ResetLayout": "Reset Layout",
+            "ClearAllItems": "Clear All Items",
+            "ImportLayout": "Import Layout",
+            "ExportLayout": "Export Layout"
+        }
+    },
+    "BG3.Settings": {
+        "EnableUI": {
+            "Name": "Enable BG3 Hotbar UI",
+            "Hint": "Enable or disable the BG3-style hotbar interface. Disable this if you prefer to use a different hotbar module or the default Foundry hotbar."
+        },
+        "ShowDamageRanges": {
+            "Name": "Show Damage as Ranges",
+            "Hint": "Display spell damage as min-max ranges instead of dice notation (e.g., '1-8 fire' instead of '1d8 fire')"
+        },
+        "ShowMaterialDescription": {
+            "Name": "Show Material Components Description",
+            "Hint": "Display the full description of material components in spell tooltips (e.g. 'diamonds worth 300gp, which the spell consumes')"
+        },
+        "BypassSpellPreparationCheck": {
+            "Name": "Include Unprepared Spells",
+            "Hint": "When enabled, all spells will be included in the hotbar regardless of their preparation state"
+        },
+        "EnforceSpellPreparationPC": {
+            "Name": "Enforce Spell Preparation (Linked Tokens)",
+            "Hint": "When enabled, linked tokens (including player characters) will only show prepared spells and special spells (innate, at-will, pact, ritual, always). When disabled, all spells will appear."
+        },
+        "EnforceSpellPreparationNPC": {
+            "Name": "Enforce Spell Preparation (Unlinked Tokens)",
+            "Hint": "When enabled, unlinked tokens will only show prepared spells and special spells (innate, at-will, pact, ritual, always). When disabled, all spells will appear."
+        },
+        "CollapseFoundryMacrobar": {
+            "Name": "Collapse Foundry Macrobar",
+            "Hint": "Automatically collapse the default Foundry macrobar"
+        },
+        "ShowPassiveFeaturesContainer": {
+            "Name": "Show Passive Features Container",
+            "Hint": "Display the container of passive features above the portrait"
+        },
+        "TooltipDelay": {
+            "Name": "Tooltip Delay",
+            "Hint": "How long to wait before showing tooltips (in milliseconds)"
+        },
+        "FadeOutDelay": {
+            "Name": "Fade Out Delay",
+            "Hint": "Seconds to wait before fading out the hotbar"
+        },
+        "NormalOpacity": {
+            "Name": "Normal Opacity",
+            "Hint": "Opacity of the hotbar when mouse is over it (0.1 to 1.0)"
+        },
+        "FadedOpacity": {
+            "Name": "Faded Opacity",
+            "Hint": "Opacity of the hotbar when mouse is not over it (0.0 to 1.0). Set to 1 to disable fading completely."
+        },
+        "AutoPopulateUnlinkedTokens": {
+            "Name": "Auto-Populate Unlinked Tokens",
+            "Hint": "Automatically populate the hotbar for newly created unlinked tokens based on the settings below"
+        },
+        "Container1AutoPopulate": {
+            "Name": "Container 1 Auto-Populate",
+            "Hint": "What item types to automatically populate in the first container (index 0)"
+        },
+        "Container2AutoPopulate": {
+            "Name": "Container 2 Auto-Populate",
+            "Hint": "What item types to automatically populate in the second container (index 1)"
+        },
+        "Container3AutoPopulate": {
+            "Name": "Container 3 Auto-Populate",
+            "Hint": "What item types to automatically populate in the third container (index 2)"
+        },
+        "AutoPopulateOverflow": {
+            "Name": "When Container is Full",
+            "Hint": "Choose how to handle items when the container runs out of space.",
+            "Expand": "Continue adding rows",
+            "NextContainer": "Overflow to next container"
+        },
+        "AutoPopulateFillDirection": {
+            "Name": "Auto-Populate Fill Direction",
+            "Hint": "Whether to fill rows first (left to right, then down) or columns first (top to bottom, then right)",
+            "RowFirst": "Rows First (Left to Right, Then Down)",
+            "ColumnFirst": "Columns First (Top to Bottom, Then Right)"
+        },
+        "ContainerAutoPopulate": {
+            "DialogTitle": "Auto-Populate Container",
+            "DefaultsTitle": "Configure Container Auto-Populate Defaults",
+            "Name": "Select Item Types",
+            "Hint": "Choose which types of items to automatically add to this container.",
+            "Weapons": "Weapons",
+            "Features": "Features",
+            "Spells": "Spells",
+            "Consumables": "Consumables",
+            "Equipment": "Equipment",
+            "Tools": "Tools",
+            "Loot": "Loot",
+            "Populate": "Populate",
+            "Cancel": "Cancel",
+            "Save": "Save Changes",
+            "SaveSuccess": "Container auto-populate settings saved successfully",
+            "Configure": "Configure Container Auto-Populate"
+        },
+        "HighlightStyle": {
+            "Name": "Highlight Style",
+            "Hint": "Choose how items are highlighted when filtered",
+            "Bottom": "Bottom Border",
+            "Border": "Full Border"
+        },
+        "DefaultPortraitPreferences": {
+            "Name": "Default Portrait Display",
+            "Hint": "Choose whether to display token images or character portraits by default. This can be overridden per token. For the first time you enable this setting, it will apply to all tokens that do not have a portrait set.",
+            "Token": "Always Use Token Image",
+            "Portrait": "Always Use Character Portrait"
+        },
+        "SettingsCategories": {
+            "HotbarContainer": "Hotbar buttons",
+            "CombatContainer": "Common Actions Container",
+            "Global": "Global",
+            "Portrait": "Character Portrait",
+            "Tooltip": "Tooltip",
+            "AutoPopulating": "Auto-Populating"
+        }
+    }
+} 
