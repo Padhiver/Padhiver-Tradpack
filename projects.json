@@ -2,5 +2,17 @@
     {
         "name": "bg3-inspired-hotbar",
         "src": "https://raw.githubusercontent.com/BragginRites/bg3-inspired-hotbar/main/lang/en.json"
+    },
+    {
+        "name": "token-variants",
+        "src": "https://raw.githubusercontent.com/Aedif/TokenVariants/master/token-variants/lang/en.json"
+    },
+    {
+        "name": "torch",
+        "src": "https://raw.githubusercontent.com/League-of-Foundry-Developers/torch/main/lang/en.json"
+    },
+    {
+        "name": "healthEstimate",
+        "src": "https://raw.githubusercontent.com/mclemente/healthEstimate/master/src/lang/en.json"
     }
 ]
