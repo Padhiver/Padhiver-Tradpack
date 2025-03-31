@@ -1,15 +1,22 @@
 const fs = require('fs');
 const merge = require('deepmerge');
 const yaml = require('js-yaml');
+const path = require('path');
 
-const entries = fs.readdirSync('./french/').map(file => {
-    const filePath = `./french/${file}`;
-    if (file.endsWith('.yml')) {
-        return yaml.load(fs.readFileSync(filePath, 'utf8'));
-    } else if (file.endsWith('.json')) {
-        return JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    } else return {};
-});
+// Lire tous les dossiers dans ./translations
+const modules = fs.readdirSync('./translations').filter(dir => 
+  fs.statSync(path.join('./translations', dir)).isDirectory()
+);
 
-const results = merge.all(entries);
-fs.writeFileSync(`./fr.json`, JSON.stringify(results));
+let allTranslations = {};
+
+for (const moduleName of modules) {
+  const frPath = path.join('./translations', moduleName, 'fr.json');
+  
+  if (fs.existsSync(frPath)) {
+    const translation = JSON.parse(fs.readFileSync(frPath, 'utf8'));
+    allTranslations = merge(allTranslations, translation);
+  }
+}
+
+fs.writeFileSync('./fr.json', JSON.stringify(allTranslations, null, 2));

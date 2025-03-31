@@ -35,7 +35,7 @@ jobs:
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'english/ french/'
+          add: 'translations/'
           message: 'Update translations [skip ci]'
           push: true
           default_author: github_actions

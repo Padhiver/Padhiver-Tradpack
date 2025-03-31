@@ -2,12 +2,11 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-// Créer les répertoires s'ils n'existent pas
-['./english', './french'].forEach(dir => {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-});
+// Créer le répertoire translations s'il n'existe pas
+const translationsDir = './translations';
+if (!fs.existsSync(translationsDir)) {
+  fs.mkdirSync(translationsDir, { recursive: true });
+}
 
 async function download(url, dest) {
   const response = await axios({
@@ -32,12 +31,19 @@ async function main() {
 
     for (const project of projectsArray) {
       const ext = project.src.endsWith('.yml') ? 'yml' : 'json';
-      const engPath = `./english/${project.name}.${ext}`;
-      const frPath = `./french/${project.name}.${ext}`;
+      const moduleDir = `${translationsDir}/${project.name}`;
+      
+      // Créer le dossier du module s'il n'existe pas
+      if (!fs.existsSync(moduleDir)) {
+        fs.mkdirSync(moduleDir, { recursive: true });
+      }
 
-      // Télécharger le fichier source
-      await download(project.src, engPath);
-      console.log(`Fichier anglais téléchargé: ${engPath}`);
+      const enPath = `${moduleDir}/en.${ext}`;
+      const frPath = `${moduleDir}/fr.${ext}`;
+
+      // Télécharger le fichier source anglais
+      await download(project.src, enPath);
+      console.log(`Fichier anglais téléchargé: ${enPath}`);
 
       // Créer fichier français vide si inexistant
       if (!fs.existsSync(frPath)) {
