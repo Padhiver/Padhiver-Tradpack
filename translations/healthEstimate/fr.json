@@ -1,1 +1,11 @@
-{}
+{
+ "healthEstimate": {
+  "core": {
+   "custom": {
+    "FractionHP": {
+     "hint": "Votre système utilise peut-être un autre chemin de données. Si l'estimation ne s'affiche pas correctement, saisissez le chemin de données vers l'attribut correct (par exemple, actor.system.health)."
+    }
+   }
+  }
+ }
+}
