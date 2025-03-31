@@ -3,7 +3,7 @@
 		"core": {
 			"custom": {
 				"FractionHP": {
-					"name": "Hit Points Attribute Data Path",
+					"name": "Hit PointsSS Attribute Data Path",
 					"hint": "Your system might be using another data path. If the estimate isn't showing correctly, input the data path to the correct attribute (e.g. actor.system.health)."
 				},
 				"FractionMath": {
