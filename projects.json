@@ -14,5 +14,73 @@
     {
         "name": "healthEstimate",
         "src": "https://raw.githubusercontent.com/mclemente/healthEstimate/master/src/lang/en.json"
+    },
+    {
+        "name": "monks-active-tiles",
+        "src": "https://raw.githubusercontent.com/ironmonk88/monks-active-tiles/main/lang/en.json"
+    },
+    {
+        "name": "sequencer",
+        "src": "https://raw.githubusercontent.com/fantasycalendar/FoundryVTT-Sequencer/master/languages/en-EN.json"
+    },
+    {
+        "name": "tactical-grid",
+        "src": "https://raw.githubusercontent.com/Aedif/tactical-grid/main/languages/en.json"
+    },
+    {
+        "name": "times-up",
+        "src": "https://gitlab.com/tposney/times-up/-/raw/master/src/lang/en.json"
+    },
+    {
+        "name": "visual-active-effects",
+        "src": "https://raw.githubusercontent.com/krbz999/visual-active-effects/main/lang/en.json"
+    },
+    {
+        "name": "active-auras",
+        "src": "https://raw.githubusercontent.com/kandashi/Active-Auras/main/lang/en.json"
+    },
+    {
+        "name": "autorotate",
+        "src": "https://raw.githubusercontent.com/Varriount/fvtt-autorotate/main/module/lang/en.json"
+    },
+    {
+        "name": "autoanimations",
+        "src": "https://raw.githubusercontent.com/theripper93/autoanimations/main/lang/en.json"
+    },
+    {
+        "name": "bulk-tasks",
+        "src": "https://raw.githubusercontent.com/NekroDarkmoon/bulk-tasks/main/lang/en.json"
+    },
+    {
+        "name": "dfreds-convenient-effects",
+        "src": "https://raw.githubusercontent.com/DFreds/dfreds-convenient-effects/main/static/lang/en.json"
+    },
+    {
+        "name": "effectmacro",
+        "src": "https://raw.githubusercontent.com/krbz999/effectmacro/main/lang/en.json"
+    },
+    {
+        "name": "find-the-culprit",
+        "src": "https://raw.githubusercontent.com/esheyw/find-the-culprit/main/lang/en.json"
+    },
+    {
+        "name": "item-piles",
+        "src": "https://raw.githubusercontent.com/fantasycalendar/FoundryVTT-ItemPiles/master/languages/en.json"
+    },
+    {
+        "name": "lib-wrapper",
+        "src": "https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/lang/en.json"
+    },
+    {
+        "name": "dnd5e-scriptlets",
+        "src": "https://raw.githubusercontent.com/tposney/dnd5e-scriptlets/dndv4/languages/en.json"
+    },
+    {
+        "name": "dae",
+        "src": "https://gitlab.com/tposney/dae/-/raw/dndv4/src/lang/en.json"
+    },
+    {
+        "name": "midi-qol",
+        "src": "https://gitlab.com/tposney/midi-qol/-/raw/v12dnd4/lang/en.json"
     }
 ]
