@@ -1,26 +1,34 @@
 {
-    "id": "padhiver-tradpack",
-    "title": "Translation: Français [Mega]",
-    "description": "Collection de traductions françaises pour plusieurs modules FoundryVTT.",
-    "authors": [
-      {
-        "name": "Votre Nom",
-        "email": "votre.email@exemple.com"
-      }
-    ],
-    "compatibility": {
-      "minimum": "11",
-      "verified": "11"
-    },
-    "esmodules": [ "welcome.js" ],
-    "languages": [{
-        "lang": "fr",
-        "name": "Français",
-        "path": "fr.json"
-    }],
-    "changelog": "Auto replaced",
-    "version": "Auto replaced",
-    "url": "Auto replaced",
-    "manifest": "Auto replaced",
-    "download": "Auto replaced"
-  }
+  "id": "padhiver-tradpack",
+  "title": "[FR] - Méga Pack",
+  "description": "Collection de traductions françaises pour plusieurs modules FoundryVTT.",
+  "version": "0.0.0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Padhiver",
+      "discord": "Padhiver"
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/dnd5e/ui/official/dnd5e-repo.jpg",
+      "thumbnail": "systems/dnd5e/ui/official/dnd5e-thumbnail.jpg"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "fr.json"
+    }
+  ],
+  "changelog": "Auto replaced",
+  "url": "Auto replaced",
+  "manifest": "Auto replaced",
+  "download": "Auto replaced"
+}
