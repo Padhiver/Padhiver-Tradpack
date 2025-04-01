@@ -1,0 +1,129 @@
+{
+  "aedifs-tactical-grid": {
+    "settings": {
+      "defaultViewDistance": {
+        "name": "Default Grid View Distance",
+        "hint": "Number of grid spaces to be displayed."
+      },
+      "usePropertyBasedDistance": {
+        "name": "Use Token Property Based Distance",
+        "hint": "Use a token property instead of `Default Grid View Distance`"
+      },
+      "propertyDistance": {
+        "name": "Token Property",
+        "hint": "Path to the Token property to be used to determine the size of the grid."
+      },
+      "defaultViewShape": {
+        "name": "Default Grid View Shape",
+        "hint": "The shape of the grid mask."
+      },
+      "enableOnCombatOnly": {
+        "name": "On Combat Only",
+        "hint": "Grid will only be shown when in combat."
+      },
+      "enableOnControl": {
+        "name": "On Control",
+        "hint": "Grid will be shown for controlled placeables."
+      },
+      "enableOnHover": {
+        "name": "On Hover",
+        "hint": "Grid will be shown for hovered over placeables."
+      },
+      "mixColors": {
+        "name": "Mix Colors",
+        "hint": "When enabled view shape colors will be mixed/blended together."
+      },
+      "assignDispositionBasedColor": {
+        "name": "Assign Color Based on Disposition",
+        "hint": "When enabled Token view shape colors will default to their disposition:"
+      },
+      "layerEnable": {
+        "hint": "Enable tactical grid for \"{layerName}\""
+      },
+      "enableOnRuler": {
+        "name": "Enable Tactical Grid For Ruler",
+        "hint": "Enables grid for Ruler Measurements (requires libWrapper to be active)."
+      },
+      "measurementPrecision": {
+        "hint": "Decimal precision that measured distances are to be displayed in."
+      },
+      "rulerColor": {
+        "hint": "Set a color for the ruler grid. If no color is set then it will use the grid color of the scene."
+      },
+      "includeElevation": {
+        "name": "Include Elevation",
+        "hint": "Should elevation be included in distance measurements?"
+      },
+      "shortestDistance": {
+        "name": "Shortest Distance Only",
+        "hint": "Only the shortest distance to the token will be shown."
+      },
+      "gridlessCircle": {
+        "name": "Gridless: Circle Border",
+        "hint": "If enabled, on gridless scenes the module will calculate shortest distance assuming the Token border is a circle."
+      },
+      "scaleFontSize": "Scale Font Size to Canvas Grid",
+      "baseGridSize": {
+        "name": "Base Grid Size",
+        "hint": "Grid smaller or larger than this will result in Font Size being scaled proportionally."
+      },
+      "cover": {
+        "name": "Cover Calculator",
+        "hint": "If a cover calculator is selected and corresponding module enabled; cover information will be displayed under measurements.",
+        "none": "None",
+        "half": "Half",
+        "threeQuarters": "Three-quarters",
+        "total": "Total"
+      },
+      "ignoreEffect": {
+        "name": "Ignore Tokens with Effect",
+        "hint": "Tokens with a matching effect name will be ignored from measurement calculations."
+      },
+      "displayDistancesOnRulerDrag": {
+        "name": "Display Distances on Ruler Drag",
+        "hint": "When enabled distances between the leading point of the ruler and all visible Tokens will be calculated and displayed on them."
+      },
+      "displayDistancesOnTokenDrag": {
+        "name": "Display Distances on Token Drag",
+        "hint": "When enabled distances between the dragged token and all visible Tokens will be calculated and displayed on them."
+      },
+      "range": {
+        "item-range": "Item Range Highlighter",
+        "token-range": "Token Range Highlighter",
+        "combat-only": "Combat Only",
+        "ranges": "Ranges",
+        "grid-shape-shrink": "Grid Shape Shrink",
+        "dispositions": "Dispositions Highlighted for Players"
+      },
+      "diagonalMultiplier": {
+        "name": "Diagonal Multiplier",
+        "hint": "Adjust distance scaling for grid-space moves that travel in both X and Y direction at the same time. 1.5x multiplier is equivalent to 5/10/5 rule. 1.0x is equivalent to 5/5/5."
+      },
+      "doubleDiagonalMultiplier": {
+        "name": "Double-Diagonal Multiplier",
+        "hint": "Adjust distance scaling for grid-space moves that travel in X, Y and Z direction at the same time."
+      }
+    },
+    "keybindings": {
+      "toggleGrid": {
+        "name": "Toggle Grid on Current Layer (Global)",
+        "hint": "Short Press will toggle the layer globally, a long press will toggle the layer just for the current Scene."
+      },
+      "sceneToggleGrid": {
+        "name": "Toggle Grid on Current Layer (Scene)",
+        "hint": ""
+      }
+    },
+    "common": {
+      "layers": "Layers",
+      "gridSpaces": "Grid Spaces",
+      "color": "Color",
+      "precision": "Precision",
+      "decimalPlaces": "Decimal Places",
+      "apply": "Apply",
+      "labels": "Labels",
+      "alpha": "Alpha",
+      "marker": "Marker"
+    }
+  }
+}
