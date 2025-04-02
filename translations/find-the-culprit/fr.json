@@ -1,1 +1,156 @@
-{}
+{
+    "FindTheCulprit": {
+      "Action": {
+        "acknowledge": {
+          "Label": {
+            "Disabled": "Ne plus afficher",
+            "Enabled": "Toujours afficher"
+          }
+        },
+        "clearAll": {
+          "Label": "Tout effacer",
+          "Tooltip": "Marquer tous les modules comme Suspect"
+        },
+        "deterministic": {
+          "Label": {
+            "Disabled": "Mélanger",
+            "Enabled": "Déterministe"
+          },
+          "Tooltip": {
+            "Disabled": "Les modules non restreints par leurs dépendances seront mélangés lors de la séparation par étape",
+            "Enabled": "L'étape de mélange lors de la séparation des modules actifs/inactifs sera ignorée"
+          }
+        },
+        "instructions": {
+          "Label": "Instructions",
+          "Tooltip": "Cliquer pour afficher les instructions"
+        },
+        "lockLibraries": {
+          "Label": {
+            "Disabled": "Bibliothèques déverrouillées",
+            "Enabled": "Bibliothèques verrouillées"
+          },
+          "Tooltip": {
+            "Disabled": "Les modules bibliothèques sont traités normalement",
+            "Enabled": "Tous les modules marqués comme bibliothèques sont forcément épinglés"
+          }
+        },
+        "mute": {
+          "Tooltip": {
+            "Disabled": "Sons activés",
+            "Enabled": "Sons désactivés"
+          }
+        },
+        "reloadAll": {
+          "Label": {
+            "Disabled": "Recharger (MJ seulement)",
+            "Enabled": "Recharger (tous)"
+          },
+          "Tooltip": {
+            "Disabled": "Seul le client MJ rechargera",
+            "Enabled": "Tous les clients connectés rechargeront avec le MJ"
+          }
+        },
+        "startRun": {
+          "Label": "Démarrer la recherche",
+          "Tooltip": "Commencer le processus de recherche"
+        },
+        "zeroMods": {
+          "Label": "Zéro module",
+          "Tooltip": "Recharger avec aucun module actif sauf Find the Culprit. Ne démarre pas une recherche complète"
+        }
+      },
+      "BinarySearchStep": {
+        "ConfirmStep": "Étape de confirmation : les seuls modules actifs sont le coupable identifié \"{culprit}\", ses dépendances (le cas échéant) et vos modules épinglés (le cas échéant).",
+        "ConfirmStepTitle": "Étape de confirmation",
+        "StatsData": "Étape {currentStep} : {numRemaining} modules toujours suspects. {remainingSteps} étape(s) ou moins restante(s).",
+        "Title": "Étape de recherche",
+        "WrongCulprit": "Mauvais coupable - Redémarrer la recherche"
+      },
+      "ClearAll": "Tout effacer",
+      "Continue": "Continuer",
+      "CopyModuleList": "Copier la liste des modules",
+      "DependencyOf": "Dépendance de",
+      "ErrorDialog": {
+        "Direction": "Les données du module peuvent être trouvées dans la console comme une Erreur pour aider au rapport de bug. Cliquer sur le bouton ci-dessous ou fermer cette boîte de dialogue ramènera votre monde à son état avant la recherche FtC.",
+        "EncounteredError": "Find the Culprit a rencontré une erreur :"
+      },
+      "FindTheCulprit": "Trouver le coupable !",
+      "FoundTheCulprit": {
+        "CulpritConfirmed": "Vous avez confirmé que le coupable trouvé cause un problème.",
+        "HasPinned": "Vous avez {count} modules épinglés, dont l'un pourrait être le vrai coupable. Si vous leur faites confiance, le coupable listé est une source probable de votre problème.",
+        "Header": "Nous avons trouvé le coupable !",
+        "OfferConfirmStep": "Le coupable n'était pas actif cette étape, donc son statut est seulement déduit. Cliquez sur le bouton Confirmer ci-dessous pour faire une étape supplémentaire avec le coupable actif.",
+        "Title": "Conclusion"
+      },
+      "Instructions": {
+        "Controls": "Les états des modules peuvent être changés en cliquant sur leur titre ou le bouton adjacent, sauf si leur état est forcé. Un clic droit sur le bouton changera l'état dans l'ordre inverse. Par défaut tous les modules sont Suspects, sauf ceux marqués comme bibliothèques par leurs auteurs, car l'option Verrouiller les bibliothèques est activée par défaut.",
+        "Disclaimer": "Bien que ce processus soit précis pour de nombreux types de problèmes, il ne garantit pas que le coupable trouvé soit le seul module - ou même <em>un module</em> - causant des problèmes, car il ne peut pas prendre en compte toutes les interactions entre modules. L'algorithme de séparation des modules empêche un module d'être activé sans ses dépendances, mais toutes les relations entre modules ne sont pas définies assez précisément pour être prises en compte.",
+        "ModuleStates": "États des modules",
+        "Reassurance": "Toute étape de recherche fermée peut être récupérée en rechargeant la page ou en cliquant sur le bouton Find the Culprit dans la gestion des modules.",
+        "Tooltips": "La plupart des éléments interactifs ont des infobulles expliquant leur fonction et/ou leur état actuel.",
+        "Usage": "Lorsque la recherche commence, la page se rafraîchira et vous serez invité à indiquer si votre problème persiste. Suivez les instructions à travers les étapes de la recherche, qui réduiront la liste des suspects jusqu'à ce qu'un seul Coupable soit trouvé, après quoi vous pourrez revenir à la liste actuelle des modules actifs."
+      },
+      "IPWOP": {
+        "BlameCoreOrSystem": "Il semble que le problème soit un bug dans le système de jeu ou le logiciel de base",
+        "BlameModules": ", ou dans l'un de vos modules épinglés :",
+        "NonePinnedTitle": "Problème dans le noyau ou le système",
+        "SomePinnedTitle": "Problème dans le noyau, le système ou les modules épinglés"
+      },
+      "MissingDependencies": {
+        "Header": "État de module invalide",
+        "NotActiveDescription": "Les modules ci-dessous ne sont pas actifs, bien qu'ils soient des dépendances requises des modules actifs listés.",
+        "NotActiveNotInstalledClickInstruction": "Cliquer sur Déconnexion activera ces modules avant la déconnexion.",
+        "NotActiveOnlyClickInstruction": "Cliquer sur Tout Activer ci-dessous pour activer ces modules et recharger.",
+        "NotInstalledDescription": "Les modules ci-dessous ne sont pas installés, bien qu'ils soient des dépendances requises des modules actifs listés. Cliquer sur Déconnexion ci-dessous pour retourner à l'installation où vous pourrez les installer.",
+        "Title": "Dépendances manquantes",
+        "Unavailable": "Find the Culprit est indisponible en raison de dépendances manquantes des modules actifs."
+      },
+      "ModuleID": "ID du module",
+      "ModuleTitle": "Titre du module",
+      "NotActive": "Non actif",
+      "NotInstalled": "Non installé",
+      "SelectMods": {
+        "FilterModules": "Filtrer les modules",
+        "ForcedTooltip": {
+          "DependencyOf": "Le module est une dépendance des modules épinglés {pinnedDependants}",
+          "ExcludedDependencies": "Le module dépend des modules exclus {excludedDependencies}",
+          "LockedLibrary": "Le module est une bibliothèque et l'option Verrouiller les bibliothèques est activée",
+          "Preamble": "Cet état est forcé car :"
+        }
+      },
+      "Setting": {
+        "debugLevel": {
+          "Choices": {
+            "Debugger": "Points d'arrêt activés",
+            "Logging": "Journalisation & globalThis.ftc",
+            "None": "Aucun"
+          },
+          "Hint": "Niveau d'activation des fonctionnalités de débogage pour Find the Culprit",
+          "Name": "Niveau de débogage"
+        }
+      },
+      "Start": "Démarrer",
+      "StartOfRun": {
+        "AllButPinnedDeactivated": "Tous les modules, sauf ceux épinglés et Find the Culprit lui-même, sont désactivés.",
+        "AllModulesDeactivated": "Tous les modules sauf Find the Culprit sont désactivés.",
+        "DoesIssuePersist": "Votre problème persiste-t-il ?",
+        "MaxSteps": "La recherche prendra au maximum {maxSteps} étapes.",
+        "NonePinnedTitle": "Aucun module actif",
+        "SomePinnedTitle": "Seuls les modules épinglés actifs"
+      },
+      "StateTooltip": {
+        "active": "<strong>Actif :</strong> Actuellement actif pour cette étape de recherche",
+        "culprit": "<strong>Coupable :</strong> Le module causant (un de) votre(s) problème(s)",
+        "excluded": "<strong>Exclu :</strong> Désactivé pour la durée de la recherche",
+        "exonerated": "<strong>Disculpé :</strong> Vous avez indiqué que le problème ne persistait pas pendant que ce module était actif",
+        "exoneratedButActive": "<strong>Disculpé (Actif) :</strong> Bien que disculpé, ce module est actif car un ou plusieurs modules suspects actifs en dépendent",
+        "inactive": "<strong>Inactif :</strong> Toujours suspect, mais inactif cette étape",
+        "pinned": "<strong>Épinglé :</strong> Actif en permanence pendant la recherche",
+        "suspect": "<strong>Suspect :</strong> Un coupable potentiel, activé et désactivé normalement"
+      },
+      "ZeroModules": {
+        "Title": "Zéro module"
+      }
+    }
+  }

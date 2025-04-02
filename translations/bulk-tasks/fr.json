@@ -1,1 +1,44 @@
-{}
+{
+	"BulkTasks": {
+		"title": "Tâches en masse",
+		"delete": "Supprimer",
+		"duplicate": "Dupliquer",
+		"export": "Exporter",
+		"import": "Importer",
+		"move": "Déplacer",
+		"rename": "Renommer",
+		"update": "Mettre à jour",
+		"secondaryNav": {
+			"actors": "Acteurs",
+			"cards": "Cartes",
+			"compendium": "Compendium",
+			"journal": "Journaux",
+			"macros": "Macros",
+			"items": "Objets",
+			"playlists": "Listes de lecture",
+			"scenes": "Scènes",
+			"tables": "Tables de jets"
+		},
+		"settings": {
+			"gmOnly": {
+				"title": "Masquer le menu aux joueurs",
+				"hint": ""
+			},
+			"defaultExportNamingConvention": { "title": "Convention de nommage par défaut pour les exports." },
+			"defaultExportZipName": { "title": "Nom par défaut du zip pour les exports." },
+			"defaultDuplicateNamingConvention": { "title": "Convention de nommage par défaut pour les duplications." },
+			"defaultRenameNamingConvention": { "title": "Convention de nommage par défaut pour les renommages." },
+			"permDefaultName": {
+				"title": "Comportement par défaut pour les documents avec des permissions non définies.",
+				"hint": "",
+				"choices": {
+					"GMOnly": "MJ uniquement",
+					"all": "Tous"
+				}
+			},
+			"keepIdsOnImport": { "title": "Conserver les IDs à l'importation" }
+		}
+	},
+	"BM.deleteTitle": "Supprimer la sélection",
+	"BM.deleteContent": "Êtes-vous sûr ? <br /> Cette action est permanente et ne peut pas être annulée."
+}

@@ -1,7 +1,145 @@
 {
- "BG3.Hotbar": {
-  "Errors": {
-   "ItemNotFound": "Impossible de récupérer l'objet à partir de l'UUID. Ne peut être placé sur la barre d'accès rapide."
-  }
- }
+    "BG3.Hotbar": {
+        "Errors": {
+            "InvalidDrop": "Données de dépôt invalides : JSON non valide.",
+            "InvalidItem": "Données d'objet invalides. Seuls les objets avec un UUID valide peuvent être placés sur la barre d'accès rapide.",
+            "ItemNotFound": "Impossible de récupérer l'objet depuis l'UUID. Non placé sur la barre d'accès rapide.",
+            "WrongToken": "Vous ne pouvez pas déposer des objets d'un token différent sur cette barre d'accès rapide.",
+            "UnableToRetrieve": "Impossible de récupérer les données de l'objet.",
+            "MacroNotFound": "Macro introuvable",
+            "NoActor": "Aucun acteur trouvé",
+            "NoUIReference": "Référence UI introuvable. Veuillez rafraîchir la page."
+        },
+        "ContextMenu": {
+            "EditItem": "Modifier l'objet",
+            "ConfigureActivities": "Configurer les activités",
+            "Remove": "Supprimer"
+        },
+        "UI": {
+            "AddRow": "Ajouter une ligne",
+            "RemoveRow": "Supprimer une ligne"
+        },
+        "SettingsMenu": {
+            "ResetLayout": "Réinitialiser la disposition",
+            "ClearAllItems": "Effacer tous les objets",
+            "ImportLayout": "Importer une disposition",
+            "ExportLayout": "Exporter la disposition"
+        }
+    },
+    "BG3.Settings": {
+        "EnableUI": {
+            "Name": "Activer l'interface BG3",
+            "Hint": "Activer ou désactiver l'interface de barre d'accès rapide style BG3. Désactivez ceci si vous préférez utiliser un autre module de barre d'accès rapide ou la barre d'accès rapide par défaut de Foundry."
+        },
+        "ShowDamageRanges": {
+            "Name": "Afficher les dégâts en plages",
+            "Hint": "Afficher les dégâts des sorts sous forme de plages min-max au lieu de la notation de dés (par exemple, '1-8 feu' au lieu de '1d8 feu')"
+        },
+        "ShowMaterialDescription": {
+            "Name": "Afficher la description des composants matériels",
+            "Hint": "Afficher la description complète des composants matériels dans les infobulles des sorts (par exemple, 'diamants d'une valeur de 300 po, que le sort consume')"
+        },
+        "BypassSpellPreparationCheck": {
+            "Name": "Inclure les sorts non préparés",
+            "Hint": "Lorsqu'activé, tous les sorts seront inclus dans la barre d'accès rapide indépendamment de leur état de préparation"
+        },
+        "EnforceSpellPreparationPC": {
+            "Name": "Appliquer la préparation des sorts (Tokens liés)",
+            "Hint": "Lorsqu'activé, les tokens liés (y compris les personnages joueurs) n'afficheront que les sorts préparés et les sorts spéciaux (innés, à volonté, pacte, rituel, toujours). Lorsqu'il est désactivé, tous les sorts apparaîtront."
+        },
+        "EnforceSpellPreparationNPC": {
+            "Name": "Appliquer la préparation des sorts (Tokens non liés)",
+            "Hint": "Lorsqu'activé, les tokens non liés n'afficheront que les sorts préparés et les sorts spéciaux (innés, à volonté, pacte, rituel, toujours). Lorsqu'il est désactivé, tous les sorts apparaîtront."
+        },
+        "CollapseFoundryMacrobar": {
+            "Name": "Réduire la barre de macros Foundry",
+            "Hint": "Réduire automatiquement la barre de macros par défaut de Foundry"
+        },
+        "ShowPassiveFeaturesContainer": {
+            "Name": "Afficher le conteneur des aptitudes passives",
+            "Hint": "Afficher le conteneur des aptitudes passives au-dessus du portrait"
+        },
+        "TooltipDelay": {
+            "Name": "Délai des infobulles",
+            "Hint": "Temps d'attente avant d'afficher les infobulles (en millisecondes)"
+        },
+        "FadeOutDelay": {
+            "Name": "Délai de disparition",
+            "Hint": "Secondes à attendre avant d'estomper la barre d'accès rapide"
+        },
+        "NormalOpacity": {
+            "Name": "Opacité normale",
+            "Hint": "Opacité de la barre d'accès rapide lorsque la souris est dessus (0.1 à 1.0)"
+        },
+        "FadedOpacity": {
+            "Name": "Opacité estompée",
+            "Hint": "Opacité de la barre d'accès rapide lorsque la souris n'est pas dessus (0.0 à 1.0). Réglez à 1 pour désactiver complètement l'estompage."
+        },
+        "AutoPopulateUnlinkedTokens": {
+            "Name": "Remplissage automatique des tokens non liés",
+            "Hint": "Remplir automatiquement la barre d'accès rapide pour les nouveaux tokens non liés en fonction des paramètres ci-dessous"
+        },
+        "Container1AutoPopulate": {
+            "Name": "Remplissage automatique du conteneur 1",
+            "Hint": "Types d'objets à ajouter automatiquement dans le premier conteneur (index 0)"
+        },
+        "Container2AutoPopulate": {
+            "Name": "Remplissage automatique du conteneur 2",
+            "Hint": "Types d'objets à ajouter automatiquement dans le deuxième conteneur (index 1)"
+        },
+        "Container3AutoPopulate": {
+            "Name": "Remplissage automatique du conteneur 3",
+            "Hint": "Types d'objets à ajouter automatiquement dans le troisième conteneur (index 2)"
+        },
+        "AutoPopulateOverflow": {
+            "Name": "Lorsque le conteneur est plein",
+            "Hint": "Choisissez comment gérer les objets lorsque le conteneur est plein.",
+            "Expand": "Continuer à ajouter des lignes",
+            "NextContainer": "Déborder vers le conteneur suivant"
+        },
+        "AutoPopulateFillDirection": {
+            "Name": "Direction de remplissage automatique",
+            "Hint": "Remplir d'abord les lignes (de gauche à droite, puis vers le bas) ou les colonnes (de haut en bas, puis vers la droite)",
+            "RowFirst": "Lignes d'abord (Gauche à Droite, Puis Bas)",
+            "ColumnFirst": "Colonnes d'abord (Haut en Bas, Puis Droite)"
+        },
+        "ContainerAutoPopulate": {
+            "DialogTitle": "Remplissage automatique du conteneur",
+            "DefaultsTitle": "Configurer les paramètres par défaut de remplissage automatique",
+            "Name": "Sélectionner les types d'objets",
+            "Hint": "Choisissez quels types d'objets ajouter automatiquement à ce conteneur.",
+            "Weapons": "Armes",
+            "Features": "Aptitude",
+            "Spells": "Sorts",
+            "Consumables": "Consommables",
+            "Equipment": "Équipement",
+            "Tools": "Outils",
+            "Loot": "Butin",
+            "Populate": "Remplir",
+            "Cancel": "Annuler",
+            "Save": "Enregistrer les modifications",
+            "SaveSuccess": "Paramètres de remplissage automatique enregistrés avec succès",
+            "Configure": "Configurer le remplissage automatique"
+        },
+        "HighlightStyle": {
+            "Name": "Style de surbrillance",
+            "Hint": "Choisissez comment les objets sont mis en surbrillance lorsqu'ils sont filtrés",
+            "Bottom": "Bordure inférieure",
+            "Border": "Bordure complète"
+        },
+        "DefaultPortraitPreferences": {
+            "Name": "Affichage par défaut du portrait",
+            "Hint": "Choisissez d'afficher par défaut les images de token ou les portraits de personnage. Ceci peut être remplacé par token. Lors de la première activation de ce paramètre, il s'appliquera à tous les tokens n'ayant pas de portrait défini.",
+            "Token": "Toujours utiliser l'image du token",
+            "Portrait": "Toujours utiliser le portrait du personnage"
+        },
+        "SettingsCategories": {
+            "HotbarContainer": "Boutons de la barre d'accès rapide",
+            "CombatContainer": "Conteneur d'actions communes",
+            "Global": "Global",
+            "Portrait": "Portrait du personnage",
+            "Tooltip": "Infobulle",
+            "AutoPopulating": "Remplissage automatique"
+        }
+    }
 }
