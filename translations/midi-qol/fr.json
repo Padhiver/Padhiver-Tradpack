@@ -3185,6 +3185,7 @@
     }
   },
   "midi-qol.noDamageonSaveSpells": [
-    "Aspersion d'acide"
+    "Aspersion d'acide",
+    "Éruption de lames"
   ]
 }
