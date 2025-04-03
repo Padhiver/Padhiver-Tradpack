@@ -1,13 +1,15 @@
-name: Reorder JSON after PR merge
+name: Reorder JSON Translations
 
 on:
   pull_request:
     types:
       - closed
+  workflow_dispatch:     # Permet d'exécuter le workflow manuellement
 
 jobs:
   reorder_json:
-    if: github.event.pull_request.merged == true
+    # Exécute le job si la PR est fusionnée OU si le workflow est déclenché manuellement
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -35,7 +37,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
           git add translations/
-          git commit -m "Réorganisation des traductions après fusion de la PR"
+          git commit -m "Réorganisation des traductions"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
