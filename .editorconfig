@@ -1,0 +1,12 @@
+# .editorconfig
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4  # Contrôle l'affichage des tabulations sur GitHub
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.json]
+indent_style = tab  # Force les tabulations pour les fichiers JSON
