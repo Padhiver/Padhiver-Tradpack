@@ -81,7 +81,16 @@
     "Embrasement",
     "Ferrage foudroyant",
     "Bouffée de poison",
-    "Cordon de flèches"
+    "Cordon de flèches",
+    "Désintégration",
+    "Flamme sacrée",
+    "Cordon de flèches",
+    "Gelure",
+    "Infestation",
+    "Glas",
+    "Mot de radiance",
+    "Catapulte",
+    "Secousse sismique"
   ],
   "midi-qol.noDamageonSaveSpellsv9": "Jet d'acide, Explosion d'épées, Coup de tonnerre, Moquerie vicieuse, Créer un feu de joie, Fouet de foudre, Jet de poison, Cordon de flèches, Désintégration, Flamme sacrée, Cordon de flèches, Morsure du gel, Infestation, Glas funèbre, Parole de radiance, Catapulte, Tremblement de terre",
   "midi-qol.undoDamageFrom": "Annuler les dégâts appliqués depuis ",
