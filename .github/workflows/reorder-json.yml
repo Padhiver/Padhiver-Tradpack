@@ -7,17 +7,21 @@ on:
 
 jobs:
   reorder_json:
-    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'weblate-translations'
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Reorder translations
         run: node ./.github/workflows/reorder.js
@@ -25,7 +29,7 @@ jobs:
       - name: Commit and push changes
         run: |
           if git diff --quiet; then
-            echo "No changes to commit."
+            echo "Aucun changement à appliquer."
             exit 0
           fi
           git config --global user.name "github-actions[bot]"
@@ -33,3 +37,5 @@ jobs:
           git add translations/
           git commit -m "Réorganisation des traductions après fusion de la PR"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
