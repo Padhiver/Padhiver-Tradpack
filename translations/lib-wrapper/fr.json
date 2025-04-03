@@ -1,127 +1,127 @@
 {
-  "lib-wrapper": {
-    "settings": {
-      "yes": "Oui",
-      "no": "Non",
-      "save": "Enregistrer",
-      "reload": "Recharger",
-      "reset": "Réinitialiser",
-      "notify-issues-gm": {
-        "name": "Notifier le MJ des problèmes",
-        "hint": "Indique si le MJ doit être notifié lorsqu'un problème est détecté, par exemple un conflit."
-      },
-      "notify-issues-player": {
-        "name": "Notifier les joueurs des problèmes",
-        "hint": "Indique si les joueurs doivent être notifiés lorsqu'un problème est détecté, par exemple un conflit."
-      },
-      "high-performance-mode": {
-        "name": "Mode haute performance",
-        "hint": "Désactive la plupart des capacités de détection dynamique des conflits en échange de performances, particulièrement utile sur les systèmes peu puissants. Notez que cela réduira significativement les chances de détecter des conflits. Il est donc recommandé de désactiver ce mode lors de l'installation ou de la mise à jour des modules."
-      },
-      "log-verbosity": {
-        "name": "Verbosité",
-        "hint": "La verbosité des messages de libWrapper dans la console Javascript.",
-        "choices": {
-          "never": "Jamais",
-          "all": "Tous",
-          "trace": "Trace",
-          "debug": "Débogage",
-          "info": "Information",
-          "warning": "Avertissement",
-          "error": "Erreur",
-          "critical": "Critique",
-          "always": "Toujours"
-        }
-      },
-      "menu": {
-        "title": "Menu des paramètres de libWrapper",
-        "priorities": {
-          "name": "Priorités",
-          "package-inactive": "Inactif",
-          "statistics-disabled": "Note : La collecte de statistiques est désactivée, impossible d'afficher les modules non prioritaires.",
-          "prioritized": {
-            "title": "Modules prioritaires",
-            "hint": "Ces modules seront prioritaires par rapport à tout module absent de cette liste.\nLes positions les plus hautes dans la liste confèrent une priorité plus élevée."
-          },
-          "unprioritized": {
-            "title": "Modules non prioritaires",
-            "hint": "Ces modules ne seront ni prioritaires ni dépriorisés.\nLes priorités parmi ces modules sont décidées selon le principe du premier arrivé, premier servi.\nLes nouveaux modules seront placés dans cette liste par défaut."
-          },
-          "deprioritized": {
-            "title": "Modules dépriorisés",
-            "hint": "Ces modules seront dépriorisés par rapport à tout module absent de cette liste.\nLes positions les plus hautes dans la liste confèrent une priorité plus élevée.",
-            "note": "Notez que les modules n'utilisant pas libWrapper sont dépriorisés même par rapport à ceux-ci."
-          }
-        },
-        "conflicts": {
-          "name": "Conflits",
-          "none-detected": "Aucun conflit n'a été détecté.",
-          "statistics-disabled": "La collecte de statistiques est désactivée.",
-          "show-ignored": "Afficher les conflits ignorés"
-        },
-        "active-wrappers": {
-          "name": "Wrappers actifs",
-          "none-active": "Aucun wrapper n'est actif actuellement."
-        },
-        "about": {
-          "name": "À propos",
-          "full-name": "À propos de libWrapper",
-          "credits": "{name} {version} par {author}.",
-          "credits-translation": "",
-          "description": "'libWrapper' est une bibliothèque qui permet aux développeurs de modules de modifier facilement le code de base de Foundry VTT, tout en réduisant les risques de conflits avec d'autres modules.",
-          "info": "Vous pouvez trouver plus d'informations sur ce module dans le <a href=\"{repo_url}\">dépôt de modules Foundry VTT</a>, ainsi que sur la <a href=\"{github_url}\">page Github du projet</a>.",
-          "support": "<b>Si vous rencontrez des problèmes</b>, le moyen le plus simple d'obtenir de l'aide est de demander à la communauté. Les principaux canaux de support communautaire sont :",
-          "issue-tracker": "Si vous rencontrez une <b>erreur interne de libWrapper</b>, ou si vous êtes un <b>développeur de module</b>, vous pouvez également soumettre une demande d'assistance dans le <a href=\"{issues_url}\">suivi des problèmes Github de libWrapper</a>."
-        },
-        "warning-reset-priorities": "Réinitialiser les priorités des modules ramènera tous les modules dans la liste 'Non prioritaires'. Cette action ne peut pas être annulée. Êtes-vous sûr de vouloir continuer ?",
-        "warning-save": "Il est recommandé de recharger la page pour appliquer les nouvelles priorités des modules. Souhaitez-vous recharger ?"
-      }
-    },
-    "packages": {
-      "unknown-title": "Inconnu",
-      "type-plus-id": "{type} {id}",
-      "type-plus-title": "{type} {title}",
-      "types": {
-        "module": "module",
-        "system": "système",
-        "world": "script de monde",
-        "unknown": "package"
-      }
-    },
-    "error": {
-      "see-js-console": "(Voir la console JS)",
-      "tech-details": "== Détails techniques :",
-      "community-support": "Demandez de l'aide à la communauté :",
-      "not-lw": "Ceci n'est *pas* un bug de libWrapper.",
-      "external": {
-        "notification": "{title} : Erreur détectée dans {type}.",
-        "message": "Erreur détectée dans {type} {title}.",
-        "info": "Trouvez des informations sur ce {type} ici : {url}",
-        "report": "Signalez ce problème ici : {url}",
-        "likely-not-updated": "Il est probable que ce {type} n'a pas été mis à jour pour Foundry VTT {version}."
-      },
-      "internal": {
-        "message": "Erreur interne détectée.",
-        "message-with-package": "Erreur interne détectée, impliquant {type} {title}.",
-        "info": "Trouvez des informations sur libWrapper ici : {url}",
-        "report": "Signalez ce problème ici : {url}"
-      },
-      "conflict": {
-        "potential": "{main} et {other} modifient la même fonctionnalité de FoundryVTT et sont susceptibles d'entrer en conflit.",
-        "confirmed": "Conflit détecté entre {main} et {other}.",
-        "info": "Trouvez des informations sur ces modules ici :",
-        "report": "Signalez ce conflit ici :"
-      }
-    },
-    "support-channels": [
-      {
-        "title": "Canal #modules-troubleshooting du Discord FoundryVTT",
-        "url": "https://discord.gg/foundryvtt"
-      },
-      {
-        "title": "Reddit FoundryVTT",
-        "url": "https://www.reddit.com/r/FoundryVTT"
-      }
-    ]
-  }
+	"lib-wrapper": {
+		"settings": {
+			"yes": "Oui",
+			"no": "Non",
+			"save": "Enregistrer",
+			"reload": "Recharger",
+			"reset": "Réinitialiser",
+			"notify-issues-gm": {
+				"name": "Notifier le MJ des problèmes",
+				"hint": "Indique si le MJ doit être notifié lorsqu'un problème est détecté, par exemple un conflit."
+			},
+			"notify-issues-player": {
+				"name": "Notifier les joueurs des problèmes",
+				"hint": "Indique si les joueurs doivent être notifiés lorsqu'un problème est détecté, par exemple un conflit."
+			},
+			"high-performance-mode": {
+				"name": "Mode haute performance",
+				"hint": "Désactive la plupart des capacités de détection dynamique des conflits en échange de performances, particulièrement utile sur les systèmes peu puissants. Notez que cela réduira significativement les chances de détecter des conflits. Il est donc recommandé de désactiver ce mode lors de l'installation ou de la mise à jour des modules."
+			},
+			"log-verbosity": {
+				"name": "Verbosité",
+				"hint": "La verbosité des messages de libWrapper dans la console Javascript.",
+				"choices": {
+					"never": "Jamais",
+					"all": "Tous",
+					"trace": "Trace",
+					"debug": "Débogage",
+					"info": "Information",
+					"warning": "Avertissement",
+					"error": "Erreur",
+					"critical": "Critique",
+					"always": "Toujours"
+				}
+			},
+			"menu": {
+				"title": "Menu des paramètres de libWrapper",
+				"priorities": {
+					"name": "Priorités",
+					"package-inactive": "Inactif",
+					"statistics-disabled": "Note : La collecte de statistiques est désactivée, impossible d'afficher les modules non prioritaires.",
+					"prioritized": {
+						"title": "Modules prioritaires",
+						"hint": "Ces modules seront prioritaires par rapport à tout module absent de cette liste.\nLes positions les plus hautes dans la liste confèrent une priorité plus élevée."
+					},
+					"unprioritized": {
+						"title": "Modules non prioritaires",
+						"hint": "Ces modules ne seront ni prioritaires ni dépriorisés.\nLes priorités parmi ces modules sont décidées selon le principe du premier arrivé, premier servi.\nLes nouveaux modules seront placés dans cette liste par défaut."
+					},
+					"deprioritized": {
+						"title": "Modules dépriorisés",
+						"hint": "Ces modules seront dépriorisés par rapport à tout module absent de cette liste.\nLes positions les plus hautes dans la liste confèrent une priorité plus élevée.",
+						"note": "Notez que les modules n'utilisant pas libWrapper sont dépriorisés même par rapport à ceux-ci."
+					}
+				},
+				"conflicts": {
+					"name": "Conflits",
+					"none-detected": "Aucun conflit n'a été détecté.",
+					"statistics-disabled": "La collecte de statistiques est désactivée.",
+					"show-ignored": "Afficher les conflits ignorés"
+				},
+				"active-wrappers": {
+					"name": "Wrappers actifs",
+					"none-active": "Aucun wrapper n'est actif actuellement."
+				},
+				"about": {
+					"name": "À propos",
+					"full-name": "À propos de libWrapper",
+					"credits": "{name} {version} par {author}.",
+					"credits-translation": "",
+					"description": "'libWrapper' est une bibliothèque qui permet aux développeurs de modules de modifier facilement le code de base de Foundry VTT, tout en réduisant les risques de conflits avec d'autres modules.",
+					"info": "Vous pouvez trouver plus d'informations sur ce module dans le <a href=\"{repo_url}\">dépôt de modules Foundry VTT</a>, ainsi que sur la <a href=\"{github_url}\">page Github du projet</a>.",
+					"support": "<b>Si vous rencontrez des problèmes</b>, le moyen le plus simple d'obtenir de l'aide est de demander à la communauté. Les principaux canaux de support communautaire sont :",
+					"issue-tracker": "Si vous rencontrez une <b>erreur interne de libWrapper</b>, ou si vous êtes un <b>développeur de module</b>, vous pouvez également soumettre une demande d'assistance dans le <a href=\"{issues_url}\">suivi des problèmes Github de libWrapper</a>."
+				},
+				"warning-reset-priorities": "Réinitialiser les priorités des modules ramènera tous les modules dans la liste 'Non prioritaires'. Cette action ne peut pas être annulée. Êtes-vous sûr de vouloir continuer ?",
+				"warning-save": "Il est recommandé de recharger la page pour appliquer les nouvelles priorités des modules. Souhaitez-vous recharger ?"
+			}
+		},
+		"packages": {
+			"unknown-title": "Inconnu",
+			"type-plus-id": "{type} {id}",
+			"type-plus-title": "{type} {title}",
+			"types": {
+				"module": "module",
+				"system": "système",
+				"world": "script de monde",
+				"unknown": "package"
+			}
+		},
+		"error": {
+			"see-js-console": "(Voir la console JS)",
+			"tech-details": "== Détails techniques :",
+			"community-support": "Demandez de l'aide à la communauté :",
+			"not-lw": "Ceci n'est *pas* un bug de libWrapper.",
+			"external": {
+				"notification": "{title} : Erreur détectée dans {type}.",
+				"message": "Erreur détectée dans {type} {title}.",
+				"info": "Trouvez des informations sur ce {type} ici : {url}",
+				"report": "Signalez ce problème ici : {url}",
+				"likely-not-updated": "Il est probable que ce {type} n'a pas été mis à jour pour Foundry VTT {version}."
+			},
+			"internal": {
+				"message": "Erreur interne détectée.",
+				"message-with-package": "Erreur interne détectée, impliquant {type} {title}.",
+				"info": "Trouvez des informations sur libWrapper ici : {url}",
+				"report": "Signalez ce problème ici : {url}"
+			},
+			"conflict": {
+				"potential": "{main} et {other} modifient la même fonctionnalité de FoundryVTT et sont susceptibles d'entrer en conflit.",
+				"confirmed": "Conflit détecté entre {main} et {other}.",
+				"info": "Trouvez des informations sur ces modules ici :",
+				"report": "Signalez ce conflit ici :"
+			}
+		},
+		"support-channels": [
+			{
+				"title": "Canal #modules-troubleshooting du Discord FoundryVTT",
+				"url": "https://discord.gg/foundryvtt"
+			},
+			{
+				"title": "Reddit FoundryVTT",
+				"url": "https://www.reddit.com/r/FoundryVTT"
+			}
+		]
+	}
 }
