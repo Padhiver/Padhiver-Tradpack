@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Contrôle des tabulations pour les fichiers JSON
+*.json eol=lf indent=tab tabwidth=4
