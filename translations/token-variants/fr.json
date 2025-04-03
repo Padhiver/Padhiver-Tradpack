@@ -1,212 +1,212 @@
 {
-    "token-variants": {
-      "settings": {
-        "search-paths": {
-          "Name": "Chemins de recherche",
-          "Hint": "Configurez les dossiers, tables aléatoires et buckets s3 à rechercher pour les illustrations."
-        },
-        "forge-search-paths": {
-          "Name": "Chemins de la bibliothèque d'assets Forge",
-          "Hint": "Configurez votre clé API et les chemins de la bibliothèque d'assets",
-          "window": {
-            "Hint": "Clé API utilisée par 'Token Variant Art' pour partager des images avec d'autres joueurs. La clé API est disponible sur la page 'Mon compte'."
-          }
-        },
-        "search-filters": {
-          "Name": "Paramètres des filtres de recherche",
-          "Hint": "Attribuez des filtres aux recherches d'illustrations de portraits et de tokens.",
-          "window": {
-            "portrait-filter": {
-              "Name": "Filtres d'illustrations de portraits",
-              "Hint": "Les illustrations de portraits seront limitées aux fichiers qui incluent/excluent ces morceaux de texte ou correspondent à l'expression régulière fournie."
-            },
-            "token-filter": {
-              "Name": "Filtres d'illustrations de tokens",
-              "Hint": "Les illustrations de tokens seront limitées aux fichiers qui incluent/excluent ces morceaux de texte ou correspondent à l'expression régulière fournie."
-            },
-            "general-filter": {
-              "Name": "Filtres d'illustrations généraux",
-              "Hint": "Ces filtres seront utilisés lors de la recherche, indépendamment du type d'illustration (token/portrait)."
-            }
-          }
-        },
-        "randomizer": {
-          "Name": "Paramètres du randomiseur",
-          "Hint": "Activez la randomisation des images lors de la création d'acteurs et de tokens.",
-          "window": {
-            "portrait-image-on-actor-create": "Image de portrait lors de la création d'un acteur",
-            "token-image-on-token-create": "Image de token lors de la création d'un token",
-            "token-image-on-token-copy-paste": "Image de token lors du copier-coller d'un token",
-            "search-types-heading": "Recherches à inclure dans le randomiseur",
-            "disable-for": "Désactiver pour",
-            "tokens-with-represented-actor": "Tokens avec acteur représenté",
-            "tokens-with-linked-actor-data": "Tokens avec données d'acteur liées",
-            "pop-up-if-randomization-disabled": "Afficher la fenêtre de sélection d'illustrations si la randomisation est désactivée",
-            "token-to-portrait": "Appliquer l'image du token au portrait",
-            "different-images": "Images différentes pour le portrait et le token",
-            "sync-images": "Synchroniser le portrait et le token en fonction de la similarité des noms d'images"
-          }
-        },
-        "pop-up": {
-          "Name": "Paramètres des fenêtres pop-up",
-          "Hint": "Activez/désactivez les fonctionnalités des fenêtres pop-up",
-          "window": {
-            "two-pop-ups": {
-              "Name": "Afficher des fenêtres pop-up séparées pour les illustrations de portraits et de tokens",
-              "Hint": "Lorsqu'activé, 2 fenêtres pop-up distinctes seront affichées lors de la création d'un acteur/token, d'abord pour sélectionner l'illustration du portrait, puis pour sélectionner l'illustration du token."
-            },
-            "no-dialog": {
-              "Name": "Désactiver l'invite entre la sélection des illustrations de portrait et de token",
-              "Hint": "Désactivera l'invite affichée lors de la création d'un token/acteur lorsque le paramètre des deux fenêtres pop-up séparées est activé."
-            },
-            "disable-automatic-pop-ups-for": "Désactiver les fenêtres pop-up automatiques pour",
-            "on-actor-create": "Lors de la création d'un acteur",
-            "on-token-create": "Lors de la création d'un token",
-            "on-token-copy-paste": "Lors du copier-coller d'un token"
-          }
-        },
-        "token-hud": {
-          "Name": "Paramètres client du HUD de token",
-          "Hint": "Paramètres pour le bouton du HUD de token",
-          "window": {
-            "enable-token-hud": {
-              "Name": "Activer le bouton du HUD de token",
-              "Hint": "Activez un bouton supplémentaire dans le HUD de token pour sélectionner des illustrations de token."
-            },
-            "display-shared-only": {
-              "Name": "Afficher uniquement les images partagées",
-              "Hint": "Seules les images partagées seront affichées dans le menu latéral. La recherche peut toujours être effectuée."
-            },
-            "display-as-image": {
-              "Name": "Afficher en tant qu'image",
-              "Hint": "Désactivez pour afficher les images sous forme de liste de leurs noms de fichiers dans le HUD."
-            },
-            "image-opacity": {
-              "Name": "Opacité de l'aperçu du token",
-              "Hint": "L'opacité des aperçus de tokens dans le HUD avant de survoler avec la souris."
-            },
-            "update-actor-image": {
-              "Name": "Mettre à jour le portrait de l'acteur",
-              "Hint": "Lorsqu'activé, la sélection d'une image depuis le HUD de token l'appliquera également à la feuille de personnage."
-            },
-            "disable-if-token-hud-wildcard-active": {
-              "Name": "Désactiver le bouton",
-              "Hint": "Cette option empêchera l'affichage du bouton 'Token Variant Art' si 'Token HUD Wildcard' est actif et 'Randomiser les images Wildcard' est coché dans le token prototype."
-            },
-            "include-wildcard": {
-              "Name": "Inclure les images Wildcard",
-              "Hint": "Si le token prototype a été configuré avec une image Wildcard, elles seront incluses dans le menu du HUD."
-            }
-          }
-        },
-        "keywords-search": {
-          "Name": "Recherche par mot-clé",
-          "Hint": "Les recherches utiliseront à la fois le nom complet et les mots individuels dans le nom de l'acteur/token. Les mots de moins de 3 caractères seront ignorés."
-        },
-        "excluded-keywords": {
-          "Name": "Mots-clés exclus",
-          "Hint": "Liste de mots-clés qui ne seront pas inclus dans la recherche lorsque 'Recherche par mot-clé' est activé."
-        },
-        "run-search-on-path": {
-          "Name": "Faire correspondre le nom au dossier",
-          "Hint": "Lorsqu'activé, les recherches d'illustrations vérifieront à la fois les noms de fichiers et les noms de dossiers le long de leur chemin pour une correspondance."
-        },
-        "imgur-client-id": {
-          "Name": "ID client Imgur",
-          "Hint": "ID client à utiliser pour effectuer des appels API Imgur."
-        },
-        "disable-notifs": {
-          "Name": "Désactiver les notifications de cache",
-          "Hint": "Désactive les notifications affichées par le module pendant la mise en cache."
-        },
-        "compendium-mapper": {
-          "Name": "Mappeur de compendium",
-          "Hint": "Appliquer des images aux compendiums",
-          "window": {
-            "compendium-select": "Sélectionnez un compendium déverrouillé pour effectuer des mappages",
-            "missing-only": "Inclure uniquement les documents sans images",
-            "diff-images": "Appliquer des images différentes pour le portrait et le token",
-            "ignore-token": "Ignorer le token",
-            "ignore-portrait": "Ignorer le portrait",
-            "show-images": "Afficher les images actuelles dans la fenêtre 'Sélection d'illustrations'",
-            "include-keywords": "Inclure les mots-clés dans la recherche",
-            "auto-apply": "Appliquer automatiquement la première image trouvée",
-            "auto-art-select": "Afficher 'Sélection d'illustrations' si aucune image n'est trouvée",
-            "cache": "Remettre en cache les images avant le début du mappage",
-            "sync-images": "Synchroniser le portrait et le token si une seule image est manquante"
-          }
-        },
-        "algorithm": {
-          "Name": "Paramètres de recherche",
-          "Hint": "Configurez l'algorithme et les filtres utilisés pour effectuer des recherches d'images",
-          "window": {
-            "exact-hint": "Les noms de tokens/acteurs doivent être entièrement présents dans le nom du fichier/dossier",
-            "fuzzy-hint": "Les noms de tokens/acteurs nécessitent uniquement des correspondances partielles avec le nom du fichier/dossier",
-            "limit-hint": "Nombre maximum de résultats retournés par recherche",
-            "percentage-match": {
-              "Name": "Pourcentage de correspondance",
-              "Hint": "Précision avec laquelle le nom du fichier/dossier doit correspondre pour être considéré comme une correspondance."
-            },
-            "art-select-slider": {
-              "Name": "Ajouter le curseur de pourcentage à la fenêtre de sélection d'illustrations",
-              "Hint": "Un curseur de pourcentage apparaîtra dans les fenêtres pop-up de sélection d'illustrations, vous permettant de modifier le pourcentage de correspondance à la volée"
-            }
-          }
-        },
-        "import-export": {
-          "Hint": "Importer/Exporter les paramètres du module",
-          "window": {
-            "import-dialog": "Importer les paramètres de Token Variant Art",
-            "source-data": "Données source"
+  "token-variants": {
+    "settings": {
+      "search-paths": {
+        "Name": "Chemins de recherche",
+        "Hint": "Configurez les dossiers, tables aléatoires et buckets s3 à rechercher pour les illustrations."
+      },
+      "forge-search-paths": {
+        "Name": "Chemins de la bibliothèque d'assets Forge",
+        "Hint": "Configurez votre clé API et les chemins de la bibliothèque d'assets",
+        "window": {
+          "Hint": "Clé API utilisée par 'Token Variant Art' pour partager des images avec d'autres joueurs. La clé API est disponible sur la page 'Mon compte'."
+        }
+      },
+      "search-filters": {
+        "Name": "Paramètres des filtres de recherche",
+        "Hint": "Attribuez des filtres aux recherches d'illustrations de portraits et de tokens.",
+        "window": {
+          "portrait-filter": {
+            "Name": "Filtres d'illustrations de portraits",
+            "Hint": "Les illustrations de portraits seront limitées aux fichiers qui incluent/excluent ces morceaux de texte ou correspondent à l'expression régulière fournie."
+          },
+          "token-filter": {
+            "Name": "Filtres d'illustrations de tokens",
+            "Hint": "Les illustrations de tokens seront limitées aux fichiers qui incluent/excluent ces morceaux de texte ou correspondent à l'expression régulière fournie."
+          },
+          "general-filter": {
+            "Name": "Filtres d'illustrations généraux",
+            "Hint": "Ces filtres seront utilisés lors de la recherche, indépendamment du type d'illustration (token/portrait)."
           }
         }
       },
-      "common": {
-        "include": "Inclure",
-        "exclude": "Exclure",
-        "randomize": "Randomiser",
-        "name": "Nom",
-        "keywords": "Mots-clés",
-        "shared": "Partagé",
-        "apply": "Appliquer",
-        "priority": "Priorité",
-        "remove": "Supprimer",
-        "start": "Démarrer",
-        "automation": "Automatisation",
-        "enable": "Activer",
-        "exact": "Exact",
-        "fuzzy": "Approximatif",
-        "limit": "Limite",
-        "save": "Sauvegarder",
-        "import": "Importer",
-        "export": "Exporter"
-      },
-      "windows": {
-        "art-select": {
-          "apply-same-art": "Appliquer la même illustration au token ?",
-          "no-art-found": "Aucune illustration trouvée contenant",
-          "select-variant": "Sélectionner une variante",
-          "select-portrait-art": "Sélectionner une illustration de portrait",
-          "select-token-art": "Sélectionner une illustration de token"
-        },
-        "status-config": {
-          "hint": "Ordre dans lequel l'image sera mise à jour si plusieurs effets/états sont appliqués. S'ils ont la même priorité, l'ancienneté sera utilisée à la place."
+      "randomizer": {
+        "Name": "Paramètres du randomiseur",
+        "Hint": "Activez la randomisation des images lors de la création d'acteurs et de tokens.",
+        "window": {
+          "portrait-image-on-actor-create": "Image de portrait lors de la création d'un acteur",
+          "token-image-on-token-create": "Image de token lors de la création d'un token",
+          "token-image-on-token-copy-paste": "Image de token lors du copier-coller d'un token",
+          "search-types-heading": "Recherches à inclure dans le randomiseur",
+          "disable-for": "Désactiver pour",
+          "tokens-with-represented-actor": "Tokens avec acteur représenté",
+          "tokens-with-linked-actor-data": "Tokens avec données d'acteur liées",
+          "pop-up-if-randomization-disabled": "Afficher la fenêtre de sélection d'illustrations si la randomisation est désactivée",
+          "token-to-portrait": "Appliquer l'image du token au portrait",
+          "different-images": "Images différentes pour le portrait et le token",
+          "sync-images": "Synchroniser le portrait et le token en fonction de la similarité des noms d'images"
         }
       },
-      "notifications": {
-        "warn": {
-          "profile-image-not-found": "Token-Variant-Art : Impossible de trouver l'image de profil pour attribuer un écouteur de clic droit.",
-          "path-not-found": "Impossible de trouver le chemin :",
-          "invalid-table": "La table \"{rollTableName}\" est introuvable",
-          "invalid-json": "Le fichier json \"{jsonName}\" est introuvable",
-          "update-image-no-token-actor": "Appel de 'updateImage' sans token ou acteur valide comme cible de mise à jour.",
-          "imgur-localhost": "Les galeries Imgur ne peuvent pas être accessibles depuis des clients exécutés sur 'localhost'",
-          "json-localhost": "Le fichier json ne peut pas être accessible depuis des clients exécutés sur 'localhost'"
-        },
-        "info": {
-          "caching-started": "Token Variant Art : Mise en cache démarrée",
-          "caching-finished": "Token Variant Art : Mise en cache terminée ({imageCount} images trouvées)"
+      "pop-up": {
+        "Name": "Paramètres des fenêtres pop-up",
+        "Hint": "Activez/désactivez les fonctionnalités des fenêtres pop-up",
+        "window": {
+          "two-pop-ups": {
+            "Name": "Afficher des fenêtres pop-up séparées pour les illustrations de portraits et de tokens",
+            "Hint": "Lorsqu'activé, 2 fenêtres pop-up distinctes seront affichées lors de la création d'un acteur/token, d'abord pour sélectionner l'illustration du portrait, puis pour sélectionner l'illustration du token."
+          },
+          "no-dialog": {
+            "Name": "Désactiver l'invite entre la sélection des illustrations de portrait et de token",
+            "Hint": "Désactivera l'invite affichée lors de la création d'un token/acteur lorsque le paramètre des deux fenêtres pop-up séparées est activé."
+          },
+          "disable-automatic-pop-ups-for": "Désactiver les fenêtres pop-up automatiques pour",
+          "on-actor-create": "Lors de la création d'un acteur",
+          "on-token-create": "Lors de la création d'un token",
+          "on-token-copy-paste": "Lors du copier-coller d'un token"
         }
+      },
+      "token-hud": {
+        "Name": "Paramètres client du HUD de token",
+        "Hint": "Paramètres pour le bouton du HUD de token",
+        "window": {
+          "enable-token-hud": {
+            "Name": "Activer le bouton du HUD de token",
+            "Hint": "Activez un bouton supplémentaire dans le HUD de token pour sélectionner des illustrations de token."
+          },
+          "display-shared-only": {
+            "Name": "Afficher uniquement les images partagées",
+            "Hint": "Seules les images partagées seront affichées dans le menu latéral. La recherche peut toujours être effectuée."
+          },
+          "display-as-image": {
+            "Name": "Afficher en tant qu'image",
+            "Hint": "Désactivez pour afficher les images sous forme de liste de leurs noms de fichiers dans le HUD."
+          },
+          "image-opacity": {
+            "Name": "Opacité de l'aperçu du token",
+            "Hint": "L'opacité des aperçus de tokens dans le HUD avant de survoler avec la souris."
+          },
+          "update-actor-image": {
+            "Name": "Mettre à jour le portrait de l'acteur",
+            "Hint": "Lorsqu'activé, la sélection d'une image depuis le HUD de token l'appliquera également à la feuille de personnage."
+          },
+          "disable-if-token-hud-wildcard-active": {
+            "Name": "Désactiver le bouton",
+            "Hint": "Cette option empêchera l'affichage du bouton 'Token Variant Art' si 'Token HUD Wildcard' est actif et 'Randomiser les images Wildcard' est coché dans le token prototype."
+          },
+          "include-wildcard": {
+            "Name": "Inclure les images Wildcard",
+            "Hint": "Si le token prototype a été configuré avec une image Wildcard, elles seront incluses dans le menu du HUD."
+          }
+        }
+      },
+      "keywords-search": {
+        "Name": "Recherche par mot-clé",
+        "Hint": "Les recherches utiliseront à la fois le nom complet et les mots individuels dans le nom de l'acteur/token. Les mots de moins de 3 caractères seront ignorés."
+      },
+      "excluded-keywords": {
+        "Name": "Mots-clés exclus",
+        "Hint": "Liste de mots-clés qui ne seront pas inclus dans la recherche lorsque 'Recherche par mot-clé' est activé."
+      },
+      "run-search-on-path": {
+        "Name": "Faire correspondre le nom au dossier",
+        "Hint": "Lorsqu'activé, les recherches d'illustrations vérifieront à la fois les noms de fichiers et les noms de dossiers le long de leur chemin pour une correspondance."
+      },
+      "imgur-client-id": {
+        "Name": "ID client Imgur",
+        "Hint": "ID client à utiliser pour effectuer des appels API Imgur."
+      },
+      "disable-notifs": {
+        "Name": "Désactiver les notifications de cache",
+        "Hint": "Désactive les notifications affichées par le module pendant la mise en cache."
+      },
+      "compendium-mapper": {
+        "Name": "Mappeur de compendium",
+        "Hint": "Appliquer des images aux compendiums",
+        "window": {
+          "compendium-select": "Sélectionnez un compendium déverrouillé pour effectuer des mappages",
+          "missing-only": "Inclure uniquement les documents sans images",
+          "diff-images": "Appliquer des images différentes pour le portrait et le token",
+          "ignore-token": "Ignorer le token",
+          "ignore-portrait": "Ignorer le portrait",
+          "show-images": "Afficher les images actuelles dans la fenêtre 'Sélection d'illustrations'",
+          "include-keywords": "Inclure les mots-clés dans la recherche",
+          "auto-apply": "Appliquer automatiquement la première image trouvée",
+          "auto-art-select": "Afficher 'Sélection d'illustrations' si aucune image n'est trouvée",
+          "cache": "Remettre en cache les images avant le début du mappage",
+          "sync-images": "Synchroniser le portrait et le token si une seule image est manquante"
+        }
+      },
+      "algorithm": {
+        "Name": "Paramètres de recherche",
+        "Hint": "Configurez l'algorithme et les filtres utilisés pour effectuer des recherches d'images",
+        "window": {
+          "exact-hint": "Les noms de tokens/acteurs doivent être entièrement présents dans le nom du fichier/dossier",
+          "fuzzy-hint": "Les noms de tokens/acteurs nécessitent uniquement des correspondances partielles avec le nom du fichier/dossier",
+          "limit-hint": "Nombre maximum de résultats retournés par recherche",
+          "percentage-match": {
+            "Name": "Pourcentage de correspondance",
+            "Hint": "Précision avec laquelle le nom du fichier/dossier doit correspondre pour être considéré comme une correspondance."
+          },
+          "art-select-slider": {
+            "Name": "Ajouter le curseur de pourcentage à la fenêtre de sélection d'illustrations",
+            "Hint": "Un curseur de pourcentage apparaîtra dans les fenêtres pop-up de sélection d'illustrations, vous permettant de modifier le pourcentage de correspondance à la volée"
+          }
+        }
+      },
+      "import-export": {
+        "Hint": "Importer/Exporter les paramètres du module",
+        "window": {
+          "import-dialog": "Importer les paramètres de Token Variant Art",
+          "source-data": "Données source"
+        }
+      }
+    },
+    "common": {
+      "include": "Inclure",
+      "exclude": "Exclure",
+      "randomize": "Randomiser",
+      "name": "Nom",
+      "keywords": "Mots-clés",
+      "shared": "Partagé",
+      "apply": "Appliquer",
+      "priority": "Priorité",
+      "remove": "Supprimer",
+      "start": "Démarrer",
+      "automation": "Automatisation",
+      "enable": "Activer",
+      "exact": "Exact",
+      "fuzzy": "Approximatif",
+      "limit": "Limite",
+      "save": "Sauvegarder",
+      "import": "Importer",
+      "export": "Exporter"
+    },
+    "windows": {
+      "art-select": {
+        "apply-same-art": "Appliquer la même illustration au token ?",
+        "no-art-found": "Aucune illustration trouvée contenant",
+        "select-variant": "Sélectionner une variante",
+        "select-portrait-art": "Sélectionner une illustration de portrait",
+        "select-token-art": "Sélectionner une illustration de token"
+      },
+      "status-config": {
+        "hint": "Ordre dans lequel l'image sera mise à jour si plusieurs effets/états sont appliqués. S'ils ont la même priorité, l'ancienneté sera utilisée à la place."
+      }
+    },
+    "notifications": {
+      "warn": {
+        "profile-image-not-found": "Token-Variant-Art : Impossible de trouver l'image de profil pour attribuer un écouteur de clic droit.",
+        "path-not-found": "Impossible de trouver le chemin :",
+        "invalid-table": "La table \"{rollTableName}\" est introuvable",
+        "invalid-json": "Le fichier json \"{jsonName}\" est introuvable",
+        "update-image-no-token-actor": "Appel de 'updateImage' sans token ou acteur valide comme cible de mise à jour.",
+        "imgur-localhost": "Les galeries Imgur ne peuvent pas être accessibles depuis des clients exécutés sur 'localhost'",
+        "json-localhost": "Le fichier json ne peut pas être accessible depuis des clients exécutés sur 'localhost'"
+      },
+      "info": {
+        "caching-started": "Token Variant Art : Mise en cache démarrée",
+        "caching-finished": "Token Variant Art : Mise en cache terminée ({imageCount} images trouvées)"
       }
     }
   }
+}
