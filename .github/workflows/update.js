@@ -2,69 +2,37 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-// Fonction pour télécharger directement en tant que stream vers un fichier
-const download = async (url, dest) => {
-    console.log(`Téléchargement: ${url} → ${dest}`);
+// Fonction pour télécharger et préserver exactement le formatage original
+const downloadWithExactFormatting = async (url, dest) => {
+    console.log(`Téléchargement avec préservation exacte du formatage: ${url} → ${dest}`);
     try {
         // Création du répertoire si nécessaire
         fs.mkdirSync(path.dirname(dest), { recursive: true });
         
-        // Téléchargement du fichier
-        const response = await axios({
-            method: 'get',
-            url,
-            responseType: 'stream',
-            timeout: 10000
-        });
-        
-        if (response.status !== 200) throw new Error(`Statut HTTP: ${response.status}`);
-        
-        // Écriture directe du stream dans le fichier
-        const writer = fs.createWriteStream(dest);
-        response.data.pipe(writer);
-        
-        return new Promise((resolve, reject) => {
-            writer.on('finish', resolve);
-            writer.on('error', reject);
-        });
-    } catch (err) {
-        console.error(`Erreur de téléchargement: ${err.message}`);
-        // Suppression du fichier en cas d'erreur pour éviter les fichiers partiels
-        if (fs.existsSync(dest)) fs.unlinkSync(dest);
-        throw err;
-    }
-};
-
-// Fonction pour télécharger comme texte et préserver le formatage
-const downloadAsRawText = async (url, dest) => {
-    console.log(`Téléchargement avec préservation du formatage: ${url} → ${dest}`);
-    try {
-        // Création du répertoire si nécessaire
-        fs.mkdirSync(path.dirname(dest), { recursive: true });
-        
-        // Téléchargement du fichier comme texte pour préserver le formatage exact
+        // Téléchargement du fichier comme texte brut pour préserver le formatage exact
         const response = await axios({
             method: 'get',
             url,
             responseType: 'text',
-            timeout: 10000
+            timeout: 15000 // Augmenter le timeout pour les fichiers plus volumineux
         });
         
         if (response.status !== 200) throw new Error(`Statut HTTP: ${response.status}`);
         
         // Vérifier que c'est un JSON valide
         try {
-            JSON.parse(response.data);
+            JSON.parse(response.data); // Vérification seulement, ne modifie pas le formatage
+            
+            // Écrire exactement le contenu reçu, sans reformatage
             fs.writeFileSync(dest, response.data);
-            return true;
+            
+            return response.data;
         } catch (e) {
-            console.error(`Contenu JSON invalide: ${e.message}`);
+            console.error(`Contenu JSON invalide pour ${url}: ${e.message}`);
             throw e;
         }
     } catch (err) {
-        console.error(`Erreur de téléchargement: ${err.message}`);
-        // Suppression du fichier en cas d'erreur
-        if (fs.existsSync(dest)) fs.unlinkSync(dest);
+        console.error(`Erreur de téléchargement pour ${url}: ${err.message}`);
         throw err;
     }
 };
@@ -79,7 +47,7 @@ const downloadAsRawText = async (url, dest) => {
         }
         
         const projects = JSON.parse(fs.readFileSync('./projects.json', 'utf8'));
-        console.log(`Found ${projects.length} projects to process`);
+        console.log(`Traitement de ${projects.length} projets...`);
         
         // Traitement de chaque projet
         for (const project of projects) {
@@ -95,41 +63,38 @@ const downloadAsRawText = async (url, dest) => {
                 
                 console.log(`Processing ${project.name}...`);
                 
-                // Téléchargement du fichier anglais avec préservation du formatage
-                await downloadAsRawText(project.src, enFile);
+                // Toujours télécharger et mettre à jour le fichier anglais
+                const content = await downloadWithExactFormatting(project.src, enFile);
+                console.log(`✅ Fichier anglais mis à jour: ${enFile} (${content.length} caractères)`);
                 
                 // Création du fichier français vide s'il n'existe pas
                 if (!fs.existsSync(frFile)) {
-                    console.log(`Creating empty fr.json for ${project.name}`);
+                    console.log(`Création du fichier fr.json pour ${project.name}`);
                     fs.writeFileSync(frFile, '{}');
-                }
-                
-                // Vérification que les fichiers ont bien été créés
-                if (fs.existsSync(enFile)) {
-                    const stats = fs.statSync(enFile);
-                    console.log(`✅ Fichier anglais créé: ${enFile} (${stats.size} octets)`);
-                }
-                
-                if (fs.existsSync(frFile)) {
-                    const stats = fs.statSync(frFile);
-                    console.log(`✅ Fichier français: ${frFile} (${stats.size} octets)`);
+                    console.log(`✅ Fichier français créé: ${frFile}`);
                 }
             } catch (err) {
-                console.error(`Failed to process ${project.name}:`, err.message);
+                console.error(`Échec du traitement pour ${project.name}:`, err.message);
             }
         }
-        
-        console.log("Traitement terminé");
         
         // Liste des fichiers créés pour vérification
         console.log("\nContenu du répertoire translations:");
         if (fs.existsSync('translations')) {
             const dirs = fs.readdirSync('translations');
+            console.log(`${dirs.length} projets traités:`);
+            
             for (const dir of dirs) {
-                const files = fs.readdirSync(`translations/${dir}`);
-                console.log(`- ${dir}: ${files.join(', ')}`);
+                try {
+                    const files = fs.readdirSync(`translations/${dir}`);
+                    console.log(`- ${dir}: ${files.join(', ')}`);
+                } catch (err) {
+                    console.error(`Erreur de lecture du dossier ${dir}: ${err.message}`);
+                }
             }
         }
+        
+        console.log("Traitement terminé avec succès");
     } catch (error) {
         console.error('Erreur globale:', error);
         process.exit(1);
