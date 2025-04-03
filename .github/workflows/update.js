@@ -38,9 +38,21 @@ async function downloadRawContent(url) {
     const response = await axios({
       method: 'get',
       url: url,
+      responseType: 'text',  // Important: forcer le format texte
       timeout: 10000
     });
-    return response.data;
+    
+    // Vérifier si la réponse est déjà une chaîne
+    if (typeof response.data === 'string') {
+      return response.data;
+    } 
+    // Si c'est un objet, le convertir en JSON formaté
+    else if (typeof response.data === 'object') {
+      return JSON.stringify(response.data, null, '\t');
+    } 
+    else {
+      throw new Error(`Type de réponse inattendu: ${typeof response.data}`);
+    }
   } catch (error) {
     console.error(`Erreur lors du téléchargement du contenu de ${url}: ${error.message}`);
     throw error;
@@ -60,7 +72,7 @@ function detectIndentation(content) {
       return '    '; // Quatre espaces
     }
   }
-  return '  '; // Par défaut, deux espaces
+  return '\t'; // Par défaut, tabulation
 }
 
 // Traiter le contenu d'un fichier selon son extension
@@ -114,8 +126,8 @@ async function main() {
           // Vérifier que le contenu est un JSON valide
           try {
             JSON.parse(rawContent); // Juste pour valider
-            fs.writeFileSync(enPath, rawContent); // Écrire tel quel pour préserver le formatage
-            console.log(`✅ Fichier anglais téléchargé (avec formatage préservé): ${enPath}`);
+            fs.writeFileSync(`${moduleDir}/en.json`, rawContent); // Écrire tel quel pour préserver le formatage
+            console.log(`✅ Fichier anglais téléchargé (avec formatage préservé): ${moduleDir}/en.json`);
           } catch (e) {
             console.error(`❌ Contenu JSON invalide pour ${project.name}: ${e.message}`);
             continue;
