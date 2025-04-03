@@ -1,0 +1,35 @@
+name: Reorder JSON after PR merge
+
+on:
+  pull_request:
+    types:
+      - closed  # Se déclenche quand une PR est fusionnée
+
+jobs:
+  reorder_json:
+    if: github.event.pull_request.merged == true  # Vérifie si la PR est bien fusionnée
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Exécuter le script de réorganisation
+        run: node workflows/reorder.js  # Assure-toi que le script est bien placé
+
+      - name: Vérifier et pousser les changements
+        run: |
+          if git diff --quiet; then
+            echo "Pas de modifications à committer."
+            exit 0
+          fi
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Réorganisation des fichiers JSON après fusion de la PR"
+          git push

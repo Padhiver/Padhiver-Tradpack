@@ -1,0 +1,26 @@
+name: Create PR from Weblate
+
+on:
+  push:
+    branches:
+      - weblate-translations  # Se déclenche quand Weblate pousse sur cette branche
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Créer une Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: weblate-translations
+          base: main
+          title: "Mise à jour des traductions depuis Weblate"
+          body: "Cette PR contient les mises à jour des traductions depuis Weblate."
+          labels: "traduction, automatique"
+          reviewers: "Padhiver"  # Remplace par ton pseudo GitHub si tu veux être notifié
