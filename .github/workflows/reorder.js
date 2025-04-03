@@ -31,6 +31,17 @@ function reorderTranslations(original, translated) {
     return ordered;
 }
 
+// Fonction pour détecter si un fichier JSON utilise des tabulations
+function usesTabIndentation(filePath) {
+    try {
+        const content = fs.readFileSync(filePath, 'utf8');
+        // Vérifier si le premier caractère d'indentation est une tabulation
+        return content.includes('\n\t');
+    } catch (error) {
+        return false;
+    }
+}
+
 // Fonction principale pour traiter un module
 function processModule(moduleDir) {
     const enPath = path.join(moduleDir, 'en.json');
@@ -46,8 +57,19 @@ function processModule(moduleDir) {
         const translated = JSON.parse(fs.readFileSync(frPath, 'utf8'));
 
         const ordered = reorderTranslations(original, translated);
-        fs.writeFileSync(frPath, JSON.stringify(ordered, null, 2));
-        console.log(`✅ Réorganisé: ${frPath}`);
+        
+        // Déterminer le type d'indentation à utiliser (tabulations ou espaces)
+        const usesTabs = usesTabIndentation(enPath);
+        
+        if (usesTabs) {
+            // Utiliser des tabulations pour l'indentation
+            fs.writeFileSync(frPath, JSON.stringify(ordered, null, '\t'));
+        } else {
+            // Utiliser des espaces pour l'indentation (par défaut: 2 espaces)
+            fs.writeFileSync(frPath, JSON.stringify(ordered, null, 2));
+        }
+        
+        console.log(`✅ Réorganisé: ${frPath} (indentation avec ${usesTabs ? 'tabulations' : 'espaces'})`);
     } catch (error) {
         console.error(`❌ Erreur lors du traitement de ${moduleDir}:`, error.message);
     }
