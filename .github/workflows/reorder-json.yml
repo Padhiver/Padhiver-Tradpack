@@ -3,33 +3,33 @@ name: Reorder JSON after PR merge
 on:
   pull_request:
     types:
-      - closed  # Se déclenche quand une PR est fusionnée
+      - closed
 
 jobs:
   reorder_json:
-    if: github.event.pull_request.merged == true  # Vérifie si la PR est bien fusionnée
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'weblate-translations'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout du code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Installer Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Exécuter le script de réorganisation
-        run: node workflows/reorder.js  # Assure-toi que le script est bien placé
+      - name: Reorder translations
+        run: node ./.github/workflows/reorder.js
 
-      - name: Vérifier et pousser les changements
+      - name: Commit and push changes
         run: |
           if git diff --quiet; then
-            echo "Pas de modifications à committer."
+            echo "No changes to commit."
             exit 0
           fi
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
-          git add .
-          git commit -m "Réorganisation des fichiers JSON après fusion de la PR"
+          git add translations/
+          git commit -m "Réorganisation des traductions après fusion de la PR"
           git push
