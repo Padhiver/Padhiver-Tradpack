@@ -1,203 +1,203 @@
 {
- "SEQUENCER": {
-  "Cancel": "Annuler",
-  "Database": {
-   "All": "Tous",
-   "AllPacks": "Tous les packs",
-   "ButtonDatabasePath": "Base de données",
-   "ButtonFilepath": "Chemin de fichier",
-   "CopyDatabasePath": "Copier comme chemin de base de données Sequencer",
-   "CopyFilePath": "Copier comme chemin de fichier direct",
-   "FileTypePredicate": "Vous devez activer \"Afficher toutes les plages\" pour filtrer par type.",
-   "ListView": "Vue liste",
-   "PlayPreview": "Lire l'aperçu",
-   "Search": "Rechercher...",
-   "ShowAllRanges": "Afficher toutes les plages",
-   "ShowSubLists": "Afficher les sous-listes",
-   "Sound": "Son",
-   "Title": "Visionneuse de la base de données Sequencer",
-   "Video": "Vidéo"
-  },
-  "Error": {
-   "CouldNotPlay": "Impossible de jouer"
-  },
-  "Hotkeys": {
-   "PlayTool": {
-    "Alt": "Player - Attacher à un objet sur le canvas",
-    "Control": "Player - Jouer plusieurs effets l'un après l'autre",
-    "Shift": "Player - Jouer plusieurs effets simultanément"
-   },
-   "SelectTool": {
-    "Alt": "Sélection - Attacher à un objet sur le canvas",
-    "Control": "Sélection - Aligner à la grille",
-    "Delete": "Sélection - Supprimer l'effet sélectionné"
-   }
-  },
-  "HowTo": {
-   "Click": "Cliquer",
-   "ClickDrag": "Cliquer maintenu + glisser",
-   "ClickDragLabel": "Jouer un effet étiré vers un emplacement",
-   "ClickLabel": "Jouer un effet à cet endroit",
-   "Explanation": "Avec le Player <i class=\"fas fa-play-circle\"></i>, vous pouvez rapidement jouer des effets sur le canvas, et avec le gestionnaire <i class=\"fas fa-film\"></i>, vous pouvez arrêter les effets persistants quand vous le souhaitez.",
-   "LayerExplanation": "Une fois que vous avez choisi un fichier, vous pouvez effectuer l'une des actions suivantes tout en étant sur la couche <i class=\"fas fa-list-ol\"></i> Sequencer.",
-   "MoreToCome": "...et plus à venir dans les futures mises à jour !",
-   "OpenModuleSettings": "Ouvrir les paramètres du module",
-   "PermissionsExplanation": "En tant que MJ, vous pouvez créer des effets, et par défaut, vos joueurs le peuvent aussi. Vous pouvez configurer les paramètres en cliquant sur ce bouton :",
-   "PlayerExplanation": "Lorsque vous utilisez le Player <i class=\"fas fa-play-circle\"></i>, vous devez choisir quel effet jouer. Cliquez sur le <strong>champ de fichier</strong> pour voir les chemins de base de données disponibles ou commencez à taper pour rechercher. Vous pouvez appuyer sur le bouton <i class=\"fas fa-file-import\"></i> à côté pour rechercher un fichier directement.",
-   "Shift": "Maj",
-   "ShiftControl": "Ctrl",
-   "ShiftControlLabel": "Jouer plusieurs effets l'un après l'autre, avec un délai entre eux",
-   "ShiftLabel": "Jouer plusieurs effets simultanément après avoir relâché Maj",
-   "Title": "Comment faire",
-   "Welcome": "Bienvenue dans Sequencer Effects !"
-  },
-  "Manager": {
-   "EndAllEffects": "Arrêter tous les effets",
-   "EndAllSounds": "Arrêter tous les sons",
-   "NothingPlaying": "Rien n'est en cours de lecture",
-   "PersistentEffects": "Effets persistants :",
-   "PlayersEffect": "Effet de {user_name}",
-   "Sounds": "Sons :",
-   "TemporaryEffects": "Effets temporaires :",
-   "Title": "Gestionnaire",
-   "UnknownEffect": "Effet d'un utilisateur inconnu"
-  },
-  "ManagerUI": "Gestionnaire Sequencer",
-  "OK": "OK",
-  "Permission": {
-   "Assistant": "MJ assistants et plus",
-   "GM": "MJ uniquement",
-   "Player": "Joueurs et plus",
-   "Trusted": "Joueurs de confiance et plus"
-  },
-  "Player": {
-   "AllUsers": "Tous les utilisateurs",
-   "ApplyPresetContent": "Êtes-vous sûr de vouloir appliquer le préréglage \"{preset_name}\" ? Les modifications non enregistrées seront perdues.",
-   "ApplyPresetTitle": "Appliquer le préréglage",
-   "CopyPresetInputLabel": "Entrez un nouveau nom de préréglage",
-   "CopyPresetTitle": "Copier un préréglage d'effet Sequencer",
-   "CreateNewPresetInputLabel": "Entrez un nouveau nom de préréglage",
-   "CreateNewPresetTitle": "Créer un nouveau préréglage d'effet Sequencer",
-   "DefaultErrorContent": "Désolé, vous ne pouvez pas nommer votre préréglage \"default\". Sequencer en a besoin pour lui-même.",
-   "DefaultErrorTitle": "Erreur",
-   "DeletePresetContent": "Êtes-vous sûr de vouloir supprimer le préréglage \"{preset_name}\" ?",
-   "DeletePresetTitle": "Supprimer le préréglage ?",
-   "Option": {
-    "AttachTo": "Attacher au point de départ",
-    "BelowTokens": "Sous les tokens",
-    "DelayMax": " ",
-    "DelayMin": "(ms)",
-    "DragBehavior": "Comportement de glissement",
-    "DragMove": "Déplacer",
-    "DragStretch": "Étirer",
-    "FadeIn": "Fondu entrant",
-    "FadeOut": "Fondu sortant",
-    "GridUnits": "Unités de grille",
-    "MirrorX": "Miroir X",
-    "MirrorY": "Miroir Y",
-    "MoveSpeed": "Vitesse de déplacement",
-    "OffsetX": "Décalage X",
-    "OffsetY": "Décalage Y",
-    "Persist": "Persistant",
-    "Preload": "Précharger",
-    "RandomOffset": "Quantité",
-    "Randomize": "Aléatoire",
-    "Repeat": "Répéter",
-    "Repetitions": "Répétitions",
-    "Rotation": "Rotation",
-    "Scale": "Échelle",
-    "ScaleIn": "Échelle entrante",
-    "ScaleOut": "Échelle sortante",
-    "SnapToGrid": "Aligner à la grille",
-    "StretchToAttach": "Attacher au point d'arrivée"
-   },
-   "OverwritePresetContent": "Êtes-vous sûr de vouloir écraser le préréglage \"{preset_name}\" ?",
-   "OverwritePresetTitle": "Écraser le préréglage ?",
-   "PathInput": "Entrez un chemin de base de données ou un chemin de fichier",
-   "Presets": "Préréglages :",
-   "PresetsDefault": "Défaut",
-   "SwitchToLayer": "Changer de couche",
-   "Title": "Player"
-  },
-  "PlayerPermissionsWarning": "Bonjour ! En tant que MJ, vous pouvez créer des effets, mais par défaut <strong>vos joueurs le peuvent aussi</strong>. Si vous ne voulez pas cela, vous pouvez configurer les permissions en cliquant sur ce bouton :",
-  "Sequences": {
-   "AbortSection": "Interrompre la section",
-   "AbortSequence": "Interrompre la séquence",
-   "Clear": "Effacer",
-   "ClearFinished": "Effacer les terminés",
-   "NoSequences": "Aucune séquence en cours d'exécution",
-   "StopAll": "Tout arrêter",
-   "Title": "Séquences"
-  },
-  "Setting": {
-   "DatabaseViewer": {
-    "Label": "Ouvrir la visionneuse de base de données",
-    "Title": "Ouvrir la visionneuse de la base de données Sequencer"
-   },
-   "Debug": {
-    "Label": "Fera en sorte que Sequencer enregistre dans la console ce qu'il fait",
-    "Title": "Activer le débogage"
-   },
-   "EnableAboveUIScreenspace": {
-    "Label": "Active la couche pour jouer des effets au-dessus de tous les éléments de l'interface utilisateur dans Foundry - certains utilisateurs ont signalé que cette couche cause une baisse significative des performances, désactivez-la si c'est le cas.",
-    "Title": "Activer la couche au-dessus de l'interface utilisateur"
-   },
-   "EnableEffects": {
-    "Label": "Active la lecture d'effets sur ce client",
-    "Title": "Activer les effets"
-   },
-   "EnableGlobalPixiFix": {
-    "Label": "Active un correctif pour les alphas de tous les fichiers .webm animés dans Foundry. À utiliser avec prudence.",
-    "Title": "Activer le correctif PIXI global"
-   },
-   "EnablePixiFix": {
-    "Label": "Active un correctif pour les alphas des effets Sequencer dans Foundry - certaines configurations (navigateurs, matériel, logiciels, etc.) semblent rendre ce correctif obsolète.",
-    "Title": "Activer le correctif PIXI"
-   },
-   "EnableSounds": {
-    "Label": "Active la lecture de sons sur ce client",
-    "Title": "Activer les sons"
-   },
-   "ExternalEffectOpacity": {
-    "Label": "Si vous créez des effets destinés à être joués pour d'autres joueurs mais pas pour vous, définir cette valeur à autre chose que 0 fera apparaître l'effet pour vous également, mais atténué. Tous les effets apparaissent toujours pour les MJ.",
-    "Title": "Opacité des effets externes"
-   },
-   "Permission": {
-    "EffectCreate": {
-     "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de jouer des effets via des macros et le player d'effets Sequencer.",
-     "Title": "Sequencer : Jouer des effets"
+  "SEQUENCER": {
+    "OK": "OK",
+    "Cancel": "Annuler",
+    "PlayerPermissionsWarning": "Bonjour ! En tant que MJ, vous pouvez créer des effets, mais par défaut <strong>vos joueurs le peuvent aussi</strong>. Si vous ne voulez pas cela, vous pouvez configurer les permissions en cliquant sur ce bouton :",
+    "Error": {
+      "CouldNotPlay": "Impossible de jouer"
     },
-    "EffectDelete": {
-     "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de supprimer tous les effets via le gestionnaire d'effets Sequencer.",
-     "Title": "Sequencer : Supprimer tous les effets"
+    "Player": {
+      "Title": "Player",
+      "SwitchToLayer": "Changer de couche",
+      "PathInput": "Entrez un chemin de base de données ou un chemin de fichier",
+      "AllUsers": "Tous les utilisateurs",
+      "Presets": "Préréglages :",
+      "PresetsDefault": "Défaut",
+      "ApplyPresetTitle": "Appliquer le préréglage",
+      "ApplyPresetContent": "Êtes-vous sûr de vouloir appliquer le préréglage \"{preset_name}\" ? Les modifications non enregistrées seront perdues.",
+      "CreateNewPresetTitle": "Créer un nouveau préréglage d'effet Sequencer",
+      "CreateNewPresetInputLabel": "Entrez un nouveau nom de préréglage",
+      "CopyPresetTitle": "Copier un préréglage d'effet Sequencer",
+      "CopyPresetInputLabel": "Entrez un nouveau nom de préréglage",
+      "DefaultErrorTitle": "Erreur",
+      "DefaultErrorContent": "Désolé, vous ne pouvez pas nommer votre préréglage \"default\". Sequencer en a besoin pour lui-même.",
+      "OverwritePresetTitle": "Écraser le préréglage ?",
+      "OverwritePresetContent": "Êtes-vous sûr de vouloir écraser le préréglage \"{preset_name}\" ?",
+      "DeletePresetTitle": "Supprimer le préréglage ?",
+      "DeletePresetContent": "Êtes-vous sûr de vouloir supprimer le préréglage \"{preset_name}\" ?",
+      "Option": {
+        "Scale": "Échelle",
+        "BelowTokens": "Sous les tokens",
+        "SnapToGrid": "Aligner à la grille",
+        "Rotation": "Rotation",
+        "Randomize": "Aléatoire",
+        "FadeIn": "Fondu entrant",
+        "FadeOut": "Fondu sortant",
+        "ScaleIn": "Échelle entrante",
+        "ScaleOut": "Échelle sortante",
+        "MirrorX": "Miroir X",
+        "MirrorY": "Miroir Y",
+        "OffsetX": "Décalage X",
+        "OffsetY": "Décalage Y",
+        "RandomOffset": "Quantité",
+        "GridUnits": "Unités de grille",
+        "Repeat": "Répéter",
+        "Repetitions": "Répétitions",
+        "DelayMin": "(ms)",
+        "DelayMax": " ",
+        "DragBehavior": "Comportement de glissement",
+        "DragStretch": "Étirer",
+        "DragMove": "Déplacer",
+        "MoveSpeed": "Vitesse de déplacement",
+        "Preload": "Précharger",
+        "AttachTo": "Attacher au point de départ",
+        "StretchToAttach": "Attacher au point d'arrivée",
+        "Persist": "Persistant"
+      }
     },
-    "PreloadClients": {
-     "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de précharger des effets et des sons pour d'autres joueurs.",
-     "Title": "Sequencer : Préchargement pour les autres"
+    "SidebarButtons": {
+      "Select": "Sélectionner un effet",
+      "Play": "Jouer un effet",
+      "Manager": "Afficher le gestionnaire Sequencer",
+      "Database": "Afficher la base de données Sequencer"
     },
-    "SoundCreate": {
-     "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de jouer des sons via ",
-     "Title": "Sequencer : Jouer des sons"
+    "Hotkeys": {
+      "PlayTool": {
+        "Shift": "Player - Jouer plusieurs effets simultanément",
+        "Control": "Player - Jouer plusieurs effets l'un après l'autre",
+        "Alt": "Player - Attacher à un objet sur le canvas"
+      },
+      "SelectTool": {
+        "Control": "Sélection - Aligner à la grille",
+        "Alt": "Sélection - Attacher à un objet sur le canvas",
+        "Delete": "Sélection - Supprimer l'effet sélectionné"
+      }
     },
-    "UseSidebarTools": {
-     "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur d'utiliser les outils de la barre latérale (ils doivent aussi pouvoir jouer des effets).",
-     "Title": "Sequencer : Utiliser les outils de la barre latérale"
+    "Manager": {
+      "Title": "Gestionnaire",
+      "NothingPlaying": "Rien n'est en cours de lecture",
+      "PersistentEffects": "Effets persistants :",
+      "TemporaryEffects": "Effets temporaires :",
+      "Sounds": "Sons :",
+      "PlayersEffect": "Effet de {user_name}",
+      "UnknownEffect": "Effet d'un utilisateur inconnu",
+      "EndAllEffects": "Arrêter tous les effets",
+      "EndAllSounds": "Arrêter tous les sons"
+    },
+    "Sequences": {
+      "Title": "Séquences",
+      "NoSequences": "Aucune séquence en cours d'exécution",
+      "AbortSequence": "Interrompre la séquence",
+      "AbortSection": "Interrompre la section",
+      "ClearFinished": "Effacer les terminés",
+      "Clear": "Effacer",
+      "StopAll": "Tout arrêter"
+    },
+    "HowTo": {
+      "Title": "Comment faire",
+      "Welcome": "Bienvenue dans Sequencer Effects !",
+      "Explanation": "Avec le Player <i class=\"fas fa-play-circle\"></i>, vous pouvez rapidement jouer des effets sur le canvas, et avec le gestionnaire <i class=\"fas fa-film\"></i>, vous pouvez arrêter les effets persistants quand vous le souhaitez.",
+      "PermissionsExplanation": "En tant que MJ, vous pouvez créer des effets, et par défaut, vos joueurs le peuvent aussi. Vous pouvez configurer les paramètres en cliquant sur ce bouton :",
+      "PlayerExplanation": "Lorsque vous utilisez le Player <i class=\"fas fa-play-circle\"></i>, vous devez choisir quel effet jouer. Cliquez sur le <strong>champ de fichier</strong> pour voir les chemins de base de données disponibles ou commencez à taper pour rechercher. Vous pouvez appuyer sur le bouton <i class=\"fas fa-file-import\"></i> à côté pour rechercher un fichier directement.",
+      "LayerExplanation": "Une fois que vous avez choisi un fichier, vous pouvez effectuer l'une des actions suivantes tout en étant sur la couche <i class=\"fas fa-list-ol\"></i> Sequencer.",
+      "OpenModuleSettings": "Ouvrir les paramètres du module",
+      "Click": "Cliquer",
+      "ClickLabel": "Jouer un effet à cet endroit",
+      "ClickDrag": "Cliquer maintenu + glisser",
+      "ClickDragLabel": "Jouer un effet étiré vers un emplacement",
+      "Shift": "Maj",
+      "ShiftLabel": "Jouer plusieurs effets simultanément après avoir relâché Maj",
+      "ShiftControl": "Ctrl",
+      "ShiftControlLabel": "Jouer plusieurs effets l'un après l'autre, avec un délai entre eux",
+      "MoreToCome": "...et plus à venir dans les futures mises à jour !"
+    },
+    "ManagerUI": "Gestionnaire Sequencer",
+    "Database": {
+      "Title": "Visionneuse de la base de données Sequencer",
+      "AllPacks": "Tous les packs",
+      "Search": "Rechercher...",
+      "ButtonFilepath": "Chemin de fichier",
+      "ButtonDatabasePath": "Base de données",
+      "ShowAllRanges": "Afficher toutes les plages",
+      "ShowSubLists": "Afficher les sous-listes",
+      "ListView": "Vue liste",
+      "Video": "Vidéo",
+      "Sound": "Son",
+      "All": "Tous",
+      "FileTypePredicate": "Vous devez activer \"Afficher toutes les plages\" pour filtrer par type.",
+      "PlayPreview": "Lire l'aperçu",
+      "CopyFilePath": "Copier comme chemin de fichier direct",
+      "CopyDatabasePath": "Copier comme chemin de base de données Sequencer"
+    },
+    "Setting": {
+      "DatabaseViewer": {
+        "Title": "Ouvrir la visionneuse de la base de données Sequencer",
+        "Label": "Ouvrir la visionneuse de base de données"
+      },
+      "EnablePixiFix": {
+        "Title": "Activer le correctif PIXI",
+        "Label": "Active un correctif pour les alphas des effets Sequencer dans Foundry - certaines configurations (navigateurs, matériel, logiciels, etc.) semblent rendre ce correctif obsolète."
+      },
+      "EnableGlobalPixiFix": {
+        "Title": "Activer le correctif PIXI global",
+        "Label": "Active un correctif pour les alphas de tous les fichiers .webm animés dans Foundry. À utiliser avec prudence."
+      },
+      "EnableAboveUIScreenspace": {
+        "Title": "Activer la couche au-dessus de l'interface utilisateur",
+        "Label": "Active la couche pour jouer des effets au-dessus de tous les éléments de l'interface utilisateur dans Foundry - certains utilisateurs ont signalé que cette couche cause une baisse significative des performances, désactivez-la si c'est le cas."
+      },
+      "Debug": {
+        "Title": "Activer le débogage",
+        "Label": "Fera en sorte que Sequencer enregistre dans la console ce qu'il fait"
+      },
+      "ShowTools": {
+        "Title": "Afficher les outils Sequencer",
+        "Label": "Affiche ou masque les outils Sequencer dans la barre latérale."
+      },
+      "ShowTokenTools": {
+        "Title": "Afficher les outils Sequencer dans les contrôles de token",
+        "Label": "Affiche ou masque les outils Sequencer dans la barre latérale des contrôles de token."
+      },
+      "EnableEffects": {
+        "Title": "Activer les effets",
+        "Label": "Active la lecture d'effets sur ce client"
+      },
+      "EnableSounds": {
+        "Title": "Activer les sons",
+        "Label": "Active la lecture de sons sur ce client"
+      },
+      "ExternalEffectOpacity": {
+        "Title": "Opacité des effets externes",
+        "Label": "Si vous créez des effets destinés à être joués pour d'autres joueurs mais pas pour vous, définir cette valeur à autre chose que 0 fera apparaître l'effet pour vous également, mais atténué. Tous les effets apparaissent toujours pour les MJ."
+      },
+      "Permission": {
+        "EffectCreate": {
+          "Title": "Sequencer : Jouer des effets",
+          "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de jouer des effets via des macros et le player d'effets Sequencer."
+        },
+        "EffectDelete": {
+          "Title": "Sequencer : Supprimer tous les effets",
+          "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de supprimer tous les effets via le gestionnaire d'effets Sequencer."
+        },
+        "SoundCreate": {
+          "Title": "Sequencer : Jouer des sons",
+          "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de jouer des sons via "
+        },
+        "PreloadClients": {
+          "Title": "Sequencer : Préchargement pour les autres",
+          "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur de précharger des effets et des sons pour d'autres joueurs."
+        },
+        "UseSidebarTools": {
+          "Title": "Sequencer : Utiliser les outils de la barre latérale",
+          "Label": "Permet aux joueurs ayant le rôle sélectionné ou supérieur d'utiliser les outils de la barre latérale (ils doivent aussi pouvoir jouer des effets)."
+        }
+      }
+    },
+    "Permission": {
+      "Player": "Joueurs et plus",
+      "Trusted": "Joueurs de confiance et plus",
+      "Assistant": "MJ assistants et plus",
+      "GM": "MJ uniquement"
     }
-   },
-   "ShowTokenTools": {
-    "Label": "Affiche ou masque les outils Sequencer dans la barre latérale des contrôles de token.",
-    "Title": "Afficher les outils Sequencer dans les contrôles de token"
-   },
-   "ShowTools": {
-    "Label": "Affiche ou masque les outils Sequencer dans la barre latérale.",
-    "Title": "Afficher les outils Sequencer"
-   }
-  },
-  "SidebarButtons": {
-   "Database": "Afficher la base de données Sequencer",
-   "Manager": "Afficher le gestionnaire Sequencer",
-   "Play": "Jouer un effet",
-   "Select": "Sélectionner un effet"
   }
- }
 }
