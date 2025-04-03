@@ -3,56 +3,46 @@ const fs = require('fs');
 const path = require('path');
 
 const download = async (url, dest) => {
+    console.log(`Téléchargement: ${url} → ${dest}`);
     try {
-        // Créer le répertoire parent si nécessaire
         fs.mkdirSync(path.dirname(dest), { recursive: true });
-
-        const response = await axios({
-            method: 'get',
-            url: url,
-            responseType: 'stream'
-        });
-
-        if (response.status !== 200) {
-            throw new Error(`Response status was ${response.status}`);
-        }
-
+        const response = await axios({ method: 'get', url, responseType: 'stream' });
+        if (response.status !== 200) throw new Error(`Statut: ${response.status}`);
+        
         const writer = fs.createWriteStream(dest);
         response.data.pipe(writer);
-
+        
         return new Promise((resolve, reject) => {
             writer.on('finish', resolve);
-            writer.on('error', (err) => {
-                fs.unlink(dest, () => {});
-                reject(err);
-            });
+            writer.on('error', reject);
         });
     } catch (err) {
-        if (fs.existsSync(dest)) {
-            fs.unlinkSync(dest);
-        }
+        console.error(`Erreur de téléchargement: ${err.message}`);
+        if (fs.existsSync(dest)) fs.unlinkSync(dest);
         throw err;
     }
 };
 
-const projects = JSON.parse(fs.readFileSync('./projects.json', 'utf8'));
-
 (async () => {
-    for (let project of projects) {
+    const projects = JSON.parse(fs.readFileSync('./projects.json', 'utf8'));
+    console.log(`Found ${projects.length} projects to process`);
+    
+    for (const project of projects) {
         try {
             const moduleDir = `translations/${project.name}`;
+            const enFile = `${moduleDir}/en.json`;
+            const frFile = `${moduleDir}/fr.json`;
             
-            // Télécharger le fichier source anglais
-            await download(project.src, `${moduleDir}/en.json`);
+            console.log(`Processing ${project.name}...`);
+            await download(project.src, enFile);
             
-            // Créer le fichier français vide s'il n'existe pas
-            const frenchFile = `${moduleDir}/fr.json`;
-            if (!fs.existsSync(frenchFile)) {
-                fs.mkdirSync(moduleDir, { recursive: true });
-                fs.writeFileSync(frenchFile, '{}');
+            if (!fs.existsSync(frFile)) {
+                console.log(`Creating empty fr.json for ${project.name}`);
+                fs.writeFileSync(frFile, '{}');
             }
         } catch (err) {
-            console.error(`Error processing ${project.name}:`, err.message);
+            console.error(`Failed to process ${project.name}:`, err.message);
         }
     }
+    console.log("Traitement terminé");
 })();

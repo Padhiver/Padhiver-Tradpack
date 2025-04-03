@@ -2,23 +2,23 @@ name: Update Language Sources
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Exécution quotidienne à minuit UTC
-  workflow_dispatch:     # Permet d'exécuter le workflow manuellement
+    - cron: '0 0 * * *'
+  workflow_dispatch:
   push:
     paths:
-      - 'projects.json'  # Déclenche sur modification du fichier projects.json
+      - 'projects.json'
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write    # Assure les permissions nécessaires pour push
+      contents: write  # Nécessaire pour push
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Important pour avoir l'historique complet
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -26,21 +26,23 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm i -D axios js-yaml
+        run: npm i -D axios
 
       - name: Update translations
         run: node ./.github/workflows/update.js
 
-      - name: Commit changes if needed
+      - name: Show changes
         run: |
-          if git diff --quiet; then
-            echo "Aucun changement détecté"
-            exit 0
-          fi
+          git status
+          git diff --stat
+
+      - name: Commit & Push
+        if: success()
+        run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.email "41910982+github-actions[bot]@users.noreply.github.com"
           git add translations/
-          git commit -m "Mise à jour des sources de traduction [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto-update translations [skip ci]"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
