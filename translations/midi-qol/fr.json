@@ -3183,5 +3183,13 @@
     "flags.midi-qol.uncanny-dodge": {
       "name": "Esquive instinctive"
     }
-  }
+  },
+  "midi-qol.noDamageonSaveSpells": [
+    "Aspersion d'acide",
+    "Éruption de lames",
+    "Coup de tonnerre",
+    "Moquerie cruelle",
+    "Embrasement",
+    "Ferrage foudroyant"
+  ]
 }
