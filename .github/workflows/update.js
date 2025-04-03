@@ -1,5 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
+const path = require('path');
+const yamlParser = require('js-yaml');
 
 // Créer le répertoire translations s'il n'existe pas
 const translationsDir = './translations';
@@ -7,113 +9,94 @@ if (!fs.existsSync(translationsDir)) {
   fs.mkdirSync(translationsDir, { recursive: true });
 }
 
-// Télécharger le contenu d'un fichier JSON
-async function downloadJsonContent(url) {
+// Télécharger un fichier depuis une URL
+async function download(url, dest) {
   try {
-    console.log(`Téléchargement depuis: ${url}`);
     const response = await axios({
       method: 'get',
       url: url,
-      responseType: 'text',
-      timeout: 10000
+      responseType: 'stream',
+      timeout: 10000 // Timeout de 10 secondes
     });
-    
-    // Vérifier que le contenu est un JSON valide
-    try {
-      JSON.parse(response.data); // Validation
-      return response.data;
-    } catch (e) {
-      console.error(`Contenu JSON invalide: ${e.message}`);
-      throw e;
-    }
+
+    const writer = fs.createWriteStream(dest);
+    response.data.pipe(writer);
+
+    return new Promise((resolve, reject) => {
+      writer.on('finish', resolve);
+      writer.on('error', reject);
+    });
   } catch (error) {
-    console.error(`Erreur lors du téléchargement: ${error.message}`);
+    console.error(`Erreur lors du téléchargement de ${url}: ${error.message}`);
     throw error;
   }
 }
 
-// Fonction principale
+// Traiter le contenu d'un fichier selon son extension
+function writeEmptyFile(filePath, ext) {
+  if (ext === 'yml' || ext === 'yaml') {
+    fs.writeFileSync(filePath, '{}');
+  } else {
+    fs.writeFileSync(filePath, '{}');
+  }
+}
+
 async function main() {
   try {
-    // Vérifier que le fichier projects.json existe
+    // Charger le fichier projects.json
     if (!fs.existsSync('./projects.json')) {
       console.error('Fichier projects.json introuvable');
       process.exit(1);
     }
 
-    // Charger et analyser le fichier projects.json
-    let projectsData;
-    try {
-      const projectsContent = fs.readFileSync('./projects.json', 'utf8');
-      projectsData = JSON.parse(projectsContent);
-      console.log(`Contenu chargé de projects.json: ${projectsContent.substring(0, 100)}...`);
-    } catch (error) {
-      console.error(`Erreur lors du chargement de projects.json: ${error.message}`);
-      process.exit(1);
-    }
+    const projects = JSON.parse(fs.readFileSync('./projects.json', 'utf8'));
+    const projectsArray = Array.isArray(projects) ? projects : [projects];
 
-    // S'assurer que projectsData est un tableau
-    const projects = Array.isArray(projectsData) ? projectsData : [projectsData];
-    console.log(`Traitement de ${projects.length} projets...`);
+    console.log(`Traitement de ${projectsArray.length} projets...`);
 
-    // Traiter chaque projet
-    for (const project of projects) {
-      // Vérifier que le projet a les propriétés nécessaires
+    for (const project of projectsArray) {
       if (!project.src || !project.name) {
         console.warn('Projet invalide, ignoré:', project);
         continue;
       }
 
-      // Créer le dossier du module
-      const moduleDir = `${translationsDir}/${project.name}`;
-      console.log(`Création du dossier: ${moduleDir}`);
+      // Déterminer l'extension du fichier source
+      const urlParts = project.src.split('.');
+      const ext = urlParts[urlParts.length - 1].toLowerCase();
+      const validExt = ['json', 'yml', 'yaml'].includes(ext) ? ext : 'json';
       
+      const moduleDir = `${translationsDir}/${project.name}`;
+      
+      // Créer le dossier du module s'il n'existe pas
       if (!fs.existsSync(moduleDir)) {
         fs.mkdirSync(moduleDir, { recursive: true });
       }
 
-      // Chemins des fichiers
-      const enPath = `${moduleDir}/en.json`;
-      const frPath = `${moduleDir}/fr.json`;
+      const enPath = `${moduleDir}/en.${validExt}`;
+      const frPath = `${moduleDir}/fr.json`; // Toujours utiliser JSON pour les traductions
 
+      // Télécharger le fichier source anglais
       try {
-        // Télécharger le fichier anglais
-        const content = await downloadJsonContent(project.src);
+        await download(project.src, enPath);
+        console.log(`✅ Fichier anglais téléchargé: ${enPath}`);
         
-        // Écrire le fichier anglais
-        fs.writeFileSync(enPath, content);
-        console.log(`✅ Fichier anglais écrit: ${enPath}`);
-        
-        // Vérifier que le fichier existe réellement
-        if (fs.existsSync(enPath)) {
-          const stats = fs.statSync(enPath);
-          console.log(`   Taille du fichier: ${stats.size} octets`);
-        } else {
-          console.error(`❌ Le fichier ${enPath} n'existe pas après l'écriture!`);
-        }
-
-        // Créer fichier français vide s'il n'existe pas
-        if (!fs.existsSync(frPath)) {
-          fs.writeFileSync(frPath, '{}');
-          console.log(`✅ Fichier français créé: ${frPath}`);
+        // Convertir YAML en JSON si nécessaire
+        if (validExt === 'yml' || validExt === 'yaml') {
+          const yamlContent = fs.readFileSync(enPath, 'utf8');
+          const jsonContent = yamlParser.load(yamlContent);
+          fs.writeFileSync(`${moduleDir}/en.json`, JSON.stringify(jsonContent, null, 2));
+          console.log(`✅ Converti YAML en JSON: ${moduleDir}/en.json`);
         }
       } catch (error) {
-        console.error(`❌ Échec pour ${project.name}: ${error.message}`);
+        console.error(`❌ Échec du téléchargement pour ${project.name}: ${error.message}`);
+        continue;
       }
-    }
 
-    // Vérifier le contenu du répertoire translations après traitement
-    console.log("\nContenu du répertoire translations après traitement:");
-    if (fs.existsSync(translationsDir)) {
-      const dirs = fs.readdirSync(translationsDir);
-      console.log(`Dossiers créés: ${dirs.join(', ')}`);
-      
-      for (const dir of dirs) {
-        const files = fs.readdirSync(`${translationsDir}/${dir}`);
-        console.log(`- ${dir}: ${files.join(', ')}`);
+      // Créer fichier français vide si inexistant
+      if (!fs.existsSync(frPath)) {
+        writeEmptyFile(frPath, 'json');
+        console.log(`✅ Fichier français créé: ${frPath}`);
       }
-    } else {
-      console.error("❌ Le répertoire translations n'existe pas après traitement!");
     }
 
     console.log('Mise à jour des sources de langue terminée.');
