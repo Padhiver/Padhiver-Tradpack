@@ -32,6 +32,37 @@ async function download(url, dest) {
   }
 }
 
+// Fonction pour récupérer le contenu brut
+async function downloadRawContent(url) {
+  try {
+    const response = await axios({
+      method: 'get',
+      url: url,
+      timeout: 10000
+    });
+    return response.data;
+  } catch (error) {
+    console.error(`Erreur lors du téléchargement du contenu de ${url}: ${error.message}`);
+    throw error;
+  }
+}
+
+// Détecter le type d'indentation d'un fichier JSON
+function detectIndentation(content) {
+  const lines = content.split('\n');
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.startsWith('\t')) {
+      return '\t'; // Tabulation
+    } else if (line.match(/^ {2}/)) {
+      return '  '; // Deux espaces
+    } else if (line.match(/^ {4}/)) {
+      return '    '; // Quatre espaces
+    }
+  }
+  return '  '; // Par défaut, deux espaces
+}
+
 // Traiter le contenu d'un fichier selon son extension
 function writeEmptyFile(filePath, ext) {
   if (ext === 'yml' || ext === 'yaml') {
@@ -75,17 +106,34 @@ async function main() {
       const enPath = `${moduleDir}/en.${validExt}`;
       const frPath = `${moduleDir}/fr.json`; // Toujours utiliser JSON pour les traductions
 
-      // Télécharger le fichier source anglais
       try {
-        await download(project.src, enPath);
-        console.log(`✅ Fichier anglais téléchargé: ${enPath}`);
-        
-        // Convertir YAML en JSON si nécessaire
-        if (validExt === 'yml' || validExt === 'yaml') {
+        if (validExt === 'json') {
+          // Pour les fichiers JSON, télécharger le contenu brut pour préserver le formatage
+          const rawContent = await downloadRawContent(project.src);
+          
+          // Vérifier que le contenu est un JSON valide
+          try {
+            JSON.parse(rawContent); // Juste pour valider
+            fs.writeFileSync(enPath, rawContent); // Écrire tel quel pour préserver le formatage
+            console.log(`✅ Fichier anglais téléchargé (avec formatage préservé): ${enPath}`);
+          } catch (e) {
+            console.error(`❌ Contenu JSON invalide pour ${project.name}: ${e.message}`);
+            continue;
+          }
+        } else {
+          // Pour les fichiers YAML, télécharger et convertir
+          await download(project.src, enPath);
+          console.log(`✅ Fichier anglais téléchargé: ${enPath}`);
+          
+          // Convertir YAML en JSON
           const yamlContent = fs.readFileSync(enPath, 'utf8');
           const jsonContent = yamlParser.load(yamlContent);
-          fs.writeFileSync(`${moduleDir}/en.json`, JSON.stringify(jsonContent, null, 2));
-          console.log(`✅ Converti YAML en JSON: ${moduleDir}/en.json`);
+          
+          // Créer le fichier en.json à côté du fichier YAML
+          const enJsonPath = `${moduleDir}/en.json`;
+          const jsonString = JSON.stringify(jsonContent, null, '\t'); // Utiliser des tabulations par défaut
+          fs.writeFileSync(enJsonPath, jsonString);
+          console.log(`✅ Converti YAML en JSON: ${enJsonPath}`);
         }
       } catch (error) {
         console.error(`❌ Échec du téléchargement pour ${project.name}: ${error.message}`);
@@ -94,8 +142,17 @@ async function main() {
 
       // Créer fichier français vide si inexistant
       if (!fs.existsSync(frPath)) {
-        writeEmptyFile(frPath, 'json');
-        console.log(`✅ Fichier français créé: ${frPath}`);
+        const enJsonPath = `${moduleDir}/en.json`;
+        if (fs.existsSync(enJsonPath)) {
+          // Utiliser le même formatage que le fichier anglais
+          const enContent = fs.readFileSync(enJsonPath, 'utf8');
+          const indentation = detectIndentation(enContent);
+          fs.writeFileSync(frPath, '{}');
+          console.log(`✅ Fichier français créé: ${frPath}`);
+        } else {
+          writeEmptyFile(frPath, 'json');
+          console.log(`✅ Fichier français créé: ${frPath}`);
+        }
       }
     }
 
