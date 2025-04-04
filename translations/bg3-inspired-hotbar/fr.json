@@ -44,11 +44,11 @@
       "Hint": "Lorsqu'activé, tous les sorts seront inclus dans la barre d'accès rapide indépendamment de leur état de préparation"
     },
     "EnforceSpellPreparationPC": {
-      "Name": "Appliquer la préparation des sorts (Tokens liés)",
+      "Name": "Appliquer la préparation des sorts (tokens liés)",
       "Hint": "Lorsqu'activé, les tokens liés (y compris les personnages joueurs) n'afficheront que les sorts préparés et les sorts spéciaux (innés, à volonté, pacte, rituel, toujours). Lorsqu'il est désactivé, tous les sorts apparaîtront."
     },
     "EnforceSpellPreparationNPC": {
-      "Name": "Appliquer la préparation des sorts (Tokens non liés)",
+      "Name": "Appliquer la préparation des sorts (tokens non liés)",
       "Hint": "Lorsqu'activé, les tokens non liés n'afficheront que les sorts préparés et les sorts spéciaux (innés, à volonté, pacte, rituel, toujours). Lorsqu'il est désactivé, tous les sorts apparaîtront."
     },
     "CollapseFoundryMacrobar": {

@@ -6,12 +6,12 @@
         "hint": "Nombre d'espaces de la grille à afficher."
       },
       "usePropertyBasedDistance": {
-        "name": "Utiliser une distance basée sur les propriétés du Token",
-        "hint": "Utilise une propriété du Token au lieu de la `Distance de vue par défaut de la grille`."
+        "name": "Utiliser une distance basée sur les propriétés du token",
+        "hint": "Utilise une propriété du token au lieu de la `Distance de vue par défaut de la grille`."
       },
       "propertyDistance": {
-        "name": "Propriété du Token",
-        "hint": "Chemin vers la propriété du Token utilisée pour déterminer la taille de la grille."
+        "name": "Propriété du token",
+        "hint": "Chemin vers la propriété du token utilisée pour déterminer la taille de la grille."
       },
       "defaultViewShape": {
         "name": "Forme de vue par défaut de la grille",
@@ -35,7 +35,7 @@
       },
       "assignDispositionBasedColor": {
         "name": "Attribuer une couleur basée sur la disposition",
-        "hint": "Lorsqu'activé, les couleurs des formes de vue des Tokens seront définies par défaut selon leur disposition :"
+        "hint": "Lorsqu'activé, les couleurs des formes de vue des tokens seront définies par défaut selon leur disposition :"
       },
       "layerEnable": {
         "hint": "Activer la grille tactique pour \"{layerName}\""
@@ -56,11 +56,11 @@
       },
       "shortestDistance": {
         "name": "Distance la plus courte uniquement",
-        "hint": "Seule la distance la plus courte vers le Token sera affichée."
+        "hint": "Seule la distance la plus courte vers le token sera affichée."
       },
       "gridlessCircle": {
         "name": "Sans grille : Bordure circulaire",
-        "hint": "Si activé, sur les scènes sans grille, le module calculera la distance la plus courte en supposant que la bordure du Token est un cercle."
+        "hint": "Si activé, sur les scènes sans grille, le module calculera la distance la plus courte en supposant que la bordure du token est un cercle."
       },
       "scaleFontSize": "Ajuster la taille de la police à la grille du canevas",
       "baseGridSize": {
@@ -76,20 +76,20 @@
         "total": "Totale"
       },
       "ignoreEffect": {
-        "name": "Ignorer les Tokens avec un effet",
-        "hint": "Les Tokens avec un nom d'effet correspondant seront ignorés dans les calculs de mesure."
+        "name": "Ignorer les tokens avec un effet",
+        "hint": "Les tokens avec un nom d'effet correspondant seront ignorés dans les calculs de mesure."
       },
       "displayDistancesOnRulerDrag": {
         "name": "Afficher les distances lors du déplacement de la règle",
-        "hint": "Lorsqu'activé, les distances entre le point de départ de la règle et tous les Tokens visibles seront calculées et affichées sur eux."
+        "hint": "Lorsqu'activé, les distances entre le point de départ de la règle et tous les tokens visibles seront calculées et affichées sur eux."
       },
       "displayDistancesOnTokenDrag": {
-        "name": "Afficher les distances lors du déplacement d'un Token",
-        "hint": "Lorsqu'activé, les distances entre le Token déplacé et tous les Tokens visibles seront calculées et affichées sur eux."
+        "name": "Afficher les distances lors du déplacement d'un token",
+        "hint": "Lorsqu'activé, les distances entre le token déplacé et tous les tokens visibles seront calculées et affichées sur eux."
       },
       "range": {
         "item-range": "Surligneur de portée d'objet",
-        "token-range": "Surligneur de portée de Token",
+        "token-range": "Surligneur de portée de token",
         "combat-only": "Uniquement en combat",
         "ranges": "Portées",
         "grid-shape-shrink": "Réduction de la forme de la grille",
