@@ -17,7 +17,7 @@
 			"items": "Objets",
 			"playlists": "Listes de lecture",
 			"scenes": "Scènes",
-			"tables": "Tables de jets"
+			"tables": "Tables aléatoires"
 		},
 		"settings": {
 			"gmOnly": {
@@ -28,7 +28,7 @@
 				"title": "Convention de nommage par défaut pour les exports."
 			},
 			"defaultExportZipName": {
-				"title": "Nom par défaut du zip pour les exports."
+				"title": "Nom de zip par défaut pour les exports."
 			},
 			"defaultDuplicateNamingConvention": {
 				"title": "Convention de nommage par défaut pour les duplications."
@@ -37,15 +37,15 @@
 				"title": "Convention de nommage par défaut pour les renommages."
 			},
 			"permDefaultName": {
-				"title": "Comportement par défaut pour les documents avec des permissions non définies.",
+				"title": "Comportement par défaut pour les documents aux permissions non définies.",
 				"hint": "",
 				"choices": {
-					"GMOnly": "MJ uniquement",
-					"all": "Tous"
+					"GMOnly": "MJ seulement",
+					"all": "Tout le monde"
 				}
 			},
 			"keepIdsOnImport": {
-				"title": "Conserver les IDs à l'importation"
+				"title": "Conserver les ID lors de l'importation"
 			}
 		}
 	},

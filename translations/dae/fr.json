@@ -1,1031 +1,1031 @@
 {
-    "dae.str": "Force",
-    "dae.dex": "Dextérité",
-    "dae.con": "Constitution",
-    "dae.wis": "Sagesse",
-    "dae.int": "Intelligence",
-    "dae.cha": "Charisme",
-    "dae.All_Modifiers/Checks": "Tests de caractéristique (numérique)",
-    "dae.ac": "Classe d'armure",
-    "dae.hp": "Points de vie",
-    "dae.di": "Immunité aux dégâts",
-    "dae.idi": "Ignorer l'immunité aux dégâts",
-    "dae.dr": "Résistance aux dégâts",
-    "dae.idr": "Ignorer la résistance aux dégâts",
-    "dae.dv": "Vulnérabilité aux dégâts",
-    "dae.idv": "Ignorer la vulnérabilité aux dégâts",
-    "dae.da": "Absorption des dégâts",
-    "dae.ida": "Ignorer l'absorption des dégâts",
-    "dae.ci": "Immunité aux états",
-    "dae.languages": "Langue",
-    "dae.Languages_All": "Toutes les langues",
-    "dae.acr": "Acrobaties",
-    "dae.ani": "Dressage",
-    "dae.arc": "Arcanes",
-    "dae.ath": "Athlétisme",
-    "dae.dec": "Tromperie",
-    "dae.his": "Histoire",
-    "dae.ins": "Intuition",
-    "dae.inv": "Investigation",
-    "dae.itm": "Intimidation",
-    "dae.med": "Médecine",
-    "dae.nat": "Nature",
-    "dae.per": "Persuasion",
-    "dae.prc": "Perception",
-    "dae.prf": "Représentation",
-    "dae.rel": "Religion",
-    "dae.slt": "Escamotage",
-    "dae.ste": "Discrétion",
-    "dae.sur": "Survie",
-    "dae.init": "Initiative",
-    "dae.spd": "Vitesse de marche",
-    "dae.Speed_Special": "Vitesse spéciale",
-    "dae.prof": "Maîtrise",
-    "dae.Strength_Attacks": "Attaques de force",
-    "dae.Dexterity_Attacks": "Attaques de dextérité",
-    "dae.Spell_Attacks": "Attaques de sort",
-    "dae.All_Skills": "Bonus aux tests de compétence (numérique)",
-    "dae.All_Saves": "Jets de sauvegarde (numérique)",
-    "dae.Initiative_Advantage": "Avantage à l'initiative",
-    "dae.Initiative_Alert": "Alerte à l'initiative",
-    "dae.InitiativeHalfProf": "Demi-maîtrise à l'initiative",
-    "dae.Powerful_Build": "Carrure imposante",
-    "dae.Savage_Attacks": "Attaques sauvages",
-    "dae.Spell_DC Bonus": "Bonus au DD de sort (numérique)",
-    "dae.Critical_Hit Threshold": "Seuil de coup critique",
-    "dae.mwak": "Arme de mélée",
-    "dae.rwak": "Arme à distance",
-    "dae.msak": "Sort de mélée",
-    "dae.rsak": "Sort à distance",
-    "dae.attack": "Attaque",
-    "dae.damage": "Dégâts",
-    "dae.heal": "Soins",
-    "dae.check": "Test",
-    "dae.save": "Sauvegarde",
-    "dae.saveBonusDE": "Sauvegarde",
-    "dae.value": "Valeur",
-    "dae.max": "Max",
-    "dae.proficient": "Maîtrise",
-    "dae.ability": "Caractéristique",
-    "dae.bonus": "Bonus",
-    "dae.success": "Réussite",
-    "dae.failure": "Échec",
-    "dae.sr": "Repos court",
-    "dae.lr": "Repos long",
-    "dae.primary": "Primaire",
-    "dae.secondary": "Secondaire",
-    "dae.tertiary": "Tertiaire",
-    "dae.alignment": "Alignement",
-    "dae.biography": "Biographie",
-    "dae.public": "Public",
-    "dae.race": "Race",
-    "dae.background": "Historique",
-    "dae.trait": "Trait",
-    "dae.ideal": "Idéal",
-    "dae.bond": "Lien",
-    "dae.flaw": "Défaut",
-    "dae.level": "Niveau",
-    "dae.hd": "Dés de vie",
-    "dae._deprecated": "<OBSOLÈTE>",
-    "dae.size": "Taille",
-    "dae.senses": "Sens",
-    "dae.blindsight": "Vision aveugle",
-    "dae.darkvision": "Vision dans le noir",
-    "dae.tremorsense": "Perception des vibrations",
-    "dae.truesight": "Vision véritable",
-    "dae.weaponProf": "Maîtrise d'arme",
-    "dae.armorProf": "Maîtrise d'armure",
-    "dae.toolProf": "Maîtrise d'outil",
-    "dae.spell0": "Emplacements de sorts N0",
-    "dae.spell1": "Emplacements de sorts N1",
-    "dae.spell2": "Emplacements de sorts N2",
-    "dae.spell3": "Emplacements de sorts N3",
-    "dae.spell4": "Emplacements de sorts N4",
-    "dae.spell5": "Emplacements de sorts N5",
-    "dae.spell6": "Emplacements de sorts N6",
-    "dae.spell7": "Emplacements de sorts N7",
-    "dae.spell8": "Emplacements de sorts N8",
-    "dae.spell9": "Emplacements de sorts N9",
-    "dae.pact": "Emplacements de magie de pacte",
-    "dae.Attuned": "Harmonisé",
-    "dae.Active": "Activé quand équipé",
-    "dae.Cursed": "Toujours activé",
-    "dae.Create": "Créer un objet",
-    "dae.Edit": "Modifier l'objet",
-    "dae.Delete": "Supprimer l'objet",
-    "dae.EffectTarget": "Cible de l'effet",
-    "dae.ActiveEffectName": "DAE",
-    "dae.TransferEffects": "Effets transférables",
-    "dae.NonTransferEffects": "Effets non transférables",
-    "dae.EffectMode": "Mode",
-    "dae.EffectValue": "Valeur",
-    "dae.label": "Libellé",
-    "dae.Title": "Effets",
-    "dae.Add": "Ajouter",
-    "dae.UpdateEffect": "Mettre à jour l'effet",
-    "dae.ItemEffectSelection": "Sélection d'effet d'objet",
-    "dae.noeffect": "Votre personnage n'a pas d'effet avec ce nom",
-    "dae.enabled": "Activé",
-    "dae.disabled": "Désactivé",
-    "dae.suppressed": "Supprimé",
-    "dae.tool_proficiency": "Maîtrise d'outil",
-    "dae.notTargetItem": "Cet objet n'a pas de cible spécifiée",
-    "dae.ConsumeCharge.Name": "Consommer une charge lors de l'activation passive",
-    "dae.ConsumeCharge.Hint": "Lors de l'activation d'un effet passif via togglePassiveEffect ou la carte de statut du tchat, n'active que si l'objet a des charges et consomme une charge",
-    "dae.noCharges": " non activé, plus de charges",
-    "dae.noSelection": "Aucun token/personnage sélectionné",
-    "dae.category": "Catégorie",
-    "dae.abilities": "Caractéristiques",
-    "dae.attributes": "Attributs",
-    "dae.bonuses": "Bonus",
-    "dae.resources": "Ressources",
-    "dae.currency": "Monnaie",
-    "dae.details": "Détails",
-    "dae.flags": "Drapeaux",
-    "dae.skills": "Compétences",
-    "dae.spells": "Sorts",
-    "dae.traits": "Traits",
-    "dae.min": "Min",
-    "dae.mod": "Modificateur",
-    "dae.total": "Total",
-    "dae.xp": "Points d'exp",
-    "dae.cp": "Cuivre",
-    "dae.sp": "Argent",
-    "dae.ep": "Électrum",
-    "dae.gp": "Or",
-    "dae.pp": "Platine",
-    "dae.initiativeHalfProf": "Init demi-maîtrise",
-    "dae.check_all": "Tous les tests de carac.",
-    "dae.spelldc": "DD de sort",
-    "dae.spelllevel": "Niveau de sort",
-    "dae.death": "Jet de sauvegarde contre la mort",
-    "dae.advantage": "Avantage",
-    "dae.exhaustion": "Épuisement",
-    "dae.temp": "Points de vie temporaires",
-    "dae.tempmax": "Points de vie temporaires max",
-    "dae.inspiration": "Inspiration",
-    "dae.special": "Spécial",
-    "dae.speed": "Vitesse",
-    "dae.spellcasting": "Incantation",
-    "dae.All-Attacks": "Tous les bonus d'attaque",
-    "dae.All-Damage": "Tous les bonus de dégâts",
-    "dae.skill": "Compétence",
-    "dae.spell": "Sort",
-    "dae.weapon": "Arme",
-    "dae.dc": "DD",
-    "dae.passive": "Passif",
-    "dae.custom": "Personnalisé",
-    "dae.all": "Tous",
-    "dae.ActiveItemSelect": "Objets à effet actif",
-    "dae.chooseitem": "Sélectionner un objet",
-    "dae.itemname": "Objet",
-    "dae.applyeffect": "Appliquer aux cibles",
-    "dae.unapplyeffect": "Retirer des cibles",
-    "dae.gm-notes": "Notes du MJ",
-    "dae.notes": "Notes",
-    "dae.playersCanSeeEffects.Name": "Permettre aux joueurs de voir les détails des effets",
-    "dae.playersCanSeeEffects.Hint": "Si désactivé, ne montre pas aux joueurs l'onglet des effets d'objet ou le résumé détaillé des effets passifs. Les joueurs de confiance peuvent modifier les effets",
-    "dae.tokenEffects.Name": "Activer les effets de token",
-    "dae.tokenEffects.Hint": "Permet des effets qui ciblent un token spécifique, ex. invisible, aveugle (fonctionnalité expérimentale)",
-    "dae.macro": "Macro",
-    "dae.macroRepeat": "Répétition de macro",
-    "dae.specialDuration": "Durée spéciale",
-    "dae.execute": "Exécuter",
-    "dae.GM": "MJ",
-    "dae.local": "Local",
-    "dae.actorUpdate": "Mise à jour de personnage",
-    "dae.itemMacro": "Macro d'objet",
-    "dae.override": "Remplacer",
-    "dae.forceCritical": "Dégâts critiques",
-    "dae.attackAdvantage": "Avantage à l'attaque",
-    "dae.conditions": "État",
-    "dae.calculateArmor.Name": "Calcul automatique de la classe d'armure",
-    "dae.calculateArmor.Hint": "Si vrai, les effets dynamiques calculeront automatiquement la CA à partir des armures/boucliers dans l'inventaire. D'autres objets peuvent toujours modifier la CA",
-    "dae.applyBaseAC.Name": "Calcul automatique de la CA de base",
-    "dae.applyBaseAC.Hint": "Si activé, les personnages (pas les PNJ) auront leur CA de base définie à 10 + mod. de dextérité",
-    "dae.applyingEffects": "Application des effets",
-    "dae.removingEffects": "Suppression des effets",
-    "dae.tokenMagic": "TokenMagic",
-    "dae.transfer.Name": "Appliquer l'effet au personnage",
-    "dae.transfer.Hint": "Activé signifie que l'effet est appliqué au propriétaire de l'objet quand l'objet est équipé. Désactivez si vous voulez que l'effet s'applique à une cible quand l'objet est utilisé",
-    "dae.effectName": "Nom de l'effet",
-    "dae.readOnly": "EFFET EN LECTURE SEULE",
-    "dae.legact": "Actions légendaires",
-    "dae.legres": "Résistance légendaire",
-    "dae.encumbrance": "Encombrement",
-    "dae.useAbilitySave.Name": "Utiliser le champ de sauvegarde de caractéristique pour les jets de sauvegarde",
-    "dae.useAbilitySave.Hint": "Par défaut, DND5e n'utilise que le modificateur de caractéristique. Activer cette option signifie que les jets de sauvegarde utiliseront le champ de sauvegarde et peuvent être modifiés via DAE",
-    "dae.Debug.Name": "Niveau de débogage à afficher",
-    "dae.Debug.Hint": "Affiche plus d'informations de débogage dans la console selon le paramètre aucun < avertissement < débogage < tout",
-    "dae.summaryFilter": "Résumé des effets",
-    "dae.enabledFilter": "Effets activés",
-    "dae.temporaryFilter": "Effets temporaires",
-    "dae.Priority": "Priorité",
-    "dae.Stackable": "Empilable",
-    "dae.EffectSheetLabel": "Feuille d'effet actif DAE",
-    "dae.confirm": "Dialogue de confirmation",
-    "dae.sure": "Êtes-vous sûr ?",
-    "dae.dae": "DAE",
-    "dae.movement": "Mouvement",
-    "dae.burrow": "Fouissement",
-    "dae.climb": "Escalade",
-    "dae.hover": "Vol stationnaire",
-    "dae.fly": "Vol",
-    "dae.swim": "Nage",
-    "dae.units": "Unités",
-    "dae.walk": "Marche",
-    "dae.diamondSoul": "Âme de diamant",
-    "dae.noGM": "Aucun client MJ connecté",
-    "dae.expireRealTime.Name": "Expirer les effets temporaires en temps réel",
-    "dae.expireRealTime.Hint": "Si activé et que about-time/times-up ne sont pas installés, les effets temporaires expireront en temps réel.",
-    "dae.isAttacked": "Est attaqué : expire si le personnage est attaqué",
-    "dae.isMoved": "Déplacé : expire quand le token est déplacé",
-    "dae.isDamaged": "Est blessé : expire si le personnage subit des dégâts",
-    "dae.isHealed": "Est soigné : expire si le personnage est soigné",
-    "dae.ZeroHP": "0 PV : expire si le personnage atteint 0 PV",
-    "dae.isHit": "Est touché : expire si le personnage est touché par une attaque d'arme/sort même si l'arme/sort ne fait pas de dégâts",
-    "dae.isHitCritical": "Est touché critique : expire si le personnage est touché par une attaque critique d'arme/sort",
-    "dae.isRollBase": "Expire si le personnage fait : ",
-    "dae.isSaveDetail": "un jet de sauvegarde",
-    "dae.isCheckDetail": "un test de caractéristique",
-    "dae.isSkillDetail": "un test de compétence",
-    "dae.isConcentrationSave": "un jet de sauvegarde de concentration",
-    "dae.isInitiativeDetail": "l'initiative",
-    "dae.1Action": "1 action : expire à la prochaine action (jet d'objet) du personnage",
-    "dae.Bonus Action": "Expire à la prochaine utilisation d'objet de type action bonus",
-    "dae.Reaction": "Expire à la prochaine utilisation d'objet de type réaction",
-    "dae.Turn Action": "Expire à la prochaine utilisation d'objet de type action",
-    "dae.1Attack": "1 attaque : expire à la prochaine attaque {type} du personnage",
-    "dae.1Spell": "1 sort : expire au prochain sort lancé (N'IMPORTE QUEL sort) par le personnage",
-    "dae.1Reaction": "1 réaction : expire après que l'attaque qui a déclenché la réaction est terminée",
-    "dae.1Hit": "1 toucher : expire au prochain toucher {type} du personnage",
-    "dae.1Critical": "1 critique : expire au prochain coup critique du personnage",
-    "dae.1Fumble": "1 échec : expire au prochain échec critique du personnage",
-    "dae.DamageDealt": "Dégâts infligés : expire quand le personnage inflige des dégâts",
-    "dae.turnStart": "Début de tour : expire au début du prochain tour de la cible (en combat)",
-    "dae.turnStartSource": "Début de tour : expire au début du prochain tour de l'acteur source (en combat)",
-    "dae.turnEnd": "Fin de tour : expire à la fin du prochain tour de la cible (en combat)",
-    "dae.turnEndSource": "Fin de tour : expire à la fin du prochain tour de l'acteur source (en combat)",
-    "dae.startEveryTurn": "Début de chaque tour : exécuter les macros d'effet au début du tour du personnage",
-    "dae.startEndEveryTurn": "Début et fin de chaque tour : exécuter les macros d'effet au début et à la fin du tour du personnage",
-    "dae.startEveryTurnAny": "Début de chaque tour : exécuter les macros d'effet au début du tour du personnage même si l'effet est désactivé",
-    "dae.startEndEveryTurnAny": "Début et fin de chaque tour : exécuter les macros d'effet au début et à la fin du tour du personnage même si l'effet est désactivé",
-    "dae.endEveryTurn": "Fin de chaque tour : exécuter les macros d'effet à la fin du tour du personnage",
-    "dae.endEveryTurnAny": "Fin de chaque tour : exécuter les macros d'effet à la fin du tour du personnage même si l'effet est désactivé",
-    "dae.ConditionalVisibility": "Visibilité conditionnelle",
-    "dae.ConditionalVisibilityVision": "Vision CV",
-    "dae.noDupDamageMacro.Name": "Pas de macros de dégâts en double",
-    "dae.noDupDamageMacro.Hint": "Si coché, les macros de dégâts en double seront ignorées",
-    "dae.DisableEffects.Name": "Désactiver tout traitement d'effet actif",
-    "dae.DisableEffects.Hint": "Si activé, aucun effet actif ne sera appliqué aux personnages. Utile si vous voulez modifier des valeurs de personnage qui sont modifiées par des effets actifs",
-    "dae.HandleEquip.Name": "Gérer les effets actifs d'équipement/déséquipement",
-    "dae.HandleEquip.Hint": "Si activé, DAE gérera l'activation/désactivation des effets actifs lors de l'équipement/déséquipement et activer/désactiver basculera l'équipement/déséquipement",
-    "dae.DAETitleBar.Name": "Barre de titre DAE",
-    "dae.DAETitleBar.Hint": "Afficher le bouton d'édition d'effet DAE dans la barre de titre",
-    "dae.DIMETitleBar.Name": "Barre de titre DIME",
-    "dae.DIMETitleBar.Hint": "Afficher l'éditeur de macro d'objet DAE dans la barre de titre",
-    "dae.DAEColorTitleBar.Name": "Barre de titre colorée DAE",
-    "dae.DAEColorTitleBar.Hint": "Appliquer une couleur au bouton d'édition d'effet DAE/bouton DIME, si des effets/macros d'objet sont présents dans le document (nécessite que Barre de titre DAE soit coché).",
-    "dae.DAENoTitleText.Name": "Juste une icône",
-    "dae.DAENoTitleText.Hint": "N'afficher que l'icône dans la barre de titre sinon icône + DAE",
-    "dae.StatusEffect": "Effet de statut",
-    "dae.ShowDeprecation.Name": "Afficher les erreurs d'obsolescence",
-    "dae.ShowDeprecation.Hint": "Afficher les erreurs d'obsolescence dans la console",
-    "dae.CE": "Effets pratiques",
-    "dae.CUB": "Ceinture utilitaire de combat",
-    "dae.ShowInline.Name": "Afficher les résultats des jets intégrés",
-    "dae.ShowInline.Hint": "Les effets avec un jet intégré afficheront les résultats du jet si activé",
-    "dae.StackableOptions": {
-      "noneName": "Les effets ne s'empilent pas par nom d'effet et origine d'effet",
-      "noneNameOnly": "Les effets ne s'empilent pas par nom d'effet",
-      "none": "Les effets ne s'empilent pas par origine d'effet",
-      "multi": "Les effets empilables appliquent l'effet plusieurs fois",
-      "count": "chaque pile augmente le compte de piles de 1",
-      "countDeleteDecrement": "appliquer augmente les piles de 1, supprimer diminue les piles de 1, retiré à 0 pile"
+  "dae.str": "Force",
+  "dae.dex": "Dextérité",
+  "dae.con": "Constitution",
+  "dae.wis": "Sagesse",
+  "dae.int": "Intelligence",
+  "dae.cha": "Charisme",
+  "dae.All_Modifiers/Checks": "Tests de caractéristique (Numérique)",
+  "dae.ac": "Classe d'armure",
+  "dae.hp": "PV",
+  "dae.di": "Immunité aux dégâts",
+  "dae.idi": "Ignorer l'immunité aux dégâts",
+  "dae.dr": "Résistance aux dégâts",
+  "dae.idr": "Ignorer la résistance aux dégâts",
+  "dae.dv": "Vulnérabilité aux dégâts",
+  "dae.idv": "Ignorer la vulnérabilité aux dégâts",
+  "dae.da": "Absorption des dégâts",
+  "dae.ida": "Ignorer l'absorption des dégâts",
+  "dae.ci": "Immunité aux états",
+  "dae.languages": "Langue",
+  "dae.Languages_All": "Toutes les langues",
+  "dae.acr": "Acrobaties",
+  "dae.ani": "Dressage",
+  "dae.arc": "Arcanes",
+  "dae.ath": "Athlétisme",
+  "dae.dec": "Tromperie",
+  "dae.his": "Histoire",
+  "dae.ins": "Intuition",
+  "dae.inv": "Investigation",
+  "dae.itm": "Intimidation",
+  "dae.med": "Médecine",
+  "dae.nat": "Nature",
+  "dae.per": "Persuasion",
+  "dae.prc": "Perception",
+  "dae.prf": "Représentation",
+  "dae.rel": "Religion",
+  "dae.slt": "Escamotage",
+  "dae.ste": "Discrétion",
+  "dae.sur": "Survie",
+  "dae.init": "Initiative",
+  "dae.spd": "Vitesse de déplacement (marche)",
+  "dae.Speed_Special": "Vitesse spéciale",
+  "dae.prof": "Maîtrise",
+  "dae.Strength_Attacks": "Attaques de Force",
+  "dae.Dexterity_Attacks": "Attaques de Dextérité",
+  "dae.Spell_Attacks": "Attaques de sort",
+  "dae.All_Skills": "Bonus aux tests de compétence (Numérique)",
+  "dae.All_Saves": "Jets de sauvegarde (Numérique)",
+  "dae.Initiative_Advantage": "Avantage à l'initiative",
+  "dae.Initiative_Alert": "Alerte (Initiative)",
+  "dae.InitiativeHalfProf": "Demi-maîtrise à l'initiative",
+  "dae.Powerful_Build": "Carrure imposante",
+  "dae.Savage_Attacks": "Attaques sauvages",
+  "dae.Spell_DC Bonus": "Bonus au DD de sort (Numérique)",
+  "dae.Critical_Hit Threshold": "Seuil de coup critique",
+  "dae.mwak": "Arme de corps à corps",
+  "dae.rwak": "Arme à distance",
+  "dae.msak": "Sort de corps à corps",
+  "dae.rsak": "Sort à distance",
+  "dae.attack": "Attaque",
+  "dae.damage": "Dégâts",
+  "dae.heal": "Soin",
+  "dae.check": "Test",
+  "dae.save": "Sauvegarde",
+  "dae.saveBonusDE": "Sauvegarde",
+  "dae.value": "Valeur",
+  "dae.max": "Max",
+  "dae.proficient": "Maîtrise",
+  "dae.ability": "Caractéristique",
+  "dae.bonus": "Bonus",
+  "dae.success": "Succès",
+  "dae.failure": "Échec",
+  "dae.sr": "Repos court",
+  "dae.lr": "Repos long",
+  "dae.primary": "Primaire",
+  "dae.secondary": "Secondaire",
+  "dae.tertiary": "Tertiaire",
+  "dae.alignment": "Alignement",
+  "dae.biography": "Biographie",
+  "dae.public": "Public",
+  "dae.race": "Race",
+  "dae.background": "Historique",
+  "dae.trait": "Trait",
+  "dae.ideal": "Idéal",
+  "dae.bond": "Lien",
+  "dae.flaw": "Défaut",
+  "dae.level": "Niveau",
+  "dae.hd": "Dés de vie",
+  "dae._deprecated": "<OBSOLÈTE>",
+  "dae.size": "Taille",
+  "dae.senses": "Sens",
+  "dae.blindsight": "Vision aveugle",
+  "dae.darkvision": "Vision dans le noir",
+  "dae.tremorsense": "Perception des vibrations",
+  "dae.truesight": "Vision véritable",
+  "dae.weaponProf": "Maîtrise des armes",
+  "dae.armorProf": "Maîtrise des armures",
+  "dae.toolProf": "Maîtrise des outils",
+  "dae.spell0": "Emplacements de sorts N0",
+  "dae.spell1": "Emplacements de sorts N1",
+  "dae.spell2": "Emplacements de sorts N2",
+  "dae.spell3": "Emplacements de sorts N3",
+  "dae.spell4": "Emplacements de sorts N4",
+  "dae.spell5": "Emplacements de sorts N5",
+  "dae.spell6": "Emplacements de sorts N6",
+  "dae.spell7": "Emplacements de sorts N7",
+  "dae.spell8": "Emplacements de sorts N8",
+  "dae.spell9": "Emplacements de sorts N9",
+  "dae.pact": "Emplacements de pacte magique",
+  "dae.Attuned": "Harmonisé",
+  "dae.Active": "Activé lorsque équipé",
+  "dae.Cursed": "Toujours activé",
+  "dae.Create": "Créer un objet",
+  "dae.Edit": "Modifier l'objet",
+  "dae.Delete": "Supprimer l'objet",
+  "dae.EffectTarget": "Cible de l'effet",
+  "dae.ActiveEffectName": "DAE",
+  "dae.TransferEffects": "Transférer les effets",
+  "dae.NonTransferEffects": "Effets non transférables",
+  "dae.EffectMode": "Mode",
+  "dae.EffectValue": "Valeur",
+  "dae.label": "Étiquette",
+  "dae.Title": "Effets",
+  "dae.Add": "Ajouter",
+  "dae.UpdateEffect": "Mettre à jour l'effet",
+  "dae.ItemEffectSelection": "Sélection d'effet d'objet",
+  "dae.noeffect": "Votre personnage n'a pas d'effet nommé",
+  "dae.enabled": "Activé",
+  "dae.disabled": "Désactivé",
+  "dae.suppressed": "Supprimé",
+  "dae.tool_proficiency": "Maîtrise des outils",
+  "dae.notTargetItem": "Cet objet n'a pas de cibles spécifiées",
+  "dae.ConsumeCharge.Name": "Consommer une charge à l'activation passive",
+  "dae.ConsumeCharge.Hint": "Lors de l'activation d'un effet passif via togglePassiveEffect ou la carte d'état du tchat, activer uniquement si l'objet a des charges et consommer une charge",
+  "dae.noCharges": " non activé, plus de charges restantes",
+  "dae.noSelection": "Aucun Token/Acteur sélectionné",
+  "dae.category": "Catégorie",
+  "dae.abilities": "Caractéristiques",
+  "dae.attributes": "Attributs",
+  "dae.bonuses": "Bonus",
+  "dae.resources": "Ressources",
+  "dae.currency": "Monnaie",
+  "dae.details": "Détails",
+  "dae.flags": "Indicateurs (Flags)",
+  "dae.skills": "Compétences",
+  "dae.spells": "Sorts",
+  "dae.traits": "Traits",
+  "dae.min": "Min",
+  "dae.mod": "Modificateur",
+  "dae.total": "Total",
+  "dae.xp": "Pts Exp",
+  "dae.cp": "Cuivre",
+  "dae.sp": "Argent",
+  "dae.ep": "Électrum",
+  "dae.gp": "Or",
+  "dae.pp": "Platine",
+  "dae.initiativeHalfProf": "Init Demi Maîtrise",
+  "dae.check_all": "Tous Tests Carac.",
+  "dae.spelldc": "DD de sort",
+  "dae.spelllevel": "Niveau de sort",
+  "dae.death": "Jet de sauvegarde contre la mort",
+  "dae.advantage": "Avantage",
+  "dae.exhaustion": "Épuisement",
+  "dae.temp": "PV Temp",
+  "dae.tempmax": "PV Temp Max",
+  "dae.inspiration": "Inspiration",
+  "dae.special": "Spécial",
+  "dae.speed": "Vitesse",
+  "dae.spellcasting": "Incantation",
+  "dae.All-Attacks": "Tous les bonus d'attaque",
+  "dae.All-Damage": "Tous les bonus de dégâts",
+  "dae.skill": "Compétence",
+  "dae.spell": "Sort",
+  "dae.weapon": "Arme",
+  "dae.dc": "DD",
+  "dae.passive": "Passif",
+  "dae.custom": "Personnalisé",
+  "dae.all": "Tout",
+  "dae.ActiveItemSelect": "Objets à effet actif",
+  "dae.chooseitem": "Sélectionner l'objet",
+  "dae.itemname": "Objet",
+  "dae.applyeffect": "Appliquer aux cibles",
+  "dae.unapplyeffect": "Retirer des cibles",
+  "dae.gm-notes": "Notes MJ",
+  "dae.notes": "Notes",
+  "dae.playersCanSeeEffects.Name": "Autoriser les joueurs à voir les détails des effets",
+  "dae.playersCanSeeEffects.Hint": "Si désactivé, ne pas montrer aux joueurs l'onglet des effets d'objet ni le résumé détaillé des effets pour les objets passifs. Les joueurs FIABLES peuvent modifier les effets",
+  "dae.tokenEffects.Name": "Activer les effets de Token",
+  "dae.tokenEffects.Hint": "Permet des effets qui ciblent un Token spécifique, par ex. invisible, aveuglé (fonctionnalité expérimentale)",
+  "dae.macro": "Macro",
+  "dae.macroRepeat": "Répétition de macro",
+  "dae.specialDuration": "Durée spéciale",
+  "dae.execute": "Exécuter",
+  "dae.GM": "MJ",
+  "dae.local": "Local",
+  "dae.actorUpdate": "Mise à jour de l'acteur",
+  "dae.itemMacro": "Macro d'objet",
+  "dae.override": "Outrepasser",
+  "dae.forceCritical": "Dégâts critiques",
+  "dae.attackAdvantage": "Avantage à l'attaque",
+  "dae.conditions": "État",
+  "dae.calculateArmor.Name": "Calculer automatiquement la classe d'armure",
+  "dae.calculateArmor.Hint": "Si vrai, les effets dynamiques calculeront automatiquement la CA à partir des armures/boucliers dans l'inventaire. D'autres objets peuvent toujours modifier la CA",
+  "dae.applyBaseAC.Name": "Calcul auto CA de base",
+  "dae.applyBaseAC.Hint": "Si défini, les personnages (pas les PNJ) auront leur CA de base définie à 10 + mod. Dex.",
+  "dae.applyingEffects": "Application des effets",
+  "dae.removingEffects": "Retrait des effets",
+  "dae.tokenMagic": "TokenMagic",
+  "dae.transfer.Name": "Appliquer l'effet à l'acteur",
+  "dae.transfer.Hint": "Activé signifie que l'effet est appliqué au propriétaire de l'objet lorsque l'objet est équipé. Désactiver si vous voulez que l'effet s'applique à une cible lorsque l'objet est utilisé",
+  "dae.effectName": "Nom de l'effet",
+  "dae.readOnly": "EFFET EN LECTURE SEULE",
+  "dae.legact": "Actions légendaires",
+  "dae.legres": "Résistance légendaire",
+  "dae.encumbrance": "Encombrement",
+  "dae.useAbilitySave.Name": "Utiliser le champ de sauvegarde de caractéristique lors des jets de sauvegarde",
+  "dae.useAbilitySave.Hint": "Par défaut, DND5e utilise uniquement le modificateur de caractéristique. Activer cette option signifie que les jets de sauvegarde utiliseront le champ de sauvegarde et pourront être modifiés via DAE",
+  "dae.Debug.Name": "Quantité de débogage à afficher",
+  "dae.Debug.Hint": "Afficher plus de débogage dans la console selon le réglage : aucun < avertissement < débogage < tout",
+  "dae.summaryFilter": "Résumé des effets",
+  "dae.enabledFilter": "Effets activés",
+  "dae.temporaryFilter": "Effets temporaires",
+  "dae.Priority": "Priorité",
+  "dae.Stackable": "Cumulable",
+  "dae.EffectSheetLabel": "Feuille d'effet actif DAE",
+  "dae.confirm": "Boîte de confirmation",
+  "dae.sure": "Êtes-vous sûr ?",
+  "dae.dae": "DAE",
+  "dae.movement": "Déplacement",
+  "dae.burrow": "Creusement",
+  "dae.climb": "Escalade",
+  "dae.hover": "Vol stationnaire",
+  "dae.fly": "Vol",
+  "dae.swim": "Nage",
+  "dae.units": "Unités",
+  "dae.walk": "Marche",
+  "dae.diamondSoul": "Âme de diamant",
+  "dae.noGM": "Aucun client MJ connecté",
+  "dae.expireRealTime.Name": "Faire expirer les effets temporaires en temps réel",
+  "dae.expireRealTime.Hint": "Si activé et que about-time/times-up ne sont pas installés, les effets temporaires expireront en temps réel.",
+  "dae.isAttacked": "Est attaqué : Expire si le personnage est attaqué",
+  "dae.isMoved": "Déplacé : Expire lorsque le token est déplacé",
+  "dae.isDamaged": "Est blessé : Expire si le personnage subit des dégâts",
+  "dae.isHealed": "Est soigné : Expire si le personnage est soigné",
+  "dae.ZeroHP": "Zéro PV : Expire si le personnage atteint 0 PV",
+  "dae.isHit": "Est touché : Expire si le personnage est touché par une attaque d'arme/sort, même si l'arme/sort ne cause pas de dégâts",
+  "dae.isHitCritical": "Est touché (Critique) : Expire si le personnage est touché par une attaque critique d'arme/sort",
+  "dae.isRollBase": "Expire si le personnage lance : ",
+  "dae.isSaveDetail": "jet de sauvegarde",
+  "dae.isCheckDetail": "test de caractéristique",
+  "dae.isSkillDetail": "test de compétence",
+  "dae.isConcentrationSave": "Jet de sauvegarde de concentration",
+  "dae.isInitiativeDetail": "initiative",
+  "dae.1Action": "1 Action : Expire à la prochaine action (utilisation d'objet) du personnage",
+  "dae.Bonus Action": "Expire à la prochaine utilisation d'objet ayant un type d'activation Action bonus",
+  "dae.Reaction": "Expire à la prochaine utilisation d'objet ayant un type d'activation Réaction",
+  "dae.Turn Action": "Expire à la prochaine utilisation d'objet ayant un type d'activation Action",
+  "dae.1Attack": "1 Attaque : Expire à la prochaine {type} par le personnage",
+  "dae.1Spell": "1 Sort : Expire au prochain sort lancé (N'IMPORTE QUEL sort) par le personnage",
+  "dae.1Reaction": "1 Réaction : Expire après que l'attaque ayant déclenché la réaction est terminée",
+  "dae.1Hit": "1 Touche : Expire à la prochaine touche {type} par le personnage",
+  "dae.1Critical": "1 Critique : Expire au prochain coup critique par le personnage",
+  "dae.1Fumble": "1 Échec critique : Expire au prochain échec critique par le personnage",
+  "dae.DamageDealt": "Dégâts infligés : Expire lorsque le personnage inflige des dégâts",
+  "dae.turnStart": "Début du tour : Expire au début du prochain tour de la cible (en combat)",
+  "dae.turnStartSource": "Début du tour : Expire au début du prochain tour de l'acteur source (en combat)",
+  "dae.turnEnd": "Fin du tour : Expire à la fin du prochain tour de la cible (en combat)",
+  "dae.turnEndSource": "Fin du tour : Expire à la fin du prochain tour de l'acteur source (en combat)",
+  "dae.startEveryTurn": "Début de chaque tour : Exécute les macros d'effet au début du tour du personnage",
+  "dae.startEndEveryTurn": "Début et Fin de chaque tour : Exécute les macros d'effet au début et à la fin du tour du personnage",
+  "dae.startEveryTurnAny": "Début de chaque tour : Exécute les macros d'effet au début du tour du personnage même si l'effet est désactivé",
+  "dae.startEndEveryTurnAny": "Début et fin de chaque tour : Exécute les macros d'effet au début et à la fin du tour du personnage même si l'effet est désactivé",
+  "dae.endEveryTurn": "Fin de chaque tour : Exécute les macros d'effet à la fin du tour du personnage",
+  "dae.endEveryTurnAny": "Fin de chaque tour : Exécute les macros d'effet à la fin du tour du personnage même si l'effet est désactivé",
+  "dae.ConditionalVisibility": "Visibilité conditionnelle",
+  "dae.ConditionalVisibilityVision": "Vision VC",
+  "dae.noDupDamageMacro.Name": "Pas de macros de dégâts dupliquées",
+  "dae.noDupDamageMacro.Hint": "Si coché, les macros de dégâts dupliquées seront ignorées",
+  "dae.DisableEffects.Name": "Désactiver tout le traitement des effets actifs",
+  "dae.DisableEffects.Hint": "Si défini, aucun effet actif ne sera appliqué aux personnages. Utile si vous voulez changer les valeurs du personnage qui sont modifiées par les effets actifs",
+  "dae.HandleEquip.Name": "Gérer les effets actifs d'équipement/déséquipement d'objet",
+  "dae.HandleEquip.Hint": "Si défini, DAE gérera l'activation/désactivation des effets actifs lors de l'équipement/déséquipement et le basculement actif basculera l'équipement/déséquipement",
+  "dae.DAETitleBar.Name": "Barre de titre DAE",
+  "dae.DAETitleBar.Hint": "Afficher le bouton de l'éditeur d'effets DAE dans la barre de titre",
+  "dae.DIMETitleBar.Name": "Barre de titre DIME",
+  "dae.DIMETitleBar.Hint": "Afficher l'éditeur de macro d'objet DAE dans la barre de titre",
+  "dae.DAEColorTitleBar.Name": "Barre de titre colorée DAE",
+  "dae.DAEColorTitleBar.Hint": "Appliquer une couleur au bouton de l'éditeur d'effets DAE/bouton DIME, si des effets/macros d'objet sont présents dans le document (Nécessite Barre de titre DAE cochée).",
+  "dae.DAENoTitleText.Name": "Juste l'icône",
+  "dae.DAENoTitleText.Hint": "Afficher seulement l'icône clé à molette dans la barre de titre, sinon icône + DAE",
+  "dae.StatusEffect": "Effet d'état",
+  "dae.ShowDeprecation.Name": "Afficher les erreurs d'obsolescence",
+  "dae.ShowDeprecation.Hint": "Afficher les erreurs d'obsolescence dans la console",
+  "dae.CE": "Convenient Effects",
+  "dae.CUB": "Combat Utility Belt",
+  "dae.ShowInline.Name": "Afficher les résultats des jets 'inline'",
+  "dae.ShowInline.Hint": "Les effets avec un jet 'inline' afficheront les résultats du jet si activé",
+  "dae.StackableOptions": {
+    "noneName": "Les effets ne se cumulent pas par nom d'effet et origine d'effet",
+    "noneNameOnly": "Les effets ne se cumulent pas par nom d'effet",
+    "none": "Les effets ne se cumulent pas par origine d'effet",
+    "multi": "Les effets cumulables appliquent l'effet plusieurs fois",
+    "count": "chaque cumul augmente le compteur de 1",
+    "countDeleteDecrement": "appliquer augmente les cumuls de 1, supprimer diminue les cumuls de 1, retiré à 0 cumuls"
+  },
+  "dae.SW5EHint": "Note pour les traducteurs - Les chaînes suivantes sont UNIQUEMENT requises pour le système SW5E",
+  "dae.SW5E": "sw5e",
+  "dae.force": "Force",
+  "dae.tech": "Tech",
+  "dae.known": "Pouvoirs connus",
+  "dae.points": "Points",
+  "dae.powers": "Pouvoirs",
+  "dae.power": "Pouvoir",
+  "dae.power0": "Emplacements de pouvoir N0",
+  "dae.power1": "Emplacements de pouvoir N1",
+  "dae.power2": "Emplacements de pouvoir N2",
+  "dae.power3": "Emplacements de pouvoir N3",
+  "dae.power4": "Emplacements de pouvoir N4",
+  "dae.power5": "Emplacements de pouvoir N5",
+  "dae.power6": "Emplacements de pouvoir N6",
+  "dae.power7": "Emplacements de pouvoir N7",
+  "dae.power8": "Emplacements de pouvoir N8",
+  "dae.power9": "Emplacements de pouvoir N9",
+  "dae.mpak": "Pouvoir de corps à corps",
+  "dae.rpak": "Pouvoir à distance",
+  "dae.gc": "Crédits",
+  "dae.species": "Espèce",
+  "dae.forceDarkDC": "DD Pouvoir de Force Obscur",
+  "dae.forceLightDC": "DD Pouvoir de Force Lumineux",
+  "dae.forceUnivDC": "DD Pouvoir de Force Universel",
+  "dae.techDC": "DD Pouvoir Tech",
+  "dae.fmax": "Force Max",
+  "dae.fvalue": "Valeur de Force",
+  "dae.foverride": "Outrepasser Force",
+  "dae.tmax": "Tech Max",
+  "dae.tvalue": "Valeur Tech",
+  "dae.toverride": "Outrepasser Tech",
+  "dae.lor": "Connaissance",
+  "dae.pil": "Pilotage",
+  "dae.tec": "Technologie",
+  "dae.powerForceLevel": "Niveau de Pouvoir de Force",
+  "dae.forceToHud.Name": "Affichage Force sur token",
+  "dae.forceToHud.Hint": "Si non vide, définir l'icône pour l'effet affiché sur le token indépendamment de la durée",
+  "dae.DurationExpression": "Expression de jet en secondes pour la durée de l'effet",
+  "dae.not-reflected": "Effet d'objet sauvegardé. Ces changements ne seront pas reflétés dans l'effet transféré originalement.",
+  "dae.not-transferred": "Effet d'objet sauvegardé. Définir l'effet d'un objet possédé comme Transférable ne transférera pas automatiquement l'effet.",
+  "dae.ATLHint": "Note pour les traducteurs, ceci n'est requis que pour Active Token Lighting",
+  "dae.ATL": "ATL",
+  "dae.dimLight": "Lumière faible",
+  "dae.brightLight": "Lumière vive",
+  "dae.light": "Lumière",
+  "dae.bright": "Vive",
+  "dae.dim": "Faible",
+  "dae.color": "Couleur de lumière",
+  "dae.animation": "Animation",
+  "dae.alpha": "Alpha",
+  "dae.angle": "Angle",
+  "dae.dimSight": "Vision faible",
+  "dae.brightSight": "Vision vive",
+  "dae.sightAngle": "Angle de vision",
+  "dae.lightColor": "Couleur de lumière",
+  "dae.lightAnimation": "Animation de lumière",
+  "dae.lightAlpha": "Alpha de lumière",
+  "dae.lightAngle": "Angle de lumière",
+  "dae.DAEUntestedSystems.Name": "Charger DAE pour les systèmes de jeu non testés",
+  "dae.DAEUntestedSystems.Hint": "Si coché, DAE se chargera pour tout système non marqué compatible. Si décoché, DAE ne se chargera que pour les systèmes marqués compatibles. Nécessite un rechargement",
+  "dae.SelfTarget.Name": "Appliquer à soi-même quand l'objet applique des effets de cible",
+  "dae.SelfTarget.Hint": "L'effet est appliqué à l'utilisateur de l'objet, pas aux cibles si l'objet applique des effets aux cibles",
+  "dae.SelfTargetAlways.Name": "Appliquer à soi-même quand l'objet est utilisé",
+  "dae.SelfTargetAlways.Hint": "L'effet est appliqué à l'utilisateur de l'objet, pas aux cibles, chaque fois que l'objet est utilisé",
+  "dae.ShowIcon.Name": "Toujours afficher l'icône d'effet",
+  "dae.ShowIcon.Hint": "Afficher l'icône d'effet sur le token et l'affichage de combat",
+  "dae.DontApply.Name": "Ne pas appliquer l'effet",
+  "dae.DontApply.Hint": "Quand DAE (et midi) applique des effets actifs, sauter celui-ci",
+  "dae.DIMEditor.Name": "DIME",
+  "dae.IncapacitatedDisabled": "Effet désactivé si l'acteur est incapable d'agir",
+  "dae.DIMESyncItemacro.Name": "Synchroniser DIME et Itemacro",
+  "dae.DIMESyncItemacro.Hint": "Coché signifie que la macro DIME et la macro Itemacro seront synchronisées - vous pouvez éditer avec l'un ou l'autre. Décoché, l'éditeur DIME aura la priorité.",
+  "dae.halfHealthEffectLabel": "Moitié de vie",
+  "dae.DAEAddHalfHealthEffect.Name": "Ajouter l'effet Moitié de vie",
+  "dae.DAEAddHalfHealthEffect.Hint": "Ajouter un effet d'état Moitié de vie pour définir les points de vie maximum de l'acteur à la moitié de son maximum normal",
+  "dae.TabChanges": "Modifications",
+  "dae.DisableCondition": "Une expression qui, si vraie, désactivera l'effet",
+  "dae.EnableCondition": "Une expression qui, si fausse, retirera l'effet de l'acteur",
+  "dae.ConditionalEffectsItem": "DAEConditionalEffects",
+  "dae.IconTint": "Teinte d'icône",
+  "dae.IconOverlay.Name": "Superposition d'icône",
+  "dae.IconOverlay.Hint": "Afficher l'icône d'état de l'effet en superposition",
+  "dae.DependentConditions.Name": "États dépendants",
+  "dae.DependentConditions.Hint": "Les effets d'état (empoisonné/paralysé) ajouteront également des états dépendants comme incapacité d'agir.",
+  "__Comment__": "Les chaînes suivantes sont pour le système DAE. La traduction est optionnelle",
+  "dae.fieldData": {
+    "fieldCategories.All": "Tout",
+    "fieldCategories.D&D5E": "D&D5E",
+    "fieldCategories.Macros": "Macros",
+    "fieldCategories.MidiQOL": "MidiQOL",
+    "fieldCategories.SystemAbilities": "Système : Caractéristiques",
+    "fieldCategories.SystemSkills": "Système : Compétences",
+    "fieldCategories.SystemAttributes": "Système : Attributs",
+    "fieldCategories.SystemBonuses": "Système : Bonus",
+    "fieldCategories.SystemTraits": "Système : Traits",
+    "fieldCategories.Other": "Autre",
+    "fieldCategories.SystemResources": "Système : Ressources",
+    "fieldCategories.SystemCurrency": "Système : Monnaie",
+    "fieldCategories.SystemDetails": "Système : Détails",
+    "fieldCategories.SystemFlags": "Système : Indicateurs"
+  },
+  "dae.D&D5E.fieldData": {
+    "flags.dnd5e.DamageBonusMacro": {
+      "name": "Macros de bonus de dégâts",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.SW5EHint": "Note pour les traducteurs - Les chaînes suivantes sont UNIQUEMENT requises pour le système SW5E",
-    "dae.SW5E": "sw5e",
-    "dae.force": "Force",
-    "dae.tech": "Technologie",
-    "dae.known": "Pouvoirs connus",
-    "dae.points": "Points",
-    "dae.powers": "Pouvoirs",
-    "dae.power": "Pouvoir",
-    "dae.power0": "Emplacements de pouvoir N0",
-    "dae.power1": "Emplacements de pouvoir N1",
-    "dae.power2": "Emplacements de pouvoir N2",
-    "dae.power3": "Emplacements de pouvoir N3",
-    "dae.power4": "Emplacements de pouvoir N4",
-    "dae.power5": "Emplacements de pouvoir N5",
-    "dae.power6": "Emplacements de pouvoir N6",
-    "dae.power7": "Emplacements de pouvoir N7",
-    "dae.power8": "Emplacements de pouvoir N8",
-    "dae.power9": "Emplacements de pouvoir N9",
-    "dae.mpak": "Pouvoir de mélée",
-    "dae.rpak": "Pouvoir à distance",
-    "dae.gc": "Crédits",
-    "dae.species": "Espèce",
-    "dae.forceDarkDC": "DD de pouvoir de force obscure",
-    "dae.forceLightDC": "DD de pouvoir de force lumineuse",
-    "dae.forceUnivDC": "DD de pouvoir de force universelle",
-    "dae.techDC": "DD de pouvoir technologique",
-    "dae.fmax": "Force max",
-    "dae.fvalue": "Valeur de force",
-    "dae.foverride": "Remplacement de force",
-    "dae.tmax": "Technologie max",
-    "dae.tvalue": "Valeur de technologie",
-    "dae.toverride": "Remplacement de technologie",
-    "dae.lor": "Savoir",
-    "dae.pil": "Pilotage",
-    "dae.tec": "Technologie",
-    "dae.powerForceLevel": "Niveau de pouvoir de force",
-    "dae.forceToHud.Name": "Affichage de la force sur le token",
-    "dae.forceToHud.Hint": "Si non vide, l'icône de l'effet sera affichée sur le token quelle que soit la durée",
-    "dae.DurationExpression": "Expression de jet en secondes pour la durée de l'effet",
-    "dae.not-reflected": "Effet d'objet sauvegardé. Ces changements ne seront pas reflétés dans l'effet transféré original.",
-    "dae.not-transferred": "Effet d'objet sauvegardé. Définir un effet d'objet possédé comme transférable ne transférera pas automatiquement l'effet.",
-    "dae.ATLHint": "Note pour les traducteurs, ceux-ci ne sont requis que pour Active Token Lighting",
-    "dae.ATL": "ATL",
-    "dae.dimLight": "Lumière faible",
-    "dae.brightLight": "Lumière vive",
-    "dae.light": "Lumière",
-    "dae.bright": "Vif",
-    "dae.dim": "Faible",
-    "dae.color": "Couleur de lumière",
-    "dae.animation": "Animation",
-    "dae.alpha": "Alpha",
-    "dae.angle": "Angle",
-    "dae.dimSight": "Vision faible",
-    "dae.brightSight": "Vision vive",
-    "dae.sightAngle": "Angle de vision",
-    "dae.lightColor": "Couleur de lumière",
-    "dae.lightAnimation": "Animation de lumière",
-    "dae.lightAlpha": "Alpha de lumière",
-    "dae.lightAngle": "Angle de lumière",
-    "dae.DAEUntestedSystems.Name": "Charger DAE pour les systèmes non testés",
-    "dae.DAEUntestedSystems.Hint": "Si coché, DAE se chargera pour tout système non marqué comme compatible. Si décoché, DAE ne se chargera que pour les systèmes marqués comme compatibles. Nécessite un rechargement",
-    "dae.SelfTarget.Name": "S'appliquer à soi quand l'objet applique des effets aux cibles",
-    "dae.SelfTarget.Hint": "L'effet est appliqué à l'utilisateur de l'objet, pas aux cibles si l'objet applique des effets aux cibles",
-    "dae.SelfTargetAlways.Name": "S'appliquer à soi quand l'objet est lancé",
-    "dae.SelfTargetAlways.Hint": "L'effet est appliqué à l'utilisateur de l'objet, pas aux cibles quand l'objet est lancé",
-    "dae.ShowIcon.Name": "Toujours afficher l'icône d'effet",
-    "dae.ShowIcon.Hint": "Afficher l'icône d'effet sur le token et l'affichage de combat",
-    "dae.DontApply.Name": "Ne pas appliquer l'effet",
-    "dae.DontApply.Hint": "Quand DAE (et midi) applique des effets actifs, ignorer celui-ci",
-    "dae.DIMEditor.Name": "DIME",
-    "dae.IncapacitatedDisabled": "Effet désactivé si l'acteur est incapacité",
-    "dae.DIMESyncItemacro.Name": "Synchroniser DIME et Itemacro",
-    "dae.DIMESyncItemacro.Hint": "Coché signifie que la macro DIME et la macro Itemacro seront synchronisées - vous pouvez éditer avec les deux. Décocher donne la priorité à l'éditeur DIME.",
-    "dae.halfHealthEffectLabel": "Moitié de vie",
-    "dae.DAEAddHalfHealthEffect.Name": "Ajouter un effet de moitié de vie",
-    "dae.DAEAddHalfHealthEffect.Hint": "Ajouter un effet de statut de moitié de vie pour définir les points de vie max de l'acteur à la moitié de son maximum normal",
-    "dae.TabChanges": "Changements",
-    "dae.DisableCondition": "Une expression qui, si vraie, désactivera l'effet",
-    "dae.EnableCondition": "Une expression qui, si fausse, retirera l'effet de l'acteur",
-    "dae.ConditionalEffectsItem": "DAEConditionalEffects",
-    "dae.IconTint": "Teinte d'icône",
-    "dae.IconOverlay.Name": "Superposition d'icône",
-    "dae.IconOverlay.Hint": "Afficher l'icône de statut d'effet comme superposition",
-    "dae.DependentConditions.Name": "États dépendants",
-    "dae.DependentConditions.Hint": "Les effets de statut (empoisonné/paralysé) ajouteront aussi des états dépendants comme incapacité.",
-    "__Comment__": "Les chaînes suivantes sont pour le système DAE. La traduction est optionnelle",
-    "dae.fieldData": {
-      "fieldCategories.All": "Tous",
-      "fieldCategories.D&D5E": "D&D5E",
-      "fieldCategories.Macros": "Macros",
-      "fieldCategories.MidiQOL": "MidiQOL",
-      "fieldCategories.SystemAbilities": "Système : Caractéristiques",
-      "fieldCategories.SystemSkills": "Système : Compétences",
-      "fieldCategories.SystemAttributes": "Système : Attributs",
-      "fieldCategories.SystemBonuses": "Système : Bonus",
-      "fieldCategories.SystemTraits": "Système : Traits",
-      "fieldCategories.Other": "Autre",
-      "fieldCategories.SystemResources": "Système : Ressources",
-      "fieldCategories.SystemCurrency": "Système : Monnaie",
-      "fieldCategories.SystemDetails": "Système : Détails",
-      "fieldCategories.SystemFlags": "Système : Drapeaux"
+    "flags.dnd5e.diamondSoul": {
+      "name": "Âme de diamant",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.D&D5E.fieldData": {
-      "flags.dnd5e.DamageBonusMacro": {
-        "name": "Macros de bonus de dégâts",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.diamondSoul": {
-        "name": "Âme de diamant",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.elvenAccuracy": {
-        "name": "Précision elfique",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.halflingLucky": {
-        "name": "Chance des halfelins",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.initiativeAdv": {
-        "name": "Avantage à l'initiative",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.initiativeAlert": {
-        "name": "Don d'alerte",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.initiativeDisadv": {
-        "name": "Désavantage à l'initiative",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.initiativeHalfProficiency": {
-        "name": "Demi-maîtrise pour l'initiative",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.jackOfAllTrades": {
-        "name": "Touche-à-tout",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.meleeCriticalDamageDice": {
-        "name": "Dés de dégâts critiques en mélée",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.observantFeat": {
-        "name": "Don d'observateur",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.powerfulBuild": {
-        "name": "Corpulence puissante",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.reliableTalent": {
-        "name": "Talent fiable",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.remarkableAthlete": {
-        "name": "Athlète remarquable",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.spellCriticalThreshold": {
-        "name": "Seuil de coup critique pour les sorts",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.spellSniper": {
-        "name": "Tireur de sorts",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.tavernBrawlerFeat": {
-        "name": "Don de bagarreur de taverne",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      },
-      "flags.dnd5e.weaponCriticalThreshold": {
-        "name": "Seuil de coup critique pour les armes",
-        "description": "Voir \"Traits spéciaux\" pour les détails."
-      }
+    "flags.dnd5e.elvenAccuracy": {
+      "name": "Précision elfique",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.SystemAbilities.fieldData": {
-      "system.abilities.cha.bonuses.check": {
-        "name": "Bonus au test de charisme"
-      },
-      "system.abilities.cha.bonuses.save": {
-        "name": "Bonus au jet de sauvegarde de charisme"
-      },
-      "system.abilities.cha.dc": {
-        "name": "DD de sauvegarde de charisme"
-      },
-      "system.abilities.cha.max": {
-        "name": "Score max de charisme"
-      },
-      "system.abilities.cha.mod": {
-        "name": "Modificateur de charisme"
-      },
-      "system.abilities.cha.proficient": {
-        "name": "Maîtrise de sauvegarde de charisme",
-        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
-      },
-      "system.abilities.cha.save": {
-        "name": "Modificateur de sauvegarde de charisme"
-      },
-      "system.abilities.cha.value": {
-        "name": "Score de charisme"
-      },
-      "system.abilities.con.bonuses.check": {
-        "name": "Bonus au test de constitution"
-      },
-      "system.abilities.con.bonuses.save": {
-        "name": "Bonus au jet de sauvegarde de constitution"
-      },
-      "system.abilities.con.dc": {
-        "name": "DD de sauvegarde de constitution"
-      },
-      "system.abilities.con.max": {
-        "name": "Score max de constitution"
-      },
-      "system.abilities.con.mod": {
-        "name": "Modificateur de constitution"
-      },
-      "system.abilities.con.proficient": {
-        "name": "Maîtrise de sauvegarde de constitution",
-        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
-      },
-      "system.abilities.con.save": {
-        "name": "Modificateur de sauvegarde de constitution"
-      },
-      "system.abilities.con.value": {
-        "name": "Score de constitution"
-      },
-      "system.abilities.dex.bonuses.check": {
-        "name": "Bonus au test de dextérité"
-      },
-      "system.abilities.dex.bonuses.save": {
-        "name": "Bonus au jet de sauvegarde de dextérité"
-      },
-      "system.abilities.dex.dc": {
-        "name": "DD de sauvegarde de dextérité"
-      },
-      "system.abilities.dex.max": {
-        "name": "Score max de dextérité"
-      },
-      "system.abilities.dex.mod": {
-        "name": "Modificateur de dextérité"
-      },
-      "system.abilities.dex.proficient": {
-        "name": "Maîtrise de sauvegarde de dextérité",
-        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
-      },
-      "system.abilities.dex.save": {
-        "name": "Modificateur de sauvegarde de dextérité"
-      },
-      "system.abilities.dex.value": {
-        "name": "Score de dextérité"
-      },
-      "system.abilities.int.bonuses.check": {
-        "name": "Bonus au test d'intelligence"
-      },
-      "system.abilities.int.bonuses.save": {
-        "name": "Bonus au jet de sauvegarde d'intelligence"
-      },
-      "system.abilities.int.dc": {
-        "name": "DD de sauvegarde d'intelligence"
-      },
-      "system.abilities.int.max": {
-        "name": "Score max d'intelligence"
-      },
-      "system.abilities.int.mod": {
-        "name": "Modificateur d'intelligence"
-      },
-      "system.abilities.int.proficient": {
-        "name": "Maîtrise de sauvegarde d'intelligence",
-        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
-      },
-      "system.abilities.int.save": {
-        "name": "Modificateur de sauvegarde d'intelligence"
-      },
-      "system.abilities.int.value": {
-        "name": "Score d'intelligence"
-      },
-      "system.abilities.str.bonuses.check": {
-        "name": "Bonus au test de force"
-      },
-      "system.abilities.str.bonuses.save": {
-        "name": "Bonus au jet de sauvegarde de force"
-      },
-      "system.abilities.str.dc": {
-        "name": "DD de sauvegarde de force"
-      },
-      "system.abilities.str.max": {
-        "name": "Score max de force"
-      },
-      "system.abilities.str.mod": {
-        "name": "Modificateur de force"
-      },
-      "system.abilities.str.proficient": {
-        "name": "Maîtrise de sauvegarde de force",
-        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
-      },
-      "system.abilities.str.save": {
-        "name": "Modificateur de sauvegarde de force"
-      },
-      "system.abilities.str.value": {
-        "name": "Score de force"
-      },
-      "system.abilities.wis.bonuses.check": {
-        "name": "Bonus au test de sagesse"
-      },
-      "system.abilities.wis.bonuses.save": {
-        "name": "Bonus au jet de sauvegarde de sagesse"
-      },
-      "system.abilities.wis.dc": {
-        "name": "DD de sauvegarde de sagesse"
-      },
-      "system.abilities.wis.max": {
-        "name": "Score max de sagesse"
-      },
-      "system.abilities.wis.mod": {
-        "name": "Modificateur de sagesse"
-      },
-      "system.abilities.wis.proficient": {
-        "name": "Maîtrise de sauvegarde de sagesse",
-        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
-      },
-      "system.abilities.wis.save": {
-        "name": "Modificateur de sauvegarde de sagesse"
-      },
-      "system.abilities.wis.value": {
-        "name": "Score de sagesse"
-      }
+    "flags.dnd5e.halflingLucky": {
+      "name": "Chance halfeline",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.SystemAttributes.fieldData": {
-      "system.attributes.ac.armor": {
-        "description": "Bonus de CA d'armure (généralement fourni uniquement via un objet d'armure équipé - n'aura d'effet que si aucune armure n'est portée)."
-      },
-      "system.attributes.ac.base": {
-        "description": "Champ dérivé obsolète - ne pas utiliser."
-      },
-      "system.attributes.ac.bonus": {
-        "description": "Bonus numérique à la CA."
-      },
-      "system.attributes.ac.calc": {
-        "description": "Méthode de calcul de la CA."
-      },
-      "system.attributes.ac.cover": {
-        "description": "Bonus de CA d'abri (généralement fourni uniquement via des effets d'état d'abri)."
-      },
-      "system.attributes.ac.flat": {
-        "description": "CA fixe (nécessite que system.attributes.ac.calc soit \"flat\")."
-      },
-      "system.attributes.ac.formula": {
-        "description": "Formule de calcul de la CA (nécessite que system.attributes.ac.calc soit \"custom\")."
-      },
-      "system.attributes.ac.min": {
-        "description": "Valeur minimale de CA (si calculée plus basse, sera augmentée à ce nombre)."
-      },
-      "system.attributes.ac.shield": {
-        "description": "Bonus de CA de bouclier (généralement fourni uniquement via un objet bouclier équipé)."
-      },
-      "system.attributes.ac.value": {
-        "description": "Utilisez system.attributes.ac.calc comme \"flat\" et system.attributes.ac.flat comme valeur souhaitée à la place."
-      },
-      "system.attributes.hp.bonuses.level": {
-        "name": "Bonus de PV par niveau",
-        "description": "Bonus aux PV appliqué pour chaque niveau de personnage (ne fonctionne que pour les acteurs avec classe)."
-      },
-      "system.attributes.hp.bonuses.overall": {
-        "name": "Bonus global de PV",
-        "description": "Bonus aux PV (ne fonctionne que pour les acteurs avec classe)."
-      },
-      "system.attributes.hp.max": {
-        "name": "PV max",
-        "description": "Ne devrait pas être modifié sur un acteur avec une classe - utilisez l'un des .bonuses ou .tempmax à la place."
-      },
-      "system.attributes.hp.temp": {
-        "name": "PV temporaires",
-        "description": "Ne devrait jamais être modifié dans un effet actif - appliquez des dégâts de temphp à la place."
-      },
-      "system.attributes.hp.tempmax": {
-        "name": "PV max temporaires",
-        "description": "Ajustement temporaire des PV max."
-      },
-      "system.attributes.hp.value": {
-        "name": "PV actuels",
-        "description": "Ne devrait jamais être modifié dans un effet actif - appliquez des dégâts à la place."
-      },
-      "system.attributes.inspiration": {
-        "name": "Inspiration"
-      }
+    "flags.dnd5e.initiativeAdv": {
+      "name": "Avantage à l'initiative",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.SystemBonuses.fieldData": {
-      "system.bonuses.abilities.check": {
-        "description": "Bonus à tous les tests de caractéristique."
-      },
-      "system.bonuses.abilities.save": {
-        "description": "Bonus à tous les jets de sauvegarde."
-      },
-      "system.bonuses.abilities.skill": {
-        "description": "Bonus à tous les tests de compétence."
-      },
-      "system.bonuses.All-Attacks": {
-        "description": "Bonus à tous les jets d'attaque."
-      },
-      "system.bonuses.All-Damage": {
-        "description": "Bonus à tous les jets de dégâts."
-      },
-      "system.bonuses.check.damage": {
-        "description": "Bonus à tous les jets de dégâts d'activité de test."
-      },
-      "system.bonuses.heal.damage": {
-        "description": "Bonus à tous les jets de dégâts d'activité de soin."
-      },
-      "system.bonuses.msak.attack": {
-        "description": "Bonus à tous les jets d'attaque \"attaque de sort de mélée\"."
-      },
-      "system.bonuses.msak.damage": {
-        "description": "Bonus à tous les jets de dégâts \"attaque de sort de mélée\"."
-      },
-      "system.bonuses.mwak.attack": {
-        "description": "Bonus à tous les jets d'attaque \"attaque d'arme de mélée\"."
-      },
-      "system.bonuses.mwak.damage": {
-        "description": "Bonus à tous les jets de dégâts \"attaque d'arme de mélée\"."
-      },
-      "system.bonuses.rsak.attack": {
-        "description": "Bonus à tous les jets d'attaque \"attaque de sort à distance\"."
-      },
-      "system.bonuses.rsak.damage": {
-        "description": "Bonus à tous les jets de dégâts \"attaque de sort à distance\"."
-      },
-      "system.bonuses.rwak.attack": {
-        "description": "Bonus à tous les jets d'attaque \"attaque d'arme à distance\"."
-      },
-      "system.bonuses.rwak.damage": {
-        "description": "Bonus à tous les jets de dégâts \"attaque d'arme à distance\"."
-      },
-      "system.bonuses.save.damage": {
-        "description": "Bonus à tous les jets de dégâts d'activité de sauvegarde."
-      },
-      "system.bonuses.spell.all.damage": {
-        "description": "Bonus à tous les jets de dégâts de sort."
-      },
-      "system.bonuses.spell.attack": {
-        "description": "Bonus à tous les jets d'attaque de sort."
-      },
-      "system.bonuses.spell.damage": {
-        "description": "Bonus à tous les jets de dégâts de sort d'activité d'attaque."
-      },
-      "system.bonuses.spell.dc": {
-        "description": "Bonus au DD de sort."
-      },
-      "system.bonuses.weapon.attack": {
-        "description": "Bonus à tous les jets d'attaque d'arme."
-      },
-      "system.bonuses.weapon.damage": {
-        "description": "Bonus à tous les jets de dégâts d'arme d'activité d'attaque."
-      }
+    "flags.dnd5e.initiativeAlert": {
+      "name": "Don Alerte",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.SystemTraits.fieldData": {
-      "system.traits.armorProf.all": {
-        "name": "Maîtrise de toutes les armures"
-      },
-      "system.traits.armorProf.custom": {
-        "name": "Maîtrise d'armure personnalisée"
-      },
-      "system.traits.armorProf.value": {
-        "name": "Valeur de maîtrise d'armure"
-      },
-      "system.traits.ci.all": {
-        "name": "Immunisé à tous les états",
-        "description": "Immunisé à tous les états."
-      },
-      "system.traits.ci.custom": {
-        "name": "Immunité aux états personnalisée"
-      },
-      "system.traits.ci.value": {
-        "name": "Immunité aux états individuels",
-        "description": "Utilisez le mode Ajouter et choisissez une immunité d'état à ajouter. -condition la retire."
-      },
-      "system.traits.di.all": {
-        "description": "Immunisé à tous les types de dégâts."
-      },
-      "system.traits.di.bypasses": {
-        "description": "Propriétés d'objet/arme qui contournent l'immunité aux dégâts."
-      },
-      "system.traits.di.value": {
-        "description": "Utilisez le mode Ajouter et choisissez un type d'immunité à ajouter. -type le retire."
-      },
-      "system.traits.dm.amount.acid": {
-        "description": "Modification des dégâts pour les dégâts acides. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.bludgeoning": {
-        "description": "Modification des dégâts pour les dégâts contondants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.cold": {
-        "description": "Modification des dégâts pour les dégâts de froid. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.fire": {
-        "description": "Modification des dégâts pour les dégâts de feu. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.force": {
-        "description": "Modification des dégâts pour les dégâts de force. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.healing": {
-        "description": "Modification des dégâts pour les soins. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.lightning": {
-        "description": "Modification des dégâts pour les dégâts de foudre. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.necrotic": {
-        "description": "Modification des dégâts pour les dégâts nécrotiques. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.piercing": {
-        "description": "Modification des dégâts pour les dégâts perforants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.poison": {
-        "description": "Modification des dégâts pour les dégâts de poison. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.psychic": {
-        "description": "Modification des dégâts pour les dégâts psychiques. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.radiant": {
-        "description": "Modification des dégâts pour les dégâts radieux. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.slashing": {
-        "description": "Modification des dégâts pour les dégâts tranchants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.temphp": {
-        "description": "Modification des dégâts pour les soins de PV temporaires. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.amount.thunder": {
-        "description": "Modification des dégâts pour les dégâts de tonnerre. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.bypasses": {
-        "description": "Propriétés d'objet/arme qui contournent la modification des dégâts."
-      },
-      "system.traits.dm.midi.all": {
-        "description": "Modification des dégâts pour tous les types de dégâts. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.midi.heal": {
-        "description": "Modification des dégâts pour les activités de soin. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.midi.msak": {
-        "description": "Modification des dégâts pour les attaques de sort de mélée. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.midi.mwak": {
-        "description": "Modification des dégâts pour les attaques d'arme de mélée. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.midi.rsak": {
-        "description": "Modification des dégâts pour les attaques de sort à distance. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.midi.rwak": {
-        "description": "Modification des dégâts pour les attaques d'arme à distance. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
-      },
-      "system.traits.dm.midi.save": {
-        "description": "Modification des dégâts pour les activités de sauvegarde. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits"
-      },
-      "system.traits.dr.all": {
-        "description": "Résistance aux dégâts pour tous les types de dégâts."
-      },
-      "system.traits.dr.bypasses": {
-        "description": "Propriétés d'objet/arme qui contournent la réduction des dégâts."
-      },
-      "system.traits.dr.value": {
-        "description": "Utilisez le mode Ajouter et choisissez un type de réduction à ajouter. -type le retire."
-      },
-      "system.traits.dv.all": {
-        "description": "Vulnérabilité aux dégâts pour tous les types de dégâts."
-      },
-      "system.traits.dv.bypasses": {
-        "description": "Propriétés d'objet/arme qui contournent la vulnérabilité aux dégâts."
-      },
-      "system.traits.dv.value": {
-        "description": "Utilisez le mode Ajouter et choisissez un type de vulnérabilité à ajouter. -type le retire."
-      },
-      "system.traits.weaponProf.all": {
-        "name": "Maîtrise de toutes les armes"
-      },
-      "system.traits.weaponProf.custom": {
-        "name": "Maîtrise d'arme personnalisée"
-      },
-      "system.traits.weaponProf.value": {
-        "name": "Valeur de maîtrise d'arme"
-      }
+    "flags.dnd5e.initiativeDisadv": {
+      "name": "Désavantage à l'initiative",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
     },
-    "dae.Other.fieldData": {
-      "system.favorites": {
-        "name": "Favoris"
-      },
-      "system.attributes.movement.air": {
-        "name": "Mouvement aérien"
-      },
-      "system.attributes.movement.land": {
-        "name": "Mouvement terrestre"
-      },
-      "system.attributes.movement.water": {
-        "name": "Mouvement aquatique"
-      },
-      "system.description.full": {
-        "name": "Description complète"
-      },
-      "system.description.summary": {
-        "name": "Description résumée"
-      },
-      "system.members": {
-        "name": "Membres"
-      },
-      "system.type.value": {
-        "name": "Valeur de type"
-      },
-      "system.attributes.ac.motionless": {
-        "name": "CA quand immobile"
-      },
-      "system.attributes.actions.stations": {
-        "name": "Postes d'action"
-      },
-      "system.attributes.actions.thresholds.0": {
-        "name": "Seuil d'actions 0"
-      },
-      "system.attributes.actions.thresholds.1": {
-        "name": "Seuil d'actions 1"
-      },
-      "system.attributes.actions.thresholds.2": {
-        "name": "Seuil d'actions 2"
-      },
-      "system.attributes.actions.value": {
-        "name": "Valeur d'actions"
-      },
-      "system.attributes.capacity.cargo": {
-        "name": "Capacité de cargaison"
-      },
-      "system.attributes.capacity.creature": {
-        "name": "Capacité de créature"
-      },
-      "system.attributes.hp.dt": {
-        "name": "Seuil de dégâts"
-      },
-      "system.attributes.hp.mt": {
-        "name": "Seuil minimum"
-      },
-      "system.cargo.crew": {
-        "name": "Capacité d'équipage"
-      },
-      "system.cargo.passengers": {
-        "name": "Capacité de passagers"
-      },
-      "system.traits.dimensions": {
-        "name": "Dimensions"
-      },
-      "system.vehicleType": {
-        "name": "Type de véhicule"
-      },
-      "system.details.age": {
-        "name": "Âge"
-      },
-      "system.details.appearance": {
-        "name": "Apparence"
-      },
-      "system.details.background": {
-        "name": "Historique"
-      },
-      "system.details.eyes": {
-        "name": "Yeux"
-      },
-      "system.details.faith": {
-        "name": "Foi"
-      },
-      "system.details.gender": {
-        "name": "Genre"
-      },
-      "system.details.hair": {
-        "name": "Cheveux"
-      },
-      "system.details.height": {
-        "name": "Taille"
-      },
-      "system.details.originalClass": {
-        "name": "Classe originale"
-      },
-      "system.details.skin": {
-        "name": "Peau"
-      },
-      "system.details.trait": {
-        "name": "Trait"
-      },
-      "system.details.weight": {
-        "name": "Poids"
-      },
-      "system.details.xp.value": {
-        "name": "Valeur d'XP"
-      },
-      "system.resources.primary.lr": {
-        "name": "Ressource primaire repos long",
-        "description": "Récupère lors d'un repos long (1/0)"
-      },
-      "system.resources.primary.sr": {
-        "name": "Ressource primaire repos court",
-        "description": "Récupère lors d'un repos court (1/0)"
-      },
-      "system.resources.primary.value": {
-        "name": "Valeur de ressource primaire",
-        "description": "Ne devrait pas être défini via un effet actif"
-      },
-      "system.resources.secondary.lr": {
-        "name": "Ressource secondaire repos long",
-        "description": "Récupère lors d'un repos long (1/0)"
-      },
-      "system.resources.secondary.sr": {
-        "name": "Ressource secondaire repos court",
-        "description": "Récupère lors d'un repos court (1/0)"
-      },
-      "system.resources.secondary.value": {
-        "name": "Valeur de ressource secondaire",
-        "description": "Ne devrait pas être défini via un effet actif"
-      },
-      "system.resources.tertiary.lr": {
-        "name": "Ressource tertiaire repos long",
-        "description": "Récupère lors d'un repos long (1/0)"
-      },
-      "system.resources.tertiary.sr": {
-        "name": "Ressource tertiaire repos court",
-        "description": "Récupère lors d'un repos court (1/0)"
-      },
-      "system.resources.tertiary.value": {
-        "name": "Valeur de ressource tertiaire",
-        "description": "Ne devrait pas être défini via un effet actif"
-      }
+    "flags.dnd5e.initiativeHalfProficiency": {
+      "name": "Demi-maîtrise pour l'initiative",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.jackOfAllTrades": {
+      "name": "Touche-à-tout",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.meleeCriticalDamageDice": {
+      "name": "Dés de dégâts critiques en mêlée",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.observantFeat": {
+      "name": "Don Observateur",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.powerfulBuild": {
+      "name": "Carrure imposante",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.reliableTalent": {
+      "name": "Expertise fiable",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.remarkableAthlete": {
+      "name": "Athlète remarquable",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.spellCriticalThreshold": {
+      "name": "Seuil de coup critique des sorts",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.spellSniper": {
+      "name": "Tireur d'élite magique",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.tavernBrawlerFeat": {
+      "name": "Don Bagarreur de taverne",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    },
+    "flags.dnd5e.weaponCriticalThreshold": {
+      "name": "Seuil de coup critique des armes",
+      "description": "Voir \"Traits spéciaux\" pour les détails."
+    }
+  },
+  "dae.SystemAbilities.fieldData": {
+    "system.abilities.cha.bonuses.check": {
+      "name": "Bonus au test de Charisme"
+    },
+    "system.abilities.cha.bonuses.save": {
+      "name": "Bonus au jet de sauvegarde de Charisme"
+    },
+    "system.abilities.cha.dc": {
+      "name": "DD de sauvegarde de Charisme"
+    },
+    "system.abilities.cha.max": {
+      "name": "Score max de Charisme"
+    },
+    "system.abilities.cha.mod": {
+      "name": "Mod. de Charisme"
+    },
+    "system.abilities.cha.proficient": {
+      "name": "Maîtrise de sauvegarde de Charisme",
+      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+    },
+    "system.abilities.cha.save": {
+      "name": "Mod. de sauvegarde de Charisme"
+    },
+    "system.abilities.cha.value": {
+      "name": "Score de Charisme"
+    },
+    "system.abilities.con.bonuses.check": {
+      "name": "Bonus au test de Constitution"
+    },
+    "system.abilities.con.bonuses.save": {
+      "name": "Bonus au jet de sauvegarde de Constitution"
+    },
+    "system.abilities.con.dc": {
+      "name": "DD de sauvegarde de Constitution"
+    },
+    "system.abilities.con.max": {
+      "name": "Score max de Constitution"
+    },
+    "system.abilities.con.mod": {
+      "name": "Mod. de Constitution"
+    },
+    "system.abilities.con.proficient": {
+      "name": "Maîtrise de sauvegarde de Constitution",
+      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+    },
+    "system.abilities.con.save": {
+      "name": "Mod. de sauvegarde de Constitution"
+    },
+    "system.abilities.con.value": {
+      "name": "Score de Constitution"
+    },
+    "system.abilities.dex.bonuses.check": {
+      "name": "Bonus au test de Dextérité"
+    },
+    "system.abilities.dex.bonuses.save": {
+      "name": "Bonus au jet de sauvegarde de Dextérité"
+    },
+    "system.abilities.dex.dc": {
+      "name": "DD de sauvegarde de Dextérité"
+    },
+    "system.abilities.dex.max": {
+      "name": "Score max de Dextérité"
+    },
+    "system.abilities.dex.mod": {
+      "name": "Mod. de Dextérité"
+    },
+    "system.abilities.dex.proficient": {
+      "name": "Maîtrise de sauvegarde de Dextérité",
+      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+    },
+    "system.abilities.dex.save": {
+      "name": "Mod. de sauvegarde de Dextérité"
+    },
+    "system.abilities.dex.value": {
+      "name": "Score de Dextérité"
+    },
+    "system.abilities.int.bonuses.check": {
+      "name": "Bonus au test d'Intelligence"
+    },
+    "system.abilities.int.bonuses.save": {
+      "name": "Bonus au jet de sauvegarde d'Intelligence"
+    },
+    "system.abilities.int.dc": {
+      "name": "DD de sauvegarde d'Intelligence"
+    },
+    "system.abilities.int.max": {
+      "name": "Score max d'Intelligence"
+    },
+    "system.abilities.int.mod": {
+      "name": "Mod. d'Intelligence"
+    },
+    "system.abilities.int.proficient": {
+      "name": "Maîtrise de sauvegarde d'Intelligence",
+      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+    },
+    "system.abilities.int.save": {
+      "name": "Mod. de sauvegarde d'Intelligence"
+    },
+    "system.abilities.int.value": {
+      "name": "Score d'Intelligence"
+    },
+    "system.abilities.str.bonuses.check": {
+      "name": "Bonus au test de Force"
+    },
+    "system.abilities.str.bonuses.save": {
+      "name": "Bonus au jet de sauvegarde de Force"
+    },
+    "system.abilities.str.dc": {
+      "name": "DD de sauvegarde de Force"
+    },
+    "system.abilities.str.max": {
+      "name": "Score max de Force"
+    },
+    "system.abilities.str.mod": {
+      "name": "Mod. de Force"
+    },
+    "system.abilities.str.proficient": {
+      "name": "Maîtrise de sauvegarde de Force",
+      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+    },
+    "system.abilities.str.save": {
+      "name": "Mod. de sauvegarde de Force"
+    },
+    "system.abilities.str.value": {
+      "name": "Score de Force"
+    },
+    "system.abilities.wis.bonuses.check": {
+      "name": "Bonus au test de Sagesse"
+    },
+    "system.abilities.wis.bonuses.save": {
+      "name": "Bonus au jet de sauvegarde de Sagesse"
+    },
+    "system.abilities.wis.dc": {
+      "name": "DD de sauvegarde de Sagesse"
+    },
+    "system.abilities.wis.max": {
+      "name": "Score max de Sagesse"
+    },
+    "system.abilities.wis.mod": {
+      "name": "Mod. de Sagesse"
+    },
+    "system.abilities.wis.proficient": {
+      "name": "Maîtrise de sauvegarde de Sagesse",
+      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+    },
+    "system.abilities.wis.save": {
+      "name": "Mod. de sauvegarde de Sagesse"
+    },
+    "system.abilities.wis.value": {
+      "name": "Score de Sagesse"
+    }
+  },
+  "dae.SystemAttributes.fieldData": {
+    "system.attributes.ac.armor": {
+      "description": "Bonus d'armure à la CA (généralement fourni uniquement via un objet d'armure équipé - n'aura d'effet que si aucune armure n'est portée)."
+    },
+    "system.attributes.ac.base": {
+      "description": "Champ dérivé obsolète - ne pas utiliser."
+    },
+    "system.attributes.ac.bonus": {
+      "description": "Bonus numérique à la CA."
+    },
+    "system.attributes.ac.calc": {
+      "description": "Méthode de calcul de la CA."
+    },
+    "system.attributes.ac.cover": {
+      "description": "Bonus d'abri à la CA (généralement fourni uniquement via les effets d'état d'abri)."
+    },
+    "system.attributes.ac.flat": {
+      "description": "CA fixe (nécessite system.attributes.ac.calc défini sur \"flat\")."
+    },
+    "system.attributes.ac.formula": {
+      "description": "Formule de calcul de la CA (nécessite system.attributes.ac.calc défini sur \"custom\")."
+    },
+    "system.attributes.ac.min": {
+      "description": "Valeur minimale de la CA (si calculée inférieure, sera mise à niveau vers ce nombre)."
+    },
+    "system.attributes.ac.shield": {
+      "description": "Bonus de bouclier à la CA (généralement fourni uniquement via un objet bouclier équipé)."
+    },
+    "system.attributes.ac.value": {
+      "description": "Utiliser system.attributes.ac.calc comme \"flat\" et system.attributes.ac.flat avec la valeur souhaitée à la place."
+    },
+    "system.attributes.hp.bonuses.level": {
+      "name": "Bonus de PV par niveau",
+      "description": "Bonus aux PV appliqué pour chaque niveau de personnage (ne fonctionne que pour les acteurs avec classe)."
+    },
+    "system.attributes.hp.bonuses.overall": {
+      "name": "Bonus global de PV",
+      "description": "Bonus aux PV (ne fonctionne que pour les acteurs avec classe)."
+    },
+    "system.attributes.hp.max": {
+      "name": "PV Max",
+      "description": "Ne doit pas être modifié sur un acteur avec une classe - utiliser l'un des .bonuses ou .tempmax à la place."
+    },
+    "system.attributes.hp.temp": {
+      "name": "PV Temp",
+      "description": "Ne doit jamais être modifié dans un effet actif - appliquer des dégâts temphp à la place."
+    },
+    "system.attributes.hp.tempmax": {
+      "name": "PV Max Temporaires",
+      "description": "Ajustement temporaire aux PV max."
+    },
+    "system.attributes.hp.value": {
+      "name": "PV Actuels",
+      "description": "Ne doit jamais être modifié dans un effet actif - appliquer des dégâts à la place."
+    },
+    "system.attributes.inspiration": {
+      "name": "Inspiration"
+    }
+  },
+  "dae.SystemBonuses.fieldData": {
+    "system.bonuses.abilities.check": {
+      "description": "Bonus à tous les tests de caractéristique."
+    },
+    "system.bonuses.abilities.save": {
+      "description": "Bonus à tous les jets de sauvegarde."
+    },
+    "system.bonuses.abilities.skill": {
+      "description": "Bonus à tous les tests de compétence."
+    },
+    "system.bonuses.All-Attacks": {
+      "description": "Bonus à tous les jets d'attaque."
+    },
+    "system.bonuses.All-Damage": {
+      "description": "Bonus à tous les jets de dégâts."
+    },
+    "system.bonuses.check.damage": {
+      "description": "Bonus à tous les jets de dégâts d'activité de Test."
+    },
+    "system.bonuses.heal.damage": {
+      "description": "Bonus à tous les jets de dégâts d'activité de Soin."
+    },
+    "system.bonuses.msak.attack": {
+      "description": "Bonus à tous les jets d'attaque \"attaque de sort en mêlée\"."
+    },
+    "system.bonuses.msak.damage": {
+      "description": "Bonus à tous les jets de dégâts \"attaque de sort en mêlée\"."
+    },
+    "system.bonuses.mwak.attack": {
+      "description": "Bonus à tous les jets d'attaque \"attaque d'arme en mêlée\"."
+    },
+    "system.bonuses.mwak.damage": {
+      "description": "Bonus à tous les jets de dégâts \"attaque d'arme en mêlée\"."
+    },
+    "system.bonuses.rsak.attack": {
+      "description": "Bonus à tous les jets d'attaque \"attaque de sort à distance\"."
+    },
+    "system.bonuses.rsak.damage": {
+      "description": "Bonus à tous les jets de dégâts \"attaque de sort à distance\"."
+    },
+    "system.bonuses.rwak.attack": {
+      "description": "Bonus à tous les jets d'attaque \"attaque d'arme à distance\"."
+    },
+    "system.bonuses.rwak.damage": {
+      "description": "Bonus à tous les jets de dégâts \"attaque d'arme à distance\"."
+    },
+    "system.bonuses.save.damage": {
+      "description": "Bonus à tous les jets de dégâts d'activité de Sauvegarde."
+    },
+    "system.bonuses.spell.all.damage": {
+      "description": "Bonus à tous les jets de dégâts de sort."
+    },
+    "system.bonuses.spell.attack": {
+      "description": "Bonus à tous les jets d'attaque de sort."
+    },
+    "system.bonuses.spell.damage": {
+      "description": "Bonus à tous les jets de dégâts de sort d'activité d'Attaque."
+    },
+    "system.bonuses.spell.dc": {
+      "description": "Bonus au DD de sauvegarde de sort."
+    },
+    "system.bonuses.weapon.attack": {
+      "description": "Bonus à tous les jets d'attaque d'arme."
+    },
+    "system.bonuses.weapon.damage": {
+      "description": "Bonus à tous les jets de dégâts d'arme d'activité d'Attaque."
+    }
+  },
+  "dae.SystemTraits.fieldData": {
+    "system.traits.armorProf.all": {
+      "name": "Maîtrise de toutes les armures"
+    },
+    "system.traits.armorProf.custom": {
+      "name": "Maîtrise d'armure personnalisée"
+    },
+    "system.traits.armorProf.value": {
+      "name": "Valeur de maîtrise d'armure"
+    },
+    "system.traits.ci.all": {
+      "name": "Immunisé à tous les états",
+      "description": "Immunisé à tous les états."
+    },
+    "system.traits.ci.custom": {
+      "name": "Immunité aux états personnalisée"
+    },
+    "system.traits.ci.value": {
+      "name": "Immunité à un état individuel",
+      "description": "Utiliser le mode Ajouter et choisir l'immunité à l'état à ajouter. -état la supprime."
+    },
+    "system.traits.di.all": {
+      "description": "Immunisé à tous les types de dégâts."
+    },
+    "system.traits.di.bypasses": {
+      "description": "Propriétés d'objet/arme qui contournent l'immunité aux dégâts."
+    },
+    "system.traits.di.value": {
+      "description": "Utiliser le mode Ajouter et choisir le type d'immunité à ajouter. -type la supprime."
+    },
+    "system.traits.dm.amount.acid": {
+      "description": "Modification des dégâts pour les dégâts d'acide. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.bludgeoning": {
+      "description": "Modification des dégâts pour les dégâts contondants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.cold": {
+      "description": "Modification des dégâts pour les dégâts de froid. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.fire": {
+      "description": "Modification des dégâts pour les dégâts de feu. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.force": {
+      "description": "Modification des dégâts pour les dégâts de force. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.healing": {
+      "description": "Modification des dégâts pour les soins. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.lightning": {
+      "description": "Modification des dégâts pour les dégâts de foudre. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.necrotic": {
+      "description": "Modification des dégâts pour les dégâts nécrotiques. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.piercing": {
+      "description": "Modification des dégâts pour les dégâts perforants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.poison": {
+      "description": "Modification des dégâts pour les dégâts de poison. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.psychic": {
+      "description": "Modification des dégâts pour les dégâts psychiques. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.radiant": {
+      "description": "Modification des dégâts pour les dégâts radiants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.slashing": {
+      "description": "Modification des dégâts pour les dégâts tranchants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.temphp": {
+      "description": "Modification des dégâts pour les soins temphp. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.amount.thunder": {
+      "description": "Modification des dégâts pour les dégâts de tonnerre. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.bypasses": {
+      "description": "Propriétés d'objet/arme qui contournent la modification des dégâts."
+    },
+    "system.traits.dm.midi.all": {
+      "description": "Modification des dégâts pour tous les types de dégâts. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.midi.heal": {
+      "description": "Modification des dégâts pour les activités de Soin. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.midi.msak": {
+      "description": "Modification des dégâts pour les attaques de sort en mêlée. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.midi.mwak": {
+      "description": "Modification des dégâts pour les attaques d'arme en mêlée. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.midi.rsak": {
+      "description": "Modification des dégâts pour les attaques de sort à distance. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.midi.rwak": {
+      "description": "Modification des dégâts pour les attaques d'arme à distance. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis."
+    },
+    "system.traits.dm.midi.save": {
+      "description": "Modification des dégâts pour les activités de Sauvegarde. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs des dégâts réduits subis"
+    },
+    "system.traits.dr.all": {
+      "description": "Résistance aux dégâts pour tous les types de dégâts."
+    },
+    "system.traits.dr.bypasses": {
+      "description": "Propriétés d'objet/arme qui contournent la réduction des dégâts."
+    },
+    "system.traits.dr.value": {
+      "description": "Utiliser le mode Ajouter et choisir le type de réduction à ajouter. -type la supprime."
+    },
+    "system.traits.dv.all": {
+      "description": "Vulnérabilité aux dégâts pour tous les types de dégâts."
+    },
+    "system.traits.dv.bypasses": {
+      "description": "Propriétés d'objet/arme qui contournent la vulnérabilité aux dégâts."
+    },
+    "system.traits.dv.value": {
+      "description": "Utiliser le mode Ajouter et choisir le type de vulnérabilité à ajouter. -type la supprime."
+    },
+    "system.traits.weaponProf.all": {
+      "name": "Maîtrise de toutes les armes"
+    },
+    "system.traits.weaponProf.custom": {
+      "name": "Maîtrise d'arme personnalisée"
+    },
+    "system.traits.weaponProf.value": {
+      "name": "Valeur de maîtrise d'arme"
+    }
+  },
+  "dae.Other.fieldData": {
+    "system.favorites": {
+      "name": "Favoris"
+    },
+    "system.attributes.movement.air": {
+      "name": "Déplacement aérien"
+    },
+    "system.attributes.movement.land": {
+      "name": "Déplacement terrestre"
+    },
+    "system.attributes.movement.water": {
+      "name": "Déplacement aquatique"
+    },
+    "system.description.full": {
+      "name": "Description complète"
+    },
+    "system.description.summary": {
+      "name": "Description sommaire"
+    },
+    "system.members": {
+      "name": "Membres"
+    },
+    "system.type.value": {
+      "name": "Valeur de type"
+    },
+    "system.attributes.ac.motionless": {
+      "name": "CA lorsque immobile"
+    },
+    "system.attributes.actions.stations": {
+      "name": "Postes d'action"
+    },
+    "system.attributes.actions.thresholds.0": {
+      "name": "Seuils d'actions 0"
+    },
+    "system.attributes.actions.thresholds.1": {
+      "name": "Seuils d'actions 1"
+    },
+    "system.attributes.actions.thresholds.2": {
+      "name": "Seuils d'actions 2"
+    },
+    "system.attributes.actions.value": {
+      "name": "Valeur d'actions"
+    },
+    "system.attributes.capacity.cargo": {
+      "name": "Capacité de chargement"
+    },
+    "system.attributes.capacity.creature": {
+      "name": "Capacité en créatures"
+    },
+    "system.attributes.hp.dt": {
+      "name": "Seuil de dégâts"
+    },
+    "system.attributes.hp.mt": {
+      "name": "Seuil minimum"
+    },
+    "system.cargo.crew": {
+      "name": "Capacité d'équipage"
+    },
+    "system.cargo.passengers": {
+      "name": "Capacité en passagers"
+    },
+    "system.traits.dimensions": {
+      "name": "Dimensions"
+    },
+    "system.vehicleType": {
+      "name": "Type de véhicule"
+    },
+    "system.details.age": {
+      "name": "Âge"
+    },
+    "system.details.appearance": {
+      "name": "Apparence"
+    },
+    "system.details.background": {
+      "name": "Historique"
+    },
+    "system.details.eyes": {
+      "name": "Yeux"
+    },
+    "system.details.faith": {
+      "name": "Foi"
+    },
+    "system.details.gender": {
+      "name": "Genre"
+    },
+    "system.details.hair": {
+      "name": "Cheveux"
+    },
+    "system.details.height": {
+      "name": "Taille"
+    },
+    "system.details.originalClass": {
+      "name": "Classe d'origine"
+    },
+    "system.details.skin": {
+      "name": "Peau"
+    },
+    "system.details.trait": {
+      "name": "Trait"
+    },
+    "system.details.weight": {
+      "name": "Poids"
+    },
+    "system.details.xp.value": {
+      "name": "Valeur d'XP"
+    },
+    "system.resources.primary.lr": {
+      "name": "Ressource primaire Repos long",
+      "description": "Récupération au Repos long (1/0)"
+    },
+    "system.resources.primary.sr": {
+      "name": "Ressource primaire Repos court",
+      "description": "Récupération au Repos court (1/0)"
+    },
+    "system.resources.primary.value": {
+      "name": "Valeur de ressource primaire",
+      "description": "Ne doit pas être défini via un effet actif"
+    },
+    "system.resources.secondary.lr": {
+      "name": "Ressource secondaire Repos long",
+      "description": "Récupération au Repos long (1/0)"
+    },
+    "system.resources.secondary.sr": {
+      "name": "Ressource secondaire Repos court",
+      "description": "Récupération au Repos court (1/0)"
+    },
+    "system.resources.secondary.value": {
+      "name": "Valeur de ressource secondaire",
+      "description": "Ne doit pas être défini via un effet actif"
+    },
+    "system.resources.tertiary.lr": {
+      "name": "Ressource tertiaire Repos long",
+      "description": "Récupération au Repos long (1/0)"
+    },
+    "system.resources.tertiary.sr": {
+      "name": "Ressource tertiaire Repos court",
+      "description": "Récupération au Repos court (1/0)"
+    },
+    "system.resources.tertiary.value": {
+      "name": "Valeur de ressource tertiaire",
+      "description": "Ne doit pas être défini via un effet actif"
     }
   }
+}

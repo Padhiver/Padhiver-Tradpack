@@ -2,53 +2,53 @@
   "aedifs-tactical-grid": {
     "settings": {
       "defaultViewDistance": {
-        "name": "Distance de vue par défaut de la grille",
-        "hint": "Nombre d'espaces de la grille à afficher."
+        "name": "Distance de vue de grille par défaut",
+        "hint": "Nombre de cases de grille à afficher."
       },
       "usePropertyBasedDistance": {
-        "name": "Utiliser une distance basée sur les propriétés du token",
-        "hint": "Utilise une propriété du token au lieu de la `Distance de vue par défaut de la grille`."
+        "name": "Utiliser la distance basée sur la propriété du token",
+        "hint": "Utiliser une propriété du token au lieu de la `Distance de vue de grille par défaut`"
       },
       "propertyDistance": {
         "name": "Propriété du token",
-        "hint": "Chemin vers la propriété du token utilisée pour déterminer la taille de la grille."
+        "hint": "Chemin d'accès vers la propriété du token à utiliser pour déterminer la taille de la grille."
       },
       "defaultViewShape": {
-        "name": "Forme de vue par défaut de la grille",
+        "name": "Forme de vue de grille par défaut",
         "hint": "La forme du masque de la grille."
       },
       "enableOnCombatOnly": {
-        "name": "Uniquement en combat",
+        "name": "En combat uniquement",
         "hint": "La grille ne sera affichée qu'en combat."
       },
       "enableOnControl": {
-        "name": "Sur contrôle",
-        "hint": "La grille sera affichée pour les objets contrôlés."
+        "name": "Lors du contrôle",
+        "hint": "La grille sera affichée pour les éléments contrôlés."
       },
       "enableOnHover": {
-        "name": "Sur survol",
-        "hint": "La grille sera affichée pour les objets survolés."
+        "name": "Au survol",
+        "hint": "La grille sera affichée pour les éléments survolés."
       },
       "mixColors": {
         "name": "Mélanger les couleurs",
-        "hint": "Lorsqu'activé, les couleurs des formes de vue seront mélangées."
+        "hint": "Lorsque activé, les couleurs des formes de vue seront mélangées/mixées."
       },
       "assignDispositionBasedColor": {
-        "name": "Attribuer une couleur basée sur la disposition",
-        "hint": "Lorsqu'activé, les couleurs des formes de vue des tokens seront définies par défaut selon leur disposition :"
+        "name": "Assigner la couleur selon la disposition",
+        "hint": "Lorsque activé, les couleurs des formes de vue du token prendront par défaut celles de leur disposition :"
       },
       "layerEnable": {
-        "hint": "Activer la grille tactique pour \"{layerName}\""
+        "hint": "Activer la grille tactique pour le calque \"{layerName}\""
       },
       "enableOnRuler": {
         "name": "Activer la grille tactique pour la règle",
-        "hint": "Active la grille pour les mesures de la règle (nécessite que libWrapper soit actif)."
+        "hint": "Active la grille pour les mesures avec la règle (nécessite que libWrapper soit actif)."
       },
       "measurementPrecision": {
-        "hint": "Précision décimale à laquelle les distances mesurées doivent être affichées."
+        "hint": "Précision décimale avec laquelle les distances mesurées doivent être affichées."
       },
       "rulerColor": {
-        "hint": "Définir une couleur pour la grille de la règle. Si aucune couleur n'est définie, la couleur de la grille de la scène sera utilisée."
+        "hint": "Définir une couleur pour la grille de la règle. Si aucune couleur n'est définie, elle utilisera la couleur de grille de la scène."
       },
       "includeElevation": {
         "name": "Inclure l'élévation",
@@ -56,73 +56,73 @@
       },
       "shortestDistance": {
         "name": "Distance la plus courte uniquement",
-        "hint": "Seule la distance la plus courte vers le token sera affichée."
+        "hint": "Seule la distance la plus courte jusqu'au token sera affichée."
       },
       "gridlessCircle": {
         "name": "Sans grille : Bordure circulaire",
         "hint": "Si activé, sur les scènes sans grille, le module calculera la distance la plus courte en supposant que la bordure du token est un cercle."
       },
-      "scaleFontSize": "Ajuster la taille de la police à la grille du canevas",
+      "scaleFontSize": "Mettre à l'échelle la taille de police sur la grille du canevas",
       "baseGridSize": {
-        "name": "Taille de base de la grille",
-        "hint": "Une grille plus petite ou plus grande que cette taille entraînera un ajustement proportionnel de la taille de la police."
+        "name": "Taille de grille de base",
+        "hint": "Une grille plus petite ou plus grande que celle-ci entraînera une mise à l'échelle proportionnelle de la taille de la police."
       },
       "cover": {
-        "name": "Calculateur de couverture",
-        "hint": "Si un calculateur de couverture est sélectionné et que le module correspondant est activé, les informations de couverture seront affichées sous les mesures.",
-        "none": "Aucune",
-        "half": "Moitié",
-        "threeQuarters": "Trois-quarts",
-        "total": "Totale"
+        "name": "Calculateur d'abri",
+        "hint": "Si un calculateur d'abri est sélectionné et le module correspondant activé, les informations d'abri seront affichées sous les mesures.",
+        "none": "Aucun",
+        "half": "Partiel",
+        "threeQuarters": "Important",
+        "total": "Total"
       },
       "ignoreEffect": {
-        "name": "Ignorer les tokens avec un effet",
-        "hint": "Les tokens avec un nom d'effet correspondant seront ignorés dans les calculs de mesure."
+        "name": "Ignorer les tokens avec effet",
+        "hint": "Les tokens ayant un nom d'effet correspondant seront ignorés des calculs de mesure."
       },
       "displayDistancesOnRulerDrag": {
-        "name": "Afficher les distances lors du déplacement de la règle",
-        "hint": "Lorsqu'activé, les distances entre le point de départ de la règle et tous les tokens visibles seront calculées et affichées sur eux."
+        "name": "Afficher les distances lors du glissement de la règle",
+        "hint": "Lorsque activé, les distances entre le point de départ de la règle et tous les tokens visibles seront calculées et affichées sur eux."
       },
       "displayDistancesOnTokenDrag": {
-        "name": "Afficher les distances lors du déplacement d'un token",
-        "hint": "Lorsqu'activé, les distances entre le token déplacé et tous les tokens visibles seront calculées et affichées sur eux."
+        "name": "Afficher les distances lors du glissement du token",
+        "hint": "Lorsque activé, les distances entre le token glissé et tous les tokens visibles seront calculées et affichées sur eux."
       },
       "range": {
         "item-range": "Surligneur de portée d'objet",
         "token-range": "Surligneur de portée de token",
-        "combat-only": "Uniquement en combat",
+        "combat-only": "Combat uniquement",
         "ranges": "Portées",
-        "grid-shape-shrink": "Réduction de la forme de la grille",
-        "dispositions": "Dispositions mises en évidence pour les joueurs"
+        "grid-shape-shrink": "Réduction de la forme de grille",
+        "dispositions": "Dispositions surlignées pour les joueurs"
       },
       "diagonalMultiplier": {
-        "name": "Multiplicateur diagonal",
-        "hint": "Ajuste l'échelle de distance pour les déplacements en diagonale sur la grille. Un multiplicateur de 1,5x équivaut à la règle 5/10/5. Un multiplicateur de 1,0x équivaut à la règle 5/5/5."
+        "name": "Multiplicateur de diagonale",
+        "hint": "Ajuster l'échelle de distance pour les déplacements sur la grille qui vont dans les directions X et Y en même temps. Un multiplicateur de 1.5x équivaut à la règle 5/10/5. Un multiplicateur de 1.0x équivaut à 5/5/5."
       },
       "doubleDiagonalMultiplier": {
-        "name": "Multiplicateur double-diagonale",
-        "hint": "Ajuste l'échelle de distance pour les déplacements en diagonale sur les trois axes (X, Y et Z)."
+        "name": "Multiplicateur de double-diagonale",
+        "hint": "Ajuster l'échelle de distance pour les déplacements sur la grille qui vont dans les directions X, Y et Z en même temps."
       }
     },
     "keybindings": {
       "toggleGrid": {
-        "name": "Activer/Désactiver la grille sur la couche actuelle (Global)",
-        "hint": "Un appui court activera/désactivera la couche globalement, un appui long activera/désactivera la couche uniquement pour la scène actuelle."
+        "name": "Basculer la grille sur le calque actuel (Global)",
+        "hint": "Une pression courte basculera le calque globalement, une pression longue basculera le calque uniquement pour la scène actuelle."
       },
       "sceneToggleGrid": {
-        "name": "Activer/Désactiver la grille sur la couche actuelle (Scène)",
+        "name": "Basculer la grille sur le calque actuel (Scène)",
         "hint": ""
       }
     },
     "common": {
-      "layers": "Couches",
-      "gridSpaces": "Espaces de la grille",
+      "layers": "Calques",
+      "gridSpaces": "Cases de grille",
       "color": "Couleur",
       "precision": "Précision",
       "decimalPlaces": "Décimales",
       "apply": "Appliquer",
       "labels": "Étiquettes",
-      "alpha": "Transparence",
+      "alpha": "Alpha",
       "marker": "Marqueur"
     }
   }

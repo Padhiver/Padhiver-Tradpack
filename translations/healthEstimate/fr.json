@@ -3,15 +3,15 @@
 		"core": {
 			"custom": {
 				"FractionHP": {
-					"name": "Chemin des données des points de vie",
-					"hint": "Votre système pourrait utiliser un autre chemin de données. Si l'estimation ne s'affiche pas correctement, indiquez le chemin des données vers l'attribut correct (par exemple, actor.system.health)."
+					"name": "Chemin de données de l'attribut des points de vie",
+					"hint": "Votre système utilise peut-être un autre chemin de données. Si l'estimation ne s'affiche pas correctement, saisissez le chemin de données vers l'attribut correct (par ex. actor.system.health)."
 				},
 				"FractionMath": {
 					"name": "Équation de fraction",
-					"hint": "L'équation des points de vie de votre système pourrait être différente de celle par défaut. Choisissez l'équation utilisée pour estimer la fraction de santé.",
+					"hint": "L'équation des PV de votre système peut être différente de celle par défaut, choisissez l'équation utilisée pour estimer la fraction de santé.",
 					"choices": {
-						"0": "(Points de vie actuels)/(Points de vie max)",
-						"1": "(Points de vie max - Points de vie actuels)/(Points de vie max)"
+						"0": "(PV actuels)/(PV max)",
+						"1": "(PV max - PV actuels)/(PV max)"
 					}
 				}
 			},
@@ -21,7 +21,7 @@
 				"best": "Meilleur",
 				"states": {
 					"0": "Inconscient",
-					"1": "Mourant",
+					"1": "Proche de la mort",
 					"2": "Gravement blessé",
 					"3": "Blessé",
 					"4": "Légèrement blessé",
@@ -29,60 +29,60 @@
 				},
 				"vehicles": {
 					"0": "Détruit",
-					"1": "En flammes",
+					"1": "En feu",
 					"2": "Fumant",
 					"3": "Endommagé",
 					"4": "Éraflé",
-					"5": "Impeccable"
+					"5": "Intact"
 				},
 				"thresholds": {
 					"0": "Détruit",
 					"1": "Cassé",
-					"2": "Fonctionnel"
+					"2": "Pleinement fonctionnel"
 				}
 			},
 			"estimationSettings": {
 				"title": "Paramètres d'estimation",
 				"AddEstimate": "Ajouter une estimation",
-				"addTable": "Ajouter un tableau",
+				"addTable": "Ajouter une table",
 				"default": "Défaut",
-				"deleteTable": "Supprimer le tableau",
+				"deleteTable": "Supprimer la table",
 				"estimate": "Estimation",
 				"jsRule": "Règle JS",
 				"prioDecrease": "Diminuer la priorité",
 				"prioIncrease": "Augmenter la priorité",
 				"ignoreColor": {
 					"name": "Ignorer la couleur",
-					"hint": "Ignore les couleurs de ce tableau et utilise les couleurs du prochain tableau valide pour le token. Conçu pour les états qui devraient avoir la priorité sur une estimation, mais utiliser la couleur de cette estimation."
+					"hint": "Ignore les couleurs de cette table et utilise les couleurs de la prochaine table valide pour le token. Ceci est destiné aux états qui devraient avoir la priorité sur une estimation, mais qui devraient quand même utiliser la couleur de cette estimation."
 				}
 			},
 			"keybinds": {
 				"markDead": {
 					"name": "Marquer comme mort",
-					"hint": "Marque tous les tokens sélectionnés comme morts. Si tous les tokens sélectionnés sont déjà morts, ils seront réinitialisés à vivants."
+					"hint": "Marque tous les tokens sélectionnés comme Morts. Si tous les tokens sélectionnés sont déjà Morts, ils seront réinitialisés comme vivants."
 				},
 				"customEstimates": {
 					"name": "Estimations personnalisées",
 					"hint": "Définit des estimations personnalisées pour les tokens sélectionnés. Laissez vide pour réinitialiser.",
 					"options": {
-						"1": "Tokens & acteurs",
-						"2": "Tokens uniquement"
+						"1": "Tokens & Acteurs",
+						"2": "Tokens seulement"
 					}
 				},
 				"dontMarkDead": {
 					"name": "Ne pas marquer comme mort",
-					"hint": "Empêche les PNJ d'être affichés comme morts lorsque leurs points de vie atteignent 0 (par exemple, ils seront affichés comme inconscients). Utile uniquement si vous utilisez le paramètre {setting}."
+					"hint": "Empêche les PNJs d'être affichés comme Morts lorsque leurs PV atteignent 0 (par ex., ils afficheront Inconscient). Ceci n'est utile que si vous utilisez le paramètre {setting}."
 				},
 				"hideEstimates": {
 					"name": "Masquer les estimations",
-					"hint": "Masque les estimations des tokens sélectionnés pour les joueurs. Les estimations masquées ne seront pas affichées dans le tchat si le paramètre est activé, et seront affichées avec un astérisque (*) pour le MJ."
+					"hint": "Masque les estimations des tokens sélectionnés pour les joueurs. Les estimations masquées ne seront pas envoyées dans le tchat si le paramètre est activé, et seront affichées avec un astérisque (*) pour le MJ."
 				},
 				"hideNames": {
 					"name": "Masquer les noms",
 					"hint": "Masque les noms des tokens sélectionnés lorsque vous utilisez le paramètre {setting}."
 				},
 				"hideEstimatesAndNames": {
-					"name": "Masquer les estimations et noms",
+					"name": "Masquer estimations et noms",
 					"hint": "Masque à la fois les estimations et les noms des tokens sélectionnés."
 				}
 			},
@@ -91,36 +91,36 @@
 				"name": "Nom d'entité inconnue",
 				"hint": "Définit comment un personnage masqué doit être appelé.{warning}",
 				"default": "Entité inconnue",
-				"warningCUB": "Si vous utilisez la fonctionnalité de masquage des noms de CUB, elle aura la priorité sur ce paramètre.",
-				"warningPF2eWorkbench": "Si vous utilisez la fonctionnalité de mystification des noms de PF2e Workbench, elle aura la priorité sur ce paramètre."
+				"warningCUB": "Si vous utilisez la fonctionnalité de CUB pour masquer les noms, elle aura la priorité sur ce paramètre.",
+				"warningPF2eWorkbench": "Si vous utilisez la fonctionnalité de PF2e Workbench pour mystifier les noms, elle aura la priorité sur ce paramètre."
 			},
 			"alwaysShow": {
 				"name": "Toujours afficher les estimations",
-				"hint": "Affiche les estimations en permanence au lieu de les afficher uniquement lors du survol du token."
+				"hint": "Rend les estimations toujours visibles au lieu de seulement au survol d'un token."
 			},
 			"combatOnly": {
-				"name": "Afficher uniquement en combat",
+				"name": "Afficher seulement en combat",
 				"hint": "Affiche les estimations uniquement lorsqu'un combat est actif."
 			},
 			"showDescription": {
-				"name": "Afficher les estimations : utilisateurs",
-				"hint": "Affiche les estimations aux utilisateurs suivants.",
+				"name": "Afficher les estimations : Utilisateurs",
+				"hint": "Afficher les estimations aux utilisateurs suivants.",
 				"choices": {
 					"all": "Tous",
-					"GM": "Maîtres de jeu",
+					"GM": "Maîtres du jeu",
 					"Players": "Joueurs",
 					"NPC": "Personnages non-joueurs",
 					"PC": "Personnages joueurs"
 				}
 			},
 			"showDescriptionTokenType": {
-				"name": "Afficher les estimations : tokens",
-				"hint": "Affiche les estimations pour les tokens suivants."
+				"name": "Afficher les estimations : Tokens",
+				"hint": "Afficher les estimations des tokens suivants."
 			},
 			"deathState": {
 				"name": "État de mort sur condition",
-				"hint1": "Affiche le token comme défini dans le paramètre {setting} lorsqu'il est affecté par une condition utilisant l'icône définie dans le paramètre {setting2}.",
-				"hint2": "Affiche le token comme défini dans le paramètre {setting} lorsqu'il est marqué comme vaincu en combat."
+				"hint1": "Afficher le token tel que défini dans le paramètre {setting} lorsqu'il a été affecté par un état qui utilise l'icône définie dans le paramètre {setting2}.",
+				"hint2": "Afficher le token tel que défini dans le paramètre {setting} lorsqu'il a été marqué comme vaincu en combat."
 			},
 			"deathStateName": {
 				"name": "Nom de l'état de mort",
@@ -129,32 +129,32 @@
 			},
 			"deathMarker": {
 				"name": "Marqueur de mort",
-				"hint": "Chemin vers l'icône de condition qui marque les tokens morts."
+				"hint": "Chemin vers l'icône d'état qui marque les tokens morts."
 			},
 			"tooltipPosition": {
-				"name": "Position de l'info-bulle d'élévation",
-				"hint": "Déplace l'info-bulle d'élévation pour éviter les conflits avec l'estimation affichée en haut du token.",
+				"name": "Position de l'infobulle d'élévation",
+				"hint": "Déplace l'infobulle d'élévation pour éviter les conflits avec l'Estimation lorsqu'elle est rendue en haut du token.",
 				"options": {
 					"left": "Gauche",
-					"default": "Défaut (aucun changement)",
+					"default": "Défaut (pas de changement)",
 					"right": "Droite"
 				}
 			},
 			"NPCsJustDie": {
-				"name": "Les PNJ meurent immédiatement",
-				"hint": "Le dernier stade des tokens dont les acteurs ne sont pas sélectionnés par les joueurs est remplacé par le paramètre {setting}. Pour plus d'informations sur ce que signifie \"sélectionnés par les joueurs\", consultez la section Configuration des utilisateurs dans l'article \"Utilisateurs et permissions\" de Foundry."
+				"name": "Les PNJs meurent immédiatement",
+				"hint": "Le dernier stade des tokens dont les acteurs ne sont pas sélectionnés par les joueurs est remplacé par le {setting}. Pour plus d'informations sur ce que signifie \"sélectionné par les joueurs\", lisez la section Configuration Utilisateur dans l'article \"Utilisateurs et Permissions\" de Foundry."
 			},
 			"outputChat": {
-				"name": "Afficher l'estimation dans le tchat",
-				"hint": "Affiche les changements d'estimation dans le tchat. Les personnages masqués avec la configuration de token \"Masquer les noms\" seront affichés comme la description du paramètre {setting}."
+				"name": "Envoyer l'estimation dans le tchat",
+				"hint": "Envoyer toute modification d'estimation dans le tchat. Les personnages marqués avec la configuration de token Masquer les noms seront affichés comme la description du paramètre {setting}."
 			},
 			"addTemp": {
 				"name": "Ajouter les points de vie temporaires",
-				"hint": "Inclut les points de vie temporaires dans le calcul de la description à afficher.\nPar exemple, avec ce paramètre activé, le token recevant des points de vie temporaires paraîtra \"en meilleure santé\" sauf s'il est déjà à son maximum."
+				"hint": "Inclure les points de vie temporaires dans le calcul de la description à afficher.\nPar ex. avec ce paramètre activé, le token recevant des PV temporaires semblera \"en meilleure santé\" sauf s'il est déjà à ses points de vie maximum."
 			},
 			"breakOnZeroMaxHP": {
-				"name": "Masquer les estimations pour les tokens avec 0 PV max",
-				"hint": "Utile pour les objets avec tokens."
+				"name": "Masquer les estimations sur les tokens avec 0 PV max",
+				"hint": "Utile pour les objets avec des tokens."
 			},
 			"menuSettings": {
 				"behaviorSettings": {
@@ -171,15 +171,15 @@
 				},
 				"fontSize": {
 					"name": "Taille de police",
-					"hint": "Accepte toute propriété valide pour CSS font-size"
+					"hint": "Accepte toute propriété valide pour font-size en CSS"
 				},
 				"useColor": {
 					"name": "Utiliser la couleur",
 					"hint": "Les estimations seront affichées en noir et blanc."
 				},
 				"smoothGradient": {
-					"name": "Dégradé progressif",
-					"hint": "Avec ce paramètre désactivé, la couleur ne changera que lorsque la prochaine description sera atteinte. Avec ce paramètre activé, elle reflétera le pourcentage de santé."
+					"name": "Dégradé lisse",
+					"hint": "Avec ce paramètre désactivé, la couleur ne changera que lorsque la description suivante sera atteinte, avec ce paramètre activé, elle reflètera le pourcentage de santé."
 				},
 				"deadColor": {
 					"name": "Couleur des tokens morts"
@@ -191,7 +191,7 @@
 				},
 				"position": {
 					"name": "Hauteur",
-					"hint": "La hauteur est définie par rapport au cadre du token. Les valeurs négatives le poussent vers le haut ; les valeurs positives, vers le bas.",
+					"hint": "La hauteur est définie par rapport au cadre du token. Les valeurs négatives le poussent plus haut ; positives, plus bas.",
 					"top": "Haut",
 					"middle": "Milieu",
 					"bottom": "Bas"
@@ -201,33 +201,33 @@
 					"hint": "La position relative au cadre du token."
 				},
 				"positionAdjustment": {
-					"name": "Ajustement des marges",
-					"hint": "Ajuste la marge du texte. Les valeurs positives le poussent vers le haut ; les valeurs négatives, vers le bas."
+					"name": "Ajustement de la marge",
+					"hint": "Ajuster la marge du texte. Les valeurs positives le poussent plus haut ; négatives, plus bas."
 				},
 				"scaleToGridSize": {
-					"name": "Adapter les estimations à la taille de la grille",
-					"hint": "Redimensionne l'estimation en fonction de la taille de la grille, en prenant 100px comme référence."
+					"name": "Mettre à l'échelle les estimations selon la taille de la grille",
+					"hint": "Met à l'échelle l'estimation en fonction de la taille de la grille, en supposant 100px comme référence."
 				},
 				"scaleToZoom": {
-					"name": "Adapter les estimations au zoom",
-					"hint": "Redimensionne l'estimation en fonction de la distance de zoom."
+					"name": "Mettre à l'échelle les estimations selon le zoom",
+					"hint": "Met à l'échelle l'estimation en fonction de la distance de zoom."
 				}
 			}
 		},
 		"notifications": {
 			"terms": {
 				"shown": {
-					"singular": "affiché",
-					"plural": "affichés"
+					"singular": "affichée",
+					"plural": "affichées"
 				},
 				"hidden": {
-					"singular": "masqué",
-					"plural": "masqués"
+					"singular": "masquée",
+					"plural": "masquées"
 				}
 			},
-			"toggleEstimate": "L'estimation de santé de {tokenName} est {term} aux joueurs.",
-			"toggleName": "Le nom de {tokenName} est {term} aux joueurs.",
-			"toggleEstimateName": "L'estimation de santé et le nom de {tokenName} sont {term} aux joueurs.",
+			"toggleEstimate": "L'estimation de santé de {tokenName} est {term} pour les joueurs.",
+			"toggleName": "Le nom de {tokenName} est {term} pour les joueurs.",
+			"toggleEstimateName": "L'estimation de santé et le nom de {tokenName} sont {term} pour les joueurs.",
 			"invalidFontSize": "Votre paramètre de style Taille de police a été réinitialisé. Vérifiez les Paramètres de style pour le modifier. Valeur précédente : {fontSize}"
 		},
 		"custom-system-builder": {
@@ -235,94 +235,94 @@
 				"hint": "Ce sera probablement {dataPath1} ou {dataPath2}."
 			},
 			"tempHP": {
-				"name": "Chemin des données des points de vie temporaires",
-				"hint": "Laissez vide si le système n'en a pas ou si vous ne voulez pas qu'ils soient inclus dans l'estimation."
+				"name": "Chemin de données de l'attribut des points de vie temporaires",
+				"hint": "Laissez vide si le système n'en a pas ou si vous ne voulez pas qu'il soit ajouté à l'estimation."
 			}
 		},
 		"cyberpunk-red-core": {
 			"unorganics": {
-				"0": "Désactivé",
-				"2": "Défectueux",
+				"4": "Intact",
 				"3": "Opérationnel",
-				"4": "Intact"
+				"2": "Dysfonctionnel",
+				"0": "Désactivé"
 			}
 		},
 		"cyphersystem": {
 			"impaired": {
-				"name": "Niveau de santé pour les PJ handicapés",
-				"hint": "Définit le niveau de santé maximal (actuel / maximal, fraction de 0,0 à 1,0) pouvant être signalé pour un personnage joueur en état critique ou mourant"
+				"name": "Niveau de santé pour les PJ Affaiblis",
+				"hint": "Définit le niveau de santé maximum (actuel / maximum, fraction 0.0 - 1.0) qui peut être rapporté pour un PJ qui est Affaibli sur la Piste de Mort"
 			},
 			"debilitated": {
-				"name": "Niveau de santé pour les PJ démolis",
-				"hint": "Définit le niveau de santé maximal (actuel / maximal, fraction de 0,0 à 1,0) pouvant être signalé pour un personnage joueur (PC) en état de faiblesse extrême ou mourant"
+				"name": "Niveau de santé pour les PJ Débilités",
+				"hint": "Définit le niveau de santé maximum (actuel / maximum, fraction 0.0 - 1.0) qui peut être rapporté pour un PJ qui est Débilité sur la Piste de Mort"
 			}
 		},
 		"PF1": {
 			"addNonlethal": {
-				"name": "Utiliser les dégâts non létaux",
-				"hint": "Si activé, les dégâts non létaux seront soustraits des points de vie actuels pour l'estimation."
+				"name": "Utiliser les dégâts non-létaux",
+				"hint": "Si activé, les dégâts non-létaux seront soustraits de la santé actuelle pour l'estimation."
 			},
 			"showExtra": {
 				"name": "Afficher {condition1} & {condition2}",
 				"hint": "Affiche les descriptions {condition1} et {condition2} lorsque leurs prérequis sont remplis."
 			},
 			"disabledName": {
-				"name": "État d'ébranlé",
-				"default": "Ébranlé"
+				"name": "Stade Chancelant",
+				"default": "Chancelant"
 			},
 			"dyingName": {
-				"name": "État d'inconscient",
+				"name": "Stade Inconscient",
 				"default": "Inconscient"
 			}
 		},
 		"PF2E": {
 			"staminaToHp": {
-				"name": "Points d'endurance à l'estimation",
-				"hint": "Ajoute les points d'endurance à l'estimation."
+				"name": "Endurance pour l'estimation",
+				"hint": "Ajouter les Points d'endurance à l'estimation."
 			},
 			"hideHazardHP": {
 				"name": "Masquer l'estimation des dangers",
-				"hint": "Masque l'estimation des dangers."
+				"hint": "Masque l'estimation des Dangers."
 			},
 			"hideVehicleHP": {
 				"name": "Masquer l'estimation des véhicules",
-				"hint": "Masque l'estimation des véhicules."
+				"hint": "Masque l'estimation des Véhicules."
 			},
 			"workbenchMystifier": {
-				"name": "(EXPÉRIMENTAL) Support du mystificateur de PF2e Workbench",
-				"hint": "Si les paramètres de mystification des PNJ sont activés, les sorties de tchat ignoreront le nom du paramètre {setting} et utiliseront le nom du token s'il est différent du nom du token prototype de son acteur."
+				"name": "(EXPÉRIMENTAL) Support du Mystificateur de PF2e Workbench",
+				"hint": "Si les paramètres de Mystification des PNJs sont activés, les sorties dans le Tchat ignoreront le nom du paramètre {setting} et utiliseront le nom du token s'il est différent du nom du Token Prototype de son acteur."
 			}
 		},
 		"numenera": {
 			"countPools": {
-				"name": "Compter les réservoirs vides",
-				"hint": "Compte les réservoirs vides au lieu de la somme de leurs valeurs, l'estimation ne changeant que lorsqu'un réservoir est vidé ou rempli."
+				"name": "Compter les réserves vides",
+				"hint": "Compter les réserves vides au lieu de la somme de leurs valeurs, l'estimation ne changeant que lorsqu'une réserve est épuisée ou reconstituée."
 			}
 		},
 		"starfinder": {
 			"useThreshold": {
 				"name": "Utiliser le seuil des véhicules",
-				"hint": "Définit quel tableau d'estimation sera utilisé pour calculer les estimations des véhicules."
+				"hint": "Définit quelle table d'estimation sera utilisée lors du calcul des estimations d'un Véhicule."
 			},
 			"addStamina": {
 				"name": "Prendre en compte l'endurance",
-				"hint": "Avec ce paramètre activé, l'endurance sera ajoutée aux points de vie pour les calculs."
+				"hint": "Avec ce paramètre activé, l'Endurance sera ajoutée aux PV pour les calculs."
 			}
 		},
 		"worldbuilding": {
 			"simpleRule": {
 				"name": "Règle d'estimation",
-				"hint": "La formule JS pour calculer la fraction de santé du token. Modifiez avec prudence. Par défaut, suppose une santé descendante simple, par exemple, vous commencez avec 10/10 dans votre champ de santé et descendez à 0/10 en subissant des dégâts."
+				"hint": "La formule JS pour calculer la fraction de santé qu'un token possède. Modifier avec prudence. La valeur par défaut suppose une santé descendante simple, par ex. vous commencez avec 10/10 dans votre champ de santé et descendez à 0/10 en subissant des dégâts."
 			}
 		},
 		"swade": {
 			"defaultWildCardMaxWounds": {
-				"name": "Blessures max par défaut pour les wild cards",
-				"hint": "Utilisé pour calculer le nombre maximum de blessures qu'un PNJ wild card devrait avoir par défaut pour les estimations."
+				"name": "Blessures max par défaut des Jokers",
+				"hint": "Ceci est utilisé pour calculer les blessures max qu'un PNJ Joker devrait avoir par défaut pour les estimations."
 			},
 			"showIncap": {
 				"name": "Effet de statut {incap}",
-				"hint": "Les tokens avec l'effet de statut {incap} seront affichés comme {incap} au lieu de leurs estimations actuelles. Ne fonctionne pas pour les tokens qui sont des véhicules ou morts."
+				"hint": "Les tokens avec l'Effet de statut {incap} seront affichés comme {incap} au lieu de leurs estimations actuelles. Ne fonctionne pas pour les tokens qui sont des véhicules ou morts."
 			}
 		}
 	}

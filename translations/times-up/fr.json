@@ -1,12 +1,12 @@
 {
   "times-up.Debug.Name": "Débogage",
-  "times-up.Debug.Hint": "Choisissez la quantité de débogage à afficher",
+  "times-up.Debug.Hint": "Choisissez le niveau de débogage à afficher",
   "times-up.TimesUpEnabled.Name": "Activer Times Up",
-  "times-up.TimesUpEnabled.Hint": "Active l'expiration automatique et la modification des effets. Les changements d'effets passifs nécessitent cette activation",
+  "times-up.TimesUpEnabled.Hint": "Activer l'expiration et la modification automatique des effets. Les changements aux effets passifs nécessitent que ceci soit activé",
   "times-up.EnablePassiveEffects.Name": "Définir le début pour les effets de transfert",
-  "times-up.EnablePassiveEffects.Hint": "Lorsqu'un effet actif expiré est activé, mettez à jour son heure de début avec l'heure actuelle du monde/combat",
+  "times-up.EnablePassiveEffects.Hint": "Lorsqu'un effet actif expiré est activé, mettre à jour son heure de début avec l'heure actuelle du monde/combat",
   "times-up.UpdatePassiveEffects.Name": "Mettre à jour les effets passifs",
-  "times-up.UpdatePassiveEffects.Hint": "Le type de durée des effets passifs sera changé en tours/secondes si le token est en (ou entre en) combat/quitte le combat. Voir aussi ci-dessous",
-  "times-up.MaxRoundsToConvert.Name": "Tours max à convertir",
-  "times-up.MaxRoundsToConvert.Hint": "Si la durée en secondes (durée restante pour les effets non transférés) est <= à ce nombre de tours, elle sera convertie en tours pour le combat"
+  "times-up.UpdatePassiveEffects.Hint": "Le type de durée des effets passifs sera changé en rounds/secondes si le token est en combat (ou y entre) / quitte le combat. Voir aussi ci-dessous",
+  "times-up.MaxRoundsToConvert.Name": "Maximum de rounds à convertir",
+  "times-up.MaxRoundsToConvert.Hint": "Si la durée en secondes (durée restante pour les effets non transférés) est <= à ce nombre de rounds, elle sera convertie en rounds pour le combat"
 }
