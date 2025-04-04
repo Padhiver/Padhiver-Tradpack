@@ -2,128 +2,128 @@
   "aedifs-tactical-grid": {
     "settings": {
       "defaultViewDistance": {
-        "name": "Default Grid View Distance",
-        "hint": "Number of grid spaces to be displayed."
+        "name": "Distance de vue par défaut de la grille",
+        "hint": "Nombre d'espaces de la grille à afficher."
       },
       "usePropertyBasedDistance": {
-        "name": "Use Token Property Based Distance",
-        "hint": "Use a token property instead of `Default Grid View Distance`"
+        "name": "Utiliser une distance basée sur les propriétés du Token",
+        "hint": "Utilise une propriété du Token au lieu de la `Distance de vue par défaut de la grille`."
       },
       "propertyDistance": {
-        "name": "Token Property",
-        "hint": "Path to the Token property to be used to determine the size of the grid."
+        "name": "Propriété du Token",
+        "hint": "Chemin vers la propriété du Token utilisée pour déterminer la taille de la grille."
       },
       "defaultViewShape": {
-        "name": "Default Grid View Shape",
-        "hint": "The shape of the grid mask."
+        "name": "Forme de vue par défaut de la grille",
+        "hint": "La forme du masque de la grille."
       },
       "enableOnCombatOnly": {
-        "name": "On Combat Only",
-        "hint": "Grid will only be shown when in combat."
+        "name": "Uniquement en combat",
+        "hint": "La grille ne sera affichée qu'en combat."
       },
       "enableOnControl": {
-        "name": "On Control",
-        "hint": "Grid will be shown for controlled placeables."
+        "name": "Sur contrôle",
+        "hint": "La grille sera affichée pour les objets contrôlés."
       },
       "enableOnHover": {
-        "name": "On Hover",
-        "hint": "Grid will be shown for hovered over placeables."
+        "name": "Sur survol",
+        "hint": "La grille sera affichée pour les objets survolés."
       },
       "mixColors": {
-        "name": "Mix Colors",
-        "hint": "When enabled view shape colors will be mixed/blended together."
+        "name": "Mélanger les couleurs",
+        "hint": "Lorsqu'activé, les couleurs des formes de vue seront mélangées."
       },
       "assignDispositionBasedColor": {
-        "name": "Assign Color Based on Disposition",
-        "hint": "When enabled Token view shape colors will default to their disposition:"
+        "name": "Attribuer une couleur basée sur la disposition",
+        "hint": "Lorsqu'activé, les couleurs des formes de vue des Tokens seront définies par défaut selon leur disposition :"
       },
       "layerEnable": {
-        "hint": "Enable tactical grid for \"{layerName}\""
+        "hint": "Activer la grille tactique pour \"{layerName}\""
       },
       "enableOnRuler": {
-        "name": "Enable Tactical Grid For Ruler",
-        "hint": "Enables grid for Ruler Measurements (requires libWrapper to be active)."
+        "name": "Activer la grille tactique pour la règle",
+        "hint": "Active la grille pour les mesures de la règle (nécessite que libWrapper soit actif)."
       },
       "measurementPrecision": {
-        "hint": "Decimal precision that measured distances are to be displayed in."
+        "hint": "Précision décimale à laquelle les distances mesurées doivent être affichées."
       },
       "rulerColor": {
-        "hint": "Set a color for the ruler grid. If no color is set then it will use the grid color of the scene."
+        "hint": "Définir une couleur pour la grille de la règle. Si aucune couleur n'est définie, la couleur de la grille de la scène sera utilisée."
       },
       "includeElevation": {
-        "name": "Include Elevation",
-        "hint": "Should elevation be included in distance measurements?"
+        "name": "Inclure l'élévation",
+        "hint": "L'élévation doit-elle être incluse dans les mesures de distance ?"
       },
       "shortestDistance": {
-        "name": "Shortest Distance Only",
-        "hint": "Only the shortest distance to the token will be shown."
+        "name": "Distance la plus courte uniquement",
+        "hint": "Seule la distance la plus courte vers le Token sera affichée."
       },
       "gridlessCircle": {
-        "name": "Gridless: Circle Border",
-        "hint": "If enabled, on gridless scenes the module will calculate shortest distance assuming the Token border is a circle."
+        "name": "Sans grille : Bordure circulaire",
+        "hint": "Si activé, sur les scènes sans grille, le module calculera la distance la plus courte en supposant que la bordure du Token est un cercle."
       },
-      "scaleFontSize": "Scale Font Size to Canvas Grid",
+      "scaleFontSize": "Ajuster la taille de la police à la grille du canevas",
       "baseGridSize": {
-        "name": "Base Grid Size",
-        "hint": "Grid smaller or larger than this will result in Font Size being scaled proportionally."
+        "name": "Taille de base de la grille",
+        "hint": "Une grille plus petite ou plus grande que cette taille entraînera un ajustement proportionnel de la taille de la police."
       },
       "cover": {
-        "name": "Cover Calculator",
-        "hint": "If a cover calculator is selected and corresponding module enabled; cover information will be displayed under measurements.",
-        "none": "None",
-        "half": "Half",
-        "threeQuarters": "Three-quarters",
-        "total": "Total"
+        "name": "Calculateur de couverture",
+        "hint": "Si un calculateur de couverture est sélectionné et que le module correspondant est activé, les informations de couverture seront affichées sous les mesures.",
+        "none": "Aucune",
+        "half": "Moitié",
+        "threeQuarters": "Trois-quarts",
+        "total": "Totale"
       },
       "ignoreEffect": {
-        "name": "Ignore Tokens with Effect",
-        "hint": "Tokens with a matching effect name will be ignored from measurement calculations."
+        "name": "Ignorer les Tokens avec un effet",
+        "hint": "Les Tokens avec un nom d'effet correspondant seront ignorés dans les calculs de mesure."
       },
       "displayDistancesOnRulerDrag": {
-        "name": "Display Distances on Ruler Drag",
-        "hint": "When enabled distances between the leading point of the ruler and all visible Tokens will be calculated and displayed on them."
+        "name": "Afficher les distances lors du déplacement de la règle",
+        "hint": "Lorsqu'activé, les distances entre le point de départ de la règle et tous les Tokens visibles seront calculées et affichées sur eux."
       },
       "displayDistancesOnTokenDrag": {
-        "name": "Display Distances on Token Drag",
-        "hint": "When enabled distances between the dragged token and all visible Tokens will be calculated and displayed on them."
+        "name": "Afficher les distances lors du déplacement d'un Token",
+        "hint": "Lorsqu'activé, les distances entre le Token déplacé et tous les Tokens visibles seront calculées et affichées sur eux."
       },
       "range": {
-        "item-range": "Item Range Highlighter",
-        "token-range": "Token Range Highlighter",
-        "combat-only": "Combat Only",
-        "ranges": "Ranges",
-        "grid-shape-shrink": "Grid Shape Shrink",
-        "dispositions": "Dispositions Highlighted for Players"
+        "item-range": "Surligneur de portée d'objet",
+        "token-range": "Surligneur de portée de Token",
+        "combat-only": "Uniquement en combat",
+        "ranges": "Portées",
+        "grid-shape-shrink": "Réduction de la forme de la grille",
+        "dispositions": "Dispositions mises en évidence pour les joueurs"
       },
       "diagonalMultiplier": {
-        "name": "Diagonal Multiplier",
-        "hint": "Adjust distance scaling for grid-space moves that travel in both X and Y direction at the same time. 1.5x multiplier is equivalent to 5/10/5 rule. 1.0x is equivalent to 5/5/5."
+        "name": "Multiplicateur diagonal",
+        "hint": "Ajuste l'échelle de distance pour les déplacements en diagonale sur la grille. Un multiplicateur de 1,5x équivaut à la règle 5/10/5. Un multiplicateur de 1,0x équivaut à la règle 5/5/5."
       },
       "doubleDiagonalMultiplier": {
-        "name": "Double-Diagonal Multiplier",
-        "hint": "Adjust distance scaling for grid-space moves that travel in X, Y and Z direction at the same time."
+        "name": "Multiplicateur double-diagonale",
+        "hint": "Ajuste l'échelle de distance pour les déplacements en diagonale sur les trois axes (X, Y et Z)."
       }
     },
     "keybindings": {
       "toggleGrid": {
-        "name": "Toggle Grid on Current Layer (Global)",
-        "hint": "Short Press will toggle the layer globally, a long press will toggle the layer just for the current Scene."
+        "name": "Activer/Désactiver la grille sur la couche actuelle (Global)",
+        "hint": "Un appui court activera/désactivera la couche globalement, un appui long activera/désactivera la couche uniquement pour la scène actuelle."
       },
       "sceneToggleGrid": {
-        "name": "Toggle Grid on Current Layer (Scene)",
+        "name": "Activer/Désactiver la grille sur la couche actuelle (Scène)",
         "hint": ""
       }
     },
     "common": {
-      "layers": "Layers",
-      "gridSpaces": "Grid Spaces",
-      "color": "Color",
-      "precision": "Precision",
-      "decimalPlaces": "Decimal Places",
-      "apply": "Apply",
-      "labels": "Labels",
-      "alpha": "Alpha",
-      "marker": "Marker"
+      "layers": "Couches",
+      "gridSpaces": "Espaces de la grille",
+      "color": "Couleur",
+      "precision": "Précision",
+      "decimalPlaces": "Décimales",
+      "apply": "Appliquer",
+      "labels": "Étiquettes",
+      "alpha": "Transparence",
+      "marker": "Marqueur"
     }
   }
 }
