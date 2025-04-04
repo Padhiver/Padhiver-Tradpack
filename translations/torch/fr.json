@@ -1,7 +1,8 @@
 {
 	"I18N.LANGUAGE": "Français",
-	"I18N.MAINTAINERS": ["Padhiver"],
-
+	"I18N.MAINTAINERS": [
+		"Padhiver"
+	],
 	"torch.settings.gameLightSources.name": "Sources de lumière additionnelles",
 	"torch.settings.gameLightSources.hint": "Fichier JSON contenant des sources de lumière additionnelles à utiliser au-delà de celles fournies",
 	"torch.settings.playerTorches.name": "Torches des joueurs",
@@ -26,5 +27,5 @@
 	"torch.help.supplyExhausted.body": "<p>Votre source de lumière est consommable et sa quantité est tombée à zéro. Augmentez la quantité de l'objet pour en allumer une nouvelle.</p>",
 	"torch.help.setupSources.title": "Configuration des sources de lumière",
 	"torch.help.setupSources.body": "<p>Votre personnage n'a actuellement aucune source de lumière dans son inventaire, que ce soit sous forme d'objets ou de sorts.</p><p>Pour les systèmes reconnus, les sources de lumière proposées sont basées sur les objets de l'inventaire - par nom. Placer des sources de lumière connues dans votre inventaire les rendra disponibles.</p><p>Certaines sources de lumière sont consommables, comme les bougies et les torches. Pour celles-ci, utiliser une source de lumière diminue sa quantité de un.</p><p>Pour les systèmes qui n'ont pas de sources de lumière basées sur l'inventaire configurées, vous pouvez configurer les sources de lumière via les paramètres du module. Dans ce cas, tous les personnages obtiennent la même source de lumière.</p><p>Vous pouvez faire reconnaître un système en fournissant un fichier JSON de sources de lumière, comme décrit dans le README.md.</p><p>Si vous avez plusieurs sources de lumière dans votre inventaire, vous pouvez choisir parmi elles en faisant un clic droit sur le bouton Torche de l'ATH lorsque vous n'avez pas de source de lumière allumée.</p>",
-    "torch.hud.tooltip": "Torche"
+	"torch.hud.tooltip": "Torche"
 }

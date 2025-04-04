@@ -41,7 +41,7 @@
   "dnd5e-scriptlets.AmmoTracker.Hint": "À la fin du combat, la moitié des munitions non magiques est récupérée pour chaque combattant",
   "dnd5e-scriptlets.AmmoRecoveryMessage.Name": "Afficher le message de récupération des munitions",
   "dnd5e-scriptlets.AmmoRecoveryMessage.Hint": "Afficher les munitions récupérées à la fin du combat",
-  "dnd5e-scriptlets.SilentInitiative.Name":  "Initiative silencieuse",
+  "dnd5e-scriptlets.SilentInitiative.Name": "Initiative silencieuse",
   "dnd5e-scriptlets.SilentInitiative.Hint": "Lancer l'initiative sans message dans le tchat",
   "dnd5e-scriptlets.UpdateCreatedOrigins.Name": "Corriger les origines des effets lors de la création d'acteurs",
   "dnd5e-scriptlets.UpdateCreatedOrigins.Hint": "Lors de la création d'un acteur, tenter de corriger les origines de tous les effets sur l'acteur",

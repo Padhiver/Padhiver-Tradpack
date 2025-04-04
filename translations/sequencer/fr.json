@@ -184,8 +184,8 @@
           "Label": "Autoriser les joueurs avec le rôle sélectionné et supérieur à jouer des sons via "
         },
         "PreloadClients": {
-           "Title": "Sequencer : Préchargement pour les autres",
-           "Label": "Autoriser les joueurs avec le rôle sélectionné et supérieur à pouvoir précharger des effets et des sons pour d'autres joueurs."
+          "Title": "Sequencer : Préchargement pour les autres",
+          "Label": "Autoriser les joueurs avec le rôle sélectionné et supérieur à pouvoir précharger des effets et des sons pour d'autres joueurs."
         },
         "UseSidebarTools": {
           "Title": "Sequencer : Utiliser les outils de la barre latérale",

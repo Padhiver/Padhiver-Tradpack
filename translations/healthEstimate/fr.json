@@ -241,10 +241,10 @@
 		},
 		"cyberpunk-red-core": {
 			"unorganics": {
-				"4": "Intact",
-				"3": "Opérationnel",
+				"0": "Désactivé",
 				"2": "Dysfonctionnel",
-				"0": "Désactivé"
+				"3": "Opérationnel",
+				"4": "Intact"
 			}
 		},
 		"cyphersystem": {

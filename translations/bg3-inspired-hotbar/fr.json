@@ -1,145 +1,145 @@
 {
   "BG3.Hotbar": {
-      "Errors": {
-          "InvalidDrop": "Données de dépôt invalides : ce n'est pas du JSON valide.",
-          "InvalidItem": "Données d'objet invalides. Seuls les objets avec un UUID valide peuvent être placés dans la barre de raccourcis.",
-          "ItemNotFound": "Impossible de récupérer l'objet à partir de l'UUID. Non placé dans la barre de raccourcis.",
-          "WrongToken": "Vous ne pouvez pas déposer d'objets d'un autre token sur cette barre de raccourcis.",
-          "UnableToRetrieve": "Impossible de récupérer les données de l'objet.",
-          "MacroNotFound": "Macro non trouvée",
-          "NoActor": "Aucun acteur trouvé",
-          "NoUIReference": "Référence UI non trouvée. Veuillez essayer de rafraîchir la page."
-      },
-      "ContextMenu": {
-          "EditItem": "Modifier l'objet",
-          "ConfigureActivities": "Configurer les activités",
-          "Remove": "Retirer"
-      },
-      "UI": {
-          "AddRow": "Ajouter une ligne",
-          "RemoveRow": "Retirer une ligne"
-      },
-      "SettingsMenu": {
-          "ResetLayout": "Réinitialiser la disposition",
-          "ClearAllItems": "Effacer tous les objets",
-          "ImportLayout": "Importer la disposition",
-          "ExportLayout": "Exporter la disposition"
-      }
+    "Errors": {
+      "InvalidDrop": "Données de dépôt invalides : ce n'est pas du JSON valide.",
+      "InvalidItem": "Données d'objet invalides. Seuls les objets avec un UUID valide peuvent être placés dans la barre de raccourcis.",
+      "ItemNotFound": "Impossible de récupérer l'objet à partir de l'UUID. Non placé dans la barre de raccourcis.",
+      "WrongToken": "Vous ne pouvez pas déposer d'objets d'un autre token sur cette barre de raccourcis.",
+      "UnableToRetrieve": "Impossible de récupérer les données de l'objet.",
+      "MacroNotFound": "Macro non trouvée",
+      "NoActor": "Aucun acteur trouvé",
+      "NoUIReference": "Référence UI non trouvée. Veuillez essayer de rafraîchir la page."
+    },
+    "ContextMenu": {
+      "EditItem": "Modifier l'objet",
+      "ConfigureActivities": "Configurer les activités",
+      "Remove": "Retirer"
+    },
+    "UI": {
+      "AddRow": "Ajouter une ligne",
+      "RemoveRow": "Retirer une ligne"
+    },
+    "SettingsMenu": {
+      "ResetLayout": "Réinitialiser la disposition",
+      "ClearAllItems": "Effacer tous les objets",
+      "ImportLayout": "Importer la disposition",
+      "ExportLayout": "Exporter la disposition"
+    }
   },
   "BG3.Settings": {
-      "EnableUI": {
-          "Name": "Activer l'UI de la barre de raccourcis BG3",
-          "Hint": "Activer ou désactiver l'interface de la barre de raccourcis de style BG3. Désactivez ceci si vous préférez utiliser un autre module de barre de raccourcis ou la barre de raccourcis Foundry par défaut."
-      },
-      "ShowDamageRanges": {
-          "Name": "Afficher les dégâts sous forme de plages",
-          "Hint": "Afficher les dégâts des sorts sous forme de plages min-max au lieu de la notation de dés (par ex., '1-8 feu' au lieu de '1d8 feu')"
-      },
-      "ShowMaterialDescription": {
-          "Name": "Afficher la description des composantes matérielles",
-          "Hint": "Afficher la description complète des composantes matérielles dans les infobulles des sorts (par ex. 'diamants d'une valeur de 300 po, que le sort consume')"
-      },
-      "BypassSpellPreparationCheck": {
-          "Name": "Inclure les sorts non préparés",
-          "Hint": "Lorsque cette option est activée, tous les sorts seront inclus dans la barre de raccourcis quel que soit leur état de préparation"
-      },
-      "EnforceSpellPreparationPC": {
-          "Name": "Forcer la préparation des sorts (Tokens liés)",
-          "Hint": "Lorsque cette option est activée, les tokens liés (y compris les personnages joueurs) n'afficheront que les sorts préparés et les sorts spéciaux (inné, à volonté, pacte, rituel, toujours). Lorsqu'elle est désactivée, tous les sorts apparaîtront."
-      },
-      "EnforceSpellPreparationNPC": {
-          "Name": "Forcer la préparation des sorts (Tokens non liés)",
-          "Hint": "Lorsque cette option est activée, les tokens non liés n'afficheront que les sorts préparés et les sorts spéciaux (inné, à volonté, pacte, rituel, toujours). Lorsqu'elle est désactivée, tous les sorts apparaîtront."
-      },
-      "CollapseFoundryMacrobar": {
-          "Name": "Réduire la barre de macros Foundry",
-          "Hint": "Réduire automatiquement la barre de macros Foundry par défaut"
-      },
-      "ShowPassiveFeaturesContainer": {
-          "Name": "Afficher le conteneur des aptitudes passives",
-          "Hint": "Afficher le conteneur des aptitudes passives au-dessus du portrait"
-      },
-      "TooltipDelay": {
-          "Name": "Délai de l'infobulle",
-          "Hint": "Temps d'attente avant d'afficher les infobulles (en millisecondes)"
-      },
-      "FadeOutDelay": {
-          "Name": "Délai de fondu en sortie",
-          "Hint": "Secondes à attendre avant de faire disparaître la barre de raccourcis en fondu"
-      },
-      "NormalOpacity": {
-          "Name": "Opacité normale",
-          "Hint": "Opacité de la barre de raccourcis lorsque la souris est dessus (0.1 à 1.0)"
-      },
-      "FadedOpacity": {
-          "Name": "Opacité estompée",
-          "Hint": "Opacité de la barre de raccourcis lorsque la souris n'est pas dessus (0.0 à 1.0). Réglez sur 1 pour désactiver complètement l'estompage."
-      },
-      "AutoPopulateUnlinkedTokens": {
-          "Name": "Remplir automatiquement les tokens non liés",
-          "Hint": "Remplir automatiquement la barre de raccourcis pour les tokens non liés nouvellement créés en fonction des paramètres ci-dessous"
-      },
-      "Container1AutoPopulate": {
-          "Name": "Remplissage automatique du conteneur 1",
-          "Hint": "Quels types d'objets remplir automatiquement dans le premier conteneur (index 0)"
-      },
-      "Container2AutoPopulate": {
-          "Name": "Remplissage automatique du conteneur 2",
-          "Hint": "Quels types d'objets remplir automatiquement dans le deuxième conteneur (index 1)"
-      },
-      "Container3AutoPopulate": {
-          "Name": "Remplissage automatique du conteneur 3",
-          "Hint": "Quels types d'objets remplir automatiquement dans le troisième conteneur (index 2)"
-      },
-      "AutoPopulateOverflow": {
-          "Name": "Lorsque le conteneur est plein",
-          "Hint": "Choisissez comment gérer les objets lorsque le conteneur manque d'espace.",
-          "Expand": "Continuer à ajouter des lignes",
-          "NextContainer": "Déborder vers le conteneur suivant"
-      },
-      "AutoPopulateFillDirection": {
-          "Name": "Direction de remplissage automatique",
-          "Hint": "Indique s'il faut remplir les lignes d'abord (de gauche à droite, puis vers le bas) ou les colonnes d'abord (de haut en bas, puis vers la droite)",
-          "RowFirst": "Lignes d'abord (De gauche à droite, puis vers le bas)",
-          "ColumnFirst": "Colonnes d'abord (De haut en bas, puis vers la droite)"
-      },
-      "ContainerAutoPopulate": {
-          "DialogTitle": "Remplir automatiquement le conteneur",
-          "DefaultsTitle": "Configurer les paramètres par défaut du remplissage automatique du conteneur",
-          "Name": "Sélectionner les types d'objets",
-          "Hint": "Choisissez quels types d'objets ajouter automatiquement à ce conteneur.",
-          "Weapons": "Armes",
-          "Features": "Aptitudes",
-          "Spells": "Sorts",
-          "Consumables": "Consommables",
-          "Equipment": "Équipement",
-          "Tools": "Outils",
-          "Loot": "Butin",
-          "Populate": "Remplir",
-          "Cancel": "Annuler",
-          "Save": "Enregistrer les modifications",
-          "SaveSuccess": "Paramètres de remplissage automatique du conteneur enregistrés avec succès",
-          "Configure": "Configurer le remplissage automatique du conteneur"
-      },
-      "HighlightStyle": {
-          "Name": "Style de surbrillance",
-          "Hint": "Choisissez comment les objets sont mis en surbrillance lorsqu'ils sont filtrés",
-          "Bottom": "Bordure inférieure",
-          "Border": "Bordure complète"
-      },
-      "DefaultPortraitPreferences": {
-          "Name": "Affichage du portrait par défaut",
-          "Hint": "Choisissez s'il faut afficher les images des tokens ou les portraits des personnages par défaut. Cela peut être remplacé par token. La première fois que vous activez ce paramètre, il s'appliquera à tous les tokens qui n'ont pas de portrait défini.",
-          "Token": "Toujours utiliser l'image du token",
-          "Portrait": "Toujours utiliser le portrait du personnage"
-      },
-      "SettingsCategories": {
-          "HotbarContainer": "Boutons de la barre de raccourcis",
-          "CombatContainer": "Conteneur des actions courantes",
-          "Global": "Global",
-          "Portrait": "Portrait du personnage",
-          "Tooltip": "Infobulle",
-          "AutoPopulating": "Remplissage automatique"
-      }
+    "EnableUI": {
+      "Name": "Activer l'UI de la barre de raccourcis BG3",
+      "Hint": "Activer ou désactiver l'interface de la barre de raccourcis de style BG3. Désactivez ceci si vous préférez utiliser un autre module de barre de raccourcis ou la barre de raccourcis Foundry par défaut."
+    },
+    "ShowDamageRanges": {
+      "Name": "Afficher les dégâts sous forme de plages",
+      "Hint": "Afficher les dégâts des sorts sous forme de plages min-max au lieu de la notation de dés (par ex., '1-8 feu' au lieu de '1d8 feu')"
+    },
+    "ShowMaterialDescription": {
+      "Name": "Afficher la description des composantes matérielles",
+      "Hint": "Afficher la description complète des composantes matérielles dans les infobulles des sorts (par ex. 'diamants d'une valeur de 300 po, que le sort consume')"
+    },
+    "BypassSpellPreparationCheck": {
+      "Name": "Inclure les sorts non préparés",
+      "Hint": "Lorsque cette option est activée, tous les sorts seront inclus dans la barre de raccourcis quel que soit leur état de préparation"
+    },
+    "EnforceSpellPreparationPC": {
+      "Name": "Forcer la préparation des sorts (Tokens liés)",
+      "Hint": "Lorsque cette option est activée, les tokens liés (y compris les personnages joueurs) n'afficheront que les sorts préparés et les sorts spéciaux (inné, à volonté, pacte, rituel, toujours). Lorsqu'elle est désactivée, tous les sorts apparaîtront."
+    },
+    "EnforceSpellPreparationNPC": {
+      "Name": "Forcer la préparation des sorts (Tokens non liés)",
+      "Hint": "Lorsque cette option est activée, les tokens non liés n'afficheront que les sorts préparés et les sorts spéciaux (inné, à volonté, pacte, rituel, toujours). Lorsqu'elle est désactivée, tous les sorts apparaîtront."
+    },
+    "CollapseFoundryMacrobar": {
+      "Name": "Réduire la barre de macros Foundry",
+      "Hint": "Réduire automatiquement la barre de macros Foundry par défaut"
+    },
+    "ShowPassiveFeaturesContainer": {
+      "Name": "Afficher le conteneur des aptitudes passives",
+      "Hint": "Afficher le conteneur des aptitudes passives au-dessus du portrait"
+    },
+    "TooltipDelay": {
+      "Name": "Délai de l'infobulle",
+      "Hint": "Temps d'attente avant d'afficher les infobulles (en millisecondes)"
+    },
+    "FadeOutDelay": {
+      "Name": "Délai de fondu en sortie",
+      "Hint": "Secondes à attendre avant de faire disparaître la barre de raccourcis en fondu"
+    },
+    "NormalOpacity": {
+      "Name": "Opacité normale",
+      "Hint": "Opacité de la barre de raccourcis lorsque la souris est dessus (0.1 à 1.0)"
+    },
+    "FadedOpacity": {
+      "Name": "Opacité estompée",
+      "Hint": "Opacité de la barre de raccourcis lorsque la souris n'est pas dessus (0.0 à 1.0). Réglez sur 1 pour désactiver complètement l'estompage."
+    },
+    "AutoPopulateUnlinkedTokens": {
+      "Name": "Remplir automatiquement les tokens non liés",
+      "Hint": "Remplir automatiquement la barre de raccourcis pour les tokens non liés nouvellement créés en fonction des paramètres ci-dessous"
+    },
+    "Container1AutoPopulate": {
+      "Name": "Remplissage automatique du conteneur 1",
+      "Hint": "Quels types d'objets remplir automatiquement dans le premier conteneur (index 0)"
+    },
+    "Container2AutoPopulate": {
+      "Name": "Remplissage automatique du conteneur 2",
+      "Hint": "Quels types d'objets remplir automatiquement dans le deuxième conteneur (index 1)"
+    },
+    "Container3AutoPopulate": {
+      "Name": "Remplissage automatique du conteneur 3",
+      "Hint": "Quels types d'objets remplir automatiquement dans le troisième conteneur (index 2)"
+    },
+    "AutoPopulateOverflow": {
+      "Name": "Lorsque le conteneur est plein",
+      "Hint": "Choisissez comment gérer les objets lorsque le conteneur manque d'espace.",
+      "Expand": "Continuer à ajouter des lignes",
+      "NextContainer": "Déborder vers le conteneur suivant"
+    },
+    "AutoPopulateFillDirection": {
+      "Name": "Direction de remplissage automatique",
+      "Hint": "Indique s'il faut remplir les lignes d'abord (de gauche à droite, puis vers le bas) ou les colonnes d'abord (de haut en bas, puis vers la droite)",
+      "RowFirst": "Lignes d'abord (De gauche à droite, puis vers le bas)",
+      "ColumnFirst": "Colonnes d'abord (De haut en bas, puis vers la droite)"
+    },
+    "ContainerAutoPopulate": {
+      "DialogTitle": "Remplir automatiquement le conteneur",
+      "DefaultsTitle": "Configurer les paramètres par défaut du remplissage automatique du conteneur",
+      "Name": "Sélectionner les types d'objets",
+      "Hint": "Choisissez quels types d'objets ajouter automatiquement à ce conteneur.",
+      "Weapons": "Armes",
+      "Features": "Aptitudes",
+      "Spells": "Sorts",
+      "Consumables": "Consommables",
+      "Equipment": "Équipement",
+      "Tools": "Outils",
+      "Loot": "Butin",
+      "Populate": "Remplir",
+      "Cancel": "Annuler",
+      "Save": "Enregistrer les modifications",
+      "SaveSuccess": "Paramètres de remplissage automatique du conteneur enregistrés avec succès",
+      "Configure": "Configurer le remplissage automatique du conteneur"
+    },
+    "HighlightStyle": {
+      "Name": "Style de surbrillance",
+      "Hint": "Choisissez comment les objets sont mis en surbrillance lorsqu'ils sont filtrés",
+      "Bottom": "Bordure inférieure",
+      "Border": "Bordure complète"
+    },
+    "DefaultPortraitPreferences": {
+      "Name": "Affichage du portrait par défaut",
+      "Hint": "Choisissez s'il faut afficher les images des tokens ou les portraits des personnages par défaut. Cela peut être remplacé par token. La première fois que vous activez ce paramètre, il s'appliquera à tous les tokens qui n'ont pas de portrait défini.",
+      "Token": "Toujours utiliser l'image du token",
+      "Portrait": "Toujours utiliser le portrait du personnage"
+    },
+    "SettingsCategories": {
+      "HotbarContainer": "Boutons de la barre de raccourcis",
+      "CombatContainer": "Conteneur des actions courantes",
+      "Global": "Global",
+      "Portrait": "Portrait du personnage",
+      "Tooltip": "Infobulle",
+      "AutoPopulating": "Remplissage automatique"
+    }
   }
 }

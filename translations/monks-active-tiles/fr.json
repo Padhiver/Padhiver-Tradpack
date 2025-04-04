@@ -3,7 +3,6 @@
   "MonksActiveTiles.TriggersHint": "Configuration pour quand un joueur interagit avec cette tuile",
   "MonksActiveTiles.TriggersImages": "Liste d'images additionnelles pour cette tuile",
   "MonksActiveTiles.TriggerAction": "Action de déclenchement",
-
   "MonksActiveTiles.ThisTile": "Cette tuile",
   "MonksActiveTiles.TriggeringToken": "Token déclencheur",
   "MonksActiveTiles.PlayerTokens": "Tokens de joueur",
@@ -21,7 +20,6 @@
   "MonksActiveTiles.SelectTile": "Sélectionner une tuile",
   "MonksActiveTiles.Match": "Correspondre",
   "MonksActiveTiles.Scene": "Scène",
-
   "MonksActiveTiles.After": "Après",
   "MonksActiveTiles.Action": "Action",
   "MonksActiveTiles.Update": "Mettre à jour",
@@ -61,15 +59,12 @@
   "MonksActiveTiles.ActiveScene": "Scène active",
   "MonksActiveTiles.TriggeringTokenScene": "Scène du token déclencheur",
   "MonksActiveTiles.TokenVision": "Le token doit avoir la vision pour déclencher",
-
   "MonksActiveTiles.actiontext.pause": "<action>{pause} le jeu</action>",
   "MonksActiveTiles.actiontext.delay": "<action>Attendre</action> pendant <detail>\"{delay} secondes\"</detail>",
   "MonksActiveTiles.actiontext.movement": "<action>{action}</action>{snap}",
-
   "MonksActiveTiles.group.actions": "Actions",
   "MonksActiveTiles.group.filters": "Filtres",
   "MonksActiveTiles.group.logic": "Flux d'action",
-
   "MonksActiveTiles.action.pause": "Mettre le jeu en pause",
   "MonksActiveTiles.action.stopmovement": "Arrêter le déplacement du token",
   "MonksActiveTiles.action.teleport": "Téléporter",
@@ -129,7 +124,6 @@
   "MonksActiveTiles.action.shuffle": "Mélanger la collection",
   "MonksActiveTiles.action.preloadtileimage": "Précharger les images de tuile",
   "MonksActiveTiles.action.runcode": "Exécuter du code",
-
   "MonksActiveTiles.filter.distance": "Filtrer les tokens par distance",
   "MonksActiveTiles.filter.exists": "Vérifier le nombre d'entités",
   "MonksActiveTiles.filter.triggercount": "Vérifier le compte de déclenchement de la tuile",
@@ -142,7 +136,6 @@
   "MonksActiveTiles.filter.visibility": "Filtrer par visibilité",
   "MonksActiveTiles.filter.variable": "Vérifier la variable",
   "MonksActiveTiles.filter.value": "Vérifier la valeur",
-
   "MonksActiveTiles.logic.anchor": "Palier",
   "MonksActiveTiles.logic.goto": "Aller au palier",
   "MonksActiveTiles.logic.stop": "Arrêter les actions restantes",
@@ -151,7 +144,6 @@
   "MonksActiveTiles.logic.method": "Rediriger selon la méthode",
   "MonksActiveTiles.logic.checkdata": "Vérifier les données",
   "MonksActiveTiles.logic.stoptriggers": "Arrêter le déclenchement de tuiles additionnelles",
-
   "MonksActiveTiles.ctrl.snap": "Magnétisme à la grille",
   "MonksActiveTiles.ctrl.select-coordinates": "Sélectionner des coordonnées",
   "MonksActiveTiles.ctrl.select-entity": "Sélectionner une entité",
@@ -297,7 +289,6 @@
   "MonksActiveTiles.ctrl.triggerremote": "Déclencher à la destination",
   "MonksActiveTiles.ctrl.code": "Code",
   "MonksActiveTiles.ctrl.hascondition": "A",
-
   "MonksActiveTiles.mode.enter": "Entrée",
   "MonksActiveTiles.mode.exit": "Sortie",
   "MonksActiveTiles.mode.both": "À l'entrée/sortie",
@@ -324,30 +315,24 @@
   "MonksActiveTiles.mode.darkness": "Changement d'éclairage",
   "MonksActiveTiles.mode.darknesschange": "Animation d'éclairage",
   "MonksActiveTiles.mode.time": "Changement d'heure",
-
   "MonksActiveTiles.restrict.all": "Autoriser tous les tokens",
   "MonksActiveTiles.restrict.player": "Seulement les tokens de joueur",
   "MonksActiveTiles.restrict.gm": "Seulement les tokens du MJ",
-
   "MonksActiveTiles.control.all": "N'importe qui",
   "MonksActiveTiles.control.player": "Joueur seulement",
   "MonksActiveTiles.control.gm": "MJ seulement",
-
   "MonksActiveTiles.hidden.show": "Montrer",
   "MonksActiveTiles.hidden.hide": "Cacher",
   "MonksActiveTiles.hidden.toggle": "Basculer",
   "MonksActiveTiles.hidden.previous": "De l'action précédente",
-
   "MonksActiveTiles.activate.activate": "Activer",
   "MonksActiveTiles.activate.deactivate": "Désactiver",
   "MonksActiveTiles.activate.toggle": "Basculer",
   "MonksActiveTiles.activate.previous": "De l'action précédente",
-
   "MonksActiveTiles.add.add": "Ajouter",
   "MonksActiveTiles.add.remove": "Retirer",
   "MonksActiveTiles.add.toggle": "Basculer",
   "MonksActiveTiles.add.clear": "Vider",
-
   "MonksActiveTiles.for.all": "Tout le monde",
   "MonksActiveTiles.for.gm": "MJ seulement",
   "MonksActiveTiles.for.token": "Propriétaire du token déclencheur",
@@ -355,37 +340,30 @@
   "MonksActiveTiles.for.triggering": "Joueur déclencheur",
   "MonksActiveTiles.for.players": "Joueurs seulement",
   "MonksActiveTiles.for.current": "Utilisateurs actuels",
-
   "MonksActiveTiles.audiotype.all": "Sons ambiants",
   "MonksActiveTiles.audiotype.tile": "Sons de tuile",
-
   "MonksActiveTiles.state.open": "Ouvert",
   "MonksActiveTiles.state.closed": "Fermé",
   "MonksActiveTiles.state.locked": "Verrouillé",
   "MonksActiveTiles.state.toggle": "Basculer",
   "MonksActiveTiles.state.add": "Ajouter",
   "MonksActiveTiles.state.remove": "Retirer",
-
   "MonksActiveTiles.doortype.door": "Porte",
   "MonksActiveTiles.doortype.secret": "Secrète",
   "MonksActiveTiles.doortype.toggle": "Basculer",
-
   "MonksActiveTiles.animate.start": "Démarrer",
   "MonksActiveTiles.animate.pause": "Pause",
   "MonksActiveTiles.animate.stop": "Arrêter",
   "MonksActiveTiles.animate.toggle": "Basculer",
   "MonksActiveTiles.animate.reset": "Réinitialiser",
   "MonksActiveTiles.animate.resume": "Reprendre",
-
   "MonksActiveTiles.pause.pause": "Pause",
   "MonksActiveTiles.pause.unpause": "Reprendre",
   "MonksActiveTiles.pause.toggle": "Basculer pause",
-
   "MonksActiveTiles.showto.everyone": "Tout le monde",
   "MonksActiveTiles.showto.gm": "MJ seulement",
   "MonksActiveTiles.showto.players": "Joueurs seulement",
   "MonksActiveTiles.showto.trigger": "Joueur déclencheur",
-
   "MonksActiveTiles.attack.attack": "Attaque",
   "MonksActiveTiles.attack.spell": "Sort",
   "MonksActiveTiles.attack.ranged": "À distance",
@@ -393,45 +371,35 @@
   "MonksActiveTiles.attack.weapon": "Arme",
   "MonksActiveTiles.attack.melee": "Mêlée",
   "MonksActiveTiles.attack.consumable": "Consommable",
-
   "MonksActiveTiles.rollmode.public": "Lancer public",
   "MonksActiveTiles.rollmode.private": "Lancer privé MJ",
   "MonksActiveTiles.rollmode.blind": "Lancer aveugle MJ",
   "MonksActiveTiles.rollmode.self": "Lancer personnel",
-
   "MonksActiveTiles.notification.info": "Info",
   "MonksActiveTiles.notification.warning": "Avertissement",
   "MonksActiveTiles.notification.error": "Erreur",
-
   "MonksActiveTiles.runas.gm": "MJ",
   "MonksActiveTiles.runas.player": "Joueur déclencheur",
-
   "MonksActiveTiles.volumetype.globalPlaylistVolume": "Listes de lecture",
   "MonksActiveTiles.volumetype.globalAmbientVolume": "Ambiance",
   "MonksActiveTiles.volumetype.globalInterfaceVolume": "Interface",
   "MonksActiveTiles.volumetype.globalSoundEffectVolume": "Effet sonore",
-
   "MonksActiveTiles.dialogtype.confirm": "Confirmer",
   "MonksActiveTiles.dialogtype.alert": "Alerte",
   "MonksActiveTiles.dialogtype.custom": "Personnalisé",
-
   "MonksActiveTiles.target.appendtarget": "Ajouter des cibles additionnelles",
   "MonksActiveTiles.target.overwritetarget": "Changer les cibles",
   "MonksActiveTiles.target.removetarget": "Retirer la cible",
   "MonksActiveTiles.target.clear": "Vider toutes les cibles",
-
   "MonksActiveTiles.position.random": "Aléatoire à l'intérieur",
   "MonksActiveTiles.position.center": "Centre",
   "MonksActiveTiles.position.relative": "Relatif à l'entrée",
-
   "MonksActiveTiles.msgtype.MessageAndBubble": "Message de tchat et bulle de token",
   "MonksActiveTiles.msgtype.MessageOnly": "Message de tchat seulement",
   "MonksActiveTiles.msgtype.ChatBubble": "Bulle de token seulement",
-
   "MonksActiveTiles.attacktype.chatcard": "Carte de tchat",
   "MonksActiveTiles.attacktype.attack": "Attaque",
   "MonksActiveTiles.attacktype.use": "Utiliser",
-
   "MonksActiveTiles.transition.none": "Aucune",
   "MonksActiveTiles.transition.fade": "Fondu",
   "MonksActiveTiles.transition.blur": "Flou",
@@ -446,26 +414,21 @@
   "MonksActiveTiles.transition.bump-down": "Heurter vers le bas",
   "MonksActiveTiles.transition.bump-random": "Heurter aléatoirement",
   "MonksActiveTiles.transition.slotmachine": "Machine à sous",
-
   "MonksActiveTiles.distribute.everyone": "Les personnages reçoivent une copie de tous les objets",
   "MonksActiveTiles.distribute.single": "Les personnages reçoivent un seul objet",
   "MonksActiveTiles.distribute.evenall": "Tous les objets distribués parmi les personnages",
   "MonksActiveTiles.distribute.even": "Distribué équitablement, les restes sont transmis",
-
   "MonksActiveTiles.ping.pulse": "Pulsation",
   "MonksActiveTiles.ping.alert": "Alerte",
   "MonksActiveTiles.ping.chevron": "Chevron",
   "MonksActiveTiles.ping.arrow": "Flèche",
-
   "MonksActiveTiles.resettype.everything": "Tout",
   "MonksActiveTiles.resettype.token": "Token",
-
   "MonksActiveTiles.permission.check": "Vérifier la permission",
   "MonksActiveTiles.permission.ignore": "Ignorer les permissions",
   "MonksActiveTiles.permission.limited": "Assigner permission limitée",
   "MonksActiveTiles.permission.observer": "Assigner permission observateur",
   "MonksActiveTiles.permission.owner": "Assigner permission propriétaire",
-
   "MonksActiveTiles.msg.prevent-teleport": "La téléportation hors de la carte a été empêchée",
   "MonksActiveTiles.msg.prevent-movement": "Le déplacement hors de la carte a été empêché",
   "MonksActiveTiles.msg.invalid-entity": "Type d'entité invalide",
@@ -494,7 +457,6 @@
   "MonksActiveTiles.msg.currentlyplaying": "En cours de lecture",
   "MonksActiveTiles.msg.useusers": "Utiliser les joueurs",
   "MonksActiveTiles.msg.usescene": "Utiliser la scène active",
-
   "MonksActiveTiles.allow-player.name": "Autoriser les joueurs",
   "MonksActiveTiles.allow-player.hint": "Autoriser les joueurs à activer les tuiles si aucun MJ n'est présent.",
   "MonksActiveTiles.use-core-macro.name": "Utiliser l'exécution de macro du noyau",
@@ -531,11 +493,9 @@
   "MonksActiveTiles.tile-edit.hint": "Autoriser l'édition des gabarits de tuile, je recommande fortement de ne pas utiliser ceci sauf si vous êtes sûr de savoir ce que vous faites",
   "MonksActiveTiles.show-imageless.name": "Afficher la tuile sans image",
   "MonksActiveTiles.show-imageless.hint": "Afficher la tuile sur le calque des tokens pour le MJ s'il n'y a pas d'image définie",
-
   "MonksActiveTiles.tabs.Setup": "Configuration",
   "MonksActiveTiles.tabs.Actions": "Actions",
   "MonksActiveTiles.tabs.Images": "Images",
-
   "MonksActiveTiles.history.ViewHistory": "Voir l'historique",
   "MonksActiveTiles.history.ViewVariables": "Voir les variables",
   "MonksActiveTiles.history.Token": "Token",
@@ -544,7 +504,6 @@
   "MonksActiveTiles.history.Who": "Qui",
   "MonksActiveTiles.history.Name": "Nom",
   "MonksActiveTiles.history.Value": "Valeur",
-
   "TYPES": {
     "RegionBehavior": {
       "monks-active-tiles": {
