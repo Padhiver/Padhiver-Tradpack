@@ -54,12 +54,12 @@ jobs:
         body: ${{ github.event.release.body }}
         makeLatest: ${{ github.event.release.prerelease && 'false' || 'legacy' }}
 
-    # Publish to foundry
-    - name: Publish Module to FoundryVTT Website  
-      if: ${{ !github.event.release.prerelease && env.PACKAGE_ID != '' }}
-      uses: ghost-fvtt/foundry-publish@v2
-      with:
-        username: ${{ secrets.FVTT_USERNAME }}
-        password: ${{ secrets.FVTT_PASSWORD }}
-        manifest-path: './module.json'
-        package-id: ${{ env.PACKAGE_ID }}
+    # Publish to foundry (désactivé)
+    # - name: Publish Module to FoundryVTT Website  
+    #   if: ${{ !github.event.release.prerelease && env.PACKAGE_ID != '' }}
+    #   uses: ghost-fvtt/foundry-publish@v2
+    #   with:
+    #     username: ${{ secrets.FVTT_USERNAME }}
+    #     password: ${{ secrets.FVTT_PASSWORD }}
+    #     manifest-path: './module.json'
+    #     package-id: ${{ env.PACKAGE_ID }}

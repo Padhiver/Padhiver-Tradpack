@@ -1,2760 +1,1031 @@
 {
-  "dae.str": "Strength",
-  "dae.dex": "Dexterity",
-  "dae.con": "Constitution",
-  "dae.wis": "Wisdom",
-  "dae.int": "Intelligence",
-  "dae.cha": "Charisma",
-  "dae.All_Modifiers/Checks": "Ability Checks (Numeric)",
-  "dae.ac": "Armor Class",
-  "dae.hp": "HP",
-  "dae.di": "Damage Immunity",
-  "dae.idi": "Ignore Damage Immunity",
-  "dae.dr": "Damage Resistance",
-  "dae.idr": "Ignore Damage Resistance",
-  "dae.dv": "Damage Vulnerability",
-  "dae.idv": "Ignore Damage Vulnerability",
-  "dae.da": "Damage Absorption",
-  "dae.ida": "Ignore Damage Absorption",
-  "dae.ci": "Condition Immunity",
-  "dae.languages": "Language",
-  "dae.Languages_All": "Languages All",
-  "dae.acr": "Acrobatics",
-  "dae.ani": "Animal Handling",
-  "dae.arc": "Arcana",
-  "dae.ath": "Athletics",
-  "dae.dec": "Deception",
-  "dae.his": "History",
-  "dae.ins": "Insight",
-  "dae.inv": "Investigation",
-  "dae.itm": "Intimidation",
-  "dae.med": "Medicine",
-  "dae.nat": "Nature",
-  "dae.per": "Persuasion",
-  "dae.prc": "Perception",
-  "dae.prf": "Performance",
-  "dae.rel": "Religion",
-  "dae.slt": "Sleight of Hand",
-  "dae.ste": "Stealth",
-  "dae.sur": "Survival",
-  "dae.init": "Initiative",
-  "dae.spd": "Speed Walking",
-  "dae.Speed_Special": "Speed Special",
-  "dae.prof": "Proficiency",
-  "dae.Strength_Attacks": "Strength Attacks",
-  "dae.Dexterity_Attacks": "Dexterity Attacks",
-  "dae.Spell_Attacks": "Spell Attacks",
-  "dae.All_Skills": "Skill Check Bonus (Numeric)",
-  "dae.All_Saves": "Ability Saves (Numeric)",
-  "dae.Initiative_Advantage": "Initiative Advantage",
-  "dae.Initiative_Alert": "Initiative Alert",
-  "dae.InitiativeHalfProf": "Half Prof. to Initiative",
-  "dae.Powerful_Build": "Powerful Build",
-  "dae.Savage_Attacks": "Savage Attacks",
-  "dae.Spell_DC Bonus": "Spell DC Bonus (Numeric)",
-  "dae.Critical_Hit Threshold": "Critical Hit Threshold",
-  "dae.mwak": "Melee Weapon",
-  "dae.rwak": "Ranged Weapon",
-  "dae.msak": "Melee Spell",
-  "dae.rsak": "Ranged Spell",
-  "dae.attack": "Attack",
-  "dae.damage": "Damage",
-  "dae.heal": "Heal",
-  "dae.check": "Check",
-  "dae.save": "Save",
-  "dae.saveBonusDE": "Save",
-  "dae.value": "Value",
-  "dae.max": "Max",
-  "dae.proficient": "Proficiency",
-  "dae.ability": "Ability",
-  "dae.bonus": "Bonus",
-  "dae.success": "Success",
-  "dae.failure": "Failure",
-  "dae.sr": "Short Rest",
-  "dae.lr": "Long Rest",
-  "dae.primary": "Primary",
-  "dae.secondary": "Secondary",
-  "dae.tertiary": "Tertiary",
-  "dae.alignment": "Alignment",
-  "dae.biography": "Biography",
-  "dae.public": "Public",
-  "dae.race": "Race",
-  "dae.background": "Background",
-  "dae.trait": "Trait",
-  "dae.ideal": "Ideal",
-  "dae.bond": "Bond",
-  "dae.flaw": "Flaw",
-  "dae.level": "Level",
-  "dae.hd": "Hit Dice",
-  "dae._deprecated": "<DEPRECATED>",
-  "dae.size": "Size",
-  "dae.senses": "Senses",
-  "dae.blindsight": "Blind Sight",
-  "dae.darkvision": "Dark Vision",
-  "dae.tremorsense": "Tremor Sense",
-  "dae.truesight": "True Sight",
-  "dae.weaponProf": "Weapon Prof.",
-  "dae.armorProf": "Armor Prof",
-  "dae.toolProf": "Tool Prof",
-  "dae.spell0": "L0 Spell Slots",
-  "dae.spell1": "L1 Spell Slots",
-  "dae.spell2": "L2 Spell Slots",
-  "dae.spell3": "L3 Spell Slots",
-  "dae.spell4": "L4 Spell Slots",
-  "dae.spell5": "L5 Spell Slots",
-  "dae.spell6": "L6 Spell Slots",
-  "dae.spell7": "L7 Spell Slots",
-  "dae.spell8": "L8 Spell Slots",
-  "dae.spell9": "L9 Spell Slots",
-  "dae.pact": "Pact Magic Slots",
-  "dae.Attuned": "Attuned",
-  "dae.Active": "Enabled when equipped",
-  "dae.Cursed": "Always enabled",
-  "dae.Create": "Create Item",
-  "dae.Edit": "Edit Item",
-  "dae.Delete": "Delete Item",
-  "dae.EffectTarget": "Effect Target",
-  "dae.ActiveEffectName": "DAE",
-  "dae.TransferEffects": "Transfer Effects",
-  "dae.NonTransferEffects": "Non-transfer Effects",
-  "dae.EffectMode": "Mode",
-  "dae.EffectValue": "Value",
-  "dae.label": "Label",
-  "dae.Title": "Effects",
-  "dae.Add": "Add",
-  "dae.UpdateEffect": "Update Effect",
-  "dae.ItemEffectSelection": "Item Effect Selection",
-  "dae.noeffect": "Your character does not have an effect name",
-  "dae.enabled": "Enabled",
-  "dae.disabled": "Disabled",
-  "dae.suppressed": "Suppressed",
-  "dae.tool_proficiency": "Tool Proficiency",
-  "dae.notTargetItem": "This item does not have targets specified",
-  "dae.ConsumeCharge.Name": "Consume Charge On Passive Activation",
-  "dae.ConsumeCharge.Hint": "When activating a passive effect via togglePassiveEffect or chat status card only activate if the item has charges and consume a charge",
-  "dae.noCharges": " not activated no charges left",
-  "dae.noSelection": "No Token/Actor selected",
-  "dae.category": "Category",
-  "dae.abilities": "Abilities",
-  "dae.attributes": "Attributes",
-  "dae.bonuses": "Bonuses",
-  "dae.resources": "Resources",
-  "dae.currency": "Currency",
-  "dae.details": "Details",
-  "dae.flags": "Flags",
-  "dae.skills": "Skills",
-  "dae.spells": "Spells",
-  "dae.traits": "Traits",
-  "dae.min": "Min",
-  "dae.mod": "Modifier",
-  "dae.total": "Total",
-  "dae.xp": "Exp Pts",
-  "dae.cp": "Copper",
-  "dae.sp": "Silver",
-  "dae.ep": "Electrum",
-  "dae.gp": "Gold",
-  "dae.pp": "Platinum",
-  "dae.initiativeHalfProf": "Init Half Prof",
-  "dae.check_all": "All Abl Checks",
-  "dae.spelldc": "Spell DC",
-  "dae.spelllevel": "Spell Level",
-  "dae.death": "Death Save",
-  "dae.advantage": "Advantage",
-  "dae.exhaustion": "Exhaustion",
-  "dae.temp": "Temp HP",
-  "dae.tempmax": "Temp HP Max",
-  "dae.inspiration": "Inspiration",
-  "dae.special": "Special",
-  "dae.speed": "Speed",
-  "dae.spellcasting": "Spell Casting",
-  "dae.All-Attacks": "All Attack Bonuses",
-  "dae.All-Damage": "All Damage Bonuses",
-  "dae.skill": "Skill",
-  "dae.spell": "Spell",
-  "dae.weapon": "Weapon",
-  "dae.dc": "DC",
-  "dae.passive": "Passive",
-  "dae.custom": "Custom",
-  "dae.all": "All",
-  "dae.ActiveItemSelect": "Active Effect Items",
-  "dae.chooseitem": "Select Item",
-  "dae.itemname": "Item",
-  "dae.applyeffect": "Apply to targets",
-  "dae.unapplyeffect": "Remove from targets",
-  "dae.gm-notes": "GMNotes",
-  "dae.notes": "Notes",
-  "dae.playersCanSeeEffects.Name": "Allow players to see details of effects",
-  "dae.playersCanSeeEffects.Hint": "If off do not show players the item effects tab or detailed effects summary for passive items. TRUSTED Players can edit effects",
-  "dae.tokenEffects.Name": "Enable Token Effects",
-  "dae.tokenEffects.Hint": "Allows effects that target a specific token, e.g. invisible, blind (experimental feature)",
-  "dae.macro": "Macro",
-  "dae.macroRepeat": "Macro Repeat",
-  "dae.specialDuration": "Special Duration",
-  "dae.execute": "Execute",
-  "dae.GM": "GM",
-  "dae.local": "Local",
-  "dae.actorUpdate": "Actor Update",
-  "dae.itemMacro": "Item Macro",
-  "dae.override": "Override",
-  "dae.forceCritical": "Critical Damage",
-  "dae.attackAdvantage": "Attack Advantage",
-  "dae.conditions": "Condition",
-  "dae.calculateArmor.Name": "Auto Calculate armor class",
-  "dae.calculateArmor.Hint": "If true dynamic effects will auto calculate AC from armor/shields in the inventory. Other items can still modify AC",
-  "dae.applyBaseAC.Name": "Auto calc base AC",
-  "dae.applyBaseAC.Hint": "If set characters (not NPCs) will get their base AC set to 10 + dex.mod",
-  "dae.applyingEffects": "Applying effects",
-  "dae.removingEffects": "Removing effects",
-  "dae.tokenMagic": "TokenMagic",
-  "dae.transfer.Name": "Apply Effect to Actor",
-  "dae.transfer.Hint": "Enabled means the effect is applied to the owner of the item when the item is equipped. Disable if you want the effect to apply to a target when the item is used",
-  "dae.effectName": "Effect Name",
-  "dae.readOnly": "READ ONLY EFFECT",
-  "dae.legact": "Legendary Actions",
-  "dae.legres": "Legendary Resistance",
-  "dae.encumbrance": "Encumbrance",
-  "dae.useAbilitySave.Name": "Use ability save field when rolling ability saves",
-  "dae.useAbilitySave.Hint": "DND5e default uses only the ability modifier, enabling this option means rolling saves will use the save field and can be modified via DAE",
-  "dae.Debug.Name": "Amount of debug to show",
-  "dae.Debug.Hint": "Display more debug to console according to setting none < warning < debug < all",
-  "dae.summaryFilter": "Effect Summary",
-  "dae.enabledFilter": "Enabled Effects",
-  "dae.temporaryFilter": "Timed effects",
-  "dae.Priority": "Priority",
-  "dae.Stackable": "Stackable",
-  "dae.EffectSheetLabel": "DAE Active Effect Sheet",
-  "dae.confirm": "Confirmation Dialog",
-  "dae.sure": "Are you sure?",
-  "dae.dae": "DAE",
-  "dae.movement": "Movement",
-  "dae.burrow": "Burrow",
-  "dae.climb": "Climb",
-  "dae.hover": "Hover",
-  "dae.fly": "Fly",
-  "dae.swim": "Swim",
-  "dae.units": "Units",
-  "dae.walk": "Walk",
-  "dae.diamondSoul": "Diamond Soul",
-  "dae.noGM": "No GM Client connected",
-  "dae.expireRealTime.Name": "Expire timed effects in real time",
-  "dae.expireRealTime.Hint": "If enabled and about-time/times-up are not installed timed effects will expire in real time.",
-  "dae.isAttacked": "Is Attacked: Expires if the character is attacked",
-  "dae.isMoved": "Moved: expires when the token is moved",
-  "dae.isDamaged": "is Damaged: Expires if the character is damaged",
-  "dae.isHealed": "is Healed: expires if the character is healed",
-  "dae.ZeroHP": "Zero HP: expires if the character reaches 0 HP",
-  "dae.isHit": "is Hit: Expires if the character is hit by any weapon/spell attack even if the weapon/spell does not deal damage",
-  "dae.isHitCritical": "is Hit Critical: Expires if the character is hit by a critical weapon/spell attack",
-  "dae.isRollBase": "Expires if the character rolls: ",
-  "dae.isSaveDetail": "saving throw",
-  "dae.isCheckDetail": "ability check",
-  "dae.isSkillDetail": "skill check",
-  "dae.isConcentrationSave": "Concentration saving throw",
-  "dae.isInitiativeDetail": "initiative",
-  "dae.1Action": "1 Action: Expires on the next action (item roll) of the character",
-  "dae.Bonus Action": "Expires on the next items use has an activation type Bonus Action",
-  "dae.Reaction": "Expires on the next items use which has an activation type Reaction",
-  "dae.Turn Action": "Expires on the next items use which is of activation type Action",
-  "dae.1Attack": "1 Attack: Expires on the next {type} by the character",
-  "dae.1Spell": "1 Spell: Expires on the next spell cast (ANY spell) by the character",
-  "dae.1Reaction": "1 Reaction: Expires after the attack that triggered the reaction is complete",
-  "dae.1Hit": "1 Hit: Expires on the next {type} hit by the character",
-  "dae.1Critical": "1 Critical: Expires on the next critical hit by the character",
-  "dae.1Fumble": "1 Fumble: Expires on the next fumble by the character",
-  "dae.DamageDealt": "Damage dealt: Expires when the character deals damage",
-  "dae.turnStart": "Turn Start: Expires at the start of the target's next turn (in combat)",
-  "dae.turnStartSource": "Turn Start: Expires at the start of the source actor's next turn (in combat)",
-  "dae.turnEnd": "Turn End: Expires at the end of the target's next turn (in combat)",
-  "dae.turnEndSource": "Turn End: Expires at the end of the source actor's next turn (in combat)",
-  "dae.startEveryTurn": "Start of each turn: Run effect macros at the start of the characters turn",
-  "dae.startEndEveryTurn": "Start and End of each turn: Run effect macros at the start of the characters turn",
-  "dae.startEveryTurnAny": "Start of each turn: Run effect macros at the start of the characters turn even if the effect is disabled",
-  "dae.startEndEveryTurnAny": "Start and end of each turn: Run effect macros at the start and end of the characters turn even if the effect is disabled",
-  "dae.endEveryTurn": "End of each turn: Run effect macros at the end of the characters turn",
-  "dae.endEveryTurnAny": "End of each turn: Run effect macros at the end of the characters turn even if the effect is disabled",
-  "dae.ConditionalVisibility": "Conditional Visibility",
-  "dae.ConditionalVisibilityVision": "CV Vision",
-  "dae.noDupDamageMacro.Name": "No Duplicate Damage macros",
-  "dae.noDupDamageMacro.Hint": "If checked duplicate Damage Macros will be ignored",
-  "dae.DisableEffects.Name": "Disable all active effect processing",
-  "dae.DisableEffects.Hint": "If set no active effects will be applied to characters. Useful if you want to change character values that are modified by active effects",
-  "dae.HandleEquip.Name": "Handle Equip/Unequip item active effects",
-  "dae.HandleEquip.Hint": "If set DAE will handle equip/unequip enabling/disabling active effects and toggling active will toggle equip/unequip",
-  "dae.DAETitleBar.Name": "DAE Title Bar",
-  "dae.DAETitleBar.Hint": "Display DAE effect editor button in Title Bar",
-  "dae.DIMETitleBar.Name": "DIME Title Bar",
-  "dae.DIMETitleBar.Hint": "Display DAE Item Macro Eitor in Title Bar",
-  "dae.DAEColorTitleBar.Name": "DAE Colorful Title Bar",
-  "dae.DAEColorTitleBar.Hint": "Apply a color to the DAE effect editor button/DIME button, if any effects/item macros are present in the document (Needs DAE Title Bar checked).",
-  "dae.DAENoTitleText.Name": " Just Icon",
-  "dae.DAENoTitleText.Hint": " Only display the wrench icon in the Title Bar otherwise icon + DAE",
-  "dae.StatusEffect": "Status Effect",
-  "dae.ShowDeprecation.Name": "Show Deprecation Errors",
-  "dae.ShowDeprecation.Hint": "Show Deprecation Errors in console",
-  "dae.CE": "Convenient Effects",
-  "dae.CUB": "Combat Utility Belt",
-  "dae.ShowInline.Name": "Display results of inline rolls",
-  "dae.ShowInline.Hint": "Effects with an inline roll will display the roll results if set",
-  "dae.StackableOptions": {
-    "noneName": "Effects do not stack by effect name and effect origin",
-    "noneNameOnly": "Effects do not stack by effect name",
-    "none": "Effects do not stack by effect origin",
-    "multi": "Stacking effects apply the effect multiple times",
-    "count": "each stack increase stack count by 1",
-    "countDeleteDecrement": "apply increase stacks by 1, delete decrease stacks by 1, removed on 0 stacks"
-  },
-  "dae.SW5EHint": "Note For Translators - The following strings are ONLY required for the SW5E system",
-  "dae.SW5E": "sw5e",
-  "dae.force": "Force",
-  "dae.tech": "Tech",
-  "dae.known": "Powers Known",
-  "dae.points": "Points",
-  "dae.powers": "Powers",
-  "dae.power": "Power",
-  "dae.power0": "L0 Power Slots",
-  "dae.power1": "L1 Power Slots",
-  "dae.power2": "L2 Power Slots",
-  "dae.power3": "L3 Power Slots",
-  "dae.power4": "L4 Power Slots",
-  "dae.power5": "L5 Power Slots",
-  "dae.power6": "L6 Power Slots",
-  "dae.power7": "L7 Power Slots",
-  "dae.power8": "L8 Power Slots",
-  "dae.power9": "L9 Power Slots",
-  "dae.mpak": "Melee Power",
-  "dae.rpak": "Ranged Power",
-  "dae.gc": "Credits",
-  "dae.species": "Species",
-  "dae.forceDarkDC": "Dark Force Power DC",
-  "dae.forceLightDC": "Light Force Power DC",
-  "dae.forceUnivDC": "Universal Force Power DC",
-  "dae.techDC": "Tech Power DC",
-  "dae.fmax": "Force Max",
-  "dae.fvalue": "Force Value",
-  "dae.foverride": "Force Override",
-  "dae.tmax": "Tech Max",
-  "dae.tvalue": "Tech Value",
-  "dae.toverride": "Tech Override",
-  "dae.lor": "Lore",
-  "dae.pil": "Piloting",
-  "dae.tec": "Technology",
-  "dae.powerForceLevel": "Force Power Level",
-  "dae.forceToHud.Name": "Force display on token",
-  "dae.forceToHud.Hint": "If non empty set the icon for the effect will be displayed on the token regardless of duration",
-  "dae.DurationExpression": "Roll expression in seconds for the effect duration",
-  "dae.not-reflected": "Item Effect Saved. These changes will not be reflected in the originally transferred Effect.",
-  "dae.not-transferred": "Item Effect Saved. Setting an owned item's effect to Transfer will not automatically transfer the Effect.",
-  "dae.ATLHint": "Note for translators these are only required for Active Token Lighting",
-  "dae.ATL": "ATL",
-  "dae.dimLight": "Dim Light",
-  "dae.brightLight": "Bright Light",
-  "dae.light": "Light",
-  "dae.bright": "Bright",
-  "dae.dim": "Dim",
-  "dae.color": "Light Color",
-  "dae.animation": "Animation",
-  "dae.alpha": "ALpha",
-  "dae.angle": "Angle",
-  "dae.dimSight": "Dim Sight",
-  "dae.brightSight": "Bright Sight",
-  "dae.sightAngle": "Sight Angle",
-  "dae.lightColor": "Light Color",
-  "dae.lightAnimation": "Light Animation",
-  "dae.lightAlpha": "Light ALpha",
-  "dae.lightAngle": "Light Angle",
-  "dae.DAEUntestedSystems.Name": "Load DAE for untested game systems",
-  "dae.DAEUntestedSystems.Hint": "If checked DAE will load for any system not marked compatible. If unchecked DAE will only load for systems marked compatible. Requires reload",
-  "dae.SelfTarget.Name": "Apply to self when item applies target effects",
-  "dae.SelfTarget.Hint": "Effect is applied to the user of the item, not the targets if the item is applying effects to targets",
-  "dae.SelfTargetAlways.Name": "Apply to self when item is rolled",
-  "dae.SelfTargetAlways.Hint": "Effect is applied to the user of the item, not the targets whenever the item is rolled",
-  "dae.ShowIcon.Name": "Always Show Effect Icon",
-  "dae.ShowIcon.Hint": "Display the effect Icon on the token and combat display",
-  "dae.DontApply.Name": "Don't apply the effect",
-  "dae.DontApply.Hint": "When Dae (and midi) applies active effects, skip this one",
-  "dae.DIMEditor.Name": "DIME",
-  "dae.IncapacitatedDisabled": "Effect disabled if actor incapacitated",
-  "dae.DIMESyncItemacro.Name": "Sync DIME and Itemacro",
-  "dae.DIMESyncItemacro.Hint": "Checked means the DIME macro and Itemacro macro will be kept in sync - you can edit with either. Uncheck DIME editor will take priority.",
-  "dae.halfHealthEffectLabel": "Half Health",
-  "dae.DAEAddHalfHealthEffect.Name": "Add Half Health Effect",
-  "dae.DAEAddHalfHealthEffect.Hint": "Add a half health status effect to set the actor's max hit points to half its normal max",
-  "dae.TabChanges": "Changes",
-  "dae.DisableCondition": "An expression which if true will disable the effect",
-  "dae.EnableCondition": "An expression which if false will remove the effect from the actor",
-  "dae.ConditionalEffectsItem": "DAEConditionalEffects",
-  "dae.IconTint": "Icon Tint",
-  "dae.IconOverlay.Name": "Icon Overlay",
-  "dae.IconOverlay.Hint": "Display the effect status icon as an overlay",
-  "dae.DependentConditions.Name": "Dependent Conditions",
-  "dae.DependentConditions.Hint": "Status effects (poisoned/paralysed) will also add dependent conditions like incapacitated.",
-  "__Comment__": "The following strings are for the DAE system. Translation is optional",
-  "dae.fieldData": {
-    "fieldCategories.All": "All",
-    "fieldCategories.D&D5E": "D&D5E",
-    "fieldCategories.Macros": "Macros",
-    "fieldCategories.MidiQOL": "MidiQOL",
-    "fieldCategories.SystemAbilities": "System: Abilities",
-    "fieldCategories.SystemSkills": "System: Skills",
-    "fieldCategories.SystemAttributes": "System: Attributes",
-    "fieldCategories.SystemBonuses": "System: Bonuses",
-    "fieldCategories.SystemTraits": "System: Traits",
-    "fieldCategories.Other": "Other",
-    "fieldCategories.SystemResources": "System: Resources",
-    "fieldCategories.SystemCurrency": "System: Currency",
-    "fieldCategories.SystemDetails": "System: Details",
-    "fieldCategories.SystemFlags": "System: Flags"
-  },
-  "dae.D&D5E.fieldData": {
-    "flags.dnd5e.DamageBonusMacro": {
-      "name": "Bonus Damage Macros",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.diamondSoul": {
-      "name": "Diamond Soul",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.elvenAccuracy": {
-      "name": "Elven Accuracy",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.halflingLucky": {
-      "name": "Halfling Lucky",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.initiativeAdv": {
-      "name": "Advantage on Initiative",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.initiativeAlert": {
-      "name": "Alert Feat",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.initiativeDisadv": {
-      "name": "Disadvantage on Initiative",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.initiativeHalfProf": {
-      "name": "",
-      "description": ""
-    },
-    "flags.dnd5e.initiativeHalfProficiency": {
-      "name": "Half Proficiency for Initiative",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.jackOfAllTrades": {
-      "name": "Jack of All Trades",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.meleeCriticalDamageDice": {
-      "name": "Melee Critical Damage Dice",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.observantFeat": {
-      "name": "Observant Feat",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.powerfulBuild": {
-      "name": "Powerful Build",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.reliableTalent": {
-      "name": "Reliable Talent",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.remarkableAthlete": {
-      "name": "Remarkable Athlete",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.spellCriticalThreshold": {
-      "name": "Spell Critical Hit Threshold",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.spellSniper": {
-      "name": "Spell Sniper",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.tavernBrawlerFeat": {
-      "name": "Tavern Brawler Feat",
-      "description": "See \"Special Traits\" for details."
-    },
-    "flags.dnd5e.weaponCriticalThreshold": {
-      "name": "Weapon Critical Hit Threshold",
-      "description": "See \"Special Traits\" for details."
-    }
-  },
-  "dae.Macros.fieldData": {
-    "macro.actorUpdate": {
-      "name": "",
-      "description": ""
-    },
-    "macro.CE": {
-      "name": "",
-      "description": ""
-    },
-    "macro.CLT": {
-      "name": "",
-      "description": ""
-    },
-    "macro.createItem": {
-      "name": "",
-      "description": ""
-    },
-    "macro.createItemRunMacro": {
-      "name": "",
-      "description": ""
-    },
-    "macro.CUB": {
-      "name": "",
-      "description": ""
-    },
-    "macro.execute": {
-      "name": "",
-      "description": ""
-    },
-    "macro.execute.GM": {
-      "name": "",
-      "description": ""
-    },
-    "macro.execute.local": {
-      "name": "",
-      "description": ""
-    },
-    "macro.itemMacro": {
-      "name": "",
-      "description": ""
-    },
-    "macro.itemMacro.GM": {
-      "name": "",
-      "description": ""
-    },
-    "macro.itemMacro.local": {
-      "name": "",
-      "description": ""
-    },
-    "macro.StatusEffect": {
-      "name": "",
-      "description": ""
-    }
-  },
-  "dae.SystemAbilities.fieldData": {
-    "system.abilities.cha.bonuses.check": {
-      "name": "Charisma Check Bonus",
-      "description": ""
-    },
-    "system.abilities.cha.bonuses.save": {
-      "name": "Charisma Save Bonus",
-      "description": ""
-    },
-    "system.abilities.cha.dc": {
-      "name": "Charisma Save DC",
-      "description": ""
-    },
-    "system.abilities.cha.max": {
-      "name": "Charisma Max Score",
-      "description": ""
-    },
-    "system.abilities.cha.mod": {
-      "name": "Charisma Mod",
-      "description": ""
-    },
-    "system.abilities.cha.proficient": {
-      "name": "Charisma Save Proficiency",
-      "description": "0: Not Proficient. 1: Proficient. 2: Expertise. 0.5: Half Proficient."
-    },
-    "system.abilities.cha.save": {
-      "name": "Charisma Save Mod",
-      "description": ""
-    },
-    "system.abilities.cha.value": {
-      "name": "Charisma Score",
-      "description": ""
-    },
-    "system.abilities.con.bonuses.check": {
-      "name": "Constitution Check Bonus",
-      "description": ""
-    },
-    "system.abilities.con.bonuses.save": {
-      "name": "Constitution Save Bonus",
-      "description": ""
-    },
-    "system.abilities.con.dc": {
-      "name": "Constitution Save DC",
-      "description": ""
-    },
-    "system.abilities.con.max": {
-      "name": "Constitution Max Score",
-      "description": ""
-    },
-    "system.abilities.con.mod": {
-      "name": "Constitution Mod",
-      "description": ""
-    },
-    "system.abilities.con.proficient": {
-      "name": "Constitution Save Proficiency",
-      "description": "0: Not Proficient. 1: Proficient. 2: Expertise. 0.5: Half Proficient."
-    },
-    "system.abilities.con.save": {
-      "name": "Constitution Save Mod",
-      "description": ""
-    },
-    "system.abilities.con.value": {
-      "name": "Constitution Score",
-      "description": ""
-    },
-    "system.abilities.dex.bonuses.check": {
-      "name": "Dexterity Check Bonus",
-      "description": ""
-    },
-    "system.abilities.dex.bonuses.save": {
-      "name": "Dexterity Save Bonus",
-      "description": ""
-    },
-    "system.abilities.dex.dc": {
-      "name": "Dexterity Save DC",
-      "description": ""
-    },
-    "system.abilities.dex.max": {
-      "name": "Dexterity Max Score",
-      "description": ""
-    },
-    "system.abilities.dex.mod": {
-      "name": "Dexterity Mod",
-      "description": ""
-    },
-    "system.abilities.dex.proficient": {
-      "name": "Dexterity Save Proficiency",
-      "description": "0: Not Proficient. 1: Proficient. 2: Expertise. 0.5: Half Proficient."
-    },
-    "system.abilities.dex.save": {
-      "name": "Dexterity Save Mod",
-      "description": ""
-    },
-    "system.abilities.dex.value": {
-      "name": "Dexterity Score",
-      "description": ""
-    },
-    "system.abilities.int.bonuses.check": {
-      "name": "Intelligence Check Bonus",
-      "description": ""
-    },
-    "system.abilities.int.bonuses.save": {
-      "name": "Intelligence Save Bonus",
-      "description": ""
-    },
-    "system.abilities.int.dc": {
-      "name": "Intelligence Save DC",
-      "description": ""
-    },
-    "system.abilities.int.max": {
-      "name": "Intelligence Max Score",
-      "description": ""
-    },
-    "system.abilities.int.mod": {
-      "name": "Intelligence Mod",
-      "description": ""
-    },
-    "system.abilities.int.proficient": {
-      "name": "Intelligence Save Proficiency",
-      "description": "0: Not Proficient. 1: Proficient. 2: Expertise. 0.5: Half Proficient."
-    },
-    "system.abilities.int.save": {
-      "name": "Intelligence Save Mod",
-      "description": ""
-    },
-    "system.abilities.int.value": {
-      "name": "Intelligence Score",
-      "description": ""
-    },
-    "system.abilities.str.bonuses.check": {
-      "name": "Strength Check Bonus",
-      "description": ""
-    },
-    "system.abilities.str.bonuses.save": {
-      "name": "Strength Save Bonus",
-      "description": ""
-    },
-    "system.abilities.str.dc": {
-      "name": "Strength Save DC",
-      "description": ""
-    },
-    "system.abilities.str.max": {
-      "name": "Strength Max Score",
-      "description": ""
-    },
-    "system.abilities.str.mod": {
-      "name": "Strength Mod",
-      "description": ""
-    },
-    "system.abilities.str.proficient": {
-      "name": "Strength Save Proficiency",
-      "description": "0: Not Proficient. 1: Proficient. 2: Expertise. 0.5: Half Proficient."
-    },
-    "system.abilities.str.save": {
-      "name": "Strength Save Mod",
-      "description": ""
-    },
-    "system.abilities.str.value": {
-      "name": "Strength Score",
-      "description": ""
-    },
-    "system.abilities.wis.bonuses.check": {
-      "name": "Wisdom Check Bonus",
-      "description": ""
-    },
-    "system.abilities.wis.bonuses.save": {
-      "name": "Wisdom Save Bonus",
-      "description": ""
-    },
-    "system.abilities.wis.dc": {
-      "name": "Wisdom Save DC",
-      "description": ""
-    },
-    "system.abilities.wis.max": {
-      "name": "Wisdom Max Score",
-      "description": ""
-    },
-    "system.abilities.wis.mod": {
-      "name": "Wisdom Mod",
-      "description": ""
-    },
-    "system.abilities.wis.proficient": {
-      "name": "Wisdom Save Proficiency",
-      "description": "0: Not Proficient. 1: Proficient. 2: Expertise. 0.5: Half Proficient."
-    },
-    "system.abilities.wis.save": {
-      "name": "Wisdom Save Mod",
-      "description": ""
-    },
-    "system.abilities.wis.value": {
-      "name": "Wisdom Score",
-      "description": ""
-    }
-  },
-  "dae.SystemSkills.fieldData": {
-    "system.skills.acr.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.acr.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.acr.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.acr.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.acr.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.acr.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.acr.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ani.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.arc.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ath.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.dec.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.his.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ins.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.inv.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.itm.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.med.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.nat.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.per.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prc.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.prf.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.rel.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.slt.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.ste.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.bonuses.passive": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.skills.sur.value": {
-      "name": "",
-      "description": ""
-    }
-  },
-  "dae.SystemAttributes.fieldData": {
-    "system.attributes.ac.AR": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.ac.armor": {
-      "name": "",
-      "description": "AC armor bonus (usually provided only via equipped armor item - will only have an effect if not wearing armor)."
-    },
-    "system.attributes.ac.base": {
-      "name": "",
-      "description": "Deprecated derived field - do not use."
-    },
-    "system.attributes.ac.bonus": {
-      "name": "",
-      "description": "Numerical bonus to AC."
-    },
-    "system.attributes.ac.calc": {
-      "name": "",
-      "description": "AC calculation method."
-    },
-    "system.attributes.ac.cover": {
-      "name": "",
-      "description": "AC cover bonus (usually provided only via cover status effects)."
-    },
-    "system.attributes.ac.EC": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.ac.flat": {
-      "name": "",
-      "description": "Flat AC (requires system.attributes.ac.calc to be \"flat\")."
-    },
-    "system.attributes.ac.formula": {
-      "name": "",
-      "description": "AC calculation formula (requires system.attributes.ac.calc to be \"custom\")."
-    },
-    "system.attributes.ac.min": {
-      "name": "",
-      "description": "Minimum AC value (if calculated lower, will upgrade to this number)."
-    },
-    "system.attributes.ac.shield": {
-      "name": "",
-      "description": "AC shield bonus (usually provided only via equipped shield item)."
-    },
-    "system.attributes.ac.value": {
-      "name": "",
-      "description": "Use system.attributes.ac.calc as \"flat\" and system.attributes.ac.flat as your desired value instead."
-    },
-    "system.attributes.attunement.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.concentration.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.concentration.bonuses.save": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.concentration.limit": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.concentration.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.concentration.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.concentration.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.death.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.death.failure": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.death.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.death.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.death.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.death.success": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.bonuses.encumbered": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.bonuses.heavilyEncumbered": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.bonuses.maximum": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.bonuses.overall": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.multipliers.encumbered": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.multipliers.heavilyEncumbered": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.multipliers.maximum": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.encumbrance.multipliers.overall": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.exhaustion": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.hd.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.hp.bonuses.level": {
-      "name": "HP Bonus Per Level",
-      "description": "Bonus to HP applied for each character level (only works for classed actors)."
-    },
-    "system.attributes.hp.bonuses.overall": {
-      "name": "HP Overall Bonus",
-      "description": "Bonus to HP (only works for classed actors)."
-    },
-    "system.attributes.hp.max": {
-      "name": "Max HP",
-      "description": "This should not be modified on an actor with a class - use one of the .bonuses or .tempmax instead."
-    },
-    "system.attributes.hp.temp": {
-      "name": "Temp HP",
-      "description": "This should never be modified in an active effect - apply temphp damage instead."
-    },
-    "system.attributes.hp.tempmax": {
-      "name": "Temporary Max HP",
-      "description": "Temporary adjustment to max HP."
-    },
-    "system.attributes.hp.value": {
-      "name": "Current HP",
-      "description": "This should never be modified in an active effect - apply damage instead."
-    },
-    "system.attributes.init.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.init.bonus": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.init.roll.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.init.roll.min": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.init.roll.mode": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.inspiration": {
-      "name": "Inspiration",
-      "description": ""
-    },
-    "system.attributes.movement.all": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.burrow": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.climb": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.fly": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.hover": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.swim": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.units": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.movement.walk": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.senses.blindsight": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.senses.darkvision": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.senses.special": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.senses.tremorsense": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.senses.truesight": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.senses.units": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.spellcasting": {
-      "name": "",
-      "description": ""
-    }
-  },
-  "dae.SystemBonuses.fieldData": {
-    "system.bonuses.abil.damage": {
-      "name": "",
-      "description": ""
-    },
-    "system.bonuses.abilities.check": {
-      "name": "",
-      "description": "Bonus to all ability checks."
-    },
-    "system.bonuses.abilities.save": {
-      "name": "",
-      "description": "Bonus to all ability saves."
-    },
-    "system.bonuses.abilities.skill": {
-      "name": "",
-      "description": "Bonus to all skill checks."
-    },
-    "system.bonuses.All-Attacks": {
-      "name": "",
-      "description": "Bonus to all attack rolls."
-    },
-    "system.bonuses.All-Damage": {
-      "name": "",
-      "description": "Bonus to all damage rolls."
-    },
-    "system.bonuses.check.damage": {
-      "name": "",
-      "description": "Bonus to all Check-activity damage rolls."
-    },
-    "system.bonuses.heal.attack": {
-      "name": "",
-      "description": ""
-    },
-    "system.bonuses.heal.damage": {
-      "name": "",
-      "description": "Bonus to all Heal-activity damage rolls."
-    },
-    "system.bonuses.msak.attack": {
-      "name": "",
-      "description": "Bonus to all \"melee spell attack\" attack rolls."
-    },
-    "system.bonuses.msak.damage": {
-      "name": "",
-      "description": "Bonus to all \"melee spell attack\" damage rolls."
-    },
-    "system.bonuses.mwak.attack": {
-      "name": "",
-      "description": "Bonus to all \"melee weapon attack\" attack rolls."
-    },
-    "system.bonuses.mwak.damage": {
-      "name": "",
-      "description": "Bonus to all \"melee weapon attack\" damage rolls."
-    },
-    "system.bonuses.other.damage": {
-      "name": "",
-      "description": ""
-    },
-    "system.bonuses.rsak.attack": {
-      "name": "",
-      "description": "Bonus to all \"ranged spell attack\" attack rolls."
-    },
-    "system.bonuses.rsak.damage": {
-      "name": "",
-      "description": "Bonus to all \"ranged spell attack\" damage rolls."
-    },
-    "system.bonuses.rwak.attack": {
-      "name": "",
-      "description": "Bonus to all \"ranged weapon attack\" attack rolls."
-    },
-    "system.bonuses.rwak.damage": {
-      "name": "",
-      "description": "Bonus to all \"ranged weapon attack\" damage rolls."
-    },
-    "system.bonuses.save.damage": {
-      "name": "",
-      "description": "Bonus to all Save-activity damage rolls."
-    },
-    "system.bonuses.spell.all.damage": {
-      "name": "",
-      "description": "Bonus to all spell damage rolls."
-    },
-    "system.bonuses.spell.attack": {
-      "name": "",
-      "description": "Bonus to all spell attack rolls."
-    },
-    "system.bonuses.spell.damage": {
-      "name": "",
-      "description": "Bonus to all Attack-activity spell damage rolls."
-    },
-    "system.bonuses.spell.dc": {
-      "name": "",
-      "description": "Bonus to spell save DC."
-    },
-    "system.bonuses.util.damage": {
-      "name": "",
-      "description": ""
-    },
-    "system.bonuses.weapon.attack": {
-      "name": "",
-      "description": "Bonus to all weapon attack rolls."
-    },
-    "system.bonuses.weapon.damage": {
-      "name": "",
-      "description": "Bonus to all Attack-activity weapon damage rolls."
-    }
-  },
-  "dae.SystemTraits.fieldData": {
-    "system.traits.armorProf.all": {
-      "name": "All Armor Proficiency",
-      "description": ""
-    },
-    "system.traits.armorProf.custom": {
-      "name": "Custom Armor Proficiency",
-      "description": ""
-    },
-    "system.traits.armorProf.value": {
-      "name": "Armor Proficiency Value",
-      "description": ""
-    },
-    "system.traits.ci.all": {
-      "name": "Immune to all conditions",
-      "description": "Immune to all conditions."
-    },
-    "system.traits.ci.custom": {
-      "name": "Custom Condition Immunity",
-      "description": ""
-    },
-    "system.traits.ci.value": {
-      "name": "Individual Condition Immunity",
-      "description": "Use mode Add and choose condition immunity to add. -condition removes it."
-    },
-    "system.traits.da.all": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.da.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.da.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.damageTypes.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.damageTypes.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.di.all": {
-      "name": "",
-      "description": "Immune to all damage types."
-    },
-    "system.traits.di.bypasses": {
-      "name": "",
-      "description": "Item/weapon properties which bypass damage immunity."
-    },
-    "system.traits.di.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.di.value": {
-      "name": "",
-      "description": "Use mode Add and choose type immunity to add. -type removes it."
-    },
-    "system.traits.dm.amount.acid": {
-      "name": "",
-      "description": "Damage Modification for Acid damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.bludgeoning": {
-      "name": "",
-      "description": "Damage Modification for Bludgeoning damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.cold": {
-      "name": "",
-      "description": "Damage Modification for Cold damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.fire": {
-      "name": "",
-      "description": "Damage Modification for Fire damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.force": {
-      "name": "",
-      "description": "Damage Modification for Force damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.healing": {
-      "name": "",
-      "description": "Damage Modification for Healing. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.lightning": {
-      "name": "",
-      "description": "Damage Modification for Lightning damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.midi-none": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dm.amount.necrotic": {
-      "name": "",
-      "description": "Damage Modification for Necrotic damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.none": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dm.amount.piercing": {
-      "name": "",
-      "description": "Damage Modification for Piercing damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.poison": {
-      "name": "",
-      "description": "Damage Modification for Poison damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.psychic": {
-      "name": "",
-      "description": "Damage Modification for Psychic damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.radiant": {
-      "name": "",
-      "description": "Damage Modification for Radiant damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.slashing": {
-      "name": "",
-      "description": "Damage Modification for Slashing damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.temphp": {
-      "name": "",
-      "description": "Damage Modification for Temphp healing. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.amount.thunder": {
-      "name": "",
-      "description": "Damage Modification for Thunder damage. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.bypasses": {
-      "name": "",
-      "description": "Item/weapon properties which bypass damage modification."
-    },
-    "system.traits.dm.midi.abil": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dm.midi.all": {
-      "name": "",
-      "description": "Damage Modification for all damage types. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.midi.ench": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dm.midi.heal": {
-      "name": "",
-      "description": "Damage Modification for Heal activities. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.midi.msak": {
-      "name": "",
-      "description": "Damage Modification for melee spell attacks. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.midi.mwak": {
-      "name": "",
-      "description": "Damage Modification for melee weapon attacks. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.midi.other": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dm.midi.rsak": {
-      "name": "",
-      "description": "Damage Modification for ranged spell attacks. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.midi.rwak": {
-      "name": "",
-      "description": "Damage Modification for ranged weapon attacks. Positive numbers mean additional damage taken, negative mean reduced damage taken."
-    },
-    "system.traits.dm.midi.save": {
-      "name": "",
-      "description": "Damage Modification for Save activities. Positive numbers mean additional damage taken, negative mean reduced damage taken"
-    },
-    "system.traits.dm.midi.summ": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dm.midi.util": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dr.all": {
-      "name": "",
-      "description": "Damage Resistance to all damage types."
-    },
-    "system.traits.dr.bypasses": {
-      "name": "",
-      "description": "Item/weapon properties which bypass damage reduction."
-    },
-    "system.traits.dr.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dr.value": {
-      "name": "",
-      "description": "Use mode Add and choose type reduction to add. -type removes it."
-    },
-    "system.traits.dv.all": {
-      "name": "",
-      "description": "Damage Vulnerability to all damage types."
-    },
-    "system.traits.dv.bypasses": {
-      "name": "",
-      "description": "Item/weapon properties which bypass damage vulnerability."
-    },
-    "system.traits.dv.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.dv.value": {
-      "name": "",
-      "description": "Use mode Add and choose type vulnerability to add. -type removes it."
-    },
-    "system.traits.languages.all": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.languages.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.languages.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.size": {
-      "name": "",
-      "description": ""
-    },
-    "system.traits.weaponProf.all": {
-      "name": "All Weapon Proficiency",
-      "description": ""
-    },
-    "system.traits.weaponProf.custom": {
-      "name": "Custom Weapon Proficiency",
-      "description": ""
-    },
-    "system.traits.weaponProf.value": {
-      "name": "Weapon Proficiency Value",
-      "description": ""
-    }
-  },
-  "dae.Other.fieldData": {
-    "StatusEffect": {
-      "name": "",
-      "description": ""
-    },
-    "StatusEffectLabel": {
-      "name": "",
-      "description": ""
-    },
-    "StatusEffectName": {
-      "name": "",
-      "description": ""
-    },
-    "flags.dae": {
-      "name": "",
-      "description": ""
-    },
-    "flags.dae.onUpdateSource": {
-      "name": "",
-      "description": ""
-    },
-    "flags.dae.onUpdateTarget": {
-      "name": "",
-      "description": ""
-    },
-    "system.favorites": {
-      "name": "Favorites",
-      "description": ""
-    },
-    "system.attributes.movement.air": {
-      "name": "Air Movement",
-      "description": ""
-    },
-    "system.attributes.movement.land": {
-      "name": "Land Movement",
-      "description": ""
-    },
-    "system.attributes.movement.water": {
-      "name": "Water Movement",
-      "description": ""
-    },
-    "system.description.full": {
-      "name": "Full Description",
-      "description": ""
-    },
-    "system.description.summary": {
-      "name": "Summary Description",
-      "description": ""
-    },
-    "system.members": {
-      "name": "Members",
-      "description": ""
-    },
-    "system.type.value": {
-      "name": "Type Value",
-      "description": ""
-    },
-    "system.attributes.hd.spent": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.hp.formula": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.cr": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.environment": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.source.book": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.source.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.source.license": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.source.page": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.spellLevel": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.type.custom": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.type.subtype": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.type.swarm": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.type.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.lair.initiative": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.lair.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.legact.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.legres.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.attributes.ac.motionless": {
-      "name": "AC When Motionless",
-      "description": ""
-    },
-    "system.attributes.actions.stations": {
-      "name": "Action Stations",
-      "description": ""
-    },
-    "system.attributes.actions.thresholds.0": {
-      "name": "Actions Threshold 0",
-      "description": ""
-    },
-    "system.attributes.actions.thresholds.1": {
-      "name": "Actions Threshold 1",
-      "description": ""
-    },
-    "system.attributes.actions.thresholds.2": {
-      "name": "Actions Threshold 2",
-      "description": ""
-    },
-    "system.attributes.actions.value": {
-      "name": "Actions Value",
-      "description": ""
-    },
-    "system.attributes.capacity.cargo": {
-      "name": "Cargo Capacity",
-      "description": ""
-    },
-    "system.attributes.capacity.creature": {
-      "name": "Creature Capacity",
-      "description": ""
-    },
-    "system.attributes.hp.dt": {
-      "name": "Damage Threshold",
-      "description": ""
-    },
-    "system.attributes.hp.mt": {
-      "name": "Minimum Threshold",
-      "description": ""
-    },
-    "system.cargo.crew": {
-      "name": "Crew Capacity",
-      "description": ""
-    },
-    "system.cargo.passengers": {
-      "name": "Passenger Capacity",
-      "description": ""
-    },
-    "system.traits.dimensions": {
-      "name": "Dimensions",
-      "description": ""
-    },
-    "system.vehicleType": {
-      "name": "Vehicle Type",
-      "description": ""
-    },
-    "system.currency.cp": {
-      "name": "",
-      "description": ""
-    },
-    "system.currency.ep": {
-      "name": "",
-      "description": ""
-    },
-    "system.currency.gp": {
-      "name": "",
-      "description": ""
-    },
-    "system.currency.pp": {
-      "name": "",
-      "description": ""
-    },
-    "system.currency.sp": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.age": {
-      "name": "Age",
-      "description": ""
-    },
-    "system.details.alignment": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.appearance": {
-      "name": "Appearance",
-      "description": ""
-    },
-    "system.details.background": {
-      "name": "Background",
-      "description": ""
-    },
-    "system.details.biography.public": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.biography.value": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.bond": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.eyes": {
-      "name": "Eyes",
-      "description": ""
-    },
-    "system.details.faith": {
-      "name": "Faith",
-      "description": ""
-    },
-    "system.details.flaw": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.gender": {
-      "name": "Gender",
-      "description": ""
-    },
-    "system.details.hair": {
-      "name": "Hair",
-      "description": ""
-    },
-    "system.details.height": {
-      "name": "Height",
-      "description": ""
-    },
-    "system.details.ideal": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.level": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.originalClass": {
-      "name": "Original Class",
-      "description": ""
-    },
-    "system.details.race": {
-      "name": "",
-      "description": ""
-    },
-    "system.details.skin": {
-      "name": "Skin",
-      "description": ""
-    },
-    "system.details.trait": {
-      "name": "Trait",
-      "description": ""
-    },
-    "system.details.weight": {
-      "name": "Weight",
-      "description": ""
-    },
-    "system.details.xp.value": {
-      "name": "XP Value",
-      "description": ""
-    },
-    "system.resources.legact.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.legres.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.primary.label": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.primary.lr": {
-      "name": "Primary Resource Long Rest",
-      "description": "Recover on Long Rest (1/0)"
-    },
-    "system.resources.primary.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.primary.sr": {
-      "name": "Primary Resource Short Rest",
-      "description": "Recover on Short Rest (1/0)"
-    },
-    "system.resources.primary.value": {
-      "name": "Primary Resource Value",
-      "description": "Should not set this via an active effect"
-    },
-    "system.resources.secondary.label": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.secondary.lr": {
-      "name": "Secondary Resource Long Rest",
-      "description": "Recover on Long Rest (1/0)"
-    },
-    "system.resources.secondary.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.secondary.sr": {
-      "name": "Secondary Resource Short Rest",
-      "description": "Recover on Short Rest (1/0)"
-    },
-    "system.resources.secondary.value": {
-      "name": "Secondary Resource Value",
-      "description": "Should not set this via an active effect"
-    },
-    "system.resources.tertiary.label": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.tertiary.lr": {
-      "name": "Tertiary Resource Long Rest",
-      "description": "Recover on Long Rest (1/0)"
-    },
-    "system.resources.tertiary.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.resources.tertiary.sr": {
-      "name": "Tertiary Resource Short Rest",
-      "description": "Recover on Short Rest (1/0)"
-    },
-    "system.resources.tertiary.value": {
-      "name": "Tertiary Resource Value",
-      "description": "Should not set this via an active effect"
-    },
-    "system.spells.pact.level": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.pact.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.pact.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell1.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell1.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell2.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell2.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell3.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell3.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell4.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell4.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell5.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell5.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell6.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell6.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell7.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell7.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell8.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell8.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell9.max": {
-      "name": "",
-      "description": ""
-    },
-    "system.spells.spell9.override": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.alchemist.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.alchemist.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.alchemist.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.art.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.art.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.art.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.bagpipes.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.bagpipes.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.bagpipes.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.brewer.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.brewer.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.brewer.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.calligrapher.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.calligrapher.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.calligrapher.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.card.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.card.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.card.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.carpenter.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.carpenter.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.carpenter.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cartographer.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cartographer.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cartographer.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.chess.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.chess.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.chess.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cobbler.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cobbler.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cobbler.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cook.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cook.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.cook.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.dice.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.dice.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.dice.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.disg.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.disg.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.disg.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.drum.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.drum.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.drum.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.dulcimer.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.dulcimer.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.dulcimer.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.flute.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.flute.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.flute.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.forg.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.forg.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.forg.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.game.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.game.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.game.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.glassblower.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.glassblower.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.glassblower.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.herb.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.herb.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.herb.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.horn.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.horn.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.horn.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.jeweler.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.jeweler.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.jeweler.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.leatherworker.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.leatherworker.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.leatherworker.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.lute.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.lute.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.lute.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.lyre.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.lyre.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.lyre.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.mason.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.mason.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.mason.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.music.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.music.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.music.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.navg.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.navg.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.navg.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.painter.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.painter.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.painter.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.panflute.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.panflute.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.panflute.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.pois.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.pois.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.pois.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.potter.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.potter.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.potter.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.shawm.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.shawm.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.shawm.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.smith.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.smith.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.smith.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.thief.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.thief.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.thief.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.tinker.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.tinker.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.tinker.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.vehicle.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.vehicle.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.vehicle.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.viol.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.viol.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.viol.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.weaver.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.weaver.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.weaver.prof": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.woodcarver.ability": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.woodcarver.bonuses.check": {
-      "name": "",
-      "description": ""
-    },
-    "system.tools.woodcarver.prof": {
-      "name": "",
-      "description": ""
+    "dae.str": "Force",
+    "dae.dex": "Dextérité",
+    "dae.con": "Constitution",
+    "dae.wis": "Sagesse",
+    "dae.int": "Intelligence",
+    "dae.cha": "Charisme",
+    "dae.All_Modifiers/Checks": "Tests de caractéristique (numérique)",
+    "dae.ac": "Classe d'armure",
+    "dae.hp": "Points de vie",
+    "dae.di": "Immunité aux dégâts",
+    "dae.idi": "Ignorer l'immunité aux dégâts",
+    "dae.dr": "Résistance aux dégâts",
+    "dae.idr": "Ignorer la résistance aux dégâts",
+    "dae.dv": "Vulnérabilité aux dégâts",
+    "dae.idv": "Ignorer la vulnérabilité aux dégâts",
+    "dae.da": "Absorption des dégâts",
+    "dae.ida": "Ignorer l'absorption des dégâts",
+    "dae.ci": "Immunité aux états",
+    "dae.languages": "Langue",
+    "dae.Languages_All": "Toutes les langues",
+    "dae.acr": "Acrobaties",
+    "dae.ani": "Dressage",
+    "dae.arc": "Arcanes",
+    "dae.ath": "Athlétisme",
+    "dae.dec": "Tromperie",
+    "dae.his": "Histoire",
+    "dae.ins": "Intuition",
+    "dae.inv": "Investigation",
+    "dae.itm": "Intimidation",
+    "dae.med": "Médecine",
+    "dae.nat": "Nature",
+    "dae.per": "Persuasion",
+    "dae.prc": "Perception",
+    "dae.prf": "Représentation",
+    "dae.rel": "Religion",
+    "dae.slt": "Escamotage",
+    "dae.ste": "Discrétion",
+    "dae.sur": "Survie",
+    "dae.init": "Initiative",
+    "dae.spd": "Vitesse de marche",
+    "dae.Speed_Special": "Vitesse spéciale",
+    "dae.prof": "Maîtrise",
+    "dae.Strength_Attacks": "Attaques de force",
+    "dae.Dexterity_Attacks": "Attaques de dextérité",
+    "dae.Spell_Attacks": "Attaques de sort",
+    "dae.All_Skills": "Bonus aux tests de compétence (numérique)",
+    "dae.All_Saves": "Jets de sauvegarde (numérique)",
+    "dae.Initiative_Advantage": "Avantage à l'initiative",
+    "dae.Initiative_Alert": "Alerte à l'initiative",
+    "dae.InitiativeHalfProf": "Demi-maîtrise à l'initiative",
+    "dae.Powerful_Build": "Carrure imposante",
+    "dae.Savage_Attacks": "Attaques sauvages",
+    "dae.Spell_DC Bonus": "Bonus au DD de sort (numérique)",
+    "dae.Critical_Hit Threshold": "Seuil de coup critique",
+    "dae.mwak": "Arme de mélée",
+    "dae.rwak": "Arme à distance",
+    "dae.msak": "Sort de mélée",
+    "dae.rsak": "Sort à distance",
+    "dae.attack": "Attaque",
+    "dae.damage": "Dégâts",
+    "dae.heal": "Soins",
+    "dae.check": "Test",
+    "dae.save": "Sauvegarde",
+    "dae.saveBonusDE": "Sauvegarde",
+    "dae.value": "Valeur",
+    "dae.max": "Max",
+    "dae.proficient": "Maîtrise",
+    "dae.ability": "Caractéristique",
+    "dae.bonus": "Bonus",
+    "dae.success": "Réussite",
+    "dae.failure": "Échec",
+    "dae.sr": "Repos court",
+    "dae.lr": "Repos long",
+    "dae.primary": "Primaire",
+    "dae.secondary": "Secondaire",
+    "dae.tertiary": "Tertiaire",
+    "dae.alignment": "Alignement",
+    "dae.biography": "Biographie",
+    "dae.public": "Public",
+    "dae.race": "Race",
+    "dae.background": "Historique",
+    "dae.trait": "Trait",
+    "dae.ideal": "Idéal",
+    "dae.bond": "Lien",
+    "dae.flaw": "Défaut",
+    "dae.level": "Niveau",
+    "dae.hd": "Dés de vie",
+    "dae._deprecated": "<OBSOLÈTE>",
+    "dae.size": "Taille",
+    "dae.senses": "Sens",
+    "dae.blindsight": "Vision aveugle",
+    "dae.darkvision": "Vision dans le noir",
+    "dae.tremorsense": "Perception des vibrations",
+    "dae.truesight": "Vision véritable",
+    "dae.weaponProf": "Maîtrise d'arme",
+    "dae.armorProf": "Maîtrise d'armure",
+    "dae.toolProf": "Maîtrise d'outil",
+    "dae.spell0": "Emplacements de sorts N0",
+    "dae.spell1": "Emplacements de sorts N1",
+    "dae.spell2": "Emplacements de sorts N2",
+    "dae.spell3": "Emplacements de sorts N3",
+    "dae.spell4": "Emplacements de sorts N4",
+    "dae.spell5": "Emplacements de sorts N5",
+    "dae.spell6": "Emplacements de sorts N6",
+    "dae.spell7": "Emplacements de sorts N7",
+    "dae.spell8": "Emplacements de sorts N8",
+    "dae.spell9": "Emplacements de sorts N9",
+    "dae.pact": "Emplacements de magie de pacte",
+    "dae.Attuned": "Harmonisé",
+    "dae.Active": "Activé quand équipé",
+    "dae.Cursed": "Toujours activé",
+    "dae.Create": "Créer un objet",
+    "dae.Edit": "Modifier l'objet",
+    "dae.Delete": "Supprimer l'objet",
+    "dae.EffectTarget": "Cible de l'effet",
+    "dae.ActiveEffectName": "DAE",
+    "dae.TransferEffects": "Effets transférables",
+    "dae.NonTransferEffects": "Effets non transférables",
+    "dae.EffectMode": "Mode",
+    "dae.EffectValue": "Valeur",
+    "dae.label": "Libellé",
+    "dae.Title": "Effets",
+    "dae.Add": "Ajouter",
+    "dae.UpdateEffect": "Mettre à jour l'effet",
+    "dae.ItemEffectSelection": "Sélection d'effet d'objet",
+    "dae.noeffect": "Votre personnage n'a pas d'effet avec ce nom",
+    "dae.enabled": "Activé",
+    "dae.disabled": "Désactivé",
+    "dae.suppressed": "Supprimé",
+    "dae.tool_proficiency": "Maîtrise d'outil",
+    "dae.notTargetItem": "Cet objet n'a pas de cible spécifiée",
+    "dae.ConsumeCharge.Name": "Consommer une charge lors de l'activation passive",
+    "dae.ConsumeCharge.Hint": "Lors de l'activation d'un effet passif via togglePassiveEffect ou la carte de statut du tchat, n'active que si l'objet a des charges et consomme une charge",
+    "dae.noCharges": " non activé, plus de charges",
+    "dae.noSelection": "Aucun token/personnage sélectionné",
+    "dae.category": "Catégorie",
+    "dae.abilities": "Caractéristiques",
+    "dae.attributes": "Attributs",
+    "dae.bonuses": "Bonus",
+    "dae.resources": "Ressources",
+    "dae.currency": "Monnaie",
+    "dae.details": "Détails",
+    "dae.flags": "Drapeaux",
+    "dae.skills": "Compétences",
+    "dae.spells": "Sorts",
+    "dae.traits": "Traits",
+    "dae.min": "Min",
+    "dae.mod": "Modificateur",
+    "dae.total": "Total",
+    "dae.xp": "Points d'exp",
+    "dae.cp": "Cuivre",
+    "dae.sp": "Argent",
+    "dae.ep": "Électrum",
+    "dae.gp": "Or",
+    "dae.pp": "Platine",
+    "dae.initiativeHalfProf": "Init demi-maîtrise",
+    "dae.check_all": "Tous les tests de carac.",
+    "dae.spelldc": "DD de sort",
+    "dae.spelllevel": "Niveau de sort",
+    "dae.death": "Jet de sauvegarde contre la mort",
+    "dae.advantage": "Avantage",
+    "dae.exhaustion": "Épuisement",
+    "dae.temp": "Points de vie temporaires",
+    "dae.tempmax": "Points de vie temporaires max",
+    "dae.inspiration": "Inspiration",
+    "dae.special": "Spécial",
+    "dae.speed": "Vitesse",
+    "dae.spellcasting": "Incantation",
+    "dae.All-Attacks": "Tous les bonus d'attaque",
+    "dae.All-Damage": "Tous les bonus de dégâts",
+    "dae.skill": "Compétence",
+    "dae.spell": "Sort",
+    "dae.weapon": "Arme",
+    "dae.dc": "DD",
+    "dae.passive": "Passif",
+    "dae.custom": "Personnalisé",
+    "dae.all": "Tous",
+    "dae.ActiveItemSelect": "Objets à effet actif",
+    "dae.chooseitem": "Sélectionner un objet",
+    "dae.itemname": "Objet",
+    "dae.applyeffect": "Appliquer aux cibles",
+    "dae.unapplyeffect": "Retirer des cibles",
+    "dae.gm-notes": "Notes du MJ",
+    "dae.notes": "Notes",
+    "dae.playersCanSeeEffects.Name": "Permettre aux joueurs de voir les détails des effets",
+    "dae.playersCanSeeEffects.Hint": "Si désactivé, ne montre pas aux joueurs l'onglet des effets d'objet ou le résumé détaillé des effets passifs. Les joueurs de confiance peuvent modifier les effets",
+    "dae.tokenEffects.Name": "Activer les effets de token",
+    "dae.tokenEffects.Hint": "Permet des effets qui ciblent un token spécifique, ex. invisible, aveugle (fonctionnalité expérimentale)",
+    "dae.macro": "Macro",
+    "dae.macroRepeat": "Répétition de macro",
+    "dae.specialDuration": "Durée spéciale",
+    "dae.execute": "Exécuter",
+    "dae.GM": "MJ",
+    "dae.local": "Local",
+    "dae.actorUpdate": "Mise à jour de personnage",
+    "dae.itemMacro": "Macro d'objet",
+    "dae.override": "Remplacer",
+    "dae.forceCritical": "Dégâts critiques",
+    "dae.attackAdvantage": "Avantage à l'attaque",
+    "dae.conditions": "État",
+    "dae.calculateArmor.Name": "Calcul automatique de la classe d'armure",
+    "dae.calculateArmor.Hint": "Si vrai, les effets dynamiques calculeront automatiquement la CA à partir des armures/boucliers dans l'inventaire. D'autres objets peuvent toujours modifier la CA",
+    "dae.applyBaseAC.Name": "Calcul automatique de la CA de base",
+    "dae.applyBaseAC.Hint": "Si activé, les personnages (pas les PNJ) auront leur CA de base définie à 10 + mod. de dextérité",
+    "dae.applyingEffects": "Application des effets",
+    "dae.removingEffects": "Suppression des effets",
+    "dae.tokenMagic": "TokenMagic",
+    "dae.transfer.Name": "Appliquer l'effet au personnage",
+    "dae.transfer.Hint": "Activé signifie que l'effet est appliqué au propriétaire de l'objet quand l'objet est équipé. Désactivez si vous voulez que l'effet s'applique à une cible quand l'objet est utilisé",
+    "dae.effectName": "Nom de l'effet",
+    "dae.readOnly": "EFFET EN LECTURE SEULE",
+    "dae.legact": "Actions légendaires",
+    "dae.legres": "Résistance légendaire",
+    "dae.encumbrance": "Encombrement",
+    "dae.useAbilitySave.Name": "Utiliser le champ de sauvegarde de caractéristique pour les jets de sauvegarde",
+    "dae.useAbilitySave.Hint": "Par défaut, DND5e n'utilise que le modificateur de caractéristique. Activer cette option signifie que les jets de sauvegarde utiliseront le champ de sauvegarde et peuvent être modifiés via DAE",
+    "dae.Debug.Name": "Niveau de débogage à afficher",
+    "dae.Debug.Hint": "Affiche plus d'informations de débogage dans la console selon le paramètre aucun < avertissement < débogage < tout",
+    "dae.summaryFilter": "Résumé des effets",
+    "dae.enabledFilter": "Effets activés",
+    "dae.temporaryFilter": "Effets temporaires",
+    "dae.Priority": "Priorité",
+    "dae.Stackable": "Empilable",
+    "dae.EffectSheetLabel": "Feuille d'effet actif DAE",
+    "dae.confirm": "Dialogue de confirmation",
+    "dae.sure": "Êtes-vous sûr ?",
+    "dae.dae": "DAE",
+    "dae.movement": "Mouvement",
+    "dae.burrow": "Fouissement",
+    "dae.climb": "Escalade",
+    "dae.hover": "Vol stationnaire",
+    "dae.fly": "Vol",
+    "dae.swim": "Nage",
+    "dae.units": "Unités",
+    "dae.walk": "Marche",
+    "dae.diamondSoul": "Âme de diamant",
+    "dae.noGM": "Aucun client MJ connecté",
+    "dae.expireRealTime.Name": "Expirer les effets temporaires en temps réel",
+    "dae.expireRealTime.Hint": "Si activé et que about-time/times-up ne sont pas installés, les effets temporaires expireront en temps réel.",
+    "dae.isAttacked": "Est attaqué : expire si le personnage est attaqué",
+    "dae.isMoved": "Déplacé : expire quand le token est déplacé",
+    "dae.isDamaged": "Est blessé : expire si le personnage subit des dégâts",
+    "dae.isHealed": "Est soigné : expire si le personnage est soigné",
+    "dae.ZeroHP": "0 PV : expire si le personnage atteint 0 PV",
+    "dae.isHit": "Est touché : expire si le personnage est touché par une attaque d'arme/sort même si l'arme/sort ne fait pas de dégâts",
+    "dae.isHitCritical": "Est touché critique : expire si le personnage est touché par une attaque critique d'arme/sort",
+    "dae.isRollBase": "Expire si le personnage fait : ",
+    "dae.isSaveDetail": "un jet de sauvegarde",
+    "dae.isCheckDetail": "un test de caractéristique",
+    "dae.isSkillDetail": "un test de compétence",
+    "dae.isConcentrationSave": "un jet de sauvegarde de concentration",
+    "dae.isInitiativeDetail": "l'initiative",
+    "dae.1Action": "1 action : expire à la prochaine action (jet d'objet) du personnage",
+    "dae.Bonus Action": "Expire à la prochaine utilisation d'objet de type action bonus",
+    "dae.Reaction": "Expire à la prochaine utilisation d'objet de type réaction",
+    "dae.Turn Action": "Expire à la prochaine utilisation d'objet de type action",
+    "dae.1Attack": "1 attaque : expire à la prochaine attaque {type} du personnage",
+    "dae.1Spell": "1 sort : expire au prochain sort lancé (N'IMPORTE QUEL sort) par le personnage",
+    "dae.1Reaction": "1 réaction : expire après que l'attaque qui a déclenché la réaction est terminée",
+    "dae.1Hit": "1 toucher : expire au prochain toucher {type} du personnage",
+    "dae.1Critical": "1 critique : expire au prochain coup critique du personnage",
+    "dae.1Fumble": "1 échec : expire au prochain échec critique du personnage",
+    "dae.DamageDealt": "Dégâts infligés : expire quand le personnage inflige des dégâts",
+    "dae.turnStart": "Début de tour : expire au début du prochain tour de la cible (en combat)",
+    "dae.turnStartSource": "Début de tour : expire au début du prochain tour de l'acteur source (en combat)",
+    "dae.turnEnd": "Fin de tour : expire à la fin du prochain tour de la cible (en combat)",
+    "dae.turnEndSource": "Fin de tour : expire à la fin du prochain tour de l'acteur source (en combat)",
+    "dae.startEveryTurn": "Début de chaque tour : exécuter les macros d'effet au début du tour du personnage",
+    "dae.startEndEveryTurn": "Début et fin de chaque tour : exécuter les macros d'effet au début et à la fin du tour du personnage",
+    "dae.startEveryTurnAny": "Début de chaque tour : exécuter les macros d'effet au début du tour du personnage même si l'effet est désactivé",
+    "dae.startEndEveryTurnAny": "Début et fin de chaque tour : exécuter les macros d'effet au début et à la fin du tour du personnage même si l'effet est désactivé",
+    "dae.endEveryTurn": "Fin de chaque tour : exécuter les macros d'effet à la fin du tour du personnage",
+    "dae.endEveryTurnAny": "Fin de chaque tour : exécuter les macros d'effet à la fin du tour du personnage même si l'effet est désactivé",
+    "dae.ConditionalVisibility": "Visibilité conditionnelle",
+    "dae.ConditionalVisibilityVision": "Vision CV",
+    "dae.noDupDamageMacro.Name": "Pas de macros de dégâts en double",
+    "dae.noDupDamageMacro.Hint": "Si coché, les macros de dégâts en double seront ignorées",
+    "dae.DisableEffects.Name": "Désactiver tout traitement d'effet actif",
+    "dae.DisableEffects.Hint": "Si activé, aucun effet actif ne sera appliqué aux personnages. Utile si vous voulez modifier des valeurs de personnage qui sont modifiées par des effets actifs",
+    "dae.HandleEquip.Name": "Gérer les effets actifs d'équipement/déséquipement",
+    "dae.HandleEquip.Hint": "Si activé, DAE gérera l'activation/désactivation des effets actifs lors de l'équipement/déséquipement et activer/désactiver basculera l'équipement/déséquipement",
+    "dae.DAETitleBar.Name": "Barre de titre DAE",
+    "dae.DAETitleBar.Hint": "Afficher le bouton d'édition d'effet DAE dans la barre de titre",
+    "dae.DIMETitleBar.Name": "Barre de titre DIME",
+    "dae.DIMETitleBar.Hint": "Afficher l'éditeur de macro d'objet DAE dans la barre de titre",
+    "dae.DAEColorTitleBar.Name": "Barre de titre colorée DAE",
+    "dae.DAEColorTitleBar.Hint": "Appliquer une couleur au bouton d'édition d'effet DAE/bouton DIME, si des effets/macros d'objet sont présents dans le document (nécessite que Barre de titre DAE soit coché).",
+    "dae.DAENoTitleText.Name": "Juste une icône",
+    "dae.DAENoTitleText.Hint": "N'afficher que l'icône dans la barre de titre sinon icône + DAE",
+    "dae.StatusEffect": "Effet de statut",
+    "dae.ShowDeprecation.Name": "Afficher les erreurs d'obsolescence",
+    "dae.ShowDeprecation.Hint": "Afficher les erreurs d'obsolescence dans la console",
+    "dae.CE": "Effets pratiques",
+    "dae.CUB": "Ceinture utilitaire de combat",
+    "dae.ShowInline.Name": "Afficher les résultats des jets intégrés",
+    "dae.ShowInline.Hint": "Les effets avec un jet intégré afficheront les résultats du jet si activé",
+    "dae.StackableOptions": {
+      "noneName": "Les effets ne s'empilent pas par nom d'effet et origine d'effet",
+      "noneNameOnly": "Les effets ne s'empilent pas par nom d'effet",
+      "none": "Les effets ne s'empilent pas par origine d'effet",
+      "multi": "Les effets empilables appliquent l'effet plusieurs fois",
+      "count": "chaque pile augmente le compte de piles de 1",
+      "countDeleteDecrement": "appliquer augmente les piles de 1, supprimer diminue les piles de 1, retiré à 0 pile"
+    },
+    "dae.SW5EHint": "Note pour les traducteurs - Les chaînes suivantes sont UNIQUEMENT requises pour le système SW5E",
+    "dae.SW5E": "sw5e",
+    "dae.force": "Force",
+    "dae.tech": "Technologie",
+    "dae.known": "Pouvoirs connus",
+    "dae.points": "Points",
+    "dae.powers": "Pouvoirs",
+    "dae.power": "Pouvoir",
+    "dae.power0": "Emplacements de pouvoir N0",
+    "dae.power1": "Emplacements de pouvoir N1",
+    "dae.power2": "Emplacements de pouvoir N2",
+    "dae.power3": "Emplacements de pouvoir N3",
+    "dae.power4": "Emplacements de pouvoir N4",
+    "dae.power5": "Emplacements de pouvoir N5",
+    "dae.power6": "Emplacements de pouvoir N6",
+    "dae.power7": "Emplacements de pouvoir N7",
+    "dae.power8": "Emplacements de pouvoir N8",
+    "dae.power9": "Emplacements de pouvoir N9",
+    "dae.mpak": "Pouvoir de mélée",
+    "dae.rpak": "Pouvoir à distance",
+    "dae.gc": "Crédits",
+    "dae.species": "Espèce",
+    "dae.forceDarkDC": "DD de pouvoir de force obscure",
+    "dae.forceLightDC": "DD de pouvoir de force lumineuse",
+    "dae.forceUnivDC": "DD de pouvoir de force universelle",
+    "dae.techDC": "DD de pouvoir technologique",
+    "dae.fmax": "Force max",
+    "dae.fvalue": "Valeur de force",
+    "dae.foverride": "Remplacement de force",
+    "dae.tmax": "Technologie max",
+    "dae.tvalue": "Valeur de technologie",
+    "dae.toverride": "Remplacement de technologie",
+    "dae.lor": "Savoir",
+    "dae.pil": "Pilotage",
+    "dae.tec": "Technologie",
+    "dae.powerForceLevel": "Niveau de pouvoir de force",
+    "dae.forceToHud.Name": "Affichage de la force sur le token",
+    "dae.forceToHud.Hint": "Si non vide, l'icône de l'effet sera affichée sur le token quelle que soit la durée",
+    "dae.DurationExpression": "Expression de jet en secondes pour la durée de l'effet",
+    "dae.not-reflected": "Effet d'objet sauvegardé. Ces changements ne seront pas reflétés dans l'effet transféré original.",
+    "dae.not-transferred": "Effet d'objet sauvegardé. Définir un effet d'objet possédé comme transférable ne transférera pas automatiquement l'effet.",
+    "dae.ATLHint": "Note pour les traducteurs, ceux-ci ne sont requis que pour Active Token Lighting",
+    "dae.ATL": "ATL",
+    "dae.dimLight": "Lumière faible",
+    "dae.brightLight": "Lumière vive",
+    "dae.light": "Lumière",
+    "dae.bright": "Vif",
+    "dae.dim": "Faible",
+    "dae.color": "Couleur de lumière",
+    "dae.animation": "Animation",
+    "dae.alpha": "Alpha",
+    "dae.angle": "Angle",
+    "dae.dimSight": "Vision faible",
+    "dae.brightSight": "Vision vive",
+    "dae.sightAngle": "Angle de vision",
+    "dae.lightColor": "Couleur de lumière",
+    "dae.lightAnimation": "Animation de lumière",
+    "dae.lightAlpha": "Alpha de lumière",
+    "dae.lightAngle": "Angle de lumière",
+    "dae.DAEUntestedSystems.Name": "Charger DAE pour les systèmes non testés",
+    "dae.DAEUntestedSystems.Hint": "Si coché, DAE se chargera pour tout système non marqué comme compatible. Si décoché, DAE ne se chargera que pour les systèmes marqués comme compatibles. Nécessite un rechargement",
+    "dae.SelfTarget.Name": "S'appliquer à soi quand l'objet applique des effets aux cibles",
+    "dae.SelfTarget.Hint": "L'effet est appliqué à l'utilisateur de l'objet, pas aux cibles si l'objet applique des effets aux cibles",
+    "dae.SelfTargetAlways.Name": "S'appliquer à soi quand l'objet est lancé",
+    "dae.SelfTargetAlways.Hint": "L'effet est appliqué à l'utilisateur de l'objet, pas aux cibles quand l'objet est lancé",
+    "dae.ShowIcon.Name": "Toujours afficher l'icône d'effet",
+    "dae.ShowIcon.Hint": "Afficher l'icône d'effet sur le token et l'affichage de combat",
+    "dae.DontApply.Name": "Ne pas appliquer l'effet",
+    "dae.DontApply.Hint": "Quand DAE (et midi) applique des effets actifs, ignorer celui-ci",
+    "dae.DIMEditor.Name": "DIME",
+    "dae.IncapacitatedDisabled": "Effet désactivé si l'acteur est incapacité",
+    "dae.DIMESyncItemacro.Name": "Synchroniser DIME et Itemacro",
+    "dae.DIMESyncItemacro.Hint": "Coché signifie que la macro DIME et la macro Itemacro seront synchronisées - vous pouvez éditer avec les deux. Décocher donne la priorité à l'éditeur DIME.",
+    "dae.halfHealthEffectLabel": "Moitié de vie",
+    "dae.DAEAddHalfHealthEffect.Name": "Ajouter un effet de moitié de vie",
+    "dae.DAEAddHalfHealthEffect.Hint": "Ajouter un effet de statut de moitié de vie pour définir les points de vie max de l'acteur à la moitié de son maximum normal",
+    "dae.TabChanges": "Changements",
+    "dae.DisableCondition": "Une expression qui, si vraie, désactivera l'effet",
+    "dae.EnableCondition": "Une expression qui, si fausse, retirera l'effet de l'acteur",
+    "dae.ConditionalEffectsItem": "DAEConditionalEffects",
+    "dae.IconTint": "Teinte d'icône",
+    "dae.IconOverlay.Name": "Superposition d'icône",
+    "dae.IconOverlay.Hint": "Afficher l'icône de statut d'effet comme superposition",
+    "dae.DependentConditions.Name": "États dépendants",
+    "dae.DependentConditions.Hint": "Les effets de statut (empoisonné/paralysé) ajouteront aussi des états dépendants comme incapacité.",
+    "__Comment__": "Les chaînes suivantes sont pour le système DAE. La traduction est optionnelle",
+    "dae.fieldData": {
+      "fieldCategories.All": "Tous",
+      "fieldCategories.D&D5E": "D&D5E",
+      "fieldCategories.Macros": "Macros",
+      "fieldCategories.MidiQOL": "MidiQOL",
+      "fieldCategories.SystemAbilities": "Système : Caractéristiques",
+      "fieldCategories.SystemSkills": "Système : Compétences",
+      "fieldCategories.SystemAttributes": "Système : Attributs",
+      "fieldCategories.SystemBonuses": "Système : Bonus",
+      "fieldCategories.SystemTraits": "Système : Traits",
+      "fieldCategories.Other": "Autre",
+      "fieldCategories.SystemResources": "Système : Ressources",
+      "fieldCategories.SystemCurrency": "Système : Monnaie",
+      "fieldCategories.SystemDetails": "Système : Détails",
+      "fieldCategories.SystemFlags": "Système : Drapeaux"
+    },
+    "dae.D&D5E.fieldData": {
+      "flags.dnd5e.DamageBonusMacro": {
+        "name": "Macros de bonus de dégâts",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.diamondSoul": {
+        "name": "Âme de diamant",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.elvenAccuracy": {
+        "name": "Précision elfique",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.halflingLucky": {
+        "name": "Chance des halfelins",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.initiativeAdv": {
+        "name": "Avantage à l'initiative",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.initiativeAlert": {
+        "name": "Don d'alerte",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.initiativeDisadv": {
+        "name": "Désavantage à l'initiative",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.initiativeHalfProficiency": {
+        "name": "Demi-maîtrise pour l'initiative",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.jackOfAllTrades": {
+        "name": "Touche-à-tout",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.meleeCriticalDamageDice": {
+        "name": "Dés de dégâts critiques en mélée",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.observantFeat": {
+        "name": "Don d'observateur",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.powerfulBuild": {
+        "name": "Corpulence puissante",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.reliableTalent": {
+        "name": "Talent fiable",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.remarkableAthlete": {
+        "name": "Athlète remarquable",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.spellCriticalThreshold": {
+        "name": "Seuil de coup critique pour les sorts",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.spellSniper": {
+        "name": "Tireur de sorts",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.tavernBrawlerFeat": {
+        "name": "Don de bagarreur de taverne",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      },
+      "flags.dnd5e.weaponCriticalThreshold": {
+        "name": "Seuil de coup critique pour les armes",
+        "description": "Voir \"Traits spéciaux\" pour les détails."
+      }
+    },
+    "dae.SystemAbilities.fieldData": {
+      "system.abilities.cha.bonuses.check": {
+        "name": "Bonus au test de charisme"
+      },
+      "system.abilities.cha.bonuses.save": {
+        "name": "Bonus au jet de sauvegarde de charisme"
+      },
+      "system.abilities.cha.dc": {
+        "name": "DD de sauvegarde de charisme"
+      },
+      "system.abilities.cha.max": {
+        "name": "Score max de charisme"
+      },
+      "system.abilities.cha.mod": {
+        "name": "Modificateur de charisme"
+      },
+      "system.abilities.cha.proficient": {
+        "name": "Maîtrise de sauvegarde de charisme",
+        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
+      },
+      "system.abilities.cha.save": {
+        "name": "Modificateur de sauvegarde de charisme"
+      },
+      "system.abilities.cha.value": {
+        "name": "Score de charisme"
+      },
+      "system.abilities.con.bonuses.check": {
+        "name": "Bonus au test de constitution"
+      },
+      "system.abilities.con.bonuses.save": {
+        "name": "Bonus au jet de sauvegarde de constitution"
+      },
+      "system.abilities.con.dc": {
+        "name": "DD de sauvegarde de constitution"
+      },
+      "system.abilities.con.max": {
+        "name": "Score max de constitution"
+      },
+      "system.abilities.con.mod": {
+        "name": "Modificateur de constitution"
+      },
+      "system.abilities.con.proficient": {
+        "name": "Maîtrise de sauvegarde de constitution",
+        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
+      },
+      "system.abilities.con.save": {
+        "name": "Modificateur de sauvegarde de constitution"
+      },
+      "system.abilities.con.value": {
+        "name": "Score de constitution"
+      },
+      "system.abilities.dex.bonuses.check": {
+        "name": "Bonus au test de dextérité"
+      },
+      "system.abilities.dex.bonuses.save": {
+        "name": "Bonus au jet de sauvegarde de dextérité"
+      },
+      "system.abilities.dex.dc": {
+        "name": "DD de sauvegarde de dextérité"
+      },
+      "system.abilities.dex.max": {
+        "name": "Score max de dextérité"
+      },
+      "system.abilities.dex.mod": {
+        "name": "Modificateur de dextérité"
+      },
+      "system.abilities.dex.proficient": {
+        "name": "Maîtrise de sauvegarde de dextérité",
+        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
+      },
+      "system.abilities.dex.save": {
+        "name": "Modificateur de sauvegarde de dextérité"
+      },
+      "system.abilities.dex.value": {
+        "name": "Score de dextérité"
+      },
+      "system.abilities.int.bonuses.check": {
+        "name": "Bonus au test d'intelligence"
+      },
+      "system.abilities.int.bonuses.save": {
+        "name": "Bonus au jet de sauvegarde d'intelligence"
+      },
+      "system.abilities.int.dc": {
+        "name": "DD de sauvegarde d'intelligence"
+      },
+      "system.abilities.int.max": {
+        "name": "Score max d'intelligence"
+      },
+      "system.abilities.int.mod": {
+        "name": "Modificateur d'intelligence"
+      },
+      "system.abilities.int.proficient": {
+        "name": "Maîtrise de sauvegarde d'intelligence",
+        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
+      },
+      "system.abilities.int.save": {
+        "name": "Modificateur de sauvegarde d'intelligence"
+      },
+      "system.abilities.int.value": {
+        "name": "Score d'intelligence"
+      },
+      "system.abilities.str.bonuses.check": {
+        "name": "Bonus au test de force"
+      },
+      "system.abilities.str.bonuses.save": {
+        "name": "Bonus au jet de sauvegarde de force"
+      },
+      "system.abilities.str.dc": {
+        "name": "DD de sauvegarde de force"
+      },
+      "system.abilities.str.max": {
+        "name": "Score max de force"
+      },
+      "system.abilities.str.mod": {
+        "name": "Modificateur de force"
+      },
+      "system.abilities.str.proficient": {
+        "name": "Maîtrise de sauvegarde de force",
+        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
+      },
+      "system.abilities.str.save": {
+        "name": "Modificateur de sauvegarde de force"
+      },
+      "system.abilities.str.value": {
+        "name": "Score de force"
+      },
+      "system.abilities.wis.bonuses.check": {
+        "name": "Bonus au test de sagesse"
+      },
+      "system.abilities.wis.bonuses.save": {
+        "name": "Bonus au jet de sauvegarde de sagesse"
+      },
+      "system.abilities.wis.dc": {
+        "name": "DD de sauvegarde de sagesse"
+      },
+      "system.abilities.wis.max": {
+        "name": "Score max de sagesse"
+      },
+      "system.abilities.wis.mod": {
+        "name": "Modificateur de sagesse"
+      },
+      "system.abilities.wis.proficient": {
+        "name": "Maîtrise de sauvegarde de sagesse",
+        "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
+      },
+      "system.abilities.wis.save": {
+        "name": "Modificateur de sauvegarde de sagesse"
+      },
+      "system.abilities.wis.value": {
+        "name": "Score de sagesse"
+      }
+    },
+    "dae.SystemAttributes.fieldData": {
+      "system.attributes.ac.armor": {
+        "description": "Bonus de CA d'armure (généralement fourni uniquement via un objet d'armure équipé - n'aura d'effet que si aucune armure n'est portée)."
+      },
+      "system.attributes.ac.base": {
+        "description": "Champ dérivé obsolète - ne pas utiliser."
+      },
+      "system.attributes.ac.bonus": {
+        "description": "Bonus numérique à la CA."
+      },
+      "system.attributes.ac.calc": {
+        "description": "Méthode de calcul de la CA."
+      },
+      "system.attributes.ac.cover": {
+        "description": "Bonus de CA d'abri (généralement fourni uniquement via des effets d'état d'abri)."
+      },
+      "system.attributes.ac.flat": {
+        "description": "CA fixe (nécessite que system.attributes.ac.calc soit \"flat\")."
+      },
+      "system.attributes.ac.formula": {
+        "description": "Formule de calcul de la CA (nécessite que system.attributes.ac.calc soit \"custom\")."
+      },
+      "system.attributes.ac.min": {
+        "description": "Valeur minimale de CA (si calculée plus basse, sera augmentée à ce nombre)."
+      },
+      "system.attributes.ac.shield": {
+        "description": "Bonus de CA de bouclier (généralement fourni uniquement via un objet bouclier équipé)."
+      },
+      "system.attributes.ac.value": {
+        "description": "Utilisez system.attributes.ac.calc comme \"flat\" et system.attributes.ac.flat comme valeur souhaitée à la place."
+      },
+      "system.attributes.hp.bonuses.level": {
+        "name": "Bonus de PV par niveau",
+        "description": "Bonus aux PV appliqué pour chaque niveau de personnage (ne fonctionne que pour les acteurs avec classe)."
+      },
+      "system.attributes.hp.bonuses.overall": {
+        "name": "Bonus global de PV",
+        "description": "Bonus aux PV (ne fonctionne que pour les acteurs avec classe)."
+      },
+      "system.attributes.hp.max": {
+        "name": "PV max",
+        "description": "Ne devrait pas être modifié sur un acteur avec une classe - utilisez l'un des .bonuses ou .tempmax à la place."
+      },
+      "system.attributes.hp.temp": {
+        "name": "PV temporaires",
+        "description": "Ne devrait jamais être modifié dans un effet actif - appliquez des dégâts de temphp à la place."
+      },
+      "system.attributes.hp.tempmax": {
+        "name": "PV max temporaires",
+        "description": "Ajustement temporaire des PV max."
+      },
+      "system.attributes.hp.value": {
+        "name": "PV actuels",
+        "description": "Ne devrait jamais être modifié dans un effet actif - appliquez des dégâts à la place."
+      },
+      "system.attributes.inspiration": {
+        "name": "Inspiration"
+      }
+    },
+    "dae.SystemBonuses.fieldData": {
+      "system.bonuses.abilities.check": {
+        "description": "Bonus à tous les tests de caractéristique."
+      },
+      "system.bonuses.abilities.save": {
+        "description": "Bonus à tous les jets de sauvegarde."
+      },
+      "system.bonuses.abilities.skill": {
+        "description": "Bonus à tous les tests de compétence."
+      },
+      "system.bonuses.All-Attacks": {
+        "description": "Bonus à tous les jets d'attaque."
+      },
+      "system.bonuses.All-Damage": {
+        "description": "Bonus à tous les jets de dégâts."
+      },
+      "system.bonuses.check.damage": {
+        "description": "Bonus à tous les jets de dégâts d'activité de test."
+      },
+      "system.bonuses.heal.damage": {
+        "description": "Bonus à tous les jets de dégâts d'activité de soin."
+      },
+      "system.bonuses.msak.attack": {
+        "description": "Bonus à tous les jets d'attaque \"attaque de sort de mélée\"."
+      },
+      "system.bonuses.msak.damage": {
+        "description": "Bonus à tous les jets de dégâts \"attaque de sort de mélée\"."
+      },
+      "system.bonuses.mwak.attack": {
+        "description": "Bonus à tous les jets d'attaque \"attaque d'arme de mélée\"."
+      },
+      "system.bonuses.mwak.damage": {
+        "description": "Bonus à tous les jets de dégâts \"attaque d'arme de mélée\"."
+      },
+      "system.bonuses.rsak.attack": {
+        "description": "Bonus à tous les jets d'attaque \"attaque de sort à distance\"."
+      },
+      "system.bonuses.rsak.damage": {
+        "description": "Bonus à tous les jets de dégâts \"attaque de sort à distance\"."
+      },
+      "system.bonuses.rwak.attack": {
+        "description": "Bonus à tous les jets d'attaque \"attaque d'arme à distance\"."
+      },
+      "system.bonuses.rwak.damage": {
+        "description": "Bonus à tous les jets de dégâts \"attaque d'arme à distance\"."
+      },
+      "system.bonuses.save.damage": {
+        "description": "Bonus à tous les jets de dégâts d'activité de sauvegarde."
+      },
+      "system.bonuses.spell.all.damage": {
+        "description": "Bonus à tous les jets de dégâts de sort."
+      },
+      "system.bonuses.spell.attack": {
+        "description": "Bonus à tous les jets d'attaque de sort."
+      },
+      "system.bonuses.spell.damage": {
+        "description": "Bonus à tous les jets de dégâts de sort d'activité d'attaque."
+      },
+      "system.bonuses.spell.dc": {
+        "description": "Bonus au DD de sort."
+      },
+      "system.bonuses.weapon.attack": {
+        "description": "Bonus à tous les jets d'attaque d'arme."
+      },
+      "system.bonuses.weapon.damage": {
+        "description": "Bonus à tous les jets de dégâts d'arme d'activité d'attaque."
+      }
+    },
+    "dae.SystemTraits.fieldData": {
+      "system.traits.armorProf.all": {
+        "name": "Maîtrise de toutes les armures"
+      },
+      "system.traits.armorProf.custom": {
+        "name": "Maîtrise d'armure personnalisée"
+      },
+      "system.traits.armorProf.value": {
+        "name": "Valeur de maîtrise d'armure"
+      },
+      "system.traits.ci.all": {
+        "name": "Immunisé à tous les états",
+        "description": "Immunisé à tous les états."
+      },
+      "system.traits.ci.custom": {
+        "name": "Immunité aux états personnalisée"
+      },
+      "system.traits.ci.value": {
+        "name": "Immunité aux états individuels",
+        "description": "Utilisez le mode Ajouter et choisissez une immunité d'état à ajouter. -condition la retire."
+      },
+      "system.traits.di.all": {
+        "description": "Immunisé à tous les types de dégâts."
+      },
+      "system.traits.di.bypasses": {
+        "description": "Propriétés d'objet/arme qui contournent l'immunité aux dégâts."
+      },
+      "system.traits.di.value": {
+        "description": "Utilisez le mode Ajouter et choisissez un type d'immunité à ajouter. -type le retire."
+      },
+      "system.traits.dm.amount.acid": {
+        "description": "Modification des dégâts pour les dégâts acides. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.bludgeoning": {
+        "description": "Modification des dégâts pour les dégâts contondants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.cold": {
+        "description": "Modification des dégâts pour les dégâts de froid. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.fire": {
+        "description": "Modification des dégâts pour les dégâts de feu. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.force": {
+        "description": "Modification des dégâts pour les dégâts de force. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.healing": {
+        "description": "Modification des dégâts pour les soins. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.lightning": {
+        "description": "Modification des dégâts pour les dégâts de foudre. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.necrotic": {
+        "description": "Modification des dégâts pour les dégâts nécrotiques. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.piercing": {
+        "description": "Modification des dégâts pour les dégâts perforants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.poison": {
+        "description": "Modification des dégâts pour les dégâts de poison. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.psychic": {
+        "description": "Modification des dégâts pour les dégâts psychiques. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.radiant": {
+        "description": "Modification des dégâts pour les dégâts radieux. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.slashing": {
+        "description": "Modification des dégâts pour les dégâts tranchants. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.temphp": {
+        "description": "Modification des dégâts pour les soins de PV temporaires. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.amount.thunder": {
+        "description": "Modification des dégâts pour les dégâts de tonnerre. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.bypasses": {
+        "description": "Propriétés d'objet/arme qui contournent la modification des dégâts."
+      },
+      "system.traits.dm.midi.all": {
+        "description": "Modification des dégâts pour tous les types de dégâts. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.midi.heal": {
+        "description": "Modification des dégâts pour les activités de soin. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.midi.msak": {
+        "description": "Modification des dégâts pour les attaques de sort de mélée. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.midi.mwak": {
+        "description": "Modification des dégâts pour les attaques d'arme de mélée. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.midi.rsak": {
+        "description": "Modification des dégâts pour les attaques de sort à distance. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.midi.rwak": {
+        "description": "Modification des dégâts pour les attaques d'arme à distance. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits."
+      },
+      "system.traits.dm.midi.save": {
+        "description": "Modification des dégâts pour les activités de sauvegarde. Les nombres positifs signifient des dégâts supplémentaires subis, les négatifs signifient des dégâts réduits"
+      },
+      "system.traits.dr.all": {
+        "description": "Résistance aux dégâts pour tous les types de dégâts."
+      },
+      "system.traits.dr.bypasses": {
+        "description": "Propriétés d'objet/arme qui contournent la réduction des dégâts."
+      },
+      "system.traits.dr.value": {
+        "description": "Utilisez le mode Ajouter et choisissez un type de réduction à ajouter. -type le retire."
+      },
+      "system.traits.dv.all": {
+        "description": "Vulnérabilité aux dégâts pour tous les types de dégâts."
+      },
+      "system.traits.dv.bypasses": {
+        "description": "Propriétés d'objet/arme qui contournent la vulnérabilité aux dégâts."
+      },
+      "system.traits.dv.value": {
+        "description": "Utilisez le mode Ajouter et choisissez un type de vulnérabilité à ajouter. -type le retire."
+      },
+      "system.traits.weaponProf.all": {
+        "name": "Maîtrise de toutes les armes"
+      },
+      "system.traits.weaponProf.custom": {
+        "name": "Maîtrise d'arme personnalisée"
+      },
+      "system.traits.weaponProf.value": {
+        "name": "Valeur de maîtrise d'arme"
+      }
+    },
+    "dae.Other.fieldData": {
+      "system.favorites": {
+        "name": "Favoris"
+      },
+      "system.attributes.movement.air": {
+        "name": "Mouvement aérien"
+      },
+      "system.attributes.movement.land": {
+        "name": "Mouvement terrestre"
+      },
+      "system.attributes.movement.water": {
+        "name": "Mouvement aquatique"
+      },
+      "system.description.full": {
+        "name": "Description complète"
+      },
+      "system.description.summary": {
+        "name": "Description résumée"
+      },
+      "system.members": {
+        "name": "Membres"
+      },
+      "system.type.value": {
+        "name": "Valeur de type"
+      },
+      "system.attributes.ac.motionless": {
+        "name": "CA quand immobile"
+      },
+      "system.attributes.actions.stations": {
+        "name": "Postes d'action"
+      },
+      "system.attributes.actions.thresholds.0": {
+        "name": "Seuil d'actions 0"
+      },
+      "system.attributes.actions.thresholds.1": {
+        "name": "Seuil d'actions 1"
+      },
+      "system.attributes.actions.thresholds.2": {
+        "name": "Seuil d'actions 2"
+      },
+      "system.attributes.actions.value": {
+        "name": "Valeur d'actions"
+      },
+      "system.attributes.capacity.cargo": {
+        "name": "Capacité de cargaison"
+      },
+      "system.attributes.capacity.creature": {
+        "name": "Capacité de créature"
+      },
+      "system.attributes.hp.dt": {
+        "name": "Seuil de dégâts"
+      },
+      "system.attributes.hp.mt": {
+        "name": "Seuil minimum"
+      },
+      "system.cargo.crew": {
+        "name": "Capacité d'équipage"
+      },
+      "system.cargo.passengers": {
+        "name": "Capacité de passagers"
+      },
+      "system.traits.dimensions": {
+        "name": "Dimensions"
+      },
+      "system.vehicleType": {
+        "name": "Type de véhicule"
+      },
+      "system.details.age": {
+        "name": "Âge"
+      },
+      "system.details.appearance": {
+        "name": "Apparence"
+      },
+      "system.details.background": {
+        "name": "Historique"
+      },
+      "system.details.eyes": {
+        "name": "Yeux"
+      },
+      "system.details.faith": {
+        "name": "Foi"
+      },
+      "system.details.gender": {
+        "name": "Genre"
+      },
+      "system.details.hair": {
+        "name": "Cheveux"
+      },
+      "system.details.height": {
+        "name": "Taille"
+      },
+      "system.details.originalClass": {
+        "name": "Classe originale"
+      },
+      "system.details.skin": {
+        "name": "Peau"
+      },
+      "system.details.trait": {
+        "name": "Trait"
+      },
+      "system.details.weight": {
+        "name": "Poids"
+      },
+      "system.details.xp.value": {
+        "name": "Valeur d'XP"
+      },
+      "system.resources.primary.lr": {
+        "name": "Ressource primaire repos long",
+        "description": "Récupère lors d'un repos long (1/0)"
+      },
+      "system.resources.primary.sr": {
+        "name": "Ressource primaire repos court",
+        "description": "Récupère lors d'un repos court (1/0)"
+      },
+      "system.resources.primary.value": {
+        "name": "Valeur de ressource primaire",
+        "description": "Ne devrait pas être défini via un effet actif"
+      },
+      "system.resources.secondary.lr": {
+        "name": "Ressource secondaire repos long",
+        "description": "Récupère lors d'un repos long (1/0)"
+      },
+      "system.resources.secondary.sr": {
+        "name": "Ressource secondaire repos court",
+        "description": "Récupère lors d'un repos court (1/0)"
+      },
+      "system.resources.secondary.value": {
+        "name": "Valeur de ressource secondaire",
+        "description": "Ne devrait pas être défini via un effet actif"
+      },
+      "system.resources.tertiary.lr": {
+        "name": "Ressource tertiaire repos long",
+        "description": "Récupère lors d'un repos long (1/0)"
+      },
+      "system.resources.tertiary.sr": {
+        "name": "Ressource tertiaire repos court",
+        "description": "Récupère lors d'un repos court (1/0)"
+      },
+      "system.resources.tertiary.value": {
+        "name": "Valeur de ressource tertiaire",
+        "description": "Ne devrait pas être défini via un effet actif"
+      }
     }
   }
-}
