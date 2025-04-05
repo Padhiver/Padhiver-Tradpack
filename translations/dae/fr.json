@@ -286,8 +286,8 @@
   "dae.DIMETitleBar.Hint": "Afficher l'éditeur de macro d'objet DAE dans la barre de titre",
   "dae.DAEColorTitleBar.Name": "Barre de titre colorée DAE",
   "dae.DAEColorTitleBar.Hint": "Appliquer une couleur au bouton de l'éditeur d'effets DAE/bouton DIME, si des effets/macros d'objet sont présents dans le document (Nécessite Barre de titre DAE cochée).",
-  "dae.DAENoTitleText.Name": "Juste l'icône",
-  "dae.DAENoTitleText.Hint": "Afficher seulement l'icône clé à molette dans la barre de titre, sinon icône + DAE",
+  "dae.DAENoTitleText.Name": " Juste l'icône",
+  "dae.DAENoTitleText.Hint": " Afficher seulement l'icône clé à molette dans la barre de titre, sinon icône + DAE",
   "dae.StatusEffect": "Effet d'état",
   "dae.ShowDeprecation.Name": "Afficher les erreurs d'obsolescence",
   "dae.ShowDeprecation.Hint": "Afficher les erreurs d'obsolescence dans la console",
@@ -560,7 +560,7 @@
     },
     "system.abilities.cha.proficient": {
       "name": "Maîtrise de sauvegarde de Charisme",
-      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+      "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
     },
     "system.abilities.cha.save": {
       "name": "Mod. de sauvegarde de Charisme",
@@ -592,7 +592,7 @@
     },
     "system.abilities.con.proficient": {
       "name": "Maîtrise de sauvegarde de Constitution",
-      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+      "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
     },
     "system.abilities.con.save": {
       "name": "Mod. de sauvegarde de Constitution",
@@ -624,7 +624,7 @@
     },
     "system.abilities.dex.proficient": {
       "name": "Maîtrise de sauvegarde de Dextérité",
-      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+      "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
     },
     "system.abilities.dex.save": {
       "name": "Mod. de sauvegarde de Dextérité",
@@ -656,7 +656,7 @@
     },
     "system.abilities.int.proficient": {
       "name": "Maîtrise de sauvegarde d'Intelligence",
-      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+      "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
     },
     "system.abilities.int.save": {
       "name": "Mod. de sauvegarde d'Intelligence",
@@ -688,7 +688,7 @@
     },
     "system.abilities.str.proficient": {
       "name": "Maîtrise de sauvegarde de Force",
-      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+      "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
     },
     "system.abilities.str.save": {
       "name": "Mod. de sauvegarde de Force",
@@ -720,7 +720,7 @@
     },
     "system.abilities.wis.proficient": {
       "name": "Maîtrise de sauvegarde de Sagesse",
-      "description": "0: Non maîtrisé. 1: Maîtrisé. 2: Expertise. 0.5: Demi-maîtrise."
+      "description": "0 : Non maîtrisé. 1 : Maîtrisé. 2 : Expertise. 0.5 : Demi-maîtrise."
     },
     "system.abilities.wis.save": {
       "name": "Mod. de sauvegarde de Sagesse",
