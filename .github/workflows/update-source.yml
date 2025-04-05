@@ -29,7 +29,7 @@ jobs:
         run: npm i -D axios
 
       - name: Update translations
-        run: node ./.github/workflows/update.js
+        run: node ./.github/workflows/scripts/update-sources.js
 
       - name: Show changes
         run: |

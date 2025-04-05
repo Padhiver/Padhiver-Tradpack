@@ -26,7 +26,7 @@ jobs:
           node-version: 20
 
       - name: Reorder translations
-        run: node ./.github/workflows/reorder.js
+        run: node ./.github/workflows/scripts/reorder-json.js
 
       - name: Commit and push changes
         run: |
