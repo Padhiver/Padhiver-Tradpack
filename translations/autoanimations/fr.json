@@ -721,6 +721,7 @@
       "swipe": "Balayer",
       "twirl": "Tournoyer"
     },
+    "optionsInfo": {},
     "app": {
       "aaAutorec-melee": {
         "label": "Mêlée",
