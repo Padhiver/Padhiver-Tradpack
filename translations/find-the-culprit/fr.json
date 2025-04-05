@@ -57,7 +57,7 @@
       },
       "zeroMods": {
         "Label": "Zéro module",
-        "Tooltip": "Recharger sans aucun module actif autre que Trouver le coupable. Ne lance pas une recherche complète."
+        "Tooltip": "Recharger sans aucun module actif autre que Find the Culprit. Ne lance pas une recherche complète."
       }
     },
     "BinarySearchStep": {
@@ -85,7 +85,7 @@
     },
     "Instructions": {
       "Controls": "Les états des modules peuvent être parcourus en cliquant sur le titre du module ou sur le bouton à côté, sauf si l'état de ce module a été forcé. Un clic droit sur le bouton permet de revenir en arrière. Par défaut, tous les modules sont Suspects, sauf ceux marqués comme bibliothèque par leurs auteurs, car l'option Verrouiller les bibliothèques est activée par défaut.",
-      "Disclaimer": "Bien que cela soit précis pour de nombreux types de problèmes, ce processus ne garantit pas que le coupable trouvé soit le seul module – ou même *un module* – causant des problèmes, car il ne peut pas tenir compte de toutes les interactions entre modules. L'algorithme de division de la liste des modules empêche un module d'être activé sans ses dépendances, mais toutes les relations entre modules ne sont pas suffisamment bien définies pour être prises en compte de cette manière.",
+      "Disclaimer": "Bien que cela soit précis pour de nombreux types de problèmes, ce processus ne garantit pas que le coupable trouvé soit le seul module &ndash; ou même <em>un module</em> &ndash; causant des problèmes, car il ne peut pas tenir compte de toutes les interactions entre modules. L'algorithme de division de la liste des modules empêche un module d'être activé sans ses dépendances, mais toutes les relations entre modules ne sont pas suffisamment bien définies pour être prises en compte de cette manière.",
       "ModuleStates": "États des modules",
       "Reassurance": "Toute boîte de dialogue d'étape de recherche fermée peut être récupérée en rechargeant la page ou en cliquant sur le bouton Trouver le coupable dans la Gestion des modules.",
       "Tooltips": "La plupart des éléments interactifs ont des infobulles expliquant leur fonction et/ou leur état actuel.",
@@ -126,7 +126,7 @@
           "Logging": "Journalisation & globalThis.ftc",
           "None": "Aucun"
         },
-        "Hint": "Le degré auquel les fonctionnalités de débogage sont activées pour Trouver le coupable.",
+        "Hint": "Le degré auquel les fonctionnalités de débogage sont activées pour Find the Culprit.",
         "Name": "Niveau de débogage"
       }
     },
