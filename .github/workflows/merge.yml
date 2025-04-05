@@ -38,7 +38,7 @@ jobs:
 
     # Create a zip file with all files required by the module
     - name: Create archive
-      run: zip ${{env.ZIP_FILENAME}}.zip module.json fr.json welcome.js
+      run: zip ${{env.ZIP_FILENAME}}.zip module.json fr.json scripts -x ".*"
 
     # Create a release for this specific version
     - name: Update Release with Files
