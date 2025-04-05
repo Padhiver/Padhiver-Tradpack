@@ -266,7 +266,7 @@
       },
       "CloakOfTheMantaRay": {
         "name": "Cape de la raie manta",
-        "description": "Ajoute une vitesse de nage de 60 ft."
+        "description": "Ajoute une vitesse de nage de 18 mètres"
       },
       "Command": {
         "name": "Injonction",
@@ -298,7 +298,7 @@
       },
       "Darkvision": {
         "name": "Vision dans le noir",
-        "description": "Améliore la vision dans le noir à 60 ft. pendant 8 heures"
+        "description": "Améliore la vision dans le noir à 18 mètres pendant 8 heures"
       },
       "Dead": {
         "name": "Mort",
@@ -338,7 +338,7 @@
       },
       "Encumbered": {
         "name": "Encombré",
-        "description": "Réduit le déplacement de 10 ft."
+        "description": "Réduit le déplacement de 3 mètres."
       },
       "EnhanceAbility": {
         "name": "Amélioration de caractéristique",
@@ -426,7 +426,7 @@
       },
       "Fly": {
         "name": "Vol",
-        "description": "Améliore la vitesse de vol à 60 ft. pendant 10 minutes"
+        "description": "Améliore la vitesse de vol à 18 mètres pendant 10 minutes"
       },
       "Foresight": {
         "name": "Prescience",
@@ -454,7 +454,7 @@
       },
       "GogglesOfNight": {
         "name": "Lunettes de vision nocturne",
-        "description": "Ajoute 60 ft. de vision dans le noir"
+        "description": "Ajoute 18 mètres de vision dans le noir"
       },
       "Grappled": {
         "name": "Agrippé",
@@ -486,7 +486,7 @@
       },
       "HeavilyEncumbered": {
         "name": "Fortement encombré",
-        "description": "Réduit le déplacement de 20 ft., désavantage à tous les jets d'attaque, et désavantage aux jets de sauvegarde de Force, Dextérité et Constitution"
+        "description": "Réduit le déplacement de 6 mètres , désavantage à tous les jets d'attaque, et désavantage aux jets de sauvegarde de Force, Dextérité et Constitution"
       },
       "HeroesFeast": {
         "name": "Festin des héros",
@@ -562,7 +562,7 @@
       },
       "Longstrider": {
         "name": "Grande foulée",
-        "description": "Augmente tout déplacement de 10 ft. pendant 1 heure"
+        "description": "Augmente tout déplacement de 3 mètres pendant 1 heure"
       },
       "MageArmor": {
         "name": "Armure de mage",
@@ -590,7 +590,7 @@
       },
       "Paralyzed": {
         "name": "Paralysé",
-        "description": "- Une créature paralysée est neutralisée (voir l'état) et ne peut ni bouger ni parler.<br />- La créature échoue automatiquement aux jets de sauvegarde de Force et de Dextérité. Les jets d'attaque contre la créature ont l'avantage.<br />- Toute attaque qui touche la créature est un coup critique si l'attaquant est à moins de 5 pieds de la créature."
+        "description": "- Une créature paralysée est neutralisée (voir l'état) et ne peut ni bouger ni parler.<br />- La créature échoue automatiquement aux jets de sauvegarde de Force et de Dextérité. Les jets d'attaque contre la créature ont l'avantage.<br />- Toute attaque qui touche la créature est un coup critique si l'attaquant est à moins de 1,5 mètres de la créature."
       },
       "PassWithoutTrace": {
         "name": "Passage sans trace",
@@ -614,7 +614,7 @@
       },
       "Prone": {
         "name": "À terre",
-        "description": "- La seule option de mouvement d'une créature à terre est de ramper, à moins qu'elle ne se relève et mette ainsi fin à l'état.<br />- La créature a le désavantage aux jets d'attaque.<br />- Un jet d'attaque contre la créature a l'avantage si l'attaquant est à moins de 5 pieds de la créature. Sinon, le jet d'attaque a le désavantage."
+        "description": "- La seule option de mouvement d'une créature à terre est de ramper, à moins qu'elle ne se relève et mette ainsi fin à l'état.<br />- La créature a le désavantage aux jets d'attaque.<br />- Un jet d'attaque contre la créature a l'avantage si l'attaquant est à moins de 1,5 mètres de la créature. Sinon, le jet d'attaque a le désavantage."
       },
       "ProtectionFromAcid": {
         "name": "Protection contre l'acide",
@@ -660,7 +660,7 @@
       },
       "RayOfFrost": {
         "name": "Rayon de givre",
-        "description": "Réduit le déplacement de 10 ft."
+        "description": "Réduit le déplacement de 3 mètres."
       },
       "Reaction": {
         "name": "Réaction",
@@ -748,7 +748,7 @@
       },
       "RingOfSwimming": {
         "name": "Anneau de nage",
-        "description": "Ajoute une vitesse de nage de 40 ft."
+        "description": "Ajoute une vitesse de nage de 12 mètres."
       },
       "RingOfWarmth": {
         "name": "Anneau de chaleur",
@@ -756,7 +756,7 @@
       },
       "RobeOfEyes": {
         "name": "Robe aux yeux multiples",
-        "description": "Avantage aux tests de Perception, améliore la vision dans le noir à 120 ft., et améliore la vision véritable à 120 ft."
+        "description": "Avantage aux tests de Perception, améliore la vision dans le noir à 36 mètres, et améliore la vision véritable à 36 mètres."
       },
       "RobeOfStars": {
         "name": "Robe des étoiles",
@@ -844,7 +844,7 @@
       },
       "Unconscious": {
         "name": "Inconscient",
-        "description": "- Une créature inconsciente est neutralisée (Voir l'état), ne peut ni bouger ni parler, et n'est pas consciente de son environnement.<br />- La créature lâche ce qu'elle tient et tombe à terre (Voir l'état).<br />- La créature échoue automatiquement aux jets de sauvegarde de Force et de Dextérité.<br />- Les jets d'attaque contre la créature ont l'avantage.<br />- Toute attaque qui touche la créature est un coup critique si l'attaquant est à moins de 5 pieds de la créature."
+        "description": "- Une créature inconsciente est neutralisée (Voir l'état), ne peut ni bouger ni parler, et n'est pas consciente de son environnement.<br />- La créature lâche ce qu'elle tient et tombe à terre (Voir l'état).<br />- La créature échoue automatiquement aux jets de sauvegarde de Force et de Dextérité.<br />- Les jets d'attaque contre la créature ont l'avantage.<br />- Toute attaque qui touche la créature est un coup critique si l'attaquant est à moins de 1,5 mètres de la créature."
       },
       "ViciousMockery": {
         "name": "Moquerie cruelle",
