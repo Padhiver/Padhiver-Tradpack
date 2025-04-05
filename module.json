@@ -1,6 +1,6 @@
 {
   "id": "padhiver-tradpack",
-  "title": "[FR] - Méga Pack",
+  "title": "[FR] - Méga Pack de traduction",
   "description": "Collection de traductions françaises pour plusieurs modules FoundryVTT.",
   "version": "0.0.0.1",
   "compatibility": {
@@ -19,6 +19,9 @@
       "url": "systems/dnd5e/ui/official/dnd5e-repo.jpg",
       "thumbnail": "systems/dnd5e/ui/official/dnd5e-thumbnail.jpg"
     }
+  ],
+  "scripts": [
+    "scripts/main.js"
   ],
   "languages": [
     {
