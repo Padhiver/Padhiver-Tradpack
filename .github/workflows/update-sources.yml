@@ -7,9 +7,13 @@ on:
   push:
     paths:
       - 'projects.json'
+    branches:
+      - main  # Limiter l'exécution aux push sur la branche main uniquement
 
 jobs:
   update:
+    # Ajout d'une vérification pour ne pas exécuter pendant les releases
+    if: github.event_name != 'release'
     runs-on: ubuntu-latest
     permissions:
       contents: write  # Nécessaire pour push
@@ -29,7 +33,7 @@ jobs:
         run: npm i -D axios
 
       - name: Update translations
-        run: node ./.github/workflows/scripts/update-sources.js
+        run: node ./.github/workflows/scripts/update-source.js
 
       - name: Show changes
         run: |
