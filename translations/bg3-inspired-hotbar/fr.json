@@ -27,19 +27,19 @@
     },
     "Tooltips": {
       "Action": "Action",
-      "Range": "Range",
-      "Target": "Target",
-      "Duration": "Duration",
+      "Range": "Distance",
+      "Target": "Cible",
+      "Duration": "Durée",
       "Description": "Description",
-      "LoadingDescription": "Loading description...",
-      "NoDescription": "No description available.",
+      "LoadingDescription": "Chargement de la description...",
+      "NoDescription": "Pas de description disponible.",
       "Permanent": "Permanent",
-      "RoundsRemaining": "{count} Round(s) Remaining",
-      "TurnsRemaining": "{count} Turn(s) Remaining",
-      "SecondsRemaining": "{count} Seconds Remaining",
+      "RoundsRemaining": "{count} Round(s) restant(s)",
+      "TurnsRemaining": "{count} Tour(s) restant(s)",
+      "SecondsRemaining": "{count} Secondes restantes",
       "Status": "Status",
       "Active": "Active",
-      "Disabled": "Disabled"
+      "Disabled": "Désactivé"
     }
   },
   "BG3.Settings": {
@@ -156,15 +156,15 @@
       "Portrait": "Portrait du personnage",
       "Tooltip": "Infobulle",
       "AutoPopulating": "Remplissage automatique",
-      "FoundryUI": "Foundry UI Tweaks"
+      "FoundryUI": "Modifications de l'interface utilisateur de Foundry"
     },
     "PlayerListVisibility": {
-      "Name": "Player List Visibility",
-      "Hint": "Control the visibility of the default Foundry player list in the bottom-left.",
+      "Name": "Visibilité de la liste des joueurs",
+      "Hint": "Contrôle la visibilité de la liste par défaut des joueurs de Foundry en bas à gauche.",
       "Choices": {
-        "always": "Always Visible",
-        "hover": "Show on Hover",
-        "hidden": "Hide Completely"
+        "always": "Toujours visible",
+        "hover": "Afficher au survol",
+        "hidden": "Cacher complètement"
       }
     }
   }
