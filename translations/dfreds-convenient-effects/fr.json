@@ -866,6 +866,44 @@
         "name": "Blessé",
         "description": "Pas d'effets actifs"
       }
+    },
+    "Setting": {
+      "TrustedPlayer": "Joueur de confiance",
+      "AssistantGM": "Assistant MJ",
+      "GameMaster": "Maître du jeu",
+      "None": "Aucun",
+      "CreateFoldersPermissionName": "Permission de création de dossiers",
+      "Player": "Joueur",
+      "AppControlsPermissionName": "Permission des contrôles de l'application",
+      "AppControlsPermissionHint": "Ceci définit le niveau de permission minimum pour voir et appliquer les Effets pratiques via l'application par le bouton sur les contrôles du token. Définir ceci sur Aucun désactivera entièrement le bouton.",
+      "CreateFoldersPermissionHint": "Ceci définit le niveau de permission minimum pour créer de nouveaux dossiers d'effets dans l'application Effets pratiques. Définir ceci sur Aucun désactivera entièrement le bouton de création. Notez qu'un utilisateur doit également avoir la permission Foundry pour créer des objets pour que cela fonctionne."
+    },
+    "Keybinding": {
+      "ToggleAppName": "Basculer l'application Convenient Effects",
+      "ToggleAppHint": "Ceci ouvrira l'application Convenient Effects si elle est fermée ou la fermera si elle est actuellement ouverte."
+    },
+    "SearchEffects": "Recherche d'effets",
+    "Config": {
+      "FoundryEffectIdLabel": "ID de l'effet Foundry",
+      "ConvenientEffectIdLabel": "ID de l'effet Convenient",
+      "TemporaryLabel": "Temporaire",
+      "ViewableLabel": "Visible",
+      "ViewableHint": "Si coché, cet effet sera toujours affiché dans l'application.",
+      "DynamicLabel": "Dynamique",
+      "DynamicHint": "Si coché, cet effet aura des effets dynamiques appliqués en fonction des données de l'acteur. Ceci ne peut pas être modifié et est utilisé pour des cas d'effets très spécifiques.",
+      "NestedEffectsLabel": "Effets imbriqués",
+      "OtherEffectsLabel": "Autres effets",
+      "OtherEffectsHint": "Les autres effets qui seront appliqués en relation avec cet effet. Si cet effet est supprimé, les autres effets ne seront pas supprimés automatiquement.",
+      "IDsTab": "IDs",
+      "FlagsTab": "Drapeaux",
+      "TemporaryHint": "Si coché, cet effet sera toujours étiqueté comme un effet temporaire, même s'il n'a pas de durée ou d'état.",
+      "SubEffectsLabel": "Sous-effets",
+      "SubEffectsHint": "Les sous-effets qui seront appliqués en relation avec cet effet. Si cet effet est supprimé, tous les sous-effets sont également supprimés automatiquement.",
+      "DependentEffectsTab": "Effets dépendants",
+      "FoundryEffectIdHint": "C'est l'ID de l'effet Foundry et peut être utilisé pour trouver, ajouter ou supprimer un effet.",
+      "Title": "Paramètres",
+      "ConvenientEffectIdHint": "C'est l'ID de l'effet Convenient Effects et peut être utilisé pour trouver, ajouter ou supprimer un effet.",
+      "NestedEffectsHint": "Les effets imbriqués qui seront affichés comme options lorsque l'effet est ajouté ou supprimé."
     }
   }
 }
