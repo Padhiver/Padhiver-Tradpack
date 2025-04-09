@@ -24,6 +24,22 @@
             "ClearAllItems": "Clear All Items",
             "ImportLayout": "Import Layout",
             "ExportLayout": "Export Layout"
+        },
+        "Tooltips": {
+            "Action": "Action",
+            "Range": "Range",
+            "Target": "Target",
+            "Duration": "Duration",
+            "Description": "Description",
+            "LoadingDescription": "Loading description...",
+            "NoDescription": "No description available.",
+            "Permanent": "Permanent",
+            "RoundsRemaining": "{count} Round(s) Remaining",
+            "TurnsRemaining": "{count} Turn(s) Remaining",
+            "SecondsRemaining": "{count} Seconds Remaining",
+            "Status": "Status",
+            "Active": "Active",
+            "Disabled": "Disabled"
         }
     },
     "BG3.Settings": {
@@ -139,7 +155,17 @@
             "Global": "Global",
             "Portrait": "Character Portrait",
             "Tooltip": "Tooltip",
-            "AutoPopulating": "Auto-Populating"
+            "AutoPopulating": "Auto-Populating",
+            "FoundryUI": "Foundry UI Tweaks"
+        },
+        "PlayerListVisibility": {
+            "Name": "Player List Visibility",
+            "Hint": "Control the visibility of the default Foundry player list in the bottom-left.",
+            "Choices": {
+                "always": "Always Visible",
+                "hover": "Show on Hover",
+                "hidden": "Hide Completely"
+            }
         }
     }
 } 
