@@ -873,37 +873,6 @@
         "name": "Blessé",
         "description": "Pas d'effets actifs"
       }
-    },
-    "SettingPlayer": "Joueur",
-    "SettingTrustedPlayer": "Joueur de confiance",
-    "SettingAssistantGM": "Assistant MJ",
-    "SettingGameMaster": "Maître du jeu",
-    "SettingNone": "Aucun",
-    "SettingAppControlsPermissionName": "Permission des contrôles de l'application",
-    "SettingAppControlsPermissionHint": "Ceci définit le niveau de permission minimum pour voir et appliquer les Effets pratiques via l'application par le bouton sur les contrôles du token. Définir ceci sur Aucun désactivera entièrement le bouton.",
-    "SettingCreateFoldersPermissionName": "Permission de création de dossiers",
-    "SettingCreateFoldersPermissionHint": "Ceci définit le niveau de permission minimum pour créer de nouveaux dossiers d'effets dans l'application Effets pratiques. Définir ceci sur Aucun désactivera entièrement le bouton de création. Notez qu'un utilisateur doit également avoir la permission Foundry pour créer des objets pour que cela fonctionne.",
-    "KeybindingToggleAppName": "Basculer l'application Effets pratiques",
-    "KeybindingToggleAppHint": "Ceci ouvrira l'application Effets pratiques si elle est fermée ou la fermera si elle est actuellement ouverte.",
-    "CreateFolder": "Créer un dossier",
-    "CreateEffect": "Créer un effet",
-    "ConfigTitle": "Configuration pratique",
-    "ConfigLabel": "Pratique",
-    "ConfigFoundryEffectIdLabel": "ID de l'effet Foundry",
-    "ConfigFoundryEffectIdHint": "C'est l'ID de l'effet Foundry et peut être utilisé pour trouver, ajouter ou supprimer un effet.",
-    "ConfigConvenientEffectIdLabel": "ID de l'effet pratique",
-    "ConfigConvenientEffectIdHint": "C'est l'ID de l'effet pratique et peut être utilisé pour trouver, ajouter ou supprimer un effet.",
-    "ConfigTemporaryLabel": "Temporaire",
-    "ConfigTemporaryHint": "Si coché, cet effet sera toujours étiqueté comme un effet temporaire, même s'il n'a pas de durée ou d'état.",
-    "ConfigViewableLabel": "Visible",
-    "ConfigViewableHint": "Si coché, cet effet sera toujours affiché dans l'application.",
-    "ConfigDynamicLabel": "Dynamique",
-    "ConfigDynamicHint": "Si coché, cet effet aura des effets dynamiques appliqués en fonction des données de l'acteur. Ceci ne peut pas être modifié et est utilisé pour des cas d'effets très spécifiques.",
-    "ConfigNestedEffectsLabel": "Effets imbriqués",
-    "ConfigNestedEffectsHint": "Les effets imbriqués qui seront affichés comme options lorsque l'effet est ajouté ou supprimé.",
-    "ConfigSubEffectsLabel": "Sous-effets",
-    "ConfigSubEffectsHint": "Les sous-effets qui seront appliqués en relation avec cet effet. Si cet effet est supprimé, tous les sous-effets sont également supprimés automatiquement.",
-    "ConfigOtherEffectsLabel": "Autres effets",
-    "ConfigOtherEffectsHint": "Les autres effets qui seront appliqués en relation avec cet effet. Si cet effet est supprimé, les autres effets ne seront pas supprimés automatiquement."
+    }
   }
 }
