@@ -149,6 +149,39 @@
             "Token": "Always Use Token Image",
             "Portrait": "Always Use Character Portrait"
         },
+        "ShapePortraitPreferences": {
+            "Name": "Shape Portrait Display",
+            "Hint": "Choose character portraits shape.",
+            "Round": "Round",
+            "Square": "Square"
+        },
+        "BorderPortraitPreferences": {
+            "Name": "Border Portrait Display",
+            "Hint": "Choose character portraits border.",
+            "None": "None",
+            "Simple": "Simple",
+            "Styled": "Styled (Round shape only)"
+        },
+        "BackgroundPortraitPreferences": {
+            "Name": "Background Portrait Image",
+            "Hint": "Choose character portraits background color."
+        },
+        "ShowHealthOverlay": {
+            "Name": "Show health overlay",
+            "Hint": ""
+        },
+        "ShowHPText": {
+            "Name": "Show HP text",
+            "Hint": ""
+        },
+        "ShowRestTurnButton": {
+            "Name": "Show Rest/Turns button",
+            "Hint": ""
+        },
+        "OverlayModePortrait": {
+            "Name": "Health Overlay as Mask",
+            "Hint": "If checked, Health Overlay won't cover transparent part of Character Portrait. Check it if you're using Dynamic Token Ring."
+        },
         "SettingsCategories": {
             "HotbarContainer": "Hotbar buttons",
             "CombatContainer": "Common Actions Container",
