@@ -3574,25 +3574,5 @@
       "name": "Esquive instinctive",
       "description": ""
     }
-  },
-  "midi-qol.noDamageonSaveSpells": [
-    "Aspersion d'acide",
-    "Explosion de lames",
-    "Coup de tonnerre",
-    "Moquerie cruelle",
-    "Création de feu de joie",
-    "Leurre foudroyant",
-    "Aspersion de poison",
-    "Cordon de flèches",
-    "Désintégration",
-    "Flamme sacrée",
-    "Cordon de flèches",
-    "Morsure de givre",
-    "Infestation",
-    "Glas des morts",
-    "Mot de radiance",
-    "Catapulte",
-    "Secousse"
-  ],
-  "midi-qol.noDamageonSaveSpellsv9": "Aspersion d'acide, Explosion de lames, Coup de tonnerre, Moquerie cruelle, Création de feu de joie, Leurre foudroyant, Aspersion de poison, Cordon de flèches, Désintégration, Flamme sacrée, Cordon de flèches, Morsure de givre, Infestation, Glas des morts, Mot de radiance, Catapulte, Secousse"
+  }
 }
