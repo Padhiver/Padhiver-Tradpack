@@ -221,7 +221,14 @@
       "Name": "Afficher l'overlay des points de vie"
     },
     "ShowHPText": {
-      "Name": "Afficher le texte HP"
+      "Name": "Afficher le texte des PdV"
+    },
+    "ShowRestTurnButton": {
+      "Name": "Afficher le bouton Repos/Tours"
+    },
+    "OverlayModePortrait": {
+      "Name": "Overlay de santé en tant que masque",
+      "Hint": "Si cette option est cochée, l'overlay de santé ne couvrira pas la partie transparente du portrait du personnage. Cochez cette case si vous utilisez Dynamic Token Ring."
     }
   }
 }
