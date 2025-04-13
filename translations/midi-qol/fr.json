@@ -73,31 +73,13 @@
   "midi-qol.AutoTarget.Name": "Ciblage automatique lors du dessin du gabarit",
   "midi-qol.AutoTarget.Hint": "Lors du placement d'un gabarit (par ex. sort), cible automatiquement les tokens à l'intérieur du gabarit. Si 'Centre + Niveaux' est défini dans le ciblage à distance, les Gabarits Volumétriques Levels seront utilisés (si installés).",
   "midi-qol._comment for translators_noDamageOnSaveSpells": "Dans Foundry v9, l'élément json tableau n'est plus supporté, seule la version v9 sera utilisée.",
-  "midi-qol.noDamageonSaveSpells": [
-    "Aspersion d'acide",
-    "Explosion de lames",
-    "Coup de tonnerre",
-    "Moquerie cruelle",
-    "Création de feu de joie",
-    "Leurre foudroyant",
-    "Aspersion de poison",
-    "Cordon de flèches",
-    "Désintégration",
-    "Flamme sacrée",
-    "Cordon de flèches",
-    "Morsure de givre",
-    "Infestation",
-    "Glas des morts",
-    "Mot de radiance",
-    "Catapulte",
-    "Secousse"
-  ],
-  "midi-qol.noDamageonSaveSpellsv9": "Aspersion d'acide, Explosion de lames, Coup de tonnerre, Moquerie cruelle, Création de feu de joie, Leurre foudroyant, Aspersion de poison, Cordon de flèches, Désintégration, Flamme sacrée, Cordon de flèches, Morsure de givre, Infestation, Glas des morts, Mot de radiance, Catapulte, Secousse",
   "midi-qol.undoDamageFrom": "Annuler les dégâts appliqués par ",
   "midi-qol.noGM": "Aucun utilisateur MJ connecté, impossible d'appliquer les effets/mettre à jour les points de vie.",
   "midi-qol.noSelection": "Aucun Token/Acteur sélectionné.",
   "midi-qol.showGM.Name": "Le MJ voit tous les messages privés",
   "midi-qol.showGM.Hint": "Le MJ voit tous les messages privés envoyés même si les paramètres du jeu indiquent que le MJ ne les verra pas.",
+  "midi-qol.PreferredGM.Name": "MJ préféré",
+  "midi-qol.PreferredGM.Hint": "MJ préféré pour les appels de socket. Si \"aucun\", le premier GM de la scène en cours sera utilisé.",
   "midi-qol.ColoredBorders.Name": "Messages avec bordures colorées",
   "midi-qol.ColoredBorders.Hint": "Chaque message de tchat a une bordure de la couleur du personnage joueur.",
   "midi-qol.AutoEffects.Name": "Appliquer automatiquement les effets d'objet",
@@ -962,6 +944,15 @@
     "firstSaveTarget": "Première cible sauvegardée",
     "firstFailedSaveTarget": "Première cible ayant échoué son jet de sauvegarde"
   },
+  "midi-qol.ActivationAutomation.Name": "Automatisation des coûts d'activation",
+  "midi-qol.ActivationAutomation.Hint": "Activer automatiquement les activités avec des coûts d'activation de repos court/long ou de début de rencontre ou de début/fin de tour.",
+  "midi-qol.ActivationAutomationOptions": {
+    "none": "Pas d'automatisation/pas de tchat",
+    "chat": "Comportement par défaut de dnd5e",
+    "auto": "Déclenchement automatique des activités ciblées sur soi"
+  },
+  "midi-qol.dummyCards.Name": "Toujours afficher les cartes d'attaque/dégâts pour les cartes cachées fusionnées",
+  "midi-qol.dummyCards.Hint": "(Expérimental) Pour les jets du MJ (en solo, en privé, en aveugle), afficher une carte de jet d'attaque/dégâts qui déclenchera une carte 'le MJ a lancé des dés' sur les tchats des joueurs. Uniquement dans le cas où vous voulez que les joueurs sachent que vous avez lancé quelque chose, mais pas ce que c'était.",
   "midi-qol.dnd5eConcentrationTrackingDisabled": "<br><strong><center>Suivi de Concentration DND5E Désactivé</strong><br></center><br><center>Le suivi de concentration est désactivé dans les paramètres système D&D5e.</center><center>Activez-le dans les paramètres DND5E pour activer les paramètres de concentration midi</center><br>",
   "midi-qol.SHARED": {
     "use-condition": {
@@ -1237,7 +1228,9 @@
     "midi-automation-only": "Utiliser uniquement dans l'automatisation midi"
   },
   "midi-qol.BaseDamageFlavor": "Dégâts",
+  "midi-qol.BaseHealingFlavor": "Guérison",
   "midi-qol.OtherDamageFlavor": "Autre",
+  "midi-qol.OtherHealingFlavor": "Autre guérison",
   "midi-qol.RequireAmmunition.Name": "Exiger des munitions disponibles pour lancer l'attaque",
   "midi-qol.CheckTwoHanded.Name": "Nécessite qu'aucun bouclier ne soit équipé pour les attaques à deux mains/main secondaire",
   "midi-qol.NoAmmunition": "Il y a 0 {name} dans votre inventaire",
@@ -3582,17 +3575,24 @@
       "description": ""
     }
   },
-  "midi-qol.PreferredGM.Name": "MJ préféré",
-  "midi-qol.ActivationAutomation.Hint": "Activer automatiquement les activités avec des coûts d'activation de repos court/long ou de début de rencontre ou de début/fin de tour.",
-  "midi-qol.PreferredGM.Hint": "MJ préféré pour les appels de socket. Si \"aucun\", le premier GM de la scène en cours sera utilisé.",
-  "midi-qol.ActivationAutomation.Name": "Automatisation des coûts d'activation",
-  "midi-qol.dummyCards.Hint": "(Expérimental) Pour les jets du MJ (en solo, en privé, en aveugle), afficher une carte de jet d'attaque/dégâts qui déclenchera une carte 'le MJ a lancé des dés' sur les tchats des joueurs. Uniquement dans le cas où vous voulez que les joueurs sachent que vous avez lancé quelque chose, mais pas ce que c'était.",
-  "midi-qol.ActivationAutomationOptions": {
-    "none": "Pas d'automatisation/pas de tchat",
-    "chat": "Comportement par défaut de dnd5e",
-    "auto": "Déclenchement automatique des activités ciblées sur soi"
-  },
-  "midi-qol.dummyCards.Name": "Toujours afficher les cartes d'attaque/dégâts pour les cartes cachées fusionnées",
-  "midi-qol.BaseHealingFlavor": "Guérison",
-  "midi-qol.OtherHealingFlavor": "Autre guérison"
+  "midi-qol.noDamageonSaveSpells": [
+    "Aspersion d'acide",
+    "Explosion de lames",
+    "Coup de tonnerre",
+    "Moquerie cruelle",
+    "Création de feu de joie",
+    "Leurre foudroyant",
+    "Aspersion de poison",
+    "Cordon de flèches",
+    "Désintégration",
+    "Flamme sacrée",
+    "Cordon de flèches",
+    "Morsure de givre",
+    "Infestation",
+    "Glas des morts",
+    "Mot de radiance",
+    "Catapulte",
+    "Secousse"
+  ],
+  "midi-qol.noDamageonSaveSpellsv9": "Aspersion d'acide, Explosion de lames, Coup de tonnerre, Moquerie cruelle, Création de feu de joie, Leurre foudroyant, Aspersion de poison, Cordon de flèches, Désintégration, Flamme sacrée, Cordon de flèches, Morsure de givre, Infestation, Glas des morts, Mot de radiance, Catapulte, Secousse"
 }
