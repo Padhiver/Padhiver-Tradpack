@@ -148,7 +148,7 @@
   "midi-qol.MergeCard.Name": "Fusionner les jets en une seule carte",
   "midi-qol.MergeCard.Hint": "Fusionne Attaque, Touches, Dégâts, Sauvegardes en une seule carte de tchat.",
   "midi-qol.MergeCardCondensed.Name": "Condenser les jets d'attaque/dégâts",
-  "midi-qol.MergeCardCondensed.Hint": "Économise un peu d'espace dans le journal de tchat en rendant les jets d'attaque et de dégâts plus petits.",
+  "midi-qol.MergeCardCondensed.Hint": "Économise un peu d'espace dans le journal de tchat en rendant les jets d'attaque et de dégâts plus petits. ",
   "midi-qol.ConfigTitle": "Configuration de Midi-QOL",
   "midi-qol.WorkflowSettings": "Paramètres du flux de travail",
   "midi-qol.CheckSaveText.Name": "Rechercher dans la description de l'objet",
@@ -367,7 +367,7 @@
     "postSave": "Après la vérification des sauvegardes",
     "preDamageApplication": "Avant l'application des dégâts",
     "preActiveEffects": "Avant les effets actifs",
-    "postActiveEffects": "Après les effets actifs",
+    "postActiveEffects": "Après les effets actifs ",
     "isTargeted": "La cible est ciblée mais avant le lancer de l'objet",
     "isPreAttacked": "La cible est sur le point d'être attaquée, avant les réactions",
     "isAttacked": "La cible est attaquée",
@@ -627,7 +627,7 @@
   "midi-qol.reactionFlavorTargeted": "{actorName} est ciblé par {itemName} et peut utiliser une réaction.",
   "midi-qol.reactionFlavorMiss": "{actorName} est raté par {itemName} et peut utiliser une réaction.",
   "midi-qol.reactionFlavorCrit": "{actorName} subit un coup critique par {itemName} et peut utiliser une réaction.",
-  "midi-qol.reactionFlavorFumble": "{actorName} est attaqué par {itemName} qui a fait un échec critique et peut utiliser une réaction.",
+  "midi-qol.reactionFlavorFumble": "{actorName} est attaqué par {itemName} qui a fait un échec critique et peut utiliser une réaction. ",
   "midi-qol.reactionFlavorHeal": "{actorName} est soigné par {itemName} et peut utiliser une réaction.",
   "midi-qol.reactionFlavorDamage": "{actorName} subit des dégâts par {itemName} et peut utiliser une réaction.",
   "midi-qol.reactionFlavorAttacked": "{actorName} est attaqué par {itemName} et peut utiliser une réaction.",
@@ -1236,8 +1236,8 @@
     "force-dialog": "Forcer la boîte de dialogue de configuration",
     "midi-automation-only": "Utiliser uniquement dans l'automatisation midi"
   },
-  "midi-qol.BaseDamageFlavor": "Dégâts de base",
-  "midi-qol.OtherDamageFlavor": "Autres dégâts",
+  "midi-qol.BaseDamageFlavor": "Dégâts",
+  "midi-qol.OtherDamageFlavor": "Autre",
   "midi-qol.RequireAmmunition.Name": "Exiger des munitions disponibles pour lancer l'attaque",
   "midi-qol.CheckTwoHanded.Name": "Nécessite qu'aucun bouclier ne soit équipé pour les attaques à deux mains/main secondaire",
   "midi-qol.NoAmmunition": "Il y a 0 {name} dans votre inventaire",
@@ -3581,5 +3581,18 @@
       "name": "Esquive instinctive",
       "description": ""
     }
-  }
+  },
+  "midi-qol.PreferredGM.Name": "MJ préféré",
+  "midi-qol.ActivationAutomation.Hint": "Activer automatiquement les activités avec des coûts d'activation de repos court/long ou de début de rencontre ou de début/fin de tour.",
+  "midi-qol.PreferredGM.Hint": "MJ préféré pour les appels de socket. Si \"aucun\", le premier GM de la scène en cours sera utilisé.",
+  "midi-qol.ActivationAutomation.Name": "Automatisation des coûts d'activation",
+  "midi-qol.dummyCards.Hint": "(Expérimental) Pour les jets du MJ (en solo, en privé, en aveugle), afficher une carte de jet d'attaque/dégâts qui déclenchera une carte 'le MJ a lancé des dés' sur les tchats des joueurs. Uniquement dans le cas où vous voulez que les joueurs sachent que vous avez lancé quelque chose, mais pas ce que c'était.",
+  "midi-qol.ActivationAutomationOptions": {
+    "none": "Pas d'automatisation/pas de tchat",
+    "chat": "Comportement par défaut de dnd5e",
+    "auto": "Déclenchement automatique des activités ciblées sur soi"
+  },
+  "midi-qol.dummyCards.Name": "Toujours afficher les cartes d'attaque/dégâts pour les cartes cachées fusionnées",
+  "midi-qol.BaseHealingFlavor": "Guérison",
+  "midi-qol.OtherHealingFlavor": "Autre guérison"
 }
