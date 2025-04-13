@@ -199,6 +199,26 @@
         "hover": "Afficher au survol",
         "hidden": "Cacher complètement"
       }
+    },
+    "ShapePortraitPreferences": {
+      "Name": "Forme du portrait",
+      "Hint": "Choisissez la forme des portraits du personnage.",
+      "Round": "Rond",
+      "Square": "Carré"
+    },
+    "BorderPortraitPreferences": {
+      "Name": "Affichage de la bordure du portrait",
+      "Hint": "Choisissez la bordure des portraits du personnage.",
+      "None": "Aucune",
+      "Simple": "Simple",
+      "Styled": "Stylé (forme ronde uniquement)"
+    },
+    "BackgroundPortraitPreferences": {
+      "Name": "Image du portrait en arrière-plan",
+      "Hint": "Choisissez la couleur d'arrière-plan du portraits du personnages."
+    },
+    "ShowHealthOverlay": {
+      "Name": "Afficher l'overlay des points de vie"
     }
   }
 }
