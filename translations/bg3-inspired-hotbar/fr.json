@@ -150,37 +150,37 @@
       "Portrait": "Toujours utiliser le portrait du personnage"
     },
     "ShapePortraitPreferences": {
-      "Name": "Shape Portrait Display",
-      "Hint": "Choose character portraits shape.",
-      "Round": "Round",
-      "Square": "Square"
+      "Name": "Forme du portrait",
+      "Hint": "Choisissez la forme des portraits du personnage.",
+      "Round": "Rond",
+      "Square": "Carré"
     },
     "BorderPortraitPreferences": {
-      "Name": "Border Portrait Display",
-      "Hint": "Choose character portraits border.",
-      "None": "None",
+      "Name": "Affichage de la bordure du portrait",
+      "Hint": "Choisissez la bordure des portraits du personnage.",
+      "None": "Aucune",
       "Simple": "Simple",
-      "Styled": "Styled (Round shape only)"
+      "Styled": "Stylé (forme ronde uniquement)"
     },
     "BackgroundPortraitPreferences": {
-      "Name": "Background Portrait Image",
-      "Hint": "Choose character portraits background color."
+      "Name": "Image du portrait en arrière-plan",
+      "Hint": "Choisissez la couleur d'arrière-plan du portraits du personnages."
     },
     "ShowHealthOverlay": {
-      "Name": "Show health overlay",
+      "Name": "Afficher l'overlay des points de vie",
       "Hint": ""
     },
     "ShowHPText": {
-      "Name": "Show HP text",
+      "Name": "Afficher le texte des PdV",
       "Hint": ""
     },
     "ShowRestTurnButton": {
-      "Name": "Show Rest/Turns button",
+      "Name": "Afficher le bouton Repos/Tours",
       "Hint": ""
     },
     "OverlayModePortrait": {
-      "Name": "Health Overlay as Mask",
-      "Hint": "If checked, Health Overlay won't cover transparent part of Character Portrait. Check it if you're using Dynamic Token Ring."
+      "Name": "Overlay de santé en tant que masque",
+      "Hint": "Si cette option est cochée, l'overlay de santé ne couvrira pas la partie transparente du portrait du personnage. Cochez cette case si vous utilisez Dynamic Token Ring."
     },
     "SettingsCategories": {
       "HotbarContainer": "Boutons de la barre de raccourcis",
@@ -199,36 +199,6 @@
         "hover": "Afficher au survol",
         "hidden": "Cacher complètement"
       }
-    },
-    "ShapePortraitPreferences": {
-      "Name": "Forme du portrait",
-      "Hint": "Choisissez la forme des portraits du personnage.",
-      "Round": "Rond",
-      "Square": "Carré"
-    },
-    "BorderPortraitPreferences": {
-      "Name": "Affichage de la bordure du portrait",
-      "Hint": "Choisissez la bordure des portraits du personnage.",
-      "None": "Aucune",
-      "Simple": "Simple",
-      "Styled": "Stylé (forme ronde uniquement)"
-    },
-    "BackgroundPortraitPreferences": {
-      "Name": "Image du portrait en arrière-plan",
-      "Hint": "Choisissez la couleur d'arrière-plan du portraits du personnages."
-    },
-    "ShowHealthOverlay": {
-      "Name": "Afficher l'overlay des points de vie"
-    },
-    "ShowHPText": {
-      "Name": "Afficher le texte des PdV"
-    },
-    "ShowRestTurnButton": {
-      "Name": "Afficher le bouton Repos/Tours"
-    },
-    "OverlayModePortrait": {
-      "Name": "Overlay de santé en tant que masque",
-      "Hint": "Si cette option est cochée, l'overlay de santé ne couvrira pas la partie transparente du portrait du personnage. Cochez cette case si vous utilisez Dynamic Token Ring."
     }
   }
 }
