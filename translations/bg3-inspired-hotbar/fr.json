@@ -219,6 +219,9 @@
     },
     "ShowHealthOverlay": {
       "Name": "Afficher l'overlay des points de vie"
+    },
+    "ShowHPText": {
+      "Name": "Afficher le texte HP"
     }
   }
 }
