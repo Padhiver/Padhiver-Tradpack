@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Fonction pour réorganiser les traductions selon l'ordre des clés du fichier original
+// et supprimer les clés qui ne sont plus présentes dans le fichier original
 function reorderTranslations(original, translated) {
     const ordered = {};
     
@@ -21,12 +22,8 @@ function reorderTranslations(original, translated) {
         }
     });
     
-    // Ajoute les clés traduites qui n'existent pas dans le fichier original
-    Object.keys(translated).forEach(key => {
-        if (ordered[key] === undefined) {
-            ordered[key] = translated[key];
-        }
-    });
+    // Ne conserve aucune clé qui n'existe pas dans le fichier original
+    // Les clés supprimées dans le fichier original ne seront pas ajoutées
     
     return ordered;
 }
