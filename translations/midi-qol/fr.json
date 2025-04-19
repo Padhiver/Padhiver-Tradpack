@@ -187,10 +187,10 @@
   "midi-qol.autoTargetOptions": {
     "none": "Aucun",
     "always": "Toujours",
-    "alwaysIgnoreIncapacitated": "Toujours - Ignorer Incapables/Morts",
+    "alwaysIgnoreIncapacitated": "Toujours - Ignorer Neutralisé/Morts",
     "alwaysIgnoreDefeated": "Toujours - Ignorer Morts",
     "wallsBlock": "Les murs bloquent",
-    "wallsBlockIgnoreIncapacitated": "Les murs bloquent - Ignorer Incapables/Morts",
+    "wallsBlockIgnoreIncapacitated": "Les murs bloquent - Ignorer Neutralisé/Morts",
     "wallsBlockIgnoreDefeated": "Les murs bloquent - Ignorer Morts",
     "walledtemplates": "Utiliser les gabarits murés"
   },
@@ -204,10 +204,10 @@
   "midi-qol.rangeTargetOptions": {
     "none": "Aucun",
     "always": "Toujours",
-    "alwaysIgnoreIncapacitated": "Toujours - Ignorer Incapables/Morts",
+    "alwaysIgnoreIncapacitated": "Toujours - Ignorer Neutralisé/Morts",
     "alwaysIgnoreDefeated": "Toujours - Ignorer Morts",
     "wallsBlock": "Les murs bloquent",
-    "wallsBlockIgnoreIncapacitated": "Les murs bloquent - Ignorer Incapables/Morts",
+    "wallsBlockIgnoreIncapacitated": "Les murs bloquent - Ignorer Neutralisé/Morts",
     "wallsBlockIgnoreDefeated": "Les murs bloquent - Ignorer Morts"
   },
   "midi-qol.autoRollDamageOptions": {

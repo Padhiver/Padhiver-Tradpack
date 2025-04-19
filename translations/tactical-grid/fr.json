@@ -72,7 +72,7 @@
         "hint": "Si un calculateur d'abri est sélectionné et le module correspondant activé, les informations d'abri seront affichées sous les mesures.",
         "none": "Aucun",
         "half": "Partiel",
-        "threeQuarters": "Important",
+        "threeQuarters": "Supérieur",
         "total": "Total"
       },
       "ignoreEffect": {
