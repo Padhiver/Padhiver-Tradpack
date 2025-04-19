@@ -82,5 +82,9 @@
     {
         "name": "midi-qol",
         "src": "https://gitlab.com/tposney/midi-qol/-/raw/v12dnd4/lang/en.json"
+    },
+    {
+        "name": "automated-conditions-5e",
+        "src": "https://raw.githubusercontent.com/thatlonelybugbear/automated-conditions-5e/main/lang/en.json"
     }
 ]
