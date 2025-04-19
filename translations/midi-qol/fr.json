@@ -259,7 +259,9 @@
   },
   "midi-qol.playerRollSavesOptions": {
     "none": "Aucun",
-    "noneDialog": "Jet auto et afficher la boîte de dialogue de jet",
+    "noneDialogPublic": "Auto roll and show roll dialog (public roll)",
+    "noneDialogPrivate": "Auto roll and show roll dialog (private roll)",
+    "noneDialogBlind": "Auto roll and show roll dialog (blind roll)",
     "chat": "Message de tchat",
     "mtb": "Monks Token Bar",
     "rer": "Rippers Epic Rolls"
