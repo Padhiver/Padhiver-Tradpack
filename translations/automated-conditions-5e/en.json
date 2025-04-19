@@ -1,0 +1,199 @@
+{
+	"AC5E.ShowTooltipsName": "Show AC5e tooltips:",
+	"AC5E.ShowTooltipsHint": "When a relevant option is selected, AC5e will show a helpful tooltip when hovering over the suggested Roll button or a generated message or both, summing up the reasons for that suggestion.",
+	"AC5E.ShowToolTipsChoicesBoth": "Roll dialogs and chat messages",
+	"AC5E.ShowToolTipsChoicesDialog": "Only on roll dialogs",
+	"AC5E.ShowToolTipsChoicesChat": "Only on chat messages",
+	"AC5E.ShowToolTipsChoicesNone": "Do not show",
+	"AC5E.ShowModuleNameInTooltipsName": "Show AC5e module name in tooltips",
+	"AC5E.ExpandedConditionsName": "AC5e expanded conditions",
+	"AC5E.ExpandedConditionsHint": "When checked, AC5e will attempt to automate some extra conditions, like Dodging, Hiding.",
+	"AC5E.AutoArmorName": "AC5e armor proficiency and equipment stealth disadvantage.",
+	"AC5E.AutoArmorHint": "When checked, AC5e will automatically process proficiency in the equipped piece of armor for ability, skills and save rolls (STR || DEX) and check equipment for the stealth disadvantage property.",
+	"AC5E.AutoArmorSpellUseName": "AC5e armor proficiency, conditions (Raging, Silenced) and spells",
+	"AC5E.AutoArmorSpellUseHint": "Off: Do nothing, Enforce: When the use of spells is not permitted, the roll is cancelled, Warn: When the use of spells is not permitted, notify user",
+	"AC5E.AutoArmorSpellUseChoicesOff": "Do nothing",
+	"AC5E.AutoArmorSpellUseChoicesEnforce": "Enforce",
+	"AC5E.AutoArmorSpellUseChoicesWarn": "Warn",
+	"AC5E.AutoArmorSpellUseChoicesEnforceToast": "is not proficient in the equipped armor and RAW cannot cast spells. Spell cancelled!",
+	"AC5E.AutoArmorSpellUseChoicesWarnToast": "is not proficient in the equipped armor and RAW cannot cast spells.",
+	"AC5E.AutoIncapacitatedSpellUseChoicesEnforceToast": "is incapacitated and cannot cast spells. Spell cancelled!",
+	"AC5E.AutoIncapacitatedSpellUseChoicesWarnToast": "is incapacitated and cannot cast spells.",
+	"AC5E.AutoRagingSpellUseChoicesEnforceToast": "is raging and cannot cast spells. Spell cancelled!",
+	"AC5E.AutoRagingSpellUseChoicesWarnToast": "is raging and cannot cast spells.",
+	"AC5E.AutoSilencedSpellUseChoicesEnforceToast": "is silenced and cannot cast spells with verbal components. Spell cancelled!",
+	"AC5E.AutoSilencedSpellUseChoicesWarnToast": "is silenced and cannot cast spells with verbal components.",
+	"AC5E.AutoRangedAttacksName": "AC5e ranged attacks automation:",
+	"AC5E.AutoRangedAttacksHint": "'Off': AC5e will not process any distance checks; 'Ranged checks only': AC5e will automatically process distance disadvantage/fail based on target distance and range values of item used to attack; 'Range + Nearby foes': Hostiles adjacent to attacker will impose disadvantage on ranged attacks.",
+	"AC5E.AutoRangedAttacksChoicesOff": "Off",
+	"AC5E.AutoRangedAttacksChoicesRangeOnly": "Range checks only",
+	"AC5E.AutoRangedAttacksChoicesNearbyFoes": "Range + Nearby foes",
+	"AC5E.AutoExhaustionName": "AC5e exhaustion automation.",
+	"AC5E.AutoExhaustionHint": "When checked, and you are using the Legacy dnd5e rules, AC5e will automatically process the normal 5e Exhaustion condition rules.",
+	"AC5E.AutoEncumbranceName": "AC5e variant encumbrance.",
+	"AC5E.AutoEncumbranceHint": "When checked, AC5e will automatically process the variant 5e Encumbrance rules. The GM must also select in the settings of the Dnd5e system, the Variant (encumbered & heavilty encumbered) option, otherwise this will have no effect.",
+	"AC5E.MultipleTargetsAttackWarn": "Automated Conditions 5e: You are attacking multiple targets and that is not supported. The Roll results can be skewed.",
+	"AC5E.NoTargetsAttackWarn": "Automated Conditions 5e: You have no targets selected when attacking. Please always target if you want AC5e to suggest advantageModes properly.",
+	"AC5E.MultipleTargetsDamageWarn": "Automated Conditions 5e: You are damaging multiple targets and that is not supported. The Roll results can be skewed.",
+	"AC5E.NoTargetsDamageWarn": "Automated Conditions 5e: You have no targets selected when rolling damage. Please always target if you want AC5e to suggest roll modes properly.",
+	"AC5E.TargetingChoicesNone": "Do nothing",
+	"AC5E.TargetingChoicesSource": "From source only",
+	"AC5E.TargetingChoicesForce": "Enforce targeting",
+	"AC5E.TargetingName": "AC5e targeting options",
+	"AC5E.TargetingHint": "If none or multiple target(s) selected when user rolls for Attack or Damage, AC5e will: 'Do nothing': No advantageMode/damageMode calculations for the incoming roll; 'From source only': advantageMode/damageMode based on any source Actor effects; 'Enforce Targeting':  Cancel roll and ask for targets before rolling again (Use with caution).",
+	"AC5E.KeypressOverrideName": "Keybinds override AC5e calculations",
+	"AC5E.KeypressOverrideHint": "The key binds for advantage, disadvantage, critical should override any calculations by AC5e (checked) or be added to the normal AC5e calculations (not checked).",
+	"AC5E.DebuggingName": "AC5E debug",
+	"AC5E.DebuggingHint": "Just some useful logs for debugging while developing. Probably makes little sense for users to have it on :)",
+	"AC5E.WarCaster": "War Caster",
+	"AC5E.Fail": "Fail",
+	"AC5E.FailLowerCase": "fail",
+	"AC5E.Fumble": "Fumble",
+	"AC5E.Rage": "Rage",
+	"AC5E.Raging": "Raging",
+	"AC5E.SubtleSpell": "Subtle Spell",
+	"AC5E.OutOfRange": "Out of range",
+	"AC5E.Item": "Item",
+	"AC5E.Equipment": "Equipment",
+	"AC5E.NearbyFoe": "Nearby Foe",
+	"AC5E.ButtonColorPicker": {
+		"Enabled": {
+			"Name": "Colorful buttons",
+			"Hint": "Make your roll dialog buttons stand out. Default colors: #288bcc (background), white (text/border). Input user to use game.user.color (best for background). Input false/none/null/0 to turn off any of the available color pickers. Delete any field to fallback to defaults."
+		},
+		"Background": {
+			"Name": "🎨 Button background color",
+			"Hint": "Delete any string from the input to default to the game.user.color"
+		},
+		"Border": {
+			"Name": "🖍️ Button border color",
+			"Hint": "Delete any string from the input to default to white"
+		},
+		"Text": {
+			"Name": "🔤 Button text color",
+			"Hint": "Delete any string from the input to default to white"
+		}
+	},
+	"AC5E.Bonus": "Bonus",
+	"AC5E.Success": "Success",
+	"AC5E.AbbreviationAdvantage": "adv",
+	"AC5E.AbbreviationDisadvantage": "dis",
+	"AC5E.AbbreviationCritical": "crit",
+	"AC5E.Grants": "grants",
+	"AC5E.Attacker": "Attacker",
+	"AC5E.TargetGrantsAdvantageAbbreviated": "Granted adv",
+	"AC5E.TargetGrantsDisadvantageAbbreviated": "Granted dis",
+	"AC5E.TargetGrantsCriticalAbbreviated": "Granted crit",
+	"AC5E.TargetGrantsFail": "Granted fail",
+	"AC5E.TargetGrantsFumble": "Granted fumble",
+	"AC5E.TargetGrantsSuccess": "Granted success",
+	"AC5E.TargetGrantsBonus": "Granted bonus",
+	"AC5E.NoChanges": "No changes",
+	"AC5E.EnviromentalHazards": {
+		"SettingsName": "Enviromental Hazards (2024)",
+		"SettingsHint": "Automate Burning and Suffocation conditions, based on the 2024 dnd45e ruleset",
+		"BurningHazard": "Burning Hazard",
+		"SuffocatingHazard": "Suffocating"
+	},
+	"dae.fieldData.fieldCategories.AC5E": "AC5E",
+	"dae.AC5E.fieldData": {
+		"flags.automated-condition-5e.crossbowExpert": {
+			"name": "Crossbow Expert",
+			"description": "Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows"
+		},
+		"flags.automated-condition-5e.sharpShooter": {
+			"name": "Sharpshooter",
+			"description": "No disadvantage for firing ranged weapons at long range or within 5 feet of an enemy"
+		},
+		"flags.automated-conditions-5e.ACTIONTYPE": {
+			"advantage": {
+				"name": "Roll with advantage",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
+			},
+			"bonus": {
+				"name": "Roll gets bonus",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/initiative/save/skill/tool. eg bonus=1d4 + 5 - @abilities.dex.mod;"
+			},
+			"critical": {
+				"name": "Roll is critical (nat20 or crit damage)",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/initiative/save/skill/tool"
+			},
+			"disadvantage": {
+				"name": "Roll with disadvantage",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
+			},
+			"fail": {
+				"name": "d20 rolls fail",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/save/skill/tool"
+			},
+			"fumble": {
+				"name": "d20 rolls fumble (nat1)",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
+			},
+			"success": {
+				"name": "d20 rolls succeed",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/save/skill/tool"
+			}
+		},
+		"flags.automated-conditions-5e.grants.ACTIONTYPE": {
+			"advantage": {
+				"name": "Grant advantage to opponent's d20 rolls",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
+			},
+			"bonus": {
+				"name": "Grant bonus to opponent's rolls",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/initiative/save/skill/tool. Lead with the bonus= followed by a ; separator, eg bonus=1d4 + 5 - @abilities.dex.mod;"
+			},
+			"critical": {
+				"name": "Grant critical (nat20 or damage) to opponent's rolls",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/initiative/save/skill/tool"
+			},
+			"disadvantage": {
+				"name": "Grant disadvantage to opponent's d20 rolls",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
+			},
+			"fail": {
+				"name": "Grant failure to opponent's d20 rolls",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/save/skill/tool"
+			},
+			"fumble": {
+				"name": "Grant fumble (nat1) to opponent's d20 rolls",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
+			},
+			"success": {
+				"name": "d20 rolls against or caused by you succeed",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/save/skill/tool"
+			}
+		},
+		"flags.automated-conditions-5e.aura.ACTIONTYPE": {
+			"advantage": {
+				"name": "An aura giving advantage",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool. Change value format example for a save ACTIONTYPE and: radius=15;includeSelf;allies;str;cha; would give to all allies including self in 15ft radius advantage to strength or charisma saves."
+			},
+			"bonus": {
+				"name": "An aura giving bonuses",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/initiative/save/skill/tool. Change value format example for initiative ACTIONTYPE and effect value of: radius=20;bonus=-source.abilities.cha.mod;target.statuses.surprised ALL within 20ft will have their rolls reduced by the source actor's cha mod if they are surprised"
+			},
+			"critical": {
+				"name": "An aura forcing critical (nat20 or damage)",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/damage/death/initiative/save/skill/tool. Change value format: radius=Number;allies or enemies or omit for ALL;other conditions"
+			},
+			"disadvantage": {
+				"name": "An aura giving disadvantage",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool. Change value format: radius=Number;allies or enemies or omit for ALL;other conditions"
+			},
+			"fail": {
+				"name": "An aura forcing d20 rolls to fail",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/save/skill/tool. Change value format: radius=Number;allies or enemies or omit for ALL;other conditions"
+			},
+			"fumble": {
+				"name": "An aura forcing d20 rolls to fumble",
+				"description": "An aura around the actor that has the effect on. Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool. Change value format: radius=Number;allies or enemies or omit for ALL;other conditions"
+			},
+			"success": {
+				"name": "An aura forcing success",
+				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration//death/save/skill/tool. Change value format: radius=Number;allies or enemies or omit for ALL;other conditions"
+			}
+		}
+	}
+}
