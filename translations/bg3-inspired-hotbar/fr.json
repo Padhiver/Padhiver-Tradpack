@@ -56,12 +56,12 @@
       "Hint": "Afficher la description complète des composantes matérielles dans les infobulles des sorts (par ex. 'diamants d'une valeur de 300 po, que le sort consume')"
     },
     "EnableLightTooltip": {
-      "Name": "Configure Tooltip display",
-      "Hint": "Choose what should be displayed in item tooltip",
+      "Name": "Configurer l'affichage de l'infobulle",
+      "Hint": "Choisir ce qui doit être affiché dans l'infobulle de l'objet",
       "Choices": {
-        "Full": "Full",
-        "Light": "Show only item name & type",
-        "NoDesc": "Hide description only"
+        "Full": "Complet",
+        "Light": "Afficher seulement le nom & le type de l'objet",
+        "NoDesc": "Masquer seulement la description"
       }
     },
     "BypassSpellPreparationCheck": {
@@ -145,7 +145,7 @@
       "Save": "Enregistrer les modifications",
       "SaveSuccess": "Paramètres de remplissage automatique du conteneur enregistrés avec succès",
       "Configure": "Configurer le remplissage automatique du conteneur",
-      "Export": "Export Theme"
+      "Export": "Exporter le thème"
     },
     "HighlightStyle": {
       "Name": "Style de surbrillance",
@@ -177,16 +177,13 @@
       "Hint": "Choisissez la couleur d'arrière-plan du portraits du personnages."
     },
     "ShowHealthOverlay": {
-      "Name": "Afficher l'overlay des points de vie",
-      "Hint": ""
+      "Name": "Afficher l'overlay des points de vie"
     },
     "ShowHPText": {
-      "Name": "Afficher le texte des PdV",
-      "Hint": ""
+      "Name": "Afficher le texte des PdV"
     },
     "ShowRestTurnButton": {
-      "Name": "Afficher le bouton Repos/Tours",
-      "Hint": ""
+      "Name": "Afficher le bouton Repos/Tours"
     },
     "OverlayModePortrait": {
       "Name": "Overlay de santé en tant que masque",
@@ -203,13 +200,13 @@
       "MidiQoL": "Synchro MidiQoL"
     },
     "MenuTheme": {
-      "Name": "Theme configuration",
-      "Hint": "Choose between available themes or create a custom one.",
-      "Label": "Configure Theme"
+      "Name": "Configuration du thème",
+      "Hint": "Choisir parmi les thèmes disponibles ou en créer un personnalisé.",
+      "Label": "Configurer le thème"
     },
     "scopeTheme": {
-      "Name": "Theme Scope",
-      "Hint": "If checked every player will be able to choose it's own theme. Otherwise the theme selected by the GM will be the same for everyone."
+      "Name": "Portée du thème",
+      "Hint": "Si coché, chaque joueur pourra choisir son propre thème. Sinon, le thème sélectionné par le MJ sera le même pour tout le monde."
     },
     "PlayerListVisibility": {
       "Name": "Visibilité de la liste des joueurs",
@@ -221,18 +218,18 @@
       }
     },
     "ShowDeathSavingThrow": {
-      "Name": "Display Death Saving Throw",
-      "Hint": "Control how the Death Saving Throw should be displayed.",
+      "Name": "Afficher le jet de sauvegarde contre la mort",
+      "Hint": "Contrôler comment le jet de sauvegarde contre la mort doit être affiché.",
       "Choices": {
-        "show": "Default",
-        "hide": "Never",
-        "only": "Only display a clickable skull on portrait"
+        "show": "Par défaut",
+        "hide": "Jamais",
+        "only": "Afficher seulement un crâne cliquable sur le portrait"
       }
     },
     "synchroMidiQoL": {
       "BR": {
-        "Name": "Bonus & Reaction active effects",
-        "Hint": "Set Bonus Action and Reaction as used based on MidiQoL active effects."
+        "Name": "Effets actifs d'Action Bonus & Réaction",
+        "Hint": "Marquer l'Action Bonus et la Réaction comme utilisées en fonction des effets actifs de MidiQoL."
       }
     }
   }
