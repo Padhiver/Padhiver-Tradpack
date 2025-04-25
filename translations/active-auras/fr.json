@@ -32,6 +32,7 @@
   "ACTIVEAURAS.FORM_Alignment": "Vérifier l'alignement",
   "ACTIVEAURAS.FORM_Type": "Correspondance des types de créature, séparez par ;",
   "ACTIVEAURAS.FORM_CustomCondition": "Test personnalisé",
+  "ACTIVEAURAS.FORM_CustomConditionPrompt": "JavaScript",
   "ACTIVEAURAS.FORM_Good": "Bon",
   "ACTIVEAURAS.FORM_Neutral": "Neutre",
   "ACTIVEAURAS.FORM_Evil": "Mauvais",
@@ -52,6 +53,5 @@
   "ACTIVEAURAS.RemoveLog": "ActiveAuras | Retiré '{effectDataName}' de {tokenName}",
   "ACTIVEAURAS.IgnoreSelfLog": "ActiveAuras | Modification '{changeKey}' de '{effectDataName}' ignorée pour {actorName}",
   "ACTIVEAURAS.SaveNotify": "${tokenName} réussit le jet de sauvegarde contre ${oldeffectDataName}",
-  "ACTIVEAURAS.FORM_CustomConditionPrompt": "JavaScript",
   "EFFECT.TABS.activeauras": "Active Auras"
 }

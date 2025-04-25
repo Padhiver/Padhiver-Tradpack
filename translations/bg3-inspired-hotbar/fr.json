@@ -55,6 +55,15 @@
       "Name": "Afficher la description des composantes matérielles",
       "Hint": "Afficher la description complète des composantes matérielles dans les infobulles des sorts (par ex. 'diamants d'une valeur de 300 po, que le sort consume')"
     },
+    "EnableLightTooltip": {
+      "Name": "Configure Tooltip display",
+      "Hint": "Choose what should be displayed in item tooltip",
+      "Choices": {
+        "Full": "Full",
+        "Light": "Show only item name & type",
+        "NoDesc": "Hide description only"
+      }
+    },
     "BypassSpellPreparationCheck": {
       "Name": "Inclure les sorts non préparés",
       "Hint": "Lorsque cette option est activée, tous les sorts seront inclus dans la barre de raccourcis quel que soit leur état de préparation"
@@ -135,7 +144,8 @@
       "Cancel": "Annuler",
       "Save": "Enregistrer les modifications",
       "SaveSuccess": "Paramètres de remplissage automatique du conteneur enregistrés avec succès",
-      "Configure": "Configurer le remplissage automatique du conteneur"
+      "Configure": "Configurer le remplissage automatique du conteneur",
+      "Export": "Export Theme"
     },
     "HighlightStyle": {
       "Name": "Style de surbrillance",
@@ -189,7 +199,17 @@
       "Portrait": "Portrait du personnage",
       "Tooltip": "Infobulle",
       "AutoPopulating": "Remplissage automatique",
-      "FoundryUI": "Modifications de l'interface utilisateur de Foundry"
+      "FoundryUI": "Modifications de l'interface utilisateur de Foundry",
+      "MidiQoL": "Synchro MidiQoL"
+    },
+    "MenuTheme": {
+      "Name": "Theme configuration",
+      "Hint": "Choose between available themes or create a custom one.",
+      "Label": "Configure Theme"
+    },
+    "scopeTheme": {
+      "Name": "Theme Scope",
+      "Hint": "If checked every player will be able to choose it's own theme. Otherwise the theme selected by the GM will be the same for everyone."
     },
     "PlayerListVisibility": {
       "Name": "Visibilité de la liste des joueurs",
@@ -198,6 +218,21 @@
         "always": "Toujours visible",
         "hover": "Afficher au survol",
         "hidden": "Cacher complètement"
+      }
+    },
+    "ShowDeathSavingThrow": {
+      "Name": "Display Death Saving Throw",
+      "Hint": "Control how the Death Saving Throw should be displayed.",
+      "Choices": {
+        "show": "Default",
+        "hide": "Never",
+        "only": "Only display a clickable skull on portrait"
+      }
+    },
+    "synchroMidiQoL": {
+      "BR": {
+        "Name": "Bonus & Reaction active effects",
+        "Hint": "Set Bonus Action and Reaction as used based on MidiQoL active effects."
       }
     }
   }
