@@ -31,13 +31,13 @@
   "ACTIVEAURAS.FORM_Height": "Vérifier la hauteur du token",
   "ACTIVEAURAS.FORM_Alignment": "Vérifier l'alignement",
   "ACTIVEAURAS.FORM_Type": "Correspondance des types de créature, séparez par ;",
-  "ACTIVEAURAS.FORM_CustomCondition": "JavaScript",
+  "ACTIVEAURAS.FORM_CustomCondition": "Test personnalisé",
   "ACTIVEAURAS.FORM_Good": "Bon",
   "ACTIVEAURAS.FORM_Neutral": "Neutre",
   "ACTIVEAURAS.FORM_Evil": "Mauvais",
   "ACTIVEAURAS.FORM_SaveEnable": "Type de jet de sauvegarde pour résister",
   "ACTIVEAURAS.FORM_SaveDC": "DD de sauvegarde",
-  "ACTIVEAURAS.FORM_TypePrompt": "humanoïde/bête etc.",
+  "ACTIVEAURAS.FORM_TypePrompt": "humanoïde/bête etc",
   "ACTIVEAURAS.FORM_RadiusPrompt": "Mesuré par l'échelle de votre grille",
   "ACTIVEAURAS.FORM_SavePrompt": "for/dex/con/sag/int/cha",
   "ACTIVEAURAS.FORM_TimePrompt": "Expiration spéciale pour l'effet appliqué",
@@ -51,5 +51,7 @@
   "ACTIVEAURAS.ApplyLog": "ActiveAuras | Appliqué '{effectDataName}' à {tokenName}",
   "ACTIVEAURAS.RemoveLog": "ActiveAuras | Retiré '{effectDataName}' de {tokenName}",
   "ACTIVEAURAS.IgnoreSelfLog": "ActiveAuras | Modification '{changeKey}' de '{effectDataName}' ignorée pour {actorName}",
-  "ACTIVEAURAS.SaveNotify": "${tokenName} réussit le jet de sauvegarde contre ${oldeffectDataName}"
+  "ACTIVEAURAS.SaveNotify": "${tokenName} réussit le jet de sauvegarde contre ${oldeffectDataName}",
+  "ACTIVEAURAS.FORM_CustomConditionPrompt": "JavaScript",
+  "EFFECT.TABS.activeauras": "Active Auras"
 }
