@@ -1,15 +1,11 @@
 name: Reorder JSON Translations
 
 on:
-  pull_request:
-    types:
-      - closed
   workflow_dispatch:     # Permet d'exécuter le workflow manuellement
 
 jobs:
   reorder_json:
     # Exécute le job si la PR est fusionnée OU si le workflow est déclenché manuellement
-    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: write
