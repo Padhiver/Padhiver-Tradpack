@@ -111,6 +111,7 @@
   "midi-qol.CriticalDamage.Name": "Choisir les dégâts critiques pour les joueurs",
   "midi-qol.CriticalDamage.Hint": "Paramètres D&D5E uniquement - jet critique standard dnd5e, Dégâts normaux max - dés de l'arme de base uniquement (pas de dés critiques) mais tous maximisés, Dés critiques max - dés critiques maximisés, Tous les dés max - dés de l'objet + dés critiques maximisés, valeur des dés doublée - résultat des dés x2, Explosion des dés critiques - lancer les critiques normaux en faisant exploser tout dé critique, Uniquement les critiques extra de l'objet - le seul bonus de dégâts pour critique vient du champ critique extra de l'objet, Critique max du jet de base - utiliser les dégâts de base maximum puis lancer les dés critiques comme d'habitude.",
   "midi-qol.CriticalDamageGM.Name": "Choisir les dégâts critiques pour le MJ",
+  "midi-qol.CriticalDamageGM.Hint": "",
   "midi-qol.CriticalDamageChoices": {
     "default": "Paramètres D&D5E uniquement",
     "maxDamage": "Dégâts normaux max",
@@ -258,13 +259,13 @@
   },
   "midi-qol.playerRollSavesOptions": {
     "none": "Aucun (Jet privé)",
+    "nonePublic": "Aucun (Jet public)",
     "noneDialogPublic": "Jet automatique et affichage (jet public)",
     "noneDialogPrivate": "Jet automatique et affichage (jet privé)",
     "noneDialogBlind": "Jet automatique et affichage (jet secret)",
     "chat": "Message de tchat",
     "mtb": "Monks Token Bar",
-    "rer": "Rippers Epic Rolls",
-    "nonePublic": "Aucun (Jet public)"
+    "rer": "Rippers Epic Rolls"
   },
   "midi-qol.playerRollSavesOptionsReduced": {
     "none": "Aucun",
@@ -1265,14 +1266,16 @@
       "description": "Convertit les dégâts de Foudre subis en soins."
     },
     "flags.midi-qol.absorption.midi-none": {
-      "name": "Absorption Aucun"
+      "name": "Absorption Aucun",
+      "description": ""
     },
     "flags.midi-qol.absorption.necrotic": {
       "name": "Absorption Nécrotique",
       "description": "Convertit les dégâts Nécrotiques subis en soins."
     },
     "flags.midi-qol.absorption.none": {
-      "name": "Pas d'absorption"
+      "name": "Pas d'absorption",
+      "description": ""
     },
     "flags.midi-qol.absorption.piercing": {
       "name": "Absorption Perforant",
@@ -1379,7 +1382,8 @@
       "description": "Avantage sur les attaques utilisant la Dextérité."
     },
     "flags.midi-qol.advantage.attack.heal": {
-      "name": "Avantage attaques de Soin"
+      "name": "Avantage attaques de Soin",
+      "description": ""
     },
     "flags.midi-qol.advantage.attack.int": {
       "name": "Avantage attaques d'Intelligence",
@@ -1394,7 +1398,8 @@
       "description": "Avantage sur les attaques d'arme au corps à corps."
     },
     "flags.midi-qol.advantage.attack.other": {
-      "name": "Avantage autres attaques"
+      "name": "Avantage autres attaques",
+      "description": ""
     },
     "flags.midi-qol.advantage.attack.rsak": {
       "name": "Avantage attaques de sort à distance",
@@ -1425,7 +1430,8 @@
       "description": "Désavantage en Discrétion à cause d'une armure lourde"
     },
     "flags.midi-qol.": {
-      "name": "Flags MIDI-QOL"
+      "name": "Flags MIDI-QOL",
+      "description": ""
     },
     "flags.midi-qol.DR.msak": {
       "name": "Réduction des dégâts (msak) (Obsolète)",
@@ -1552,7 +1558,8 @@
       "description": "Utilisez plutôt les champs system.traits.dm (avec une valeur négative)."
     },
     "flags.midi-qol.OverTime": {
-      "name": "Effets sur la durée"
+      "name": "Effets sur la durée",
+      "description": ""
     },
     "flags.midi-qol.advantage.concentration": {
       "name": "Avantage (Concentration)",
@@ -1643,635 +1650,844 @@
       "description": "Les cibles pré-sélectionnées des sorts à sauvegarde réussissent automatiquement."
     },
     "flags.midi-qol.concentrationSaveBonus": {
-      "name": "Bonus au jet de sauvegarde de concentration"
+      "name": "Bonus au jet de sauvegarde de concentration",
+      "description": ""
     },
     "flags.midi-qol.critical.all": {
-      "name": "Critique (Tous)"
+      "name": "Critique (Tous)",
+      "description": ""
     },
     "flags.midi-qol.critical.heal": {
-      "name": "Critique (Soin)"
+      "name": "Critique (Soin)",
+      "description": ""
     },
     "flags.midi-qol.critical.msak": {
-      "name": "Critique (Attaque de sort au corps à corps)"
+      "name": "Critique (Attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.critical.mwak": {
-      "name": "Critique (Attaque d'arme au corps à corps)"
+      "name": "Critique (Attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.critical.other": {
-      "name": "Critique (Autre)"
+      "name": "Critique (Autre)",
+      "description": ""
     },
     "flags.midi-qol.critical.rsak": {
-      "name": "Critique (Attaque de sort à distance)"
+      "name": "Critique (Attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.critical.rwak": {
-      "name": "Critique (Attaque d'arme à distance)"
+      "name": "Critique (Attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.critical.save": {
-      "name": "Critique (Jet de sauvegarde)"
+      "name": "Critique (Jet de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.critical.util": {
-      "name": "Critique (Utilitaire)"
+      "name": "Critique (Utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.damage.reroll-kh": {
-      "name": "Relancer les dégâts (Garder le plus haut)"
+      "name": "Relancer les dégâts (Garder le plus haut)",
+      "description": ""
     },
     "flags.midi-qol.damage.reroll-kl": {
-      "name": "Relancer les dégâts (Garder le plus bas)"
+      "name": "Relancer les dégâts (Garder le plus bas)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.all": {
-      "name": "Désavantage (Toutes les caractéristiques)"
+      "name": "Désavantage (Toutes les caractéristiques)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.all": {
-      "name": "Désavantage (Tous les tests de caractéristique)"
+      "name": "Désavantage (Tous les tests de caractéristique)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.cha": {
-      "name": "Désavantage (Tests de Charisme)"
+      "name": "Désavantage (Tests de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.con": {
-      "name": "Désavantage (Tests de Constitution)"
+      "name": "Désavantage (Tests de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.dex": {
-      "name": "Désavantage (Tests de Dextérité)"
+      "name": "Désavantage (Tests de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.int": {
-      "name": "Désavantage (Tests d'Intelligence)"
+      "name": "Désavantage (Tests d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.str": {
-      "name": "Désavantage (Tests de Force)"
+      "name": "Désavantage (Tests de Force)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.check.wis": {
-      "name": "Désavantage (Tests de Sagesse)"
+      "name": "Désavantage (Tests de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.all": {
-      "name": "Désavantage (Tous les jets de sauvegarde)"
+      "name": "Désavantage (Tous les jets de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.cha": {
-      "name": "Désavantage (Jets de sauvegarde de Charisme)"
+      "name": "Désavantage (Jets de sauvegarde de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.con": {
-      "name": "Désavantage (Jets de sauvegarde de Constitution)"
+      "name": "Désavantage (Jets de sauvegarde de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.dex": {
-      "name": "Désavantage (Jets de sauvegarde de Dextérité)"
+      "name": "Désavantage (Jets de sauvegarde de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.int": {
-      "name": "Désavantage (Jets de sauvegarde d'Intelligence)"
+      "name": "Désavantage (Jets de sauvegarde d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.str": {
-      "name": "Désavantage (Jets de sauvegarde de Force)"
+      "name": "Désavantage (Jets de sauvegarde de Force)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.ability.save.wis": {
-      "name": "Désavantage (Jets de sauvegarde de Sagesse)"
+      "name": "Désavantage (Jets de sauvegarde de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.all": {
       "name": "Désavantage sur tout",
       "description": "Désavantage sur tous les jets de d20."
     },
     "flags.midi-qol.disadvantage.attack.all": {
-      "name": "Désavantage (Toutes les attaques)"
+      "name": "Désavantage (Toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.cha": {
-      "name": "Désavantage (Attaques de Charisme)"
+      "name": "Désavantage (Attaques de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.con": {
-      "name": "Désavantage (Attaques de Constitution)"
+      "name": "Désavantage (Attaques de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.dex": {
-      "name": "Désavantage (Attaques de Dextérité)"
+      "name": "Désavantage (Attaques de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.heal": {
-      "name": "Désavantage (Soin)"
+      "name": "Désavantage (Soin)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.int": {
-      "name": "Désavantage (Attaques d'Intelligence)"
+      "name": "Désavantage (Attaques d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.msak": {
-      "name": "Désavantage (Attaque de sort au corps à corps)"
+      "name": "Désavantage (Attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.mwak": {
-      "name": "Désavantage (Attaque d'arme au corps à corps)"
+      "name": "Désavantage (Attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.other": {
-      "name": "Désavantage (Autres attaques)"
+      "name": "Désavantage (Autres attaques)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.rsak": {
-      "name": "Désavantage (Attaque de sort à distance)"
+      "name": "Désavantage (Attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.rwak": {
-      "name": "Désavantage (Attaque d'arme à distance)"
+      "name": "Désavantage (Attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.save": {
-      "name": "Désavantage (Jet de sauvegarde)"
+      "name": "Désavantage (Jet de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.util": {
-      "name": "Désavantage (Utilitaire)"
+      "name": "Désavantage (Utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.attack.wis": {
-      "name": "Désavantage (Attaques de Sagesse)"
+      "name": "Désavantage (Attaques de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.concentration": {
-      "name": "Désavantage (Concentration)"
+      "name": "Désavantage (Concentration)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.deathSave": {
-      "name": "Désavantage (Jet de sauvegarde contre la mort)"
+      "name": "Désavantage (Jet de sauvegarde contre la mort)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.acr": {
-      "name": "Désavantage (Acrobaties)"
+      "name": "Désavantage (Acrobaties)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.all": {
-      "name": "Désavantage (Toutes les compétences)"
+      "name": "Désavantage (Toutes les compétences)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.ani": {
-      "name": "Désavantage (Dressage)"
+      "name": "Désavantage (Dressage)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.arc": {
-      "name": "Désavantage (Arcanes)"
+      "name": "Désavantage (Arcanes)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.ath": {
-      "name": "Désavantage (Athlétisme)"
+      "name": "Désavantage (Athlétisme)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.dec": {
-      "name": "Désavantage (Tromperie)"
+      "name": "Désavantage (Tromperie)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.his": {
-      "name": "Désavantage (Histoire)"
+      "name": "Désavantage (Histoire)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.ins": {
-      "name": "Désavantage (Intuition)"
+      "name": "Désavantage (Intuition)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.inv": {
-      "name": "Désavantage (Investigation)"
+      "name": "Désavantage (Investigation)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.itm": {
-      "name": "Désavantage (Intimidation)"
+      "name": "Désavantage (Intimidation)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.med": {
-      "name": "Désavantage (Médecine)"
+      "name": "Désavantage (Médecine)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.nat": {
-      "name": "Désavantage (Nature)"
+      "name": "Désavantage (Nature)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.per": {
-      "name": "Désavantage (Persuasion)"
+      "name": "Désavantage (Persuasion)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.prc": {
-      "name": "Désavantage (Perception)"
+      "name": "Désavantage (Perception)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.prf": {
-      "name": "Désavantage (Représentation)"
+      "name": "Désavantage (Représentation)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.rel": {
-      "name": "Désavantage (Religion)"
+      "name": "Désavantage (Religion)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.slt": {
-      "name": "Désavantage (Escamotage)"
+      "name": "Désavantage (Escamotage)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.ste": {
-      "name": "Désavantage (Discrétion)"
+      "name": "Désavantage (Discrétion)",
+      "description": ""
     },
     "flags.midi-qol.disadvantage.skill.sur": {
-      "name": "Désavantage (Survie)"
+      "name": "Désavantage (Survie)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.all": {
-      "name": "Échec (Toutes les caractéristiques)"
+      "name": "Échec (Toutes les caractéristiques)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.all": {
-      "name": "Échec (Tous les tests de caractéristique)"
+      "name": "Échec (Tous les tests de caractéristique)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.cha": {
-      "name": "Échec (Tests de Charisme)"
+      "name": "Échec (Tests de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.con": {
-      "name": "Échec (Tests de Constitution)"
+      "name": "Échec (Tests de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.dex": {
-      "name": "Échec (Tests de Dextérité)"
+      "name": "Échec (Tests de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.int": {
-      "name": "Échec (Tests d'Intelligence)"
+      "name": "Échec (Tests d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.str": {
-      "name": "Échec (Tests de Force)"
+      "name": "Échec (Tests de Force)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.check.wis": {
-      "name": "Échec (Tests de Sagesse)"
+      "name": "Échec (Tests de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.all": {
-      "name": "Échec (Tous les jets de sauvegarde)"
+      "name": "Échec (Tous les jets de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.cha": {
-      "name": "Échec (Jets de sauvegarde de Charisme)"
+      "name": "Échec (Jets de sauvegarde de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.con": {
-      "name": "Échec (Jets de sauvegarde de Constitution)"
+      "name": "Échec (Jets de sauvegarde de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.dex": {
-      "name": "Échec (Jets de sauvegarde de Dextérité)"
+      "name": "Échec (Jets de sauvegarde de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.int": {
-      "name": "Échec (Jets de sauvegarde d'Intelligence)"
+      "name": "Échec (Jets de sauvegarde d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.str": {
-      "name": "Échec (Jets de sauvegarde de Force)"
+      "name": "Échec (Jets de sauvegarde de Force)",
+      "description": ""
     },
     "flags.midi-qol.fail.ability.save.wis": {
-      "name": "Échec (Jets de sauvegarde de Sagesse)"
+      "name": "Échec (Jets de sauvegarde de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.fail.all": {
-      "name": "Échec (Toutes les actions)"
+      "name": "Échec (Toutes les actions)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.all": {
-      "name": "Échec (Toutes les attaques)"
+      "name": "Échec (Toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.heal": {
-      "name": "Échec (Soin)"
+      "name": "Échec (Soin)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.msak": {
-      "name": "Échec (Attaque de sort au corps à corps)"
+      "name": "Échec (Attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.mwak": {
-      "name": "Échec (Attaque d'arme au corps à corps)"
+      "name": "Échec (Attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.other": {
-      "name": "Échec (Autres attaques)"
+      "name": "Échec (Autres attaques)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.rsak": {
-      "name": "Échec (Attaque de sort à distance)"
+      "name": "Échec (Attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.rwak": {
-      "name": "Échec (Attaque d'arme à distance)"
+      "name": "Échec (Attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.save": {
-      "name": "Échec (Jet de sauvegarde)"
+      "name": "Échec (Jet de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.fail.attack.util": {
-      "name": "Échec (Utilitaire)"
+      "name": "Échec (Utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.all": {
-      "name": "Échec critique (Tous)"
+      "name": "Échec critique (Tous)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.heal": {
-      "name": "Échec critique (Soin)"
+      "name": "Échec critique (Soin)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.msak": {
-      "name": "Échec critique (Attaque de sort au corps à corps)"
+      "name": "Échec critique (Attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.mwak": {
-      "name": "Échec critique (Attaque d'arme au corps à corps)"
+      "name": "Échec critique (Attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.other": {
-      "name": "Échec critique (Autre)"
+      "name": "Échec critique (Autre)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.rsak": {
-      "name": "Échec critique (Attaque de sort à distance)"
+      "name": "Échec critique (Attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.rwak": {
-      "name": "Échec critique (Attaque d'arme à distance)"
+      "name": "Échec critique (Attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.save": {
-      "name": "Échec critique (Jet de sauvegarde)"
+      "name": "Échec critique (Jet de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.fail.critical.util": {
-      "name": "Échec critique (Utilitaire)"
+      "name": "Échec critique (Utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.acr": {
-      "name": "Échec (Acrobaties)"
+      "name": "Échec (Acrobaties)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.all": {
-      "name": "Échec (Toutes les compétences)"
+      "name": "Échec (Toutes les compétences)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.ani": {
-      "name": "Échec (Dressage)"
+      "name": "Échec (Dressage)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.arc": {
-      "name": "Échec (Arcanes)"
+      "name": "Échec (Arcanes)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.ath": {
-      "name": "Échec (Athlétisme)"
+      "name": "Échec (Athlétisme)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.dec": {
-      "name": "Échec (Tromperie)"
+      "name": "Échec (Tromperie)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.his": {
-      "name": "Échec (Histoire)"
+      "name": "Échec (Histoire)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.ins": {
-      "name": "Échec (Intuition)"
+      "name": "Échec (Intuition)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.inv": {
-      "name": "Échec (Investigation)"
+      "name": "Échec (Investigation)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.itm": {
-      "name": "Échec (Intimidation)"
+      "name": "Échec (Intimidation)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.med": {
-      "name": "Échec (Médecine)"
+      "name": "Échec (Médecine)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.nat": {
-      "name": "Échec (Nature)"
+      "name": "Échec (Nature)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.per": {
-      "name": "Échec (Persuasion)"
+      "name": "Échec (Persuasion)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.prc": {
-      "name": "Échec (Perception)"
+      "name": "Échec (Perception)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.prf": {
-      "name": "Échec (Représentation)"
+      "name": "Échec (Représentation)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.rel": {
-      "name": "Échec (Religion)"
+      "name": "Échec (Religion)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.slt": {
-      "name": "Échec (Escamotage)"
+      "name": "Échec (Escamotage)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.ste": {
-      "name": "Échec (Discrétion)"
+      "name": "Échec (Discrétion)",
+      "description": ""
     },
     "flags.midi-qol.fail.skill.sur": {
-      "name": "Échec (Survie)"
+      "name": "Échec (Survie)",
+      "description": ""
     },
     "flags.midi-qol.fail.spell.material": {
-      "name": "Échec (Composante matérielle)"
+      "name": "Échec (Composante matérielle)",
+      "description": ""
     },
     "flags.midi-qol.fail.spell.somatic": {
-      "name": "Échec (Composante somatique)"
+      "name": "Échec (Composante somatique)",
+      "description": ""
     },
     "flags.midi-qol.fail.spell.vocal": {
-      "name": "Échec (Composante verbale)"
+      "name": "Échec (Composante verbale)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.all": {
-      "name": "Accorde l'avantage (Toutes les attaques)"
+      "name": "Accorde l'avantage (Toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.heal": {
-      "name": "Accorde l'avantage (Soin)"
+      "name": "Accorde l'avantage (Soin)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.msak": {
-      "name": "Accorde l'avantage (Attaque de sort au corps à corps)"
+      "name": "Accorde l'avantage (Attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.mwak": {
-      "name": "Accorde l'avantage (Attaque d'arme au corps à corps)"
+      "name": "Accorde l'avantage (Attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.other": {
-      "name": "Accorde l'avantage (Autres attaques)"
+      "name": "Accorde l'avantage (Autres attaques)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.rsak": {
-      "name": "Accorde l'avantage (Attaque de sort à distance)"
+      "name": "Accorde l'avantage (Attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.rwak": {
-      "name": "Accorde l'avantage (Attaque d'arme à distance)"
+      "name": "Accorde l'avantage (Attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.save": {
-      "name": "Accorde l'avantage (Jet de sauvegarde)"
+      "name": "Accorde l'avantage (Jet de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.attack.util": {
-      "name": "Accorde l'avantage (Utilitaire)"
+      "name": "Accorde l'avantage (Utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.all": {
-      "name": "Accorde l'avantage (Tous les tests)"
+      "name": "Accorde l'avantage (Tous les tests)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.cha": {
-      "name": "Accorde l'avantage (Tests de Charisme)"
+      "name": "Accorde l'avantage (Tests de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.con": {
-      "name": "Accorde l'avantage (tests de Constitution)"
+      "name": "Accorde l'avantage (tests de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.dex": {
-      "name": "Accorde l'avantage (tests de Dextérité)"
+      "name": "Accorde l'avantage (tests de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.int": {
-      "name": "Accorde l'avantage (tests d'Intelligence)"
+      "name": "Accorde l'avantage (tests d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.str": {
-      "name": "Accorde l'avantage (tests de Force)"
+      "name": "Accorde l'avantage (tests de Force)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.check.wis": {
-      "name": "Accorde l'avantage (tests de Sagesse)"
+      "name": "Accorde l'avantage (tests de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.all": {
-      "name": "Accorde l'avantage (tous les jets de sauvegarde)"
+      "name": "Accorde l'avantage (tous les jets de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.cha": {
-      "name": "Accorde l'avantage (jets de sauvegarde de Charisme)"
+      "name": "Accorde l'avantage (jets de sauvegarde de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.con": {
-      "name": "Accorde l'avantage (jets de sauvegarde de Constitution)"
+      "name": "Accorde l'avantage (jets de sauvegarde de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.dex": {
-      "name": "Accorde l'avantage (jets de sauvegarde de Dextérité)"
+      "name": "Accorde l'avantage (jets de sauvegarde de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.int": {
-      "name": "Accorde l'avantage (jets de sauvegarde d'Intelligence)"
+      "name": "Accorde l'avantage (jets de sauvegarde d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.str": {
-      "name": "Accorde l'avantage (jets de sauvegarde de Force)"
+      "name": "Accorde l'avantage (jets de sauvegarde de Force)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.save.wis": {
-      "name": "Accorde l'avantage (jets de sauvegarde de Sagesse)"
+      "name": "Accorde l'avantage (jets de sauvegarde de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.all": {
-      "name": "Accorde l'avantage (toutes les compétences)"
+      "name": "Accorde l'avantage (toutes les compétences)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.cha": {
-      "name": "Accorde l'avantage (compétences de Charisme)"
+      "name": "Accorde l'avantage (compétences de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.con": {
-      "name": "Accorde l'avantage (compétences de Constitution)"
+      "name": "Accorde l'avantage (compétences de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.dex": {
-      "name": "Accorde l'avantage (compétences de Dextérité)"
+      "name": "Accorde l'avantage (compétences de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.int": {
-      "name": "Accorde l'avantage (compétences d'Intelligence)"
+      "name": "Accorde l'avantage (compétences d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.str": {
-      "name": "Accorde l'avantage (compétences de Force)"
+      "name": "Accorde l'avantage (compétences de Force)",
+      "description": ""
     },
     "flags.midi-qol.grants.advantage.skill.wis": {
-      "name": "Accorde l'avantage (compétences de Sagesse)"
+      "name": "Accorde l'avantage (compétences de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.all": {
-      "name": "Accorde un bonus d'attaque (toutes)"
+      "name": "Accorde un bonus d'attaque (toutes)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.heal": {
-      "name": "Accorde un bonus d'attaque (soin)"
+      "name": "Accorde un bonus d'attaque (soin)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.msak": {
-      "name": "Accorde un bonus d'attaque (attaque de sort au corps à corps)"
+      "name": "Accorde un bonus d'attaque (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.mwak": {
-      "name": "Accorde un bonus d'attaque (attaque d'arme au corps à corps)"
+      "name": "Accorde un bonus d'attaque (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.other": {
-      "name": "Accorde un bonus d'attaque (autre)"
+      "name": "Accorde un bonus d'attaque (autre)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.rsak": {
-      "name": "Accorde un bonus d'attaque (attaque de sort à distance)"
+      "name": "Accorde un bonus d'attaque (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.rwak": {
-      "name": "Accorde un bonus d'attaque (attaque d'arme à distance)"
+      "name": "Accorde un bonus d'attaque (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.save": {
-      "name": "Accorde un bonus d'attaque (sauvegarde)"
+      "name": "Accorde un bonus d'attaque (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.bonus.util": {
-      "name": "Accorde un bonus d'attaque (utilitaire)"
+      "name": "Accorde un bonus d'attaque (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.fail.all": {
-      "name": "Accorde un échec d'attaque (toutes)"
+      "name": "Accorde un échec d'attaque (toutes)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.all": {
-      "name": "Accorde une réussite d'attaque (toutes)"
+      "name": "Accorde une réussite d'attaque (toutes)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.heal": {
-      "name": "Accorde une réussite d'attaque (soin)"
+      "name": "Accorde une réussite d'attaque (soin)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.msak": {
-      "name": "Accorde une réussite d'attaque (attaque de sort au corps à corps)"
+      "name": "Accorde une réussite d'attaque (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.mwak": {
-      "name": "Accorde une réussite d'attaque (attaque d'arme au corps à corps)"
+      "name": "Accorde une réussite d'attaque (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.other": {
-      "name": "Accorde une réussite d'attaque (autre)"
+      "name": "Accorde une réussite d'attaque (autre)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.rsak": {
-      "name": "Accorde une réussite d'attaque (attaque de sort à distance)"
+      "name": "Accorde une réussite d'attaque (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.rwak": {
-      "name": "Accorde une réussite d'attaque (attaque d'arme à distance)"
+      "name": "Accorde une réussite d'attaque (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.save": {
-      "name": "Accorde une réussite d'attaque (sauvegarde)"
+      "name": "Accorde une réussite d'attaque (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.attack.success.util": {
-      "name": "Accorde une réussite d'attaque (utilitaire)"
+      "name": "Accorde une réussite d'attaque (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.all": {
-      "name": "Accorde un coup critique (toutes)"
+      "name": "Accorde un coup critique (toutes)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.heal": {
-      "name": "Accorde un coup critique (soin)"
+      "name": "Accorde un coup critique (soin)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.msak": {
-      "name": "Accorde un coup critique (attaque de sort au corps à corps)"
+      "name": "Accorde un coup critique (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.mwak": {
-      "name": "Accorde un coup critique (attaque d'arme au corps à corps)"
+      "name": "Accorde un coup critique (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.other": {
-      "name": "Accorde un coup critique (autre)"
+      "name": "Accorde un coup critique (autre)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.range": {
-      "name": "Accorde un coup critique (portée)"
+      "name": "Accorde un coup critique (portée)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.rsak": {
-      "name": "Accorde un coup critique (attaque de sort à distance)"
+      "name": "Accorde un coup critique (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.rwak": {
-      "name": "Accorde un coup critique (attaque d'arme à distance)"
+      "name": "Accorde un coup critique (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.save": {
-      "name": "Accorde un coup critique (sauvegarde)"
+      "name": "Accorde un coup critique (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.critical.util": {
-      "name": "Accorde un coup critique (utilitaire)"
+      "name": "Accorde un coup critique (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.grants.criticalThreshold": {
-      "name": "Seuil de coup critique"
+      "name": "Seuil de coup critique",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.all": {
-      "name": "Accorde le désavantage (toutes les attaques)"
+      "name": "Accorde le désavantage (toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.heal": {
-      "name": "Accorde le désavantage (soin)"
+      "name": "Accorde le désavantage (soin)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.msak": {
-      "name": "Accorde le désavantage (attaque de sort au corps à corps)"
+      "name": "Accorde le désavantage (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.mwak": {
-      "name": "Accorde le désavantage (attaque d'arme au corps à corps)"
+      "name": "Accorde le désavantage (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.other": {
-      "name": "Accorde le désavantage (autres attaques)"
+      "name": "Accorde le désavantage (autres attaques)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.rsak": {
-      "name": "Accorde le désavantage (attaque de sort à distance)"
+      "name": "Accorde le désavantage (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.rwak": {
-      "name": "Accorde le désavantage (attaque d'arme à distance)"
+      "name": "Accorde le désavantage (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.save": {
-      "name": "Accorde le désavantage (sauvegarde)"
+      "name": "Accorde le désavantage (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.attack.util": {
-      "name": "Accorde le désavantage (utilitaire)"
+      "name": "Accorde le désavantage (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.all": {
-      "name": "Accorde le désavantage (tous les tests)"
+      "name": "Accorde le désavantage (tous les tests)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.cha": {
-      "name": "Accorde le désavantage (tests de Charisme)"
+      "name": "Accorde le désavantage (tests de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.con": {
-      "name": "Accorde le désavantage (tests de Constitution)"
+      "name": "Accorde le désavantage (tests de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.dex": {
-      "name": "Accorde le désavantage (tests de Dextérité)"
+      "name": "Accorde le désavantage (tests de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.int": {
-      "name": "Accorde le désavantage (tests d'Intelligence)"
+      "name": "Accorde le désavantage (tests d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.str": {
-      "name": "Accorde le désavantage (tests de Force)"
+      "name": "Accorde le désavantage (tests de Force)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.check.wis": {
-      "name": "Accorde le désavantage (tests de Sagesse)"
+      "name": "Accorde le désavantage (tests de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.all": {
-      "name": "Accorde le désavantage (tous les jets de sauvegarde)"
+      "name": "Accorde le désavantage (tous les jets de sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.cha": {
-      "name": "Accorde le désavantage (jets de sauvegarde de Charisme)"
+      "name": "Accorde le désavantage (jets de sauvegarde de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.con": {
-      "name": "Accorde le désavantage (jets de sauvegarde de Constitution)"
+      "name": "Accorde le désavantage (jets de sauvegarde de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.dex": {
-      "name": "Accorde le désavantage (jets de sauvegarde de Dextérité)"
+      "name": "Accorde le désavantage (jets de sauvegarde de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.int": {
-      "name": "Accorde le désavantage (jets de sauvegarde d'Intelligence)"
+      "name": "Accorde le désavantage (jets de sauvegarde d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.str": {
-      "name": "Accorde le désavantage (jets de sauvegarde de Force)"
+      "name": "Accorde le désavantage (jets de sauvegarde de Force)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.save.wis": {
-      "name": "Accorde le désavantage (jets de sauvegarde de Sagesse)"
+      "name": "Accorde le désavantage (jets de sauvegarde de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.all": {
-      "name": "Accorde le désavantage (toutes les compétences)"
+      "name": "Accorde le désavantage (toutes les compétences)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.cha": {
-      "name": "Accorde le désavantage (compétences de Charisme)"
+      "name": "Accorde le désavantage (compétences de Charisme)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.con": {
-      "name": "Accorde le désavantage (compétences de Constitution)"
+      "name": "Accorde le désavantage (compétences de Constitution)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.dex": {
-      "name": "Accorde le désavantage (compétences de Dextérité)"
+      "name": "Accorde le désavantage (compétences de Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.int": {
-      "name": "Accorde le désavantage (compétences d'Intelligence)"
+      "name": "Accorde le désavantage (compétences d'Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.str": {
-      "name": "Accorde le désavantage (compétences de Force)"
+      "name": "Accorde le désavantage (compétences de Force)",
+      "description": ""
     },
     "flags.midi-qol.grants.disadvantage.skill.wis": {
-      "name": "Accorde le désavantage (compétences de Sagesse)"
+      "name": "Accorde le désavantage (compétences de Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.grants.fail.advantage.attack.all": {
-      "name": "Accorde l'échec de l'avantage (toutes les attaques)"
+      "name": "Accorde l'échec de l'avantage (toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.noAdvantage.attack.all": {
       "name": "N'accorde pas d'avantage (toutes les attaques)",
@@ -2394,7 +2610,8 @@
       "description": "Tout test de caractéristique forcé par l'acteur n'aura pas de désavantage"
     },
     "flags.midi-qol.grants.fail.disadvantage.attack.skill": {
-      "name": "N'accorde pas de désavantage (compétence)"
+      "name": "N'accorde pas de désavantage (compétence)",
+      "description": ""
     },
     "flags.midi-qol.grants.noDisadvantage.attack.skill": {
       "name": "N'accorde pas de désavantage (compétence)",
@@ -2445,131 +2662,172 @@
       "description": "Toutes les attaques d'arme infligeront le minimum de dégâts"
     },
     "flags.midi-qol.grants.min.damage.other": {
-      "name": "Accorde les dégâts minimums (autre)"
+      "name": "Accorde les dégâts minimums (autre)",
+      "description": ""
     },
     "flags.midi-qol.grants.min.damage.rsak": {
-      "name": "Accorde les dégâts minimums (attaque de sort à distance)"
+      "name": "Accorde les dégâts minimums (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.min.damage.rwak": {
-      "name": "Accorde les dégâts minimums (attaque d'arme à distance)"
+      "name": "Accorde les dégâts minimums (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.min.damage.save": {
-      "name": "Accorde les dégâts minimums (sauvegarde)"
+      "name": "Accorde les dégâts minimums (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.min.damage.util": {
-      "name": "Accorde les dégâts minimums (utilitaire)"
+      "name": "Accorde les dégâts minimums (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.all": {
-      "name": "N'accorde pas de coup critique (tous)"
+      "name": "N'accorde pas de coup critique (tous)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.heal": {
-      "name": "N'accorde pas de coup critique (soin)"
+      "name": "N'accorde pas de coup critique (soin)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.msak": {
-      "name": "N'accorde pas de coup critique (attaque de sort au corps à corps)"
+      "name": "N'accorde pas de coup critique (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.mwak": {
-      "name": "N'accorde pas de coup critique (attaque d'arme au corps à corps)"
+      "name": "N'accorde pas de coup critique (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.other": {
-      "name": "N'accorde pas de coup critique (autre)"
+      "name": "N'accorde pas de coup critique (autre)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.rsak": {
-      "name": "N'accorde pas de coup critique (attaque de sort à distance)"
+      "name": "N'accorde pas de coup critique (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.rwak": {
-      "name": "N'accorde pas de coup critique (attaque d'arme à distance)"
+      "name": "N'accorde pas de coup critique (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.save": {
-      "name": "N'accorde pas de coup critique (sauvegarde)"
+      "name": "N'accorde pas de coup critique (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.grants.noCritical.util": {
-      "name": "N'accorde pas de coup critique (utilitaire)"
+      "name": "N'accorde pas de coup critique (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.ignoreNearbyFoes": {
       "name": "Ignorer les ennemis proches",
       "description": "Ignore le désavantage imposé aux attaques à distance par les ennemis proches."
     },
     "flags.midi-qol.inMotion": {
-      "name": "En mouvement"
+      "name": "En mouvement",
+      "description": ""
     },
     "flags.midi-qol.long.all": {
-      "name": "Longue portée (tous)"
+      "name": "Longue portée (tous)",
+      "description": ""
     },
     "flags.midi-qol.long.heal": {
-      "name": "Longue portée (soin)"
+      "name": "Longue portée (soin)",
+      "description": ""
     },
     "flags.midi-qol.long.msak": {
-      "name": "Longue portée (attaque de sort au corps à corps)"
+      "name": "Longue portée (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.long.mwak": {
-      "name": "Longue portée (attaque d'arme au corps à corps)"
+      "name": "Longue portée (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.long.other": {
-      "name": "Longue portée (autre)"
+      "name": "Longue portée (autre)",
+      "description": ""
     },
     "flags.midi-qol.long.rsak": {
-      "name": "Longue portée (attaque de sort à distance)"
+      "name": "Longue portée (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.long.rwak": {
-      "name": "Longue portée (attaque d'arme à distance)"
+      "name": "Longue portée (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.long.save": {
-      "name": "Longue portée (sauvegarde)"
+      "name": "Longue portée (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.long.util": {
-      "name": "Longue portée (utilitaire)"
+      "name": "Longue portée (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.all": {
-      "name": "Résistance à la magie (toutes)"
+      "name": "Résistance à la magie (toutes)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.cha": {
-      "name": "Résistance à la magie (Charisme)"
+      "name": "Résistance à la magie (Charisme)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.check.all": {
-      "name": "Résistance à la magie (tests)"
+      "name": "Résistance à la magie (tests)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.con": {
-      "name": "Résistance à la magie (Constitution)"
+      "name": "Résistance à la magie (Constitution)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.dex": {
-      "name": "Résistance à la magie (Dextérité)"
+      "name": "Résistance à la magie (Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.int": {
-      "name": "Résistance à la magie (Intelligence)"
+      "name": "Résistance à la magie (Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.save.all": {
-      "name": "Résistance à la magie (sauvegardes)"
+      "name": "Résistance à la magie (sauvegardes)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.skill.all": {
-      "name": "Résistance à la magie (compétences)"
+      "name": "Résistance à la magie (compétences)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.str": {
-      "name": "Résistance à la magie (Force)"
+      "name": "Résistance à la magie (Force)",
+      "description": ""
     },
     "flags.midi-qol.magicResistance.wis": {
-      "name": "Résistance à la magie (Sagesse)"
+      "name": "Résistance à la magie (Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all": {
-      "name": "Vulnérabilité à la magie (toutes)"
+      "name": "Vulnérabilité à la magie (toutes)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all.cha": {
-      "name": "Vulnérabilité à la magie (Charisme)"
+      "name": "Vulnérabilité à la magie (Charisme)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all.con": {
-      "name": "Vulnérabilité à la magie (Constitution)"
+      "name": "Vulnérabilité à la magie (Constitution)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all.dex": {
-      "name": "Vulnérabilité à la magie (Dextérité)"
+      "name": "Vulnérabilité à la magie (Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all.int": {
-      "name": "Vulnérabilité à la magie (Intelligence)"
+      "name": "Vulnérabilité à la magie (Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all.str": {
-      "name": "Vulnérabilité à la magie (Force)"
+      "name": "Vulnérabilité à la magie (Force)",
+      "description": ""
     },
     "flags.midi-qol.magicVulnerability.all.wis": {
-      "name": "Vulnérabilité à la magie (Sagesse)"
+      "name": "Vulnérabilité à la magie (Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.max.ability.check.all": {
       "name": "Test de caractéristique maximum (tous)",
@@ -2632,31 +2890,40 @@
       "description": "Résultat maximum possible sur le d20 principal pour les jets de sauvegarde de Sagesse."
     },
     "flags.midi-qol.max.damage.all": {
-      "name": "Dégâts maximums (tous)"
+      "name": "Dégâts maximums (tous)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.heal": {
-      "name": "Dégâts maximums (soin)"
+      "name": "Dégâts maximums (soin)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.msak": {
-      "name": "Dégâts maximums (attaque de sort au corps à corps)"
+      "name": "Dégâts maximums (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.mwak": {
-      "name": "Dégâts maximums (attaque d'arme au corps à corps)"
+      "name": "Dégâts maximums (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.other": {
-      "name": "Dégâts maximums (autre)"
+      "name": "Dégâts maximums (autre)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.rsak": {
-      "name": "Dégâts maximums (attaque de sort à distance)"
+      "name": "Dégâts maximums (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.rwak": {
-      "name": "Dégâts maximums (attaque d'arme à distance)"
+      "name": "Dégâts maximums (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.save": {
-      "name": "Dégâts maximums (sauvegarde)"
+      "name": "Dégâts maximums (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.max.damage.util": {
-      "name": "Dégâts maximums (utilitaire)"
+      "name": "Dégâts maximums (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.max.skill.all": {
       "name": "Compétence maximum (toutes)",
@@ -2723,71 +2990,100 @@
       "description": "Résultat minimum possible sur le d20 principal pour les jets de sauvegarde de Sagesse."
     },
     "flags.midi-qol.min.damage.all": {
-      "name": "Dégâts minimums (tous)"
+      "name": "Dégâts minimums (tous)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.heal": {
-      "name": "Dégâts minimums (soin)"
+      "name": "Dégâts minimums (soin)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.msak": {
-      "name": "Dégâts minimums (attaque de sort au corps à corps)"
+      "name": "Dégâts minimums (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.mwak": {
-      "name": "Dégâts minimums (attaque d'arme au corps à corps)"
+      "name": "Dégâts minimums (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.other": {
-      "name": "Dégâts minimums (autre)"
+      "name": "Dégâts minimums (autre)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.rsak": {
-      "name": "Dégâts minimums (attaque de sort à distance)"
+      "name": "Dégâts minimums (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.rwak": {
-      "name": "Dégâts minimums (attaque d'arme à distance)"
+      "name": "Dégâts minimums (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.save": {
-      "name": "Dégâts minimums (sauvegarde)"
+      "name": "Dégâts minimums (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.min.damage.util": {
-      "name": "Dégâts minimums (utilitaire)"
+      "name": "Dégâts minimums (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.neverTarget": {
-      "name": "Jamais ciblé"
+      "name": "Jamais ciblé",
+      "description": ""
     },
     "flags.midi-qol.noCritical.all": {
-      "name": "Pas de coup critique (tous)"
+      "name": "Pas de coup critique (tous)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.heal": {
-      "name": "Pas de coup critique (soin)"
+      "name": "Pas de coup critique (soin)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.msak": {
-      "name": "Pas de coup critique (attaque de sort au corps à corps)"
+      "name": "Pas de coup critique (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.mwak": {
-      "name": "Pas de coup critique (attaque d'arme au corps à corps)"
+      "name": "Pas de coup critique (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.other": {
-      "name": "Pas de coup critique (autre)"
+      "name": "Pas de coup critique (autre)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.rsak": {
-      "name": "Pas de coup critique (attaque de sort à distance)"
+      "name": "Pas de coup critique (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.rwak": {
-      "name": "Pas de coup critique (attaque d'arme à distance)"
+      "name": "Pas de coup critique (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.save": {
-      "name": "Pas de coup critique (sauvegarde)"
+      "name": "Pas de coup critique (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.noCritical.util": {
-      "name": "Pas de coup critique (utilitaire)"
+      "name": "Pas de coup critique (utilitaire)",
+      "description": ""
+    },
+    "flags.midi-qol.onUseMacroName": {
+      "name": "",
+      "description": ""
+    },
+    "flags.midi-qol.optional.NAME.macroToCall": {
+      "name": "",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.ac": {
-      "name": "CA optionnelle"
+      "name": "CA optionnelle",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.activation": {
       "name": "Activation optionnelle",
       "description": "Condition d'activation pour le bonus optionnel."
     },
     "flags.midi-qol.optional.NAME.attack.all": {
-      "name": "Bonus d'attaque optionnel (toutes)"
+      "name": "Bonus d'attaque optionnel (toutes)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.fail.all": {
       "name": "Échec d'attaque optionnel (toutes)",
@@ -2826,40 +3122,52 @@
       "description": "Ne demande qu'en cas d'échec."
     },
     "flags.midi-qol.optional.NAME.attack.heal": {
-      "name": "Bonus d'attaque optionnel (soin)"
+      "name": "Bonus d'attaque optionnel (soin)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.msak": {
-      "name": "Bonus d'attaque optionnel (attaque de sort au corps à corps)"
+      "name": "Bonus d'attaque optionnel (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.mwak": {
-      "name": "Bonus d'attaque optionnel (attaque d'arme au corps à corps)"
+      "name": "Bonus d'attaque optionnel (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.other": {
-      "name": "Bonus d'attaque optionnel (autre)"
+      "name": "Bonus d'attaque optionnel (autre)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.rsak": {
-      "name": "Bonus d'attaque optionnel (attaque de sort à distance)"
+      "name": "Bonus d'attaque optionnel (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.rwak": {
-      "name": "Bonus d'attaque optionnel (attaque d'arme à distance)"
+      "name": "Bonus d'attaque optionnel (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.save": {
-      "name": "Bonus d'attaque optionnel (sauvegarde)"
+      "name": "Bonus d'attaque optionnel (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.attack.util": {
-      "name": "Bonus d'attaque optionnel (utilitaire)"
+      "name": "Bonus d'attaque optionnel (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.all": {
-      "name": "Bonus de test optionnel (tous)"
+      "name": "Bonus de test optionnel (tous)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.cha": {
-      "name": "Bonus de test optionnel (Charisme)"
+      "name": "Bonus de test optionnel (Charisme)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.con": {
-      "name": "Bonus de test optionnel (Constitution)"
+      "name": "Bonus de test optionnel (Constitution)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.dex": {
-      "name": "Bonus de test optionnel (Dextérité)"
+      "name": "Bonus de test optionnel (Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.fail.all": {
       "name": "Échec de test optionnel (tous)",
@@ -2890,68 +3198,88 @@
       "description": "Ne demande qu'en cas d'échec."
     },
     "flags.midi-qol.optional.NAME.check.int": {
-      "name": "Bonus de test optionnel (Intelligence)"
+      "name": "Bonus de test optionnel (Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.str": {
-      "name": "Bonus de test optionnel (Force)"
+      "name": "Bonus de test optionnel (Force)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.check.wis": {
-      "name": "Bonus de test optionnel (Sagesse)"
+      "name": "Bonus de test optionnel (Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.count": {
-      "name": "Compteur optionnel"
+      "name": "Compteur optionnel",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.countAlt": {
-      "name": "Alternative de compteur optionnel"
+      "name": "Alternative de compteur optionnel",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.criticalDamage": {
-      "name": "Dégâts critiques optionnels"
+      "name": "Dégâts critiques optionnels",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.all": {
-      "name": "Dégâts optionnels (tous)"
+      "name": "Dégâts optionnels (tous)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.heal": {
-      "name": "Dégâts optionnels (soin)"
+      "name": "Dégâts optionnels (soin)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.msak": {
-      "name": "Dégâts optionnels (attaque de sort au corps à corps)"
+      "name": "Dégâts optionnels (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.mwak": {
-      "name": "Dégâts optionnels (attaque d'arme au corps à corps)"
+      "name": "Dégâts optionnels (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.other": {
-      "name": "Dégâts optionnels (autre)"
+      "name": "Dégâts optionnels (autre)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.rsak": {
-      "name": "Dégâts optionnels (attaque de sort à distance)"
+      "name": "Dégâts optionnels (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.rwak": {
-      "name": "Dégâts optionnels (attaque d'arme à distance)"
+      "name": "Dégâts optionnels (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.save": {
-      "name": "Dégâts optionnels (sauvegarde)"
+      "name": "Dégâts optionnels (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.damage.util": {
-      "name": "Dégâts optionnels (utilitaire)"
+      "name": "Dégâts optionnels (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.force": {
       "name": "Forçage optionnel",
       "description": "Condition pour forcer l'activation du bonus."
     },
     "flags.midi-qol.optional.NAME.label": {
-      "name": "Étiquette optionnelle"
+      "name": "Étiquette optionnelle",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.all": {
-      "name": "Bonus de sauvegarde optionnel (tous)"
+      "name": "Bonus de sauvegarde optionnel (tous)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.cha": {
-      "name": "Bonus de sauvegarde optionnel (Charisme)"
+      "name": "Bonus de sauvegarde optionnel (Charisme)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.con": {
-      "name": "Bonus de sauvegarde optionnel (Constitution)"
+      "name": "Bonus de sauvegarde optionnel (Constitution)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.dex": {
-      "name": "Bonus de sauvegarde optionnel (Dextérité)"
+      "name": "Bonus de sauvegarde optionnel (Dextérité)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.fail.all": {
       "name": "Échec de sauvegarde optionnel (tous)",
@@ -2982,128 +3310,168 @@
       "description": "Ne demande qu'en cas d'échec."
     },
     "flags.midi-qol.optional.NAME.save.int": {
-      "name": "Bonus de sauvegarde optionnel (Intelligence)"
+      "name": "Bonus de sauvegarde optionnel (Intelligence)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.str": {
-      "name": "Bonus de sauvegarde optionnel (Force)"
+      "name": "Bonus de sauvegarde optionnel (Force)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.save.wis": {
-      "name": "Bonus de sauvegarde optionnel (Sagesse)"
+      "name": "Bonus de sauvegarde optionnel (Sagesse)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.acr": {
-      "name": "Bonus de compétence optionnel (Acrobaties)"
+      "name": "Bonus de compétence optionnel (Acrobaties)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.all": {
-      "name": "Bonus de compétence optionnel (toutes)"
+      "name": "Bonus de compétence optionnel (toutes)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.ani": {
-      "name": "Bonus de compétence optionnel (Dressage)"
+      "name": "Bonus de compétence optionnel (Dressage)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.arc": {
-      "name": "Bonus de compétence optionnel (Arcanes)"
+      "name": "Bonus de compétence optionnel (Arcanes)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.ath": {
-      "name": "Bonus de compétence optionnel (Athlétisme)"
+      "name": "Bonus de compétence optionnel (Athlétisme)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.fail.all": {
       "name": "Échec de compétence optionnel (toutes)",
       "description": "Ne demande qu'en cas d'échec."
     },
     "flags.midi-qol.optional.NAME.skill.his": {
-      "name": "Bonus de compétence optionnel (Histoire)"
+      "name": "Bonus de compétence optionnel (Histoire)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.ins": {
-      "name": "Bonus de compétence optionnel (Intuition)"
+      "name": "Bonus de compétence optionnel (Intuition)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.inv": {
-      "name": "Bonus de compétence optionnel (Investigation)"
+      "name": "Bonus de compétence optionnel (Investigation)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.itm": {
-      "name": "Bonus de compétence optionnel (Intimidation)"
+      "name": "Bonus de compétence optionnel (Intimidation)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.med": {
-      "name": "Bonus de compétence optionnel (Médecine)"
+      "name": "Bonus de compétence optionnel (Médecine)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.nat": {
-      "name": "Bonus de compétence optionnel (Nature)"
+      "name": "Bonus de compétence optionnel (Nature)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.per": {
-      "name": "Bonus de compétence optionnel (Persuasion)"
+      "name": "Bonus de compétence optionnel (Persuasion)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.prc": {
-      "name": "Bonus de compétence optionnel (Perception)"
+      "name": "Bonus de compétence optionnel (Perception)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.prf": {
-      "name": "Bonus de compétence optionnel (Représentation)"
+      "name": "Bonus de compétence optionnel (Représentation)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.rel": {
-      "name": "Bonus de compétence optionnel (Religion)"
+      "name": "Bonus de compétence optionnel (Religion)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.slt": {
-      "name": "Bonus de compétence optionnel (Escamotage)"
+      "name": "Bonus de compétence optionnel (Escamotage)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.ste": {
-      "name": "Bonus de compétence optionnel (Discrétion)"
+      "name": "Bonus de compétence optionnel (Discrétion)",
+      "description": ""
     },
     "flags.midi-qol.optional.NAME.skill.sur": {
-      "name": "Bonus de compétence optionnel (Survie)"
+      "name": "Bonus de compétence optionnel (Survie)",
+      "description": ""
     },
     "flags.midi-qol.potentCantrip": {
-      "name": "Cantrip puissant"
+      "name": "Cantrip puissant",
+      "description": ""
     },
     "flags.midi-qol.range.all": {
-      "name": "Portée (tous)"
+      "name": "Portée (tous)",
+      "description": ""
     },
     "flags.midi-qol.range.heal": {
-      "name": "Portée (soin)"
+      "name": "Portée (soin)",
+      "description": ""
     },
     "flags.midi-qol.range.msak": {
-      "name": "Portée (attaque de sort au corps à corps)"
+      "name": "Portée (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.range.mwak": {
-      "name": "Portée (attaque d'arme au corps à corps)"
+      "name": "Portée (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.range.other": {
-      "name": "Portée (autre)"
+      "name": "Portée (autre)",
+      "description": ""
     },
     "flags.midi-qol.range.rsak": {
-      "name": "Portée (attaque de sort à distance)"
+      "name": "Portée (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.range.rwak": {
-      "name": "Portée (attaque d'arme à distance)"
+      "name": "Portée (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.range.save": {
-      "name": "Portée (sauvegarde)"
+      "name": "Portée (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.range.util": {
-      "name": "Portée (utilitaire)"
+      "name": "Portée (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.all": {
-      "name": "Substitution de portée (toutes les attaques)"
+      "name": "Substitution de portée (toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.heal": {
-      "name": "Substitution de portée (soin)"
+      "name": "Substitution de portée (soin)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.msak": {
-      "name": "Substitution de portée (attaque de sort au corps à corps)"
+      "name": "Substitution de portée (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.mwak": {
-      "name": "Substitution de portée (attaque d'arme au corps à corps)"
+      "name": "Substitution de portée (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.other": {
-      "name": "Substitution de portée (autre)"
+      "name": "Substitution de portée (autre)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.rsak": {
-      "name": "Substitution de portée (attaque de sort à distance)"
+      "name": "Substitution de portée (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.rwak": {
-      "name": "Substitution de portée (attaque d'arme à distance)"
+      "name": "Substitution de portée (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.save": {
-      "name": "Substitution de portée (sauvegarde)"
+      "name": "Substitution de portée (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.rangeOverride.attack.util": {
-      "name": "Substitution de portée (utilitaire)"
+      "name": "Substitution de portée (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.sculptSpells": {
       "name": "Sculpter les sorts",
@@ -3138,34 +3506,44 @@
       "description": "Aucun dégât si réussi."
     },
     "flags.midi-qol.sharpShooter": {
-      "name": "Tireur d'élite"
+      "name": "Tireur d'élite",
+      "description": ""
     },
     "flags.midi-qol.success.attack.all": {
-      "name": "Réussite (toutes les attaques)"
+      "name": "Réussite (toutes les attaques)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.heal": {
-      "name": "Réussite (soin)"
+      "name": "Réussite (soin)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.msak": {
-      "name": "Réussite (attaque de sort au corps à corps)"
+      "name": "Réussite (attaque de sort au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.mwak": {
-      "name": "Réussite (attaque d'arme au corps à corps)"
+      "name": "Réussite (attaque d'arme au corps à corps)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.other": {
-      "name": "Réussite (autre)"
+      "name": "Réussite (autre)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.rsak": {
-      "name": "Réussite (attaque de sort à distance)"
+      "name": "Réussite (attaque de sort à distance)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.rwak": {
-      "name": "Réussite (attaque d'arme à distance)"
+      "name": "Réussite (attaque d'arme à distance)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.save": {
-      "name": "Réussite (sauvegarde)"
+      "name": "Réussite (sauvegarde)",
+      "description": ""
     },
     "flags.midi-qol.success.attack.util": {
-      "name": "Réussite (utilitaire)"
+      "name": "Réussite (utilitaire)",
+      "description": ""
     },
     "flags.midi-qol.superSaver.all": {
       "name": "Super sauvegarde (tous)",
@@ -3196,7 +3574,8 @@
       "description": "Aucun dégât si réussi, demi-dégâts si échoué."
     },
     "flags.midi-qol.uncanny-dodge": {
-      "name": "Esquive instinctive"
+      "name": "Esquive instinctive",
+      "description": ""
     }
   }
 }
