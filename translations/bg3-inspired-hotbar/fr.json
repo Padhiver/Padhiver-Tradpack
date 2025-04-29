@@ -231,6 +231,10 @@
         "Name": "Effets actifs d'Action Bonus & Réaction",
         "Hint": "Marquer l'Action Bonus et la Réaction comme utilisées en fonction des effets actifs de MidiQoL."
       }
+    },
+    "GamePause": {
+      "Name": "Garder \"Jeu en pause\" au premier plan",
+      "Hint": "Si coché, l'interface utilisateur s'affichera sous \"Jeu en pause\"."
     }
   }
 }
