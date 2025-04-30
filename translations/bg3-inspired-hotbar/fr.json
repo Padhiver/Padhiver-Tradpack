@@ -180,13 +180,16 @@
       "Hint": "Choisissez la couleur d'arrière-plan du portraits du personnages."
     },
     "ShowHealthOverlay": {
-      "Name": "Afficher l'overlay des points de vie"
+      "Name": "Afficher l'overlay des points de vie",
+      "Hint": ""
     },
     "ShowHPText": {
-      "Name": "Afficher le texte des PdV"
+      "Name": "Afficher le texte des PdV",
+      "Hint": ""
     },
     "ShowRestTurnButton": {
-      "Name": "Afficher les boutons Repos/Tours"
+      "Name": "Afficher les boutons Repos/Tours",
+      "Hint": ""
     },
     "OverlayModePortrait": {
       "Name": "Overlay de santé en tant que masque",
@@ -259,14 +262,14 @@
         "Label": "Configurer le thème"
       },
       "Portrait": {
+        "Name": "Paramètres du portrait",
         "Hint": "Paramètres avancés pour le portrait du personnage.",
-        "Label": "Configurer le portrait",
-        "Name": "Paramètres du portrait"
+        "Label": "Configurer le portrait"
       },
       "Hotbar": {
         "Name": "Paramètres des barres de raccourcis",
-        "Label": "Configurer les barres de raccourcis",
-        "Hint": "Paramètres avancés pour les barres de raccourcis."
+        "Hint": "Paramètres avancés pour les barres de raccourcis.",
+        "Label": "Configurer les barres de raccourcis"
       },
       "Combat": {
         "Name": "Paramètres des actions courantes",
@@ -275,8 +278,8 @@
       },
       "Populate": {
         "Name": "Paramètres du remplissage automatique",
-        "Label": "Configurer le remplissage automatique",
-        "Hint": "Paramètres avancés pour la fonctionnalité de remplissage automatique."
+        "Hint": "Paramètres avancés pour la fonctionnalité de remplissage automatique.",
+        "Label": "Configurer le remplissage automatique"
       },
       "Tooltip": {
         "Name": "Paramètres de l'infobulle",
@@ -285,8 +288,8 @@
       },
       "Midi": {
         "Name": "Paramètres Synchro MidiQoL",
-        "Label": "Configurer Synchro MidiQoL",
-        "Hint": "Synchronisation avec les fonctionnalités de MidiQoL. Nécessite que le module MidiQoL soit installé."
+        "Hint": "Synchronisation avec les fonctionnalités de MidiQoL. Nécessite que le module MidiQoL soit installé.",
+        "Label": "Configurer Synchro MidiQoL"
       }
     }
   }
