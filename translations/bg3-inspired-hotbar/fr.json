@@ -40,6 +40,9 @@
       "Status": "Status",
       "Active": "Active",
       "Disabled": "Désactivé"
+    },
+    "Ability": {
+      "Tooltip": "Cliquez pour afficher les tests de caractéristique et les jets de sauvegarde"
     }
   },
   "BG3.Settings": {
@@ -183,7 +186,7 @@
       "Name": "Afficher le texte des PdV"
     },
     "ShowRestTurnButton": {
-      "Name": "Afficher le bouton Repos/Tours"
+      "Name": "Afficher les boutons Repos/Tours"
     },
     "OverlayModePortrait": {
       "Name": "Overlay de santé en tant que masque",
@@ -230,11 +233,61 @@
       "BR": {
         "Name": "Effets actifs d'Action Bonus & Réaction",
         "Hint": "Marquer l'Action Bonus et la Réaction comme utilisées en fonction des effets actifs de MidiQoL."
+      },
+      "ADV": {
+        "Name": "Ajouter les boutons Avantage/Désavantage",
+        "Hint": "Ajouter une source d'avantage ou de désavantage. Nécessite que l'option 'Avance rapide' de MidiQoL soit activée."
       }
     },
     "GamePause": {
       "Name": "Garder \"Jeu en pause\" au premier plan",
       "Hint": "Si coché, l'interface utilisateur s'affichera sous \"Jeu en pause\"."
+    },
+    "AutoScale": {
+      "Name": "Mise à l'échelle automatique de l'interface",
+      "Hint": "Met automatiquement à l'échelle l'interface en fonction de votre navigateur. Désactive le paramètre de mise à l'échelle de l'interface ci-dessous."
+    },
+    "Menu": {
+      "Global": {
+        "Name": "Paramètres globaux",
+        "Hint": "Éléments natifs de Foundry ou paramètres globaux de l'interface BG3.",
+        "Label": "Configurer les paramètres globaux"
+      },
+      "Theme": {
+        "Name": "Paramètres du thème",
+        "Hint": "Choisir parmi les thèmes disponibles ou en créer un personnalisé.",
+        "Label": "Configurer le thème"
+      },
+      "Portrait": {
+        "Hint": "Paramètres avancés pour le portrait du personnage.",
+        "Label": "Configurer le portrait",
+        "Name": "Paramètres du portrait"
+      },
+      "Hotbar": {
+        "Name": "Paramètres des barres de raccourcis",
+        "Label": "Configurer les barres de raccourcis",
+        "Hint": "Paramètres avancés pour les barres de raccourcis."
+      },
+      "Combat": {
+        "Name": "Paramètres des actions courantes",
+        "Hint": "Paramètres avancés pour les actions courantes.",
+        "Label": "Configurer les actions courantes"
+      },
+      "Populate": {
+        "Name": "Paramètres du remplissage automatique",
+        "Label": "Configurer le remplissage automatique",
+        "Hint": "Paramètres avancés pour la fonctionnalité de remplissage automatique."
+      },
+      "Tooltip": {
+        "Name": "Paramètres de l'infobulle",
+        "Hint": "Paramètres avancés pour l'infobulle.",
+        "Label": "Configurer l'infobulle"
+      },
+      "Midi": {
+        "Name": "Paramètres Synchro MidiQoL",
+        "Label": "Configurer Synchro MidiQoL",
+        "Hint": "Synchronisation avec les fonctionnalités de MidiQoL. Nécessite que le module MidiQoL soit installé."
+      }
     }
   }
 }
