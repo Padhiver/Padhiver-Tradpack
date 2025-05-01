@@ -42,7 +42,7 @@
       "Disabled": "Désactivé"
     },
     "Ability": {
-      "Tooltip": "Cliquez pour afficher les tests de caractéristique et les jets de sauvegarde"
+      "Tooltip": "Clic gauche pour afficher les tests de caractéristique et les jets de sauvegarde<br>Clic droit pour lancer l'initiative."
     }
   },
   "BG3.Settings": {
@@ -287,6 +287,12 @@
         "Name": "Paramètres Synchro MidiQoL",
         "Hint": "Synchronisation avec les fonctionnalités de MidiQoL. Nécessite que le module MidiQoL soit installé.",
         "Label": "Configurer Synchro MidiQoL"
+      },
+      "CPR": {
+        "Name": "Choisir les actions de CPR",
+        "Hint": "électionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes.",
+        "Label": "Sélectionner les Actions CPR",
+        "UpTo6": "Sélectionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes. Jusqu'à 6."
       }
     }
   }
