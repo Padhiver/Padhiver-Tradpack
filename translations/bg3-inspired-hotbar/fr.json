@@ -42,7 +42,7 @@
       "Disabled": "Désactivé"
     },
     "Ability": {
-      "Tooltip": "Cliquez pour afficher les tests de caractéristique et les jets de sauvegarde"
+      "Tooltip": "Clic gauche pour afficher les tests de caractéristique et les jets de sauvegarde<br>Clic droit pour lancer l'initiative."
     }
   },
   "BG3.Settings": {
@@ -180,16 +180,13 @@
       "Hint": "Choisissez la couleur d'arrière-plan du portraits du personnages."
     },
     "ShowHealthOverlay": {
-      "Name": "Afficher l'overlay des points de vie",
-      "Hint": ""
+      "Name": "Afficher l'overlay des points de vie"
     },
     "ShowHPText": {
-      "Name": "Afficher le texte des PdV",
-      "Hint": ""
+      "Name": "Afficher le texte des PdV"
     },
     "ShowRestTurnButton": {
-      "Name": "Afficher les boutons Repos/Tours",
-      "Hint": ""
+      "Name": "Afficher les boutons Repos/Tours"
     },
     "OverlayModePortrait": {
       "Name": "Overlay de santé en tant que masque",
@@ -290,6 +287,12 @@
         "Name": "Paramètres Synchro MidiQoL",
         "Hint": "Synchronisation avec les fonctionnalités de MidiQoL. Nécessite que le module MidiQoL soit installé.",
         "Label": "Configurer Synchro MidiQoL"
+      },
+      "CPR": {
+        "Name": "Choisir les actions de CPR",
+        "Hint": "électionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes.",
+        "Label": "Sélectionner les Actions CPR",
+        "UpTo6": "Sélectionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes. Jusqu'à 6."
       }
     }
   }
