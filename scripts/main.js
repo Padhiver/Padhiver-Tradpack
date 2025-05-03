@@ -7,7 +7,7 @@ Hooks.on('i18nInit', async () => {
     }
   
     const MY_MODULE_ID = 'padhiver-tradpack'; // ID de votre module
-    const translationFilePath = `modules/${MY_MODULE_ID}/lang/fr.json`;
+    const translationFilePath = `modules/${MY_MODULE_ID}/fr.json`;
   
     console.log(`${MY_MODULE_ID} | Tentative de chargement des traductions FR personnalisées depuis ${translationFilePath}`);
   
