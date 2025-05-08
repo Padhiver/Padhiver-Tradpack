@@ -42,7 +42,7 @@
       "Disabled": "Désactivé"
     },
     "Ability": {
-      "Tooltip": "Clic gauche pour afficher les tests de caractéristique et les jets de sauvegarde<br>Clic droit pour lancer l'initiative."
+      "Tooltip": "Clic gauche pour afficher les tests de caractéristique et les jets de sauvegarde.<br>Clic droit pour lancer l'initiative (ALT : Avantage / CTRL : Désavantage)."
     }
   },
   "BG3.Settings": {
@@ -195,7 +195,7 @@
     "SettingsCategories": {
       "HotbarContainer": "Boutons de la barre de raccourcis",
       "CombatContainer": "Conteneur des actions courantes",
-      "Global": "Global",
+      "Global": "Général",
       "Portrait": "Portrait du personnage",
       "Tooltip": "Infobulle",
       "AutoPopulating": "Remplissage automatique",
@@ -249,9 +249,14 @@
     },
     "Menu": {
       "Global": {
-        "Name": "Paramètres globaux",
-        "Hint": "Éléments natifs de Foundry ou paramètres globaux de l'interface BG3.",
-        "Label": "Configurer les paramètres globaux"
+        "Name": "Paramètres généraux",
+        "Hint": "Éléments natifs de Foundry ou paramètres généraux de l'interface BG3.",
+        "Label": "Configurer les paramètres généraux",
+        "Sub": {
+          "Foundry": "Interface Foundry",
+          "Scale": "Échelle & Position",
+          "Opacity": "Opacité & Masquage"
+        }
       },
       "Theme": {
         "Name": "Paramètres du thème",
@@ -261,12 +266,22 @@
       "Portrait": {
         "Name": "Paramètres du portrait",
         "Hint": "Paramètres avancés pour le portrait du personnage.",
-        "Label": "Configurer le portrait"
+        "Label": "Configurer le portrait",
+        "Sub": {
+          "Show": "Paramètres d'affichage/masquage",
+          "Portrait": "Paramètres du portrait",
+          "Other": "Autres paramètres"
+        }
       },
       "Hotbar": {
         "Name": "Paramètres des barres de raccourcis",
         "Hint": "Paramètres avancés pour les barres de raccourcis.",
-        "Label": "Configurer les barres de raccourcis"
+        "Label": "Configurer les barres de raccourcis",
+        "Sub": {
+          "General": "Général",
+          "Common": "Actions courantes",
+          "Other": "Autre"
+        }
       },
       "Combat": {
         "Name": "Paramètres des actions courantes",
@@ -294,6 +309,10 @@
         "Label": "Sélectionner les Actions CPR",
         "UpTo6": "Sélectionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes. Jusqu'à 6."
       }
+    },
+    "EnableGMHotbar": {
+      "Name": "Activer la barre de raccourcis du MJ",
+      "Hint": "Afficher la barre de raccourcis spéciale du MJ lorsqu'aucun token ou plusieurs tokens sont sélectionnés."
     }
   }
 }
