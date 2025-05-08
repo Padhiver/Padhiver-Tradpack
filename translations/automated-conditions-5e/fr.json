@@ -31,7 +31,7 @@
   "AC5E.AutoExhaustionName": "Automatisation de l'épuisement AC5e.",
   "AC5E.AutoExhaustionHint": "Lorsque coché, et que vous utilisez les règles Legacy de D&D 5e, AC5e traitera automatiquement les règles normales de l'état Épuisement 5e.",
   "AC5E.AutoEncumbranceName": "Variante d'encombrement AC5e.",
-  "AC5E.AutoEncumbranceHint": "Lorsque coché, AC5e traitera automatiquement les règles de la variante d'encombrement 5e. Le MJ doit également sélectionner dans les paramètres du système D&D 5e l'option Variante (Encombré & Fortement Encombré), sinon cela n'aura aucun effet.",
+  "AC5E.AutoEncumbranceHint": "Lorsque coché, AC5e traitera automatiquement les règles de la variante d'encombrement 5e. Le MJ doit également sélectionner dans les paramètres du système D&D 5e l'option Variante (Chargé & Surchargé), sinon cela n'aura aucun effet.",
   "AC5E.MultipleTargetsAttackWarn": "Automated Conditions 5e : Vous attaquez plusieurs cibles et cela n'est pas supporté. Les résultats du jet peuvent être faussés.",
   "AC5E.NoTargetsAttackWarn": "Automated Conditions 5e : Vous n'avez sélectionné aucune cible lors de l'attaque. Veuillez toujours cibler si vous voulez qu'AC5e suggère correctement les modes d'avantage.",
   "AC5E.MultipleTargetsDamageWarn": "Automated Conditions 5e : Vous infligez des dégâts à plusieurs cibles et cela n'est pas supporté. Les résultats du jet peuvent être faussés.",
@@ -190,5 +190,17 @@
         "description": "Remplacer ACTIONTYPE par l'un des suivants : all/attack/check/concentration/death/save/skill/tool. Format de la valeur : radius=Nombre;allies ou enemies ou omettre pour TOUS;autres états"
       }
     }
-  }
+  },
+  "AC5E.ShowTooltipChatVisibility.All": "Tous",
+  "AC5E.ShowTooltipChatVisibility.None": "Aucun",
+  "AC5E.ShowTooltipChatVisibility.Owned": "Possédés",
+  "AC5E.ShowTooltipChatVisibility.Players": "Joueurs",
+  "AC5E.EnvironmentalHazards": {
+    "BurningHazard": "Danger de brûlure",
+    "SettingsHint": "Automatiser les états de Brûlure et d'Asphyxie, basé sur les règles D&D 5e de 2024",
+    "SuffocatingHazard": "Asphyxie",
+    "SettingsName": "Dangers environnementaux (2024)"
+  },
+  "AC5E.ShowTooltipChatVisibility.Name": "Afficher les infobulles du tchat dans les clients des joueurs",
+  "AC5E.ShowTooltipChatVisibility.Hint": "'Tous' - tous les jets d'acteur, 'Aucun' - aucun jet, 'Possédés' - jets des acteurs possédés, 'Joueurs' - jets des acteurs joueurs"
 }
