@@ -81,7 +81,7 @@
     },
     "CollapseFoundryMacrobar": {
       "Name": "Réduire la barre de macros Foundry",
-      "Hint": "Réduire automatiquement la barre de macros Foundry par défaut"
+      "Hint": "Réduire automatiquement la barre de raccourcis Foundry par défaut. Sur Foundry V13 ou supérieur, \"Toujours\" et \"Complètement caché\" ont le même effet."
     },
     "ShowPassiveFeaturesContainer": {
       "Name": "Afficher le conteneur des aptitudes passives",
@@ -280,7 +280,8 @@
         "Sub": {
           "General": "Général",
           "Common": "Actions courantes",
-          "Other": "Autre"
+          "Other": "Autre",
+          "Weapon": "Ensembles d'armes"
         }
       },
       "Combat": {
@@ -308,11 +309,36 @@
         "Hint": "électionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes.",
         "Label": "Sélectionner les Actions CPR",
         "UpTo6": "Sélectionnez quelles actions CPR remplir automatiquement dans le conteneur des actions courantes. Jusqu'à 6."
+      },
+      "Filter": {
+        "Name": "Paramètres des filtres"
       }
     },
     "EnableGMHotbar": {
       "Name": "Activer la barre de raccourcis du MJ",
       "Hint": "Afficher la barre de raccourcis spéciale du MJ lorsqu'aucun token ou plusieurs tokens sont sélectionnés."
+    },
+    "EnableHPControls": {
+      "Name": "Activer les contrôles des PV",
+      "Hint": "Ajouter des contrôles supplémentaires sur les PV au survol du portrait."
+    },
+    "EnableWeaponAutoEquip": {
+      "Hint": "Si coché, sélectionner un token ou changer d'ensemble d'armes équipera ou déséquipera automatiquement les objets.",
+      "Name": "Activer l'équipement auto des ensembles d'armes"
+    },
+    "HoverFilterShow": {
+      "Name": "Filtre de la barre de raccourcis au survol",
+      "Hint": "Si coché, afficher le filtre de la barre de raccourcis uniquement lors de son survol."
+    },
+    "ShowExtendedFilter": {
+      "Name": "Afficher les filtres étendus",
+      "Hint": "Si coché, afficher les objets à utilisations limitées comme Filtre (sans mise en surbrillance / grisé)."
+    }
+  },
+  "BG3.Portrait": {
+    "HP": {
+      "Death": "Tuer !",
+      "Full": "Soin complet"
     }
   }
 }
