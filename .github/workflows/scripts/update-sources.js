@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration du délai en millisecondes (par exemple, 1000 ms = 1 seconde)
-const DELAY_MS = 1000;
+const DELAY_MS = 5000;
 
 // Fonction de délai asynchrone
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
