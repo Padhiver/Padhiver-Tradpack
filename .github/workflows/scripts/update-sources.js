@@ -2,13 +2,19 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
+// Configuration du délai en millisecondes (par exemple, 1000 ms = 1 seconde)
+const DELAY_MS = 1000;
+
+// Fonction de délai asynchrone
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 // Fonction pour télécharger directement en tant que stream vers un fichier
 const download = async (url, dest) => {
     console.log(`Téléchargement: ${url} → ${dest}`);
     try {
         // Création du répertoire si nécessaire
         fs.mkdirSync(path.dirname(dest), { recursive: true });
-        
+
         // Téléchargement du fichier
         const response = await axios({
             method: 'get',
@@ -16,13 +22,13 @@ const download = async (url, dest) => {
             responseType: 'stream',
             timeout: 10000
         });
-        
+
         if (response.status !== 200) throw new Error(`Statut HTTP: ${response.status}`);
-        
+
         // Écriture directe du stream dans le fichier
         const writer = fs.createWriteStream(dest);
         response.data.pipe(writer);
-        
+
         return new Promise((resolve, reject) => {
             writer.on('finish', resolve);
             writer.on('error', reject);
@@ -41,7 +47,7 @@ const downloadAsRawText = async (url, dest) => {
     try {
         // Création du répertoire si nécessaire
         fs.mkdirSync(path.dirname(dest), { recursive: true });
-        
+
         // Téléchargement du fichier comme texte pour préserver le formatage exact
         const response = await axios({
             method: 'get',
@@ -49,9 +55,9 @@ const downloadAsRawText = async (url, dest) => {
             responseType: 'text',
             timeout: 10000
         });
-        
+
         if (response.status !== 200) throw new Error(`Statut HTTP: ${response.status}`);
-        
+
         // Vérifier que c'est un JSON valide
         try {
             JSON.parse(response.data);
@@ -77,10 +83,10 @@ const downloadAsRawText = async (url, dest) => {
             console.error('Fichier projects.json introuvable');
             process.exit(1);
         }
-        
+
         const projects = JSON.parse(fs.readFileSync('./projects.json', 'utf8'));
         console.log(`Found ${projects.length} projects to process`);
-        
+
         // Traitement de chaque projet
         for (const project of projects) {
             try {
@@ -88,28 +94,31 @@ const downloadAsRawText = async (url, dest) => {
                     console.warn('Projet invalide, ignoré:', project);
                     continue;
                 }
-                
+
                 const moduleDir = `translations/${project.name}`;
                 const enFile = `${moduleDir}/en.json`;
                 const frFile = `${moduleDir}/fr.json`;
-                
+
                 console.log(`Processing ${project.name}...`);
-                
+
                 // Téléchargement du fichier anglais avec préservation du formatage
                 await downloadAsRawText(project.src, enFile);
-                
+
+                // Délai avant de passer au projet suivant
+                await sleep(DELAY_MS);
+
                 // Création du fichier français vide s'il n'existe pas
                 if (!fs.existsSync(frFile)) {
                     console.log(`Creating empty fr.json for ${project.name}`);
                     fs.writeFileSync(frFile, '{}');
                 }
-                
+
                 // Vérification que les fichiers ont bien été créés
                 if (fs.existsSync(enFile)) {
                     const stats = fs.statSync(enFile);
                     console.log(`✅ Fichier anglais créé: ${enFile} (${stats.size} octets)`);
                 }
-                
+
                 if (fs.existsSync(frFile)) {
                     const stats = fs.statSync(frFile);
                     console.log(`✅ Fichier français: ${frFile} (${stats.size} octets)`);
@@ -118,9 +127,9 @@ const downloadAsRawText = async (url, dest) => {
                 console.error(`Failed to process ${project.name}:`, err.message);
             }
         }
-        
+
         console.log("Traitement terminé");
-        
+
         // Liste des fichiers créés pour vérification
         console.log("\nContenu du répertoire translations:");
         if (fs.existsSync('translations')) {
