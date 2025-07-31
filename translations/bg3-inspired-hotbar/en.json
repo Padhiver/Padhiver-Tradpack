@@ -324,6 +324,10 @@
             "Name": "Enable Weapon Sets Auto-Equip",
             "Hint": "If checked, selecting a token or switching between weapon sets will automatically equip or unequip items."
         },
+        "NpcUseContainerDefaults": {
+            "Name": "NPCs Use Container Defaults",
+            "Hint": "If checked, NPCs (linked or unlinked) will ignore weapon sets and use container auto-populate defaults instead."
+        },
         "HoverFilterShow": {
             "Name": "Hotbar Filter on hover",
             "Hint": "If checked, show Hotbar Filter only when hovering it."
