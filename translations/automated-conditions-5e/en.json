@@ -113,6 +113,7 @@
 		}
 	},
 	"AC5E.Bonus": "Bonus",
+	"AC5E.ExtraDice": "Extra dice",
 	"AC5E.Success": "Success",
 	"AC5E.AbbreviationAdvantage": "adv",
 	"AC5E.AbbreviationDisadvantage": "dis",
@@ -129,6 +130,7 @@
 	"AC5E.TargetGrantsSuccess": "Granted success",
 	"AC5E.TargetGrantsBonus": "Granted bonus",
 	"AC5E.TargetGrantsModifier": "Granted modifier",
+	"AC5E.TargetGrantsExtraDice": "Granted extra dice",
 	"AC5E.NoChanges": "No changes",
 	"AC5E.SystemMode": "System mode",
 	"AC5E.EnvironmentalHazards": {
@@ -163,6 +165,18 @@
 			"name": "An aura altering the criticalThreshold of the attacks in radius",
 			"description": "Use radius=10;threshold='18'; or radius=15;threshold='-1d6'. The former will set to 18 if lower and the latter will add to the current; use negative to reduce"
 		},
+		"flags.automated-conditions-5e.damage.extraDice": {
+			"name": "Increase or decrease the number of dice rolled for each denomination",
+			"description": "Use bonus=4 to increase the number of dice rolled by 4."
+		},
+		"flags.automated-conditions-5e.grants.damage.extraDice": {
+			"name": "Grant an increase or decrease to the number of dice rolled for each denomination",
+			"description": "Use bonus=-1 to decrease the number of dice rolled by 1"
+		},
+		"flags.automated-conditions-5e.aura.damage.extraDice": {
+			"name": "An aura increasing or decreasing the number of dice rolled for each denomination",
+			"description": "Use bonus=2; radius=10 to increase the number of dice rolled for each denomination in a 10 distance units radius."
+		},
 		"flags.automated-conditions-5e.modifyAC": {
 			"name": "Modify the AC of the actor against incoming attacks",
 			"description": "Use bonus='18' or bonus='+5'. The former will set the AC to 18 and the latter will add to the current; use negative to reduce"
@@ -193,8 +207,8 @@
 				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
 			},
 			"modifier": {
-				"name": "d20 rolls modifiers for max, min",
-				"description": "Replace ACTIONTYPE with one of: attack/check/concentration/death/initiative/save/skill/tool. eg modifier=rollingActor.attributes.hp.pct < 50 ? 'max8' : 'min12'"
+				"name": "min and max modifiers for d20 rolls modifiers for max and any for damage rolls",
+				"description": "Replace ACTIONTYPE with one of: attack/check/concentration/damage/death/initiative/save/skill/tool. eg modifier=rollingActor.attributes.hp.pct < 50 ? 'max8' : 'min12'"
 			},
 			"modifyDC": {
 				"name": "Modify the DC of your actions. Will work for concentation checks and death saves you make too",
@@ -231,8 +245,8 @@
 				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool"
 			},
 			"modifier": {
-				"name": "Grant modifiers for max, min for opponent's d20 rolls",
-				"description": "Replace ACTIONTYPE with one of: attack/check/concentration/death/initiative/save/skill/tool. eg modifier='min10'"
+				"name": "Grant min and max modifiers for d20 rolls modifiers for max and any for damage rolls",
+				"description": "Replace ACTIONTYPE with one of: attack/check/concentration/damage/death/initiative/save/skill/tool. eg modifier='min10'"
 			},
 			"modifyDC": {
 				"name": "Modify the DC of a roll you make against an action taken by another",
@@ -269,8 +283,8 @@
 				"description": "Replace ACTIONTYPE with one of: all/attack/check/concentration/death/initiative/save/skill/tool. Change value format: radius=Number;allies or enemies or omit for ALL;other conditions"
 			},
 			"modifier": {
-				"name": "An aura giving modifiers for max, min on d20 rolls",
-				"description": "Replace ACTIONTYPE with one of: attack/check/concentration/death/initiative/save/skill/tool. eg modifier='min10'; radius=rollingActor.details.level < 10 ? 15 : 30; modifier='min10'"
+				"name": "An aura giving min and max modifiers for d20 rolls modifiers for max and any for damage rolls",
+				"description": "Replace ACTIONTYPE with one of: attack/check/concentration/damage/death/initiative/save/skill/tool. eg modifier='min10'; radius=rollingActor.details.level < 10 ? 15 : 30; modifier='min10'"
 			},
 			"modifyDC": {
 				"name": "An aura that modifies the DC of actions the affected tokens take.",
