@@ -8,5 +8,7 @@
   "times-up.UpdatePassiveEffects.Name": "Update passive effects",
   "times-up.UpdatePassiveEffects.Hint": "The duration type of passive effects will be changed to rounds/seconds if the token is in (or enters) combat/leaves combat. See also below",
   "times-up.MaxRoundsToConvert.Name": "Max rounds to convert",
-  "times-up.MaxRoundsToConvert.Hint": "If the duration in seconds (remaining duration for non transfer effeccts) is <= this number of rounds it will be converted to rounds for combat"
+  "times-up.MaxRoundsToConvert.Hint": "If the duration in seconds (remaining duration for non transfer effects) is <= this number of rounds it will be converted to rounds for combat",
+  "times-up.ExpireRoundEffectsOnCombatEnd.Name": "Expire rounds/turns duration effects on combat end",
+  "times-up.ExpireRoundEffectsOnCombatEnd.Hint": "When combat ends, expire all effects that have a duration in rounds/turns. Short-term combat effects will be removed when combat ends."
 }
